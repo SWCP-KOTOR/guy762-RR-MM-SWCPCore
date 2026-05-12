@@ -14,7 +14,7 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<packageId>SWCP.guy762.RR.SWCore</packageId>
-	<url>https://github.com/guy1762/guy762-MM-KotORCore</url>
+	<url>https://github.com/SWCP-KOTOR/guy762-RR-MM-SWCPCore</url>
 	
 	<!-- Requirements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<modDependencies>
