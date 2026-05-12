@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>guy762_BionicHediff_implantI</defName>
+    <label>modular implant dock, small</label>
+    <labelNoun>a small implant dock</labelNoun>
+    <description>An installed small implant dock. This dock can install the following implant upgrade types:\n\n- Packages\n\n- Devices</description>
+    <descriptionHyperlinks><ThingDef>guy762_ImplantDock_I</ThingDef></descriptionHyperlinks>
+	<hediffClass>EBSGFramework.Hediff_ModularImplant</hediffClass>
+	<tags><li>guy762_ModularImplantDock</li></tags>
+    <spawnThingOnRemoved>guy762_ImplantDock_I</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+		<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Items/Bionics/Dock1</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+	<comps>
+	  <li Class="EBSGFramework.HediffCompProperties_Modular">
+		<slots>
+			<li>
+				<slotID>guy762_ImplantSlot_Pkg</slotID>
+				<slotName>package slot</slotName>
+				<capacity>1</capacity>
+			</li>
+			<li>
+				<slotID>guy762_ImplantSlot_Imp</slotID>
+				<slotName>device slot</slotName>
+				<capacity>1</capacity>
+			</li>
+		</slots>
+	  </li>
+	  <!--li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li-->
+    </comps>
+  </HediffDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>guy762_ImplantDock_I</defName>
+    <label>modular implant dock, small</label>
+    <description>A small, unobtrusive implant dock capable of installing package and device upgrades.</description>
+    <descriptionHyperlinks><RecipeDef>guy762_InstallHediff_implantI</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <color>(0.6, 0.6, 1.0)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>1</Mass>
+	  
+	  <WorkToMake>26000</WorkToMake>
+    </statBases>
+	
+	
+	<recipeMaker>
+		<researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>14</Medicine>
+		</skillRequirements>
+	</recipeMaker>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+    </costList>
+    
+	<!--techHediffsTags Inherit="False">
+      <li>guy762TechTag_malakjaw</li>
+    </techHediffsTags-->
+	
+	<thingSetMakerTags>
+		<li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+	<tradeTags Inherit="False">
+	  <li>guy762TT_implants_basic</li>
+	  <li>guy762TT_AllItemsSellable</li>
+	</tradeTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>guy762_InstallHediff_implantI</defName>
+    <label>install modular implant dock, small</label>
+    <description>Install a small implant dock.</description>
+    <descriptionHyperlinks>
+      <ThingDef>guy762_ImplantDock_I</ThingDef>
+      <HediffDef>guy762_BionicHediff_implantI</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing small implant dock.</jobString>
+	
+	<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+	<workAmount>4000</workAmount>
+    <skillRequirements>
+      <Medicine>14</Medicine>
+    </skillRequirements>
+	
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>guy762_ImplantDock_I</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>KOTOR_kolto</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+      <thingDefs>
+        <li>guy762_ImplantDock_I</li>
+        <li>KOTOR_kolto</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>guy762_BionicHediff_implantI</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>guy762_ModularImplantDock</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+  
+  
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>guy762_RemoveHediff_implantI</defName>
+    <label>remove modular implant dock, small</label>
+    <description>Remove small implant dock.</description>
+    <descriptionHyperlinks>
+      <ThingDef>guy762_ImplantDock_I</ThingDef>
+      <HediffDef>guy762_BionicHediff_implantI</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing implant dock.</jobString>
+    <removesHediff>guy762_BionicHediff_implantI</removesHediff>
+	
+	<ingredients Inherit="False">
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>KOTOR_kolto</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+      <thingDefs>
+        <li>KOTOR_kolto</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+
+</Defs>

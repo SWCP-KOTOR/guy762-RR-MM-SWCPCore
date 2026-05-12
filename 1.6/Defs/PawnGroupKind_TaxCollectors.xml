@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!--__________ Tax Collectors __________-->
+
+    <!-- PawnGroupKinds -->
+
+    <PawnGroupKindDef>
+        <defName>FCP_PawnGroupKind_TaxCollector</defName> <!-- hardcoded name -->
+        <workerClass>PawnGroupKindWorker_Trader</workerClass>
+    </PawnGroupKindDef>
+
+    <!-- Incidents -->
+
+    <!-- <IncidentDef Name="SWCP_CaravanArrivalTaxCollectorBase" Abstract="True"> -->
+        <!-- <label>tax collector caravan arrival</label> -->
+        <!-- <targetTags> -->
+            <!-- <li>Map_PlayerHome</li> -->
+        <!-- </targetTags> -->
+        <!-- <workerClass>SWCP.Core.IncidentWorker_CaravanArrivalTaxCollector</workerClass> -->
+        <!-- <category>FactionArrival</category> -->
+        <!-- given by a special storyteller comp -->
+        <!-- <baseChance>0</baseChance> -->
+        <!-- <requireColonistsPresent>True</requireColonistsPresent> -->
+    <!-- </IncidentDef> -->
+
+</Defs>

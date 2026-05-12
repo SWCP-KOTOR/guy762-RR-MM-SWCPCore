@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef MayRequire="guy762.StarWarsXenotypes" ParentName="KotORMeleeMakeable_OffHand">
+		<defName>guy762_gamorreanaxe</defName>
+		<label>Arg'garok</label>
+		<description>The impressive Arg'garok is the most prized Gamorrean weapon. These huge axes are designed to be wielded by those with a low center of gravity and tremendous strength, making them awkward for most weaker species to use.</description>
+		<soundInteract>kotorsound_swordinteract</soundInteract>
+		<meleeHitSound>kotorsound_blade_hitsoft</meleeHitSound>
+		<graphicData>
+			<texPath>gamorreanaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<techLevel>Spacer</techLevel>
+		<weaponClasses><li>MeleePiercer</li></weaponClasses>
+		<statBases>
+			<MarketValue>1850</MarketValue>
+			<Mass>10</Mass>
+			
+			<WorkToMake>12000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_hutts</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Uranium>75</Uranium>
+		</costList>
+		
+		<comps>
+		  <li Class="CompExtraSounds.CompProperties_ExtraSounds">
+			<compClass>CompExtraSounds.CompExtraSounds</compClass>
+			<soundMiss>kotorsound_blade_swing</soundMiss>
+			<soundHitPawn>kotorsound_blade_hitsoft</soundHitPawn>
+			<soundHitBuilding>kotorsound_blade_hithard</soundHitBuilding>
+		  </li>
+		  
+		  <!-- <li Class="AthenaFramework.CompProperties_GeneLockedEquippable"> -->
+			<!-- <requiredGenes> -->
+				<!-- <li>Robust</li> -->
+			<!-- </requiredGenes> -->
+			<!-- <cantReason>Not strong enough! (Requires "Robust" gene)</cantReason> -->
+			<!-- <dropWithoutRequirements>true</dropWithoutRequirements> -->
+		  <!-- </li> -->
+		</comps>
+		<modExtensions>
+		  <li MayRequire="EBSG.Framework" Class="EBSGFramework.EquipRestrictExtension">
+			<requireOneOfGenesToEquip>
+				<li>Robust</li>
+			</requireOneOfGenesToEquip>
+		  </li>
+		</modExtensions>
+		
+		<equippedStatOffsets>
+		  <MeleeHitChance>-0.5</MeleeHitChance>
+		  <MeleeWeapon_DamageMultiplier>1.3</MeleeWeapon_DamageMultiplier>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<!---->
+				<power>12</power>
+				<chanceFactor>0.25</chanceFactor>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>back spikes</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<!---->
+				<power>16</power>
+				<chanceFactor>0.5</chanceFactor>
+				<cooldownTime>1</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<!---->
+				<power>30</power>
+				<chanceFactor>1</chanceFactor>
+				<cooldownTime>4</cooldownTime>
+				<extraMeleeDamages>
+				  <li>
+					<def>Stun</def>
+					<amount>6</amount>
+				  </li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<weaponTags Inherit="False">
+			<li>HC_gamorreanaxe</li>
+			<li>SWMelee_GamorreanAxe</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_KotORWeapon_exotic</li>
+			<li>guy762TT_GCWMelee</li>
+			<li>guy762TT_GCWWeapon_ExoticLegal</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		  <li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+</Defs>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="BenchBase">
+		<defName>guy762_KotORWorkbench</defName>
+		<label>Aratech workbench</label>
+		<description>A highly advanced workbench for creating and modifying weapons and armor.\n\nAbout upgrading:\nNot all weapons can be upgraded; the fabrication patterns of common, base-level blasters and vibroweapons that you are capable of manufacturing in your own facilities are streamlined and simplistic, and modifying them in any meaningful capacity cannot reasonably be done. Weapons of more modular design found throughout the galaxy require highly advanced fabrication technology to manufacture, the specifics of which are closely-guarded corporate secrets. Weapons of this kind must be found - either bought from a trader, or looted from your enemies.\nSimilarly, upgrade items must also first be found or bought before they can be installed. Once installed, an upgrade cannot be salvaged, only replaced or removed. Ensure you are installing your upgrade on the weapon you want it on before completing the UI!</description>
+		<thingClass>ModularWeapons2.Building_GunsmithStation</thingClass>
+		<graphicData>
+		  <texPath>Buildings/Workbench/armour_workbench</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>(3,3)</drawSize>
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		  </damageData>
+		  <shadowData>
+			<volume>(1.5, 0.5, 0.25)</volume>
+			<offset>(0,0,-0.35)</offset>
+		  </shadowData>
+		</graphicData>
+		<costList>
+		  <KOTOR_AlloyDurasteel>150</KOTOR_AlloyDurasteel>
+		  <ComponentIndustrial>10</ComponentIndustrial>
+		  <ComponentSpacer>5</ComponentSpacer>
+		  <KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+		  <MarketValue>2500</MarketValue>
+		  <WorkToBuild>6000</WorkToBuild>
+		  <MaxHitPoints>750</MaxHitPoints>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<uiOrder>762</uiOrder>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<inspectorTabs>
+		  <li>ITab_Bills</li>
+		</inspectorTabs>
+		<recipes>
+		  <li>Make_ComponentIndustrial</li>
+		  <li>Make_ComponentSpacer</li>
+		</recipes>
+		<building>
+		  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<shortCircuitInRain>false</shortCircuitInRain>
+			<basePowerConsumption>200</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Flickable"/>
+		  <li Class="CompProperties_AffectedByFacilities">
+			<linkableFacilities>
+			  <li>ToolCabinet</li>
+			</linkableFacilities>
+		  </li>
+		  <li Class="CompProperties_Breakdownable"/>
+		</comps>
+		
+		<minifiedDef>MinifiedThing</minifiedDef>
+		
+		<placeWorkers>
+		  <li>PlaceWorker_ShowFacilitiesConnections</li>
+		  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+		  <li>guy762_ResearchKotOR_workbench</li>
+		</researchPrerequisites>
+		<tradeTags>
+		  <li>guy762TT_KotORWorkbench</li>
+		</tradeTags>
+	  </ThingDef>
+	  
+	  <WorkGiverDef>
+		<defName>KOTOR_WorkGiver_AratechWorkbench</defName>
+		<label>make things at Aratech workbench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>75</priorityInType>
+		<fixedBillGiverDefs>
+		  <li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		</fixedBillGiverDefs>
+		<verb>work</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	  </WorkGiverDef>
+	  
+</Defs>

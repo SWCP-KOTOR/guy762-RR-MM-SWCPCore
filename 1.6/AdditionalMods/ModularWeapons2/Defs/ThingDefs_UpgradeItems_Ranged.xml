@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+			<!--scopes-->
+	
+	
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_scopeitem_accuracy</defName>
+		<label>accuracy scope</label>
+		<description>A simple scope that offers enhanced magnification. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/scope_accuracy</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>90</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Shooting>6</Shooting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_scopeitem_crippling</defName>
+		<label>crippling scope</label>
+		<description>A scope with a built-in targeting computer that detects weak points on selected targets. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/scope_crippling</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>305</MarketValue>
+		  <Mass>0.3</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Animals>8</Animals>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_scopeitem_holographic</defName>
+		<label>holographic scope</label>
+		<description>A lightweight, compact scope for close-range combat. It does not provide much magnification, however, and is less effective against distant targets. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/scope_holographic</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>125</MarketValue>
+		  <Mass>0.1</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Shooting>10</Shooting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_scopeitem_targeting</defName>
+		<label>targeting scope</label>
+		<description>A scope with an advanced built-in targeting computer. Increases accuracy at longer ranges, but is very cumbersome, and not as effective against closer targets. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/scope_targeting</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>250</MarketValue>
+		  <Mass>0.3</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Intellectual>12</Intellectual>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+			<!--powercells-->
+	
+	
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_pcellitem_optimized</defName>
+		<label>optimized power cell</label>
+		<description>A ranged upgrade which decreases cooldown between bursts. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/powercell_optimized</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>79</MarketValue>
+		  <Mass>0.3</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>6</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_pcellitem_pulsator</defName>
+		<label>power pulsator</label>
+		<description>A ranged upgrade which adds additional energy to the blaster's bolt. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/powercell_pulsator</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>165</MarketValue>
+		  <Mass>0.3</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>10</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_pcellitem_rylith</defName>
+		<label>Rylith power cell</label>
+		<description>A ranged upgrade which collects and stores solar energy. Greatly increases power output, with the downside of increasing recharge time as well. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/powercell_rylith</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>300</MarketValue>
+		  <Mass>0.4</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_pcellitem_ion</defName>
+		<label>ion charger</label>
+		<description>A ranged upgrade that can add an ionizing charge to a blaster burst. Due to the complex nature of its design, it can only be applied to standard blasters. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/powercell_ion</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>175</MarketValue>
+		  <Mass>0.4</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_pcellitem_charge</defName>
+		<label>energy charger</label>
+		<description>A ranged upgrade that allows the user to "charge" a single blaster bolt, greatly increasing damage at the cost of longer cooldown and time to aim. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/powercell_charge</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>125</MarketValue>
+		  <Mass>0.4</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>12</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+			<Gold>2</Gold>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_pcellitem_advcharge</defName>
+		<label>adv. energy charger</label>
+		<description>A ranged upgrade that allows the user to "charge" a single blaster bolt, greatly increasing damage at the cost of longer cooldown and time to aim. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/powercell_charge_adv</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>367</MarketValue>
+		  <Mass>0.5</Mass>
+		  
+		  <WorkToMake>40000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>14</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>2</KOTOR_PlasmaCartridge>
+			<Gold>4</Gold>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_pcellitem_mstcharge</defName>
+		<label>master energy charger</label>
+		<description>A ranged upgrade that allows the user to "charge" a single blaster bolt, greatly increasing damage at the cost of longer cooldown and time to aim. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/powercell_charge_mst</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>460</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<!--ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_pcellitem_bowcaster</defName>
+		<label>Bowcaster charger</label>
+		<description>An advanced power cell of Wookiee design which charges an explosive energy quarrel to be fired by the Bowcaster itself. It is designed specifically for Wookiee Bowcasters, and would be of little use to someone wielding any other kind of weapon. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/powercell_bowcaster</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>177</MarketValue>
+		  <Mass>0.4</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_Wookiee</li>
+		</tradeTags>
+	</ThingDef-->
+	
+	
+	
+			<!--chamber-->
+	
+	
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_chamberitem_precision</defName>
+		<label>precision chamber</label>
+		<description>A ranged upgrade which increases the blaster's accuracy. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/chamber_precision</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>55</MarketValue>
+		  <Mass>0.3</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>8</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_chamberitem_amp</defName>
+		<label>amplifying chamber</label>
+		<description>A ranged upgrade which increases a blaster's energy output. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/chamber_amp</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>85</MarketValue>
+		  <Mass>0.3</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>8</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_chamberitem_carbonite</defName>
+		<label>carbonite chamber</label>
+		<description>A ranged upgrade which utilizes a liquid Carbonite cooling mechanism of Tetan design to decrease a blaster's cooldown between bursts. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/chamber_carbonite</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>130</MarketValue>
+		  <Mass>0.5</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_chamberitem_mando</defName>
+		<label>Mandalorian chamber</label>
+		<description>An advanced firing chamber of Mandalorian design, this upgrade boosts damage output as well as accuracy. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/chamber_mando</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>192</MarketValue>
+		  <Mass>0.5</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>10</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		  <li>guy762TT_MNCWeapons</li>
+		  <li>guy762TT_MandoLoot</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+			<!--trigger-->
+			
+			
+			
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_triggeritem_hair</defName>
+		<label>hair trigger</label>
+		<description>A highly sensitive trigger mechanism that allows the user to fire more bolts per burst. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/trigger_hair</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>150</MarketValue>
+		  <Mass>0.1</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Shooting>6</Shooting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_triggeritem_rapid</defName>
+		<label>rapid-fire trigger</label>
+		<description>An advanced trigger mechanism that allows the user to fire a large but inaccurate burst of bolts. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/trigger_rapid</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>75</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>8</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_triggeritem_advrapid</defName>
+		<label>adv. rapid-fire trigger</label>
+		<description>An advanced trigger mechanism that allows the user to fire a large but inaccurate burst of bolts. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/trigger_rapid_adv</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>225</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>40000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>10</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_triggeritem_mstrapid</defName>
+		<label>master rapid-fire trigger</label>
+		<description>An advanced trigger mechanism that allows the user to fire a large but inaccurate burst of bolts. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/trigger_rapid_mst</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>345</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+			<!--beam-->
+			
+			
+			
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_beamitem_splitter</defName>
+		<label>beam splitter</label>
+		<description>A ranged upgrade which splits a blaster's beam, increasing shots fired per burst. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/beam_splitter</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>180</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>10</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Gold>1</Gold>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>	
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_beamitem_focuser</defName>
+		<label>beam focuser</label>
+		<description>A ranged upgrade which focuses a blaster's beam, increasing range and accuracy. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/beam_focuser</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>130</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>10</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Gold>1</Gold>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>	
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_beamitem_sniper</defName>
+		<label>sniper kit</label>
+		<description>Derived from Sith sniper rifles, this extensive upgrade package can convert any blaster into a suitable long-range marksman's weapon. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/beam_sniper</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>77</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>10</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_beamitem_advsniper</defName>
+		<label>adv. sniper kit</label>
+		<description>Derived from Sith sniper rifles, this extensive upgrade package can convert any blaster into a suitable long-range marksman's weapon. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/beam_sniper_adv</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>142</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>40000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>14</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>	
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_beamitem_mstsniper</defName>
+		<label>master sniper kit</label>
+		<description>Derived from Sith sniper rifles, this extensive upgrade package can convert any blaster into a suitable long-range marksman's weapon. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Ranged/beam_sniper_mst</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>270</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

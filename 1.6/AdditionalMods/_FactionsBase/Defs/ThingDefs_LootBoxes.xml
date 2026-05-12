@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>guy762_KotORLootBox_FoodMeds</defName>
+        <label>supply container</label>
+        <description>A supply container containing a random assortment of food and medical supplies.</description>
+        <graphicData>
+            <texPath>Buildings/KotOR_PlasteelCylinder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Spacer</techLevel>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>2</numWeightedDrops>
+                <guaranteedDrops>
+                    <li>
+                        <thingDef>MealSurvivalPack</thingDef>
+                        <countRange>10</countRange>
+                    </li>
+					<li>
+                        <thingDef>KOTOR_SpacerMedKit</thingDef>
+                        <countRange>5</countRange>
+                    </li>
+                </guaranteedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>Chocolate</thingDef>
+                        <countRange>10</countRange>
+                        <weight>0.5</weight>
+                    </li>
+                    <li>
+                        <thingDef>KOTOR_kolto</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.1</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_medpac</thingDef>
+                        <countRange>5</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_medpac_adv</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_medpac_life</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.1</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_plasteelcylinder_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+		<thingSetMakerTags>
+		  <li>RewardStandardCore</li>
+		</thingSetMakerTags>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ResourceBase">
+        <defName>guy762_KotORLootBox_DrugsAlcohol</defName>
+        <label>party crate</label>
+        <description>A supply container containing a random assortment of luxury foodstuffs, drugs, and alcohol.</description>
+        <graphicData>
+            <texPath>Buildings/SotE_singlecrate_red</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>2500</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>20</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Spacer</techLevel>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>2</numWeightedDrops>
+                <guaranteedDrops>
+                    <li>
+                        <thingDef>MealLavish</thingDef>
+                        <countRange>10~15</countRange>
+                    </li>
+					<li>
+                        <thingDef>KOTOR_Deathstick</thingDef>
+                        <countRange>10~25</countRange>
+                    </li>
+                </guaranteedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>Beer</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>Chocolate</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>1</weight>
+                    </li>
+                    <li>
+                        <thingDef>InsectJelly</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li>
+                        <thingDef>Ambrosia</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>KOTOR_Spice</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>1</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_scrappile_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+		<thingSetMakerTags>
+		  <li>RewardStandardCore</li>
+		</thingSetMakerTags>
+    </ThingDef>
+	
+	
+	
+	<ThingDef ParentName="ResourceBase">
+        <defName>guy762_KotORLootBox_RawFood</defName>
+        <label>foodstuff shipment</label>
+        <description>A shipment of bulk grains, animal products, and more.</description>
+        <graphicData>
+            <texPath>Buildings/SotE_singlecrate_blue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1750</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>20</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Spacer</techLevel>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>1</numWeightedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>RawPotatoes</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>RawRice</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>RawCorn</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>1</weight>
+                    </li>
+                    <li>
+                        <thingDef>Milk</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li>
+                        <thingDef>EggChickenUnfertilized</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li>
+                        <thingDef>RawBerries</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>RawAgave</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>RawFungus</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>InsectJelly</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>Chocolate</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>Ambrosia</thingDef>
+                        <countRange>150~250</countRange>
+                        <weight>0.1</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_scrappile_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+		<thingSetMakerTags>
+		  <li>RewardStandardCore</li>
+		</thingSetMakerTags>
+    </ThingDef>
+	
+	
+	
+	
+
+    
+
+</Defs>

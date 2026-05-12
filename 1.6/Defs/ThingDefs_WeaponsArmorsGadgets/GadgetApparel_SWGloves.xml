@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="guy762_CraftableGloveBase">
+    <defName>guy762_glove_insulated</defName>
+    <label>insulated gloves</label>
+    <description>These thick gloves are typically used by workers at metal processing plants.</description>
+    <graphicData>
+      <texPath>Items/glove_basic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(250,245,185)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>25</MarketValue>
+	  <Mass>2</Mass>
+	  <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+	  
+	  <WorkToMake>2000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>20</Cloth>
+		<Synthread>10</Synthread>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORGloves_basic</li>
+		<li>KotOREquipment_basic</li>
+		<li>SWCPSpecificGadgetItem_InsulatedGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_karakan</defName>
+    <label>Karakan gauntlets</label>
+    <description>These heavy gauntlets, created by the isolationist Karakan, are almost a complete medical computer in themselves. They constantly monitor and adjust the nervous impulses, blood pressure, and tension through the wearers hands. The resulting increase in stability and overall system integrity have many benefits.</description>
+    <graphicData>
+      <texPath>Items/glove_basic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(170,205,215)</color>
+    </graphicData>
+    <statBases>
+      <Mass>4</Mass>
+	  <MarketValue>7500</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<StaggerDurationFactor>-0.3</StaggerDurationFactor>
+		<PawnTrapSpringChance>-0.3</PawnTrapSpringChance>
+		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.3</VEF_RangedDodgeChance>
+		<PainShockThreshold>0.3</PainShockThreshold>
+		<AimingDelayFactor>-0.1</AimingDelayFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_basic</li>
+		<li>KotORGloves_combat</li>
+		<li>KotOREquipment_adv</li>
+		<li>KotOREquipment_officer</li>
+		<li>SWCPSpecificGadgetItem_KarakanGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_gamorrean</defName>
+    <label>Gamorrean Wargloves</label>
+    <description>These monstrous gauntlets provide considerable protection but are quite inflexible.</description>
+    <graphicData>
+      <texPath>Items/glove_basic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(200,210,120)</color>
+    </graphicData>
+    <statBases>
+      <Mass>4</Mass>
+	  <MarketValue>2000</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<AimingDelayFactor>0.2</AimingDelayFactor>
+		<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
+		<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_combat</li>
+		<li>KotORGloves_gamorrean</li>
+		<li>KotOREquipment_adv</li>
+		<li>KotORHeroAccessories_canderous</li>
+		<li>KotORHeroAccessories_canderousMerc</li>
+		<li>SWCPSpecificGadgetItem_GamorreanGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_accuracy</defName>
+    <label>accuracy gloves</label>
+    <description>These gloves are flexible, but very stiff. Though a bit awkward when first put on, they effectively steady one's hands, improving accuracy with ranged weapons.</description>
+    <graphicData>
+      <texPath>Items/glove_vertical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(215,190,200)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>200</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_combat</li>
+		<li>KotOREquipment_adv</li>
+		<li>KotORHeroAccessories_canderousMerc</li>
+		<li>SWCPSpecificGadgetItem_AccuracyGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_nagai</defName>
+    <label>Nagai combat gloves</label>
+    <description>The Nagai, who favor knife fighting, employ these gloves to foil those who attempt to break their charge with blaster fire.</description>
+    <graphicData>
+      <texPath>Items/glove_horizontal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(230,230,130)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<StaggerDurationFactor>-0.2</StaggerDurationFactor>
+		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
+		<PainShockThreshold>0.2</PainShockThreshold>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>5000</MarketValue>
+	  <ArmorRating_Heat>0.5</ArmorRating_Heat>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_combat</li>
+		<li>KotOREquipment_rare</li>
+		<li>SaV_apparel_nagai</li>
+		<li>KotORHeroAccessories_juhani</li>
+		<li>SWCPSpecificGadgetItem_NagaiGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_eriadu</defName>
+    <label>Eriadu strength amplifier</label>
+    <description>This device uses micro-bursts of repulsorlift energy to assist actions in combat, giving the appearance that the user is stronger than normal.</description>
+    <graphicData>
+      <texPath>Items/glove_basic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(250,200,190)</color>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>3000</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDamageFactor>0.2</MeleeDamageFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_combat</li>
+		<li>KotOREquipment_adv</li>
+		<li>KotOREquipment_sith</li>
+		<li>SWCPSpecificGadgetItem_EriaduSTRGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_CraftableGloveBase">
+    <defName>guy762_glove_sith</defName>
+    <label>Sith power gauntlets</label>
+    <description>Based on stolen Eriadu designs, items of this type utilize almost uncomfortable bursts of repulsorlift energy to assist movement. They are rarely seen outside of Sith possession.</description>
+    <graphicData>
+      <texPath>Items/glove_both</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(90,90,90)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>6250</MarketValue>
+	  <Mass>2</Mass>
+	  
+	  <WorkToMake>10000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDamageFactor>0.3</MeleeDamageFactor>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Synthread>30</Synthread>
+		<ComponentSpacer>2</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORGloves_sith</li>
+		<li>KotOREquipment_adv</li>
+		<li>KotOREquipment_sith</li>
+		<li>KotORHeroAccessories_visas</li>
+		<li>KotORHeroAccessories_sion</li>
+		<li>KotORHeroAccessories_yuthura</li>
+		<li>SWCPSpecificGadgetItem_SithSTRGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_SEArmor</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_jalshey</defName>
+    <label>Jal Shey perception gloves</label>
+    <description>The Jal Shey use these gloves during meditation. How they function is unknown, but they seem effective in increasing one's awareness to their surroundings.</description>
+    <graphicData>
+      <texPath>Items/glove_both</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(130,195,80)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
+		<SWCPStat_AwarenessGearOffset>0.1</SWCPStat_AwarenessGearOffset>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
+        <PsychicSensitivity>0.1</PsychicSensitivity>
+		<MeditationFocusGain>0.1</MeditationFocusGain>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>1850</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_force</li>
+		<li>KotOREquipment_jedi</li>
+		<li>KotORHeroAccessories_exile</li>
+		<li>KotORHeroAccessories_bastila</li>
+		<li>SWCPSpecificGadgetItem_JalSheyGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_zeisonsha</defName>
+    <label>Zeison Sha gloves</label>
+    <description>These gloves are named for the Zeison Sha, not by them. This Force sensitive culture developed their powers as a means of surviving the harsh planet. Zeison Sha stress independence and survival as well as assistance to those in need.</description>
+    <graphicData>
+      <texPath>Items/glove_both</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(50,95,35)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<PainShockThreshold>0.2</PainShockThreshold>
+		<InjuryHealingFactor>0.1</InjuryHealingFactor>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>1825</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_force</li>
+		<li>KotOREquipment_jedi</li>
+		<li>KotORHeroAccessories_exile</li>
+		<li>KotORHeroAccessories_bastila</li>
+		<li>KotORHeroAccessories_juhani</li>
+		<li>SWCPSpecificGadgetItem_ZeisonShaGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_stabilizer</defName>
+    <label>stabilizer gauntlets</label>
+    <description>These gauntlets are quite stiff, minimizing actions that might interfere with delicate operations in the medical field.</description>
+    <graphicData>
+      <texPath>Items/glove_vertical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(165,200,225)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
+		<MedicalTendQualityOffset>0.2</MedicalTendQualityOffset>
+		<MedicalTendSpeed>0.2</MedicalTendSpeed>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>300</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORUtility_medic</li>
+		<li>KotORUtility_StabilizerGauntlets</li>
+		<li>KotORHeroAccessories_exile</li>
+		<li>SWCPSpecificGadgetItem_MedicGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_infiltrator</defName>
+    <label>infiltrator gloves</label>
+    <description>These gloves are equipped with an advanced artifical intelligence unit that the wearer can use to tap into nearby computer systems through cables or wireless transmission. The system also stabilizes the wearer's hands for fine detail work.</description>
+    <graphicData>
+      <texPath>Items/glove_both</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(190,150,225)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.4</HackingSpeed>
+		<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">40</HackingStealth>
+		<ResearchSpeed>0.4</ResearchSpeed>
+		<AimingDelayFactor>-0.2</AimingDelayFactor>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>1500</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_tech</li>
+		<li>KotOREquipment_tech</li>
+		<li>KotORHeroAccessories_visas</li>
+		<li>KotORHeroAccessories_mission</li>
+		<li>SWCPSpecificGadgetItem_InfiltratorGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_detonator</defName>
+    <label>detonator gloves</label>
+    <description>These gauntlets are specifically designed to protect the wearer from demolitions mishaps. Their protective capabilities also tend to increase the wearer's confidence when dealing with mortars, improving their performance.</description>
+    <graphicData>
+      <texPath>Items/glove_horizontal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(250,170,55)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<PawnTrapSpringChance>-0.3</PawnTrapSpringChance>
+		<!--ConstructionSpeedFactor>0.3</ConstructionSpeedFactor-->
+		<MortarMissRadiusFactor>-0.3</MortarMissRadiusFactor>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>900</MarketValue>
+	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.2</ArmorRating_Heat>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_tech</li>
+		<li>KotOREquipment_adv</li>
+		<li>SWCPSpecificGadgetItem_DetonatorGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_automation</defName>
+    <label>automation gloves</label>
+    <description>A sophisticated computer controls the movements of these gloves. While difficult to become accustomed to, they greatly increase the wearer's precision.</description>
+    <graphicData>
+      <texPath>Items/glove_basic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(190,190,190)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.2</MechRepairSpeed>
+		<FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+		<ConstructSuccessChance>0.2</ConstructSuccessChance>
+		<ConstructionSpeed>0.2</ConstructionSpeed>
+		<!--WorkTableWorkSpeedFactor>0.2</WorkTableWorkSpeedFactor-->
+		<!--MHC_MechanicalSurgerySuccessChance>0.2</MHC_MechanicalSurgerySuccessChance>
+		<MHC_MechanicalTendQualityOffset>0.2</MHC_MechanicalTendQualityOffset>
+		<MHC_MechanicalTendSpeed>0.2</MHC_MechanicalTendSpeed-->
+		<AimingDelayFactor>-0.1</AimingDelayFactor>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>1280</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_tech</li>
+		<li>KotOREquipment_tech</li>
+		<li>KotORUtility_engi</li>
+		<li>KotORUtility_engi_novisor</li>
+		<li>SWCPSpecificGadgetItem_EngineerGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_programmer</defName>
+    <label>programmer gloves</label>
+    <description>These colorful gloves are equipped with highly advanced computational relay systems which expedite many of the more tedious processes in serious programming work. Experimental micro-stabilizers help preserve and enhance the user's reflexes in the forearms during long work sessions.</description>
+    <graphicData>
+      <texPath>Items/glove_programmer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedStatOffsets>
+		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.6</HackingSpeed>
+		<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">60</HackingStealth>
+		<ResearchSpeed>0.6</ResearchSpeed>
+		<AimingDelayFactor>-0.5</AimingDelayFactor>
+		<MeleeDodgeChance>0.5</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.5</VEF_RangedDodgeChance>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>6200</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_rare</li>
+		<li>SWCPSpecificGadgetItem_ProgrammerGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_dominator</defName>
+    <label>dominator gauntlets</label>
+    <description>A working proto-type of a huge technological advancement in power gauntlets, the Dominators give the user unparalleled strength and power.</description>
+    <graphicData>
+      <texPath>Items/glove_vertical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(125,45,75)</color>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>7099</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDamageFactor>0.5</MeleeDamageFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_rare</li>
+		<li>KotOREquipment_rare</li>
+		<li>KotORHeroAccessories_canderous</li>
+		<li>KotORHeroAccessories_yuthura</li>
+		<li>KotORHeroAccessories_handmaiden</li>
+		<li>KotORHeroAccessories_sion</li>
+		<li>KotORHeroAccessories_juhani</li>
+		<li>KotORHeroAccessories_zaalbar</li>
+		<li>KotORHeroAccessories_hanharr</li>
+		<li>SWCPSpecificGadgetItem_DominatorSTRGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_automation_adv</defName>
+    <label>improved automation gloves</label>
+    <description>An advanced computer controls the movements of these gloves. While difficult to become accustomed to, they greatly increase the wearer's precision.</description>
+    <graphicData>
+      <texPath>Items/glove_vertical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(190,190,190)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.4</MechRepairSpeed>
+		<FixBrokenDownBuildingSuccessChance>0.4</FixBrokenDownBuildingSuccessChance>
+		<ConstructSuccessChance>0.4</ConstructSuccessChance>
+		<ConstructionSpeed>0.4</ConstructionSpeed>
+		<!--WorkTableWorkSpeedFactor>0.4</WorkTableWorkSpeedFactor-->
+		<!--MHC_MechanicalSurgerySuccessChanceFactor>0.4</MHC_MechanicalSurgerySuccessChanceFactor>
+		<MHC_MechanicalTendQualityOffset>0.4</MHC_MechanicalTendQualityOffset>
+		<MHC_MechanicalTendSpeed>0.4</MHC_MechanicalTendSpeed-->
+		<AimingDelayFactor>-0.2</AimingDelayFactor>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>7580</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_rare</li>
+		<li>KotORUtility_engi</li>
+		<li>KotORUtility_engi_novisor</li>
+		<li>SWCPSpecificGadgetItem_AdvEngineerGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_glovebase">
+    <defName>guy762_glove_bothan</defName>
+    <label>Bothan precision gloves</label>
+    <description>For obvious reasons, these multi-purpose gloves are highly sought after by demolitions experts.</description>
+    <graphicData>
+      <texPath>Items/glove_horizontal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(185,190,250)</color>
+    </graphicData>
+	<equippedStatOffsets>
+		<PawnTrapSpringChance>-0.6</PawnTrapSpringChance>
+		<!--ConstructionSpeedFactor>0.6</ConstructionSpeedFactor-->
+		<MortarMissRadiusFactor>-0.6</MortarMissRadiusFactor>
+		<AimingDelayFactor>-0.1</AimingDelayFactor>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
+	</equippedStatOffsets>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>7750</MarketValue>
+	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.4</ArmorRating_Heat>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORGloves_rare</li>
+		<li>KotORGloves_bothan</li>
+		<li>KotORHeroAccessories_canderous</li>
+		<li>KotORHeroAccessories_canderousMerc</li>
+		<li>SWCPSpecificGadgetItem_BothanGloves</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+
+  
+  
+</Defs>

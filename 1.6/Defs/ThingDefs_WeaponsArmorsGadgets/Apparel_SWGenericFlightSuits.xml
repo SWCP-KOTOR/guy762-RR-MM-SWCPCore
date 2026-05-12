@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  
+  
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_RebelPilot_suitbox</defName>
+		<label>flight suit compressor</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>SWApparel/RebelPilot/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1</Mass>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			
+			<Insulation_Cold>100</Insulation_Cold>
+			<!-- <Insulation_Heat>100</Insulation_Heat> -->
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+			
+			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.1</PilotingAbility>
+		</equippedStatOffsets>
+		<apparel>
+		  <tags Inherit="False">
+			<li>NewRepublic_pilot</li>
+			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/RebelPilot/Apparel</wornGraphicPath>
+		  <layers Inherit="False">
+			<li>Shell</li>
+		  </layers>
+		  <bodyPartGroups Inherit="False">
+			<li>Torso</li>
+		  </bodyPartGroups>
+		  <drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORArmor_space</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+			<li>guy762TT_GCWArmor_PDFSpaceGear</li>
+			<li>guy762TT_GCWArmor_RebelSpaceGear</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	  
+	  
+  
+	<ThingDef ParentName="guy762_MakeNoQualityClothing">
+		<defName>guy762_FlightVest</defName>
+		<label>flight vest</label>
+		<description>A padded vest intended for starfighter pilots, it has a small amount of anti-radiation padding in order to protect the wearer's vital organs from background radiation during extravehicular operations.</description>
+		<graphicData>
+		  <texPath>SWApparel/FlightVest/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>2.5</Mass>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>1</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+			
+			<WorkToMake>5000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
+		  <DecompressionResistance MayRequire="kentington.saveourship2">0.125</DecompressionResistance>
+		  
+		  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.1</PilotingAbility>
+		</equippedStatOffsets>
+		
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+		  <ComponentIndustrial>1</ComponentIndustrial>
+		  <Synthread>45</Synthread>
+		</costList>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>KotORClothing_pilot</li>
+			<li>SWCPSpecificApparelItem_FlightVest</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/FlightVest/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers Inherit="False">
+			<li>Middle</li>
+		  </layers>
+		  <bodyPartGroups Inherit="False">
+			<li>Torso</li>
+		  </bodyPartGroups>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_KotORArmor_space</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWArmor_PDFSpaceGear</li>
+			<li>guy762TT_GCWArmor_RebelSpaceGear</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>5</weight>
+					<only>(130,130,130)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_FlightArmor</defName>
+		<label>armored flight vest</label>
+		<description>This combat-ready flight vest provides additional protection against vacuum for limited periods. Its many models appeal to a wide range of users, from military pilots and mercenaries to fringe explorers and space pirates. Built-in grav thrusters also assist with movement in open space.</description>
+		<graphicData>
+		  <texPath>SWApparel/FlightArmor/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(140,0,0)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>6</Mass>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>225</MaxHitPoints>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			
+			<Insulation_Cold>20</Insulation_Cold>
+			
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.125</DecompressionResistance>
+			
+			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.2</PilotingAbility>
+		</equippedStatOffsets>
+		<apparel>
+		  <tags Inherit="False">
+			<li>KotORClothing_pilot</li>
+			<li>SWCPSpecificApparelItem_KotORFlightArmor</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/FlightArmor/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers Inherit="False">
+			<li>Middle</li>
+		  </layers>
+		  <bodyPartGroups Inherit="False">
+			<li>Torso</li>
+		  </bodyPartGroups>
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer>	<!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/FlightArmor/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>140,0,0</color> <!-- dark red -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_KotORArmor_space</li>
+			<li>guy762TT_KotORArmor_powered</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(180,185,185)</only> <!-- KotOR armor silver -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

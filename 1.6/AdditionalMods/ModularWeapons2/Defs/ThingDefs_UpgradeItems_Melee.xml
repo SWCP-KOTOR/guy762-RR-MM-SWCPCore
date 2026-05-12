@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+
+			<!--edges-->
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_edgeitem_devaronian</defName>
+		<label>Devaronian edge</label>
+		<description>Devaronian Blood-poison is a gemstone that can release poison into a victim's bloodstream. Application of Devaronian particles on a blade's edge can cause great pain to the weapon's victim. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/edge_devaronian</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>130</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_edgeitem_neutronium</defName>
+		<label>Neutronium edge</label>
+		<description>Neutronium is a highly durable and resilient material used in the creation of durasteel. It can be used to increase the damage inflicted by a blade. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/edge_neutronium</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>130</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_edgeitem_mullinine</defName>
+		<label>Mullinine edge</label>
+		<description>Mullinine is an ideal building material for melee weapons as it holds an edge very well. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/edge_mullinine</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>257</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_edgeitem_quadranium</defName>
+		<label>Quadranium edge</label>
+		<description>Quadranium is an amazingly strong material that is sometimes used for fuel storage containers. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/edge_quadranium</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>411</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		</tradeTags>
+	</ThingDef>
+
+
+
+	
+			<!--energycells-->
+	
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_ecellitem_ion</defName>
+		<label>ion cell</label>
+		<description>Ion cells discharge ions along the length of the blade. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/ecell_ion</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>130</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>12</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Gold>1</Gold>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_ecellitem_vibration</defName>
+		<label>enhanced vibration cell</label>
+		<description>Vibration energy cells increase the amount of damage a weapon can inflict, but make them much harder to wield. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/ecell_vibration</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>195</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>12</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_ecellitem_energy</defName>
+		<label>enhanced energy cell</label>
+		<description>Enhanced energy cells can stabilize the blade, increasing damage. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/ecell_energy</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>265</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>40000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>16</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_ecellitem_sonic</defName>
+		<label>sonic discharge cell</label>
+		<description>Sonic discharge energy cells release sound waves upon impact. Though the sonic discharge makes the weapon unwieldy, few types of armor protect against this type of attack. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/ecell_sonic</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>302</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>40000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>16</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+			<!--grips-->
+	
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_gripitem_contoured</defName>
+		<label>contoured grip</label>
+		<description>This shorter grip allows maximum accuracy, but the reduced leverage limits the weapon's power. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/grip_contoured</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>50</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>8</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>40</Plasteel>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_gripitem_agrinium</defName>
+		<label>Agrinium grip</label>
+		<description>This grip, made from the lighter mineral agrinium, balances a weapon towards the point, resulting in heftier swings. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/grip_agrinium</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>30</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_gripitem_basket</defName>
+		<label>basket hilt</label>
+		<description>The basket hilt makes a weapon ideal for parrying, but slightly less wieldy. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/grip_basket</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>135</MarketValue>
+		  <Mass>0.4</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Melee>8</Melee>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<KOTOR_AlloyBronzium>40</KOTOR_AlloyBronzium>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_gripitem_nagai</defName>
+		<label>Nagai grip</label>
+		<description>The Nagai designed this grip to improve a weapon's performance without any side-effects. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/grip_nagai</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>196</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_gripitem_zabrak</defName>
+		<label>Zabrak grip</label>
+		<description>This specialized grip has a reduced crossguard, increasing both accuracy and damage, but making it less useful for parrying. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Melee/grip_zabrak</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>375</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	
+</Defs>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORMissile_whistlingbird</defName>
+		<label>micro missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_whistlingbird</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.875</armorPenetrationBase>
+			<speed>25</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORMissile_seeker</defName>
+		<label>seeker missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>25</speed>
+			<explosionRadius>1</explosionRadius>
+			<soundAmbient>kotorsound_rocketflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORMissile_highex</defName>
+		<label>high-ex missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>3</explosionRadius>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORMissile_plasma</defName>
+		<label>plasma missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_plasma</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.125</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>4</explosionRadius>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+			<extraDamages>
+				<li>
+					<def>guy762_GrenadeDamage_ion</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_ion</defName>
+		<label>ion missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_cyan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_ion</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>2</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>50</amount>
+				</li>
+			</extraDamages>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_buster</defName>
+		<label>buster missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
+			<damageAmountBase>75</damageAmountBase>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+			<screenShakeFactor>1</screenShakeFactor>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+
+</Defs>

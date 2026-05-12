@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_suspendersA</defName>
+		<label>suspenders, simple</label>
+		<description>This is a set of simple, general-purpose utility suspenders for workers and soldiers alike.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/suspenders_simple/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1</Mass>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>5500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <!--ConstructionSpeed>0.1</ConstructionSpeed-->
+		  <GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Accessories/suspenders_simple/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_light</li>
+				<li>KotORAccessory_engi</li>
+				<li>KotORAccessory_trooper</li>
+				<li>KotORAccessory_trooper_strapsonly</li>
+				<li>KotORAccessory_trooper_withponcho</li>
+				<li>KotORAccessory_trooper_poncho_knife</li>
+				<li>SWWarlordsAccessory_scumtrooper_poncho</li>
+				<li>SWWarlordsAccessory_scumtrooper</li>
+				<li>SWWarlordsAccessory_trooper</li>
+				<li>SaV_wookiee</li>
+				<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+		</tradeTags>
+		<costList>
+			<KOTOR_FabricArmorweave>30</KOTOR_FabricArmorweave>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<!--<li>
+					<weight>10</weight>
+					<only>(155,30,25)</only>       zaalbar's red
+				</li>-->
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,140)</only>         <!-- bley -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	  
+	  
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_suspendersB</defName>
+		<label>suspenders, engineer's</label>
+		<description>This is a set of heavy-duty load-bearing suspenders with many pockets for tools.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/suspenders_engi/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+			<MarketValue>200</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>7500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
+		  
+		  <ConstructionSpeed>0.2</ConstructionSpeed>
+		  <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.2</MechRepairSpeed>
+		  <FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+		  <ConstructSuccessChance>0.2</ConstructSuccessChance>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Accessories/suspenders_engi/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_engi</li>
+				<li>KotORAccessory_specops</li>
+				<li>SaV_wookiee</li>
+				<li>SWCPSpecificApparelItem_EngineerSuspenders</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+		</tradeTags>
+		<costList>
+			<KOTOR_FabricArmorweave>35</KOTOR_FabricArmorweave>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,140)</only>         <!-- bley -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	  
+	  
+	  
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_suspendersC</defName>
+		<label>suspenders, heavy</label>
+		<description>This is a set of heavy-duty load-bearing suspenders with many pouches and pockets attached.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/suspenders_heavy/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>7500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Accessories/suspenders_heavy/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_heavy</li>
+				<li>KotORAccessory_trader</li>
+				<li>SaV_wookiee</li>
+				<li>SWCPSpecificApparelItem_HeavySuspenders</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+		</tradeTags>
+		<costList>
+			<KOTOR_FabricArmorweave>50</KOTOR_FabricArmorweave>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,140)</only>         <!-- bley -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	  
+	  
+	  
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_bandolierA</defName>
+		<label>bandolier, double</label>
+		<description>This is a bandolier for storing munitions and other small items.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/bandolier_double/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1</Mass>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>5500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <RangedCooldownFactor>-0.2</RangedCooldownFactor>
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Accessories/bandolier_double/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_heavy</li>
+				<li>KotORAccessory_outlaw</li>
+				<li>KotORAccessory_trooper</li>
+				<li>KotORAccessory_specops</li>
+				<li>KotORAccessory_trooper_strapsonly</li>
+				<li>KotORAccessory_trooper_withponcho</li>
+				<li>KotORAccessory_trooper_poncho_knife</li>
+				<li>KotORAccessory_bandolier</li>
+				<li>KotORAccessory_lightdiagonalonly</li>
+				<li>SWWarlordsAccessory_scumtrooper_poncho</li>
+				<li>SWWarlordsAccessory_scumtrooper</li>
+				<li>SaV_wookiee</li>
+				<li>SWCPSpecificApparelItem_DoubleBandolier</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+		</tradeTags>
+		<costList>
+			<KOTOR_FabricArmorweave>30</KOTOR_FabricArmorweave>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,140)</only>         <!-- bley -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	  
+	  
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_chewiebandolier</defName>
+		<label>bandolier, heavy</label>
+		<description>This is a large bandolier for storing munitions and other small items.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/bandolier_chewbacca/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>1</Mass>
+			<MarketValue>200</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>5500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <RangedCooldownFactor>-0.2</RangedCooldownFactor>
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Accessories/bandolier_chewbacca/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_heavy</li>
+				<li>KotORAccessory_outlaw</li>
+				<li>KotORAccessory_trooper</li>
+				<li>KotORAccessory_trooper_strapsonly</li>
+				<li>KotORAccessory_trooper_withponcho</li>
+				<li>KotORAccessory_trooper_poncho_knife</li>
+				<li>KotORAccessory_bandolier</li>
+				<li>SaV_wookiee</li>
+				<li>SWCPSpecificApparelItem_ChewbaccaBandolier</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWCharacterItem</li>
+		</tradeTags>
+		<costList>
+			<KOTOR_FabricArmorweave>30</KOTOR_FabricArmorweave>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,140)</only>         <!-- bley -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	  
+	
+	  
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_travelerbag</defName>
+		<label>traveler's bag</label>
+		<description>This is a simple pouch for storing small items.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/bandolier_traveler/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>1500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Accessories/bandolier_traveler/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_light</li>
+				<li>KotORAccessory_civilian</li>
+				<li>KotORAccessory_richcivilian</li>
+				<li>KotORAccessory_lightdiagonalonly</li>
+				<li>SWWarlordsAccessory_scumtrooper_poncho</li>
+				<li>SWWarlordsAccessory_scumtrooper</li>
+				<li>SaV_wookiee</li>
+				<li>SWCPSpecificApparelItem_TravelerBag</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+		</tradeTags>
+		<costList>
+			<KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,140)</only>         <!-- bley -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	  
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_poncho</defName>
+		<label>poncho, plain</label>
+		<description>This is a large piece of fabric designed to protect the wearer from inclement weather.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/poncho/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>2500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<HuntingStealth>0.2</HuntingStealth>
+			<SWCPStat_StealthGearOffset>0.2</SWCPStat_StealthGearOffset>
+		</equippedStatOffsets>
+		
+		<!-- //////////////////////////////////////////////////////////////////////////////// NOTE: the function that cancels the "soaking wet" and "tox rain" thoughts when this item is worn is done through a PATCH!!!  -->
+		
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_outlaw</li>
+				<li>KotORAccessory_trooper_withponcho</li>
+				<li>KotORAccessory_trooper_poncho_knife</li>
+				<!--li>KotORAccessory_trooper</li-->
+				<li>KotORAccessory_civilian</li>
+				<li>SWWarlordsAccessory_scumtrooper_poncho</li>
+				<li>SWWarlordsAccessory_onlyponcho</li>
+				<li>KotORClothing_civilian_hooded</li>
+				<li>SWCPAccessory_CloakOrPlainPoncho</li>
+				<li>SWCPSpecificApparelItem_PlainPoncho</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+		</tradeTags>
+		<costList>
+			<Synthread>50</Synthread>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(90,85,65)</only> <!-- grease green -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(120,125,110)</only> <!-- drab green -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(115,120,75)</only> <!-- olive green -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(130,125,105)</only>   <!-- khaki -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(160,150,105)</only> <!-- dijon yellow -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(70,50,30)</only> <!-- brown -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(75,75,75)</only> <!-- dark grey -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(90,75,60)</only> <!-- patchleather -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(75,85,95)</only> <!-- mid denim blue -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	  
+	  
+	  
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_ponchoCamo</defName>
+		<label>poncho, camouflaged</label>
+		<description>This is a large piece of fabric designed to help the wearer blend in with their surrounding environment.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/poncho/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(130,125,105)</colorTwo>   <!-- khaki -->
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>40</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>2500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<HuntingStealth>0.4</HuntingStealth>
+			<SWCPStat_StealthGearOffset>0.4</SWCPStat_StealthGearOffset>
+		</equippedStatOffsets>
+		
+		<!-- //////////////////////////////////////////////////////////////////////////////// NOTE: the function that cancels the "soaking wet" and "tox rain" thoughts when this item is worn is done through a PATCH!!!  -->
+		
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			
+			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>23</baseLayer>	<!-- SHELL? -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Accessories/poncho/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>130,125,105</color> <!-- khaki -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>66</layer> </dataNorth> </drawData>	<!-- SHELL? -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_camoponcho</li>
+				<li>SWCPSpecificApparelItem_CamoPoncho</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+		</tradeTags>
+		<costList>
+			<Synthread>50</Synthread>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(90,85,65)</only> <!-- grease green -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(115,120,75)</only> <!-- olive green -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(75,75,75)</only> <!-- dark grey -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(90,75,60)</only> <!-- patchleather -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+  
+  
+  
+  
+
+</Defs>

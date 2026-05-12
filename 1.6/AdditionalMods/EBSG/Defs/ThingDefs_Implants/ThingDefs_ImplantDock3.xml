@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>guy762_BionicHediff_implantIII</defName>
+    <label>modular implant dock, large</label>
+    <labelNoun>a large implant dock</labelNoun>
+    <description>An installed large implant dock. This dock can install the following implant upgrade types:\n\n- Packages\n\n- Devices\n\n- Systems\n\n- D-Packages</description>
+    <descriptionHyperlinks><ThingDef>guy762_ImplantDock_III</ThingDef></descriptionHyperlinks>
+	
+	<hediffClass>EBSGFramework.Hediff_ModularImplant</hediffClass>
+	<tags><li>guy762_ModularImplantDock</li></tags>
+    <spawnThingOnRemoved>guy762_ImplantDock_III</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+	<stages>
+      <li>
+		<opinionOfOthersFactor>0</opinionOfOthersFactor>
+		<statOffsets>
+			<PsychicSensitivity>-0.5</PsychicSensitivity>
+			<MeditationFocusGain>-0.9</MeditationFocusGain>
+			<PsychicEntropyRecoveryRate>-0.9</PsychicEntropyRecoveryRate>
+			<!-- <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">-0.9</SWPotF_ForcePoints_Recovery> -->
+			<Force_FPRecovery MayRequire="lee.theforce.standalone">-0.9</Force_FPRecovery>
+		</statOffsets>
+		<capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<offset>1</offset>
+			</li>
+		</capMods>
+		
+		<disablesNeeds>
+			<li>Mood</li>
+			<li>Joy</li>
+			<li>Beauty</li>
+			<li>Comfort</li>
+			<li>Outdoors</li>
+			<li>Indoors</li>
+			<li>RoomSize</li>
+			<li MayRequire="rim.job.world">Sex</li>
+		</disablesNeeds>
+      </li>
+    </stages>
+	<blocksSocialInteraction>true</blocksSocialInteraction>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+		<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Items/Bionics/Lobot</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>71</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+	<comps>
+	  <li Class="EBSGFramework.HediffCompProperties_Modular">
+		<slots>
+			<li>
+				<slotID>guy762_ImplantSlot_Pkg</slotID>
+				<slotName>package slot</slotName>
+				<capacity>1</capacity>
+			</li>
+			<li>
+				<slotID>guy762_ImplantSlot_Imp</slotID>
+				<slotName>device slot</slotName>
+				<capacity>1</capacity>
+			</li>
+			<li>
+				<slotID>guy762_ImplantSlot_Sys</slotID>
+				<slotName>system slot</slotName>
+				<capacity>1</capacity>
+			</li>
+			<li>
+				<slotID>guy762_ImplantSlot_DPkg</slotID>
+				<slotName>D-Package slot</slotName>
+				<capacity>1</capacity>
+			</li>
+		</slots>
+	  </li>
+	  <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>guy762_ImplantDock_III</defName>
+    <label>modular implant dock, large</label>
+    <description>A large, bulky implant dock capable of installing package, device, system, and D-package upgrades. This is one of the most expensive pieces of bionics in the galaxy, and is extremely difficult to manufacture and install. Installation requires a deep understanding of the humanoid brain's functioning and structure, as the process involves replacing over 20% of it with positronic hardware.\n\nNOTE: This is a very difficult piece of equipment to install! This procedure has a base success chance of 62%. Removing this device after it has been installed will kill the pawn!\n\nNOTE: This device has drastic effects on the pawn it is installed on! Pawns with this device installed will be incapable of expressing emotion; they will be unable to interact socially with others, and their mood, joy, comfort, and beauty needs will be completely disabled! This is as close as a humanoid can get to becoming a droid!</description>
+    <descriptionHyperlinks><RecipeDef>guy762_InstallHediff_implantIII</RecipeDef></descriptionHyperlinks>
+    <graphicData>
+      <color>(0.6, 0.6, 1.0)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>50000</MarketValue>
+	  <Mass>4</Mass>
+	  
+	  <WorkToMake>78000</WorkToMake>
+    </statBases>
+	
+	
+	<recipeMaker>
+		<researchPrerequisite>KOTOR_Research_Lobot</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>18</Medicine>
+		</skillRequirements>
+	</recipeMaker>
+    <costList>
+      <Plasteel>90</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
+	  <KOTOR_UltraComponent>3</KOTOR_UltraComponent>
+    </costList>
+    
+	<!--techHediffsTags Inherit="False">
+      <li>guy762TechTag_malakjaw</li>
+    </techHediffsTags-->
+	
+	<thingSetMakerTags>
+		<li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<tradeTags Inherit="False">
+	  <li>guy762TT_implants_rare</li>
+	  <li>guy762TT_AllItemsSellable</li>
+	</tradeTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>guy762_InstallHediff_implantIII</defName>
+    <label>install modular implant dock, large</label>
+    <description>Install a large implant dock.\n\nNOTE: This is a very difficult piece of equipment to install! This procedure has a base success chance of 62%. Removing this device after it has been installed will kill the pawn!\n\nNOTE: This device has drastic effects on the pawn it is installed on! Pawns with this device installed will be incapable of expressing emotion; they will be unable to interact socially with others, and their mood, joy, comfort, and beauty needs will be completely disabled! This is as close as a humanoid can get to becoming a droid!</description>
+    <descriptionHyperlinks>
+      <ThingDef>guy762_ImplantDock_III</ThingDef>
+      <HediffDef>guy762_BionicHediff_implantIII</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing large implant dock.</jobString>
+	<!--workerClass>Recipe_InstallArtificialBodyPart</workerClass-->
+	
+	<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+    <workAmount>8000</workAmount>
+    <skillRequirements>
+      <Medicine>18</Medicine>
+    </skillRequirements>
+	<surgerySuccessChanceFactor>0.62</surgerySuccessChanceFactor>
+	
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>guy762_ImplantDock_III</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>KOTOR_kolto</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False">
+      <thingDefs>
+        <li>guy762_ImplantDock_III</li>
+        <li>KOTOR_kolto</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>guy762_BionicHediff_implantIII</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>guy762_ModularImplantDock</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+  
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>guy762_RemoveHediff_implantIII</defName>
+    <label>remove modular implant dock, large</label>
+    <description>Remove large implant dock.\n\nNOTE: Removing this will kill your pawn!</description>
+    <descriptionHyperlinks>
+      <ThingDef>guy762_ImplantDock_III</ThingDef>
+      <HediffDef>guy762_BionicHediff_implantIII</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing implant dock.</jobString>
+    <removesHediff>guy762_BionicHediff_implantIII</removesHediff>
+	
+	<workerClass>RemoveImplantForcibly.Recipe_RemoveImplantForcibly</workerClass>
+	
+	<deathOnFailedSurgeryChance>5</deathOnFailedSurgeryChance>
+	
+	<!--addsHediff>guy762_Hediff_MissingBrainMatter</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts-->
+  </RecipeDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--HediffDef>
+    <defName>guy762_Hediff_MissingBrainMatter</defName>
+    <label>missing brain matter</label>
+    <description>Several critical pieces of this individual's brain are missing, having been removed in order to install a large implant dock.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<isBad>true</isBad>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+        <opinionOfOthersFactor>0</opinionOfOthersFactor>
+      </li>
+    </stages>
+	<blocksSocialInteraction>true</blocksSocialInteraction>
+	<disablesNeeds>
+		<li>Mood</li>
+		<li>Joy</li>
+		<li>Beauty</li>
+		<li>Comfort</li>
+		<li>Outdoors</li>
+		<li>Indoors</li>
+		<li>RoomSize</li>
+		<li MayRequire="rim.job.world">Sex</li>
+	</disablesNeeds>
+  </HediffDef-->
+
+</Defs>

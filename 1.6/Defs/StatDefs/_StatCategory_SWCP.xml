@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--================ General ================-->
+
+  <StatCategoryDef>
+    <defName>SWCPStatCategory</defName>
+    <label>SWCP Stats</label>
+    <displayOrder>762</displayOrder>
+	
+	<displayAllByDefault>true</displayAllByDefault>
+  </StatCategoryDef>
+
+ 
+
+</Defs>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- This Rulepackdef is what finds the txt files to be used in the later rulepacks -->
+    <RulePackDef>
+        <defName>SWCP_DroidNameRules</defName>
+        <rulePack>
+            <rulesFiles>
+                <li>Digit_01_99->Names/Digit_01_99</li>
+                <li>Droid_TwoCode->droidnames/astrocode</li>
+                <li>Droid_ID->droidnames/genericID</li>
+                <li>Droid_R2->droidnames/R2</li>
+                <li>Droid_R3->droidnames/R3</li>
+                <li>Droid_R4->droidnames/R4</li>
+                <li>Droid_R5->droidnames/R5</li>
+                <li>Droid_B1->droidnames/B1</li>
+                <li>Droid_DUM->droidnames/DUM</li>
+                <li>Droid_21B->droidnames/21B</li>
+                <li>Droid_LOM->droidnames/LOM</li>
+                <li>Droid_3PO->droidnames/3PO</li>
+                <li>Droid_TC->droidnames/TC</li>
+                <li>Droid_RA7->droidnames/RA7</li>
+                <li>Droid_CLLM2->droidnames/CLLM2</li>
+                <li>Droid_ASP7->droidnames/ASP7</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>SWCP_DroidNamer_R2AD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_R2] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_R3AD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_R3] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_R4AD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_R4] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_R5AD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_R5] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_B1BD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_B1] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_DUMpitdroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_DUM] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_21BMedDroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_21B] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_LOMProtocolDroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99] [Droid_LOM]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_3POProtocolDroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_TC] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+                <li>r_name(p=3)->[Droid_3PO] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_RA7ProtocolDroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_RA7] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_CLLM2BinaryLoadlifter</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_CLLM2] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_ASP7LaborDroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ASP7] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+    
+
+</Defs>

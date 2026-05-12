@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace Name="guy762_KotORDroidBase" ParentName="ABF_Thing_Synstruct_HumanlikeBase" Abstract="True">
+		<statBases>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+		</statBases>
+        <alienRace>
+			<raceRestriction>
+                <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+				<xenotypeList>
+				  <li>guy762_debugxenotype_droid</li>
+				</xenotypeList>
+				<onlyEatRaceRestrictedFood>true</onlyEatRaceRestrictedFood>
+				<foodList>
+				  <li>guy762_repairkit</li>
+				  <li>guy762_repairkit_adv</li>
+				  <li>guy762_repairkit_con</li>
+				  <li>guy762_DroidBattery</li>
+				  <li>guy762_DroidBattery_adv</li>
+				</foodList>
+				<whiteFoodList>
+				  <li>ABF_Thing_Synstruct_StasisPill</li>
+				  <li>ABF_Thing_Synstruct_ThermalPill</li>
+				  <li>ABF_Thing_Synstruct_SignalSurge</li>
+				  <li>ABF_Thing_Synstruct_RegenerativePill</li>
+				</whiteFoodList>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<blackApparelList>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Flophat</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Broadwrap</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Slicecap</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_VisageMask</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Headwrap</li>
+				</blackApparelList>
+				
+				<blackWeaponList>
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_lightsaber_red</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_lightsaber_orange</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_lightsaber_yellow</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_lightsaber_green</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_lightsaber_blue</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_lightsaber_purple</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_lightsaber_white</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_darksaber</li> -->
+					
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_shortsaber_red</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_shortsaber_orange</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_shortsaber_yellow</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_shortsaber_green</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_shortsaber_blue</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_shortsaber_purple</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_shortsaber_white</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_naddsaber</li> -->
+					
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_dualsaber_red</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_dualsaber_orange</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_dualsaber_yellow</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_dualsaber_green</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_dualsaber_blue</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_dualsaber_purple</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_dualsaber_white</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_exarsaber</li> -->
+					
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_crosssaber_red</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_crosssaber_orange</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_crosssaber_yellow</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_crosssaber_green</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_crosssaber_blue</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_crosssaber_purple</li> -->
+					
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_curvesaber_red</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_curvesaber_orange</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_curvesaber_yellow</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_curvesaber_green</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_curvesaber_blue</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_curvesaber_purple</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_curvesaber_white</li> -->
+					
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_revansaber</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_malaksaber</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_nihilussaber</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_sionsaber</li> -->
+					<!-- <li MayRequire ="guy762.KotORWeapons">SWSaber_KotOR_exilesaber</li> -->
+					
+					<!-- <li MayRequire ="lee.theforce.psycast">Force_Lightsaber_Custom</li> -->
+					<!-- <li MayRequire ="lee.theforce.psycast">Force_Lightsaber_Curved</li> -->
+					<!-- <li MayRequire ="lee.theforce.psycast">Force_Lightsaber_Shoto</li> -->
+					<!-- <li MayRequire ="lee.theforce.psycast">Force_Lightsaber_Dual</li> -->
+					<!-- <li MayRequire ="lee.theforce.psycast">Force_Darksaber</li> -->
+					<!-- <li MayRequire ="lee.theforce.psycast">Force_Ezra_BlasterLightsaber</li> -->
+					<!-- <li MayRequire ="lee.theforce.psycast">Modular_Lightsaber</li> -->
+					<li MayRequire ="lee.theforce.psycast">Force_BladeofTalzin</li>
+					<li MayRequire ="lee.theforce.psycast">Force_EnergyBow</li>
+					
+					<li MayRequire ="lee.theforce.lightsaber">Force_Lightsaber_Custom</li>
+					<li MayRequire ="lee.theforce.lightsaber">Force_Lightsaber_Dual</li>
+					<li MayRequire ="lee.theforce.lightsaber">Force_Lightsaber_Inquisitor</li>
+					<li MayRequire ="lee.theforce.lightsaber">Force_Lightsaber_Curved</li>
+					<li MayRequire ="lee.theforce.lightsaber">Force_Lightsaber_Shoto</li>
+					<li MayRequire ="lee.theforce.lightsaber">Force_Lightsaber_Crossguard</li>
+					<li MayRequire ="lee.theforce.lightsaber">Force_Darksaber</li>
+					<li MayRequire ="lee.theforce.lightsaber">Force_Broadsaber</li>
+				</blackWeaponList>
+				
+				<onlyGetRaceRestrictedTraits>true</onlyGetRaceRestrictedTraits>
+				<whiteTraitList>
+					<li>Asexual</li>
+				</whiteTraitList>
+			</raceRestriction>
+			<!--generalSettings>
+				<traitCount>0</traitCount>
+				<additionalTraits>0</additionalTraits>
+            </generalSettings-->
+        </alienRace>
+		<comps>
+            <li>
+                <compClass>ArtificialBeings.CompCoherenceNeed</compClass>
+            </li>
+        </comps>
+		<damageMultipliers>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_RangedDamage_KOstun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_GrenadeDamage_stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_PoisonDamage_saber</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Frostbite</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_RangedDamage_kolto</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		</damageMultipliers>
+    </AlienRace.ThingDef_AlienRace>
+	
+	<XenotypeDef>
+		<defName>guy762_debugxenotype_droid</defName>
+		<label>droid</label>
+		<description>An artificially-constructed sapient being. This Xenotype primarily exists for behind-the-scenes dev purposes.</description>
+		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+		<displayPriority>10000</displayPriority>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+	</XenotypeDef>
+
+</Defs>

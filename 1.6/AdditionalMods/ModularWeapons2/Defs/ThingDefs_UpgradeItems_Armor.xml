@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+			<!--underlay-->
+	
+	
+	
+	<ThingDef ParentName="guy762_underlayupgradebase">
+		<defName>guy762_underlayitem_armorweave</defName>
+		<label>Armorweave underlay</label>
+		<description>Underlay can have a variety of effects on the armor to which it is applied. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/underlay_armorweave</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>237</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>8</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Synthread>20</Synthread>
+			<KOTOR_FabricArmorweave>40</KOTOR_FabricArmorweave>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_underlayupgradebase">
+		<defName>guy762_underlayitem_environment</defName>
+		<label>environment underlay</label>
+		<description>Underlay can have a variety of effects on the armor to which it is applied. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/underlay_environment</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>170</MarketValue>
+		  <Mass>0.4</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Cooking>8</Cooking>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Synthread>20</Synthread>
+			<DevilstrandCloth>40</DevilstrandCloth>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_underlayupgradebase">
+		<defName>guy762_underlayitem_durasteel</defName>
+		<label>Durasteel underlay</label>
+		<description>Underlay can have a variety of effects on the armor to which it is applied. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/underlay_durasteel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>325</MarketValue>
+		  <Mass>0.4</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Construction>8</Construction>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Synthread>40</Synthread>
+			<KOTOR_AlloyDurasteel>20</KOTOR_AlloyDurasteel>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_underlayupgradebase">
+		<defName>guy762_underlayitem_regen</defName>
+		<label>Biorestorative underlay</label>
+		<description>Underlay can have a variety of effects on the armor to which it is applied. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/underlay_biorestorative</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>367</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Medicine>12</Medicine>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Synthread>40</Synthread>
+			<Neutroamine>20</Neutroamine>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_underlayupgradebase">
+		<defName>guy762_underlayitem_flex</defName>
+		<label>flexible underlay</label>
+		<description>Underlay can have a variety of effects on the armor to which it is applied. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/underlay_flex</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>475</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Animals>12</Animals>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Synthread>40</Synthread>
+			<Hyperweave>20</Hyperweave>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_underlayupgradebase">
+		<defName>guy762_underlayitem_strength</defName>
+		<label>strengthening underlay</label>
+		<description>Underlay can have a variety of effects on the armor to which it is applied. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/underlay_strength</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>445</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Melee>12</Melee>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Synthread>40</Synthread>
+			<KOTOR_Spice>20</KOTOR_Spice>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_adv</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_NoCraft_underlayupgradebase">
+		<defName>guy762_underlayitem_force</defName>
+		<label>Forceweave underlay</label>
+		<description>Underlay can have a variety of effects on the armor to which it is applied. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/underlay_force</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>800</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_JediApparel</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+			<!--overlay-->
+			
+			
+			
+	<ThingDef ParentName="guy762_overlayupgradebase">
+		<defName>guy762_overlayitem_heat</defName>
+		<label>heat shielding</label>
+		<description>Alloy overlays can enhance armor performance. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/overlay_heat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>100</MarketValue>
+		  <Mass>0.4</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Cooking>10</Cooking>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<KOTOR_AlloyBronzium>20</KOTOR_AlloyBronzium>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_overlayupgradebase">
+		<defName>guy762_overlayitem_energy</defName>
+		<label>energy shielding</label>
+		<description>Alloy overlays can enhance armor performance. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/overlay_energy</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>207</MarketValue>
+		  <Mass>0.4</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>10</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<KOTOR_IngotCortosis>10</KOTOR_IngotCortosis>
+			<Gold>1</Gold>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_overlayupgradebase">
+		<defName>guy762_overlayitem_ballistic</defName>
+		<label>ballistic shielding</label>
+		<description>Alloy overlays can enhance armor performance. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/overlay_ballistic</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>245</MarketValue>
+		  <Mass>0.4</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Melee>10</Melee>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<KOTOR_AlloyDurasteel>20</KOTOR_AlloyDurasteel>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_basic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_overlayupgradebase">
+		<defName>guy762_overlayitem_armorply</defName>
+		<label>Armorply plating</label>
+		<description>Alloy overlays can enhance armor performance. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/overlay_armorply</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>351</MarketValue>
+		  <Mass>0.4</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Animals>14</Animals>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<Hyperweave>40</Hyperweave>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_overlayupgradebase">
+		<defName>guy762_overlayitem_ablative</defName>
+		<label>ablative plating</label>
+		<description>Alloy overlays can enhance armor performance. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/overlay_ablative</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>395</MarketValue>
+		  <Mass>0.6</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Construction>14</Construction>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<KOTOR_AlloyDurasteel>20</KOTOR_AlloyDurasteel>
+			<KOTOR_IngotCortosis>40</KOTOR_IngotCortosis>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_overlayupgradebase">
+		<defName>guy762_overlayitem_bonded</defName>
+		<label>bonded plates</label>
+		<description>Alloy overlays can enhance armor performance. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/overlay_bonded</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>475</MarketValue>
+		  <Mass>0.6</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>14</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<KOTOR_AlloyDurasteel>40</KOTOR_AlloyDurasteel>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_overlayupgradebase">
+		<defName>guy762_overlayitem_hvybonded</defName>
+		<label>heavy bonded plates</label>
+		<description>Alloy overlays can enhance armor performance. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/overlay_hvybonded</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>605</MarketValue>
+		  <Mass>0.8</Mass>
+		  
+		  <WorkToMake>40000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>16</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_exupgrade</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Uranium>20</Uranium>
+			<KOTOR_AlloyDurasteel>40</KOTOR_AlloyDurasteel>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_armormod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_overlayupgradebase">
+		<defName>guy762_overlayitem_beskar</defName>
+		<label>Beskar plating</label>
+		<description>Alloy overlays can enhance armor performance. Use of this armor modification requires a gunsmith or Aratech workbench, and an upgradeable armor.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Armor/overlay_beskar</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>0.8</Mass>
+		  
+		  <WorkToMake>40000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <researchPrerequisites>
+			<li>guy762_ResearchKotOR_exupgrade</li>
+			<li>guy762_ResearchKotOR_mando</li>
+		  </researchPrerequisites>
+		  <skillRequirements>
+			<Crafting>16</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_IngotBeskar>60</KOTOR_IngotBeskar>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_MNCArmor</li>
+		  <li>guy762TT_MandoLoot</li>
+		</tradeTags>
+	</ThingDef>
+
+	
+	
+</Defs>

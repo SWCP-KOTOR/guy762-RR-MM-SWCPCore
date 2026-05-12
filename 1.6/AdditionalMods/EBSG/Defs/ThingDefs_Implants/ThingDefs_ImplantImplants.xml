@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+			<!--implants-->
+	
+	<ThingDef ParentName="guy762_ImplantBase">
+		<defName>guy762_ImplantItemImp_retinal</defName>
+		<label>retinal combat device</label>
+		<description>This ocular implant greatly increases visual acuity, allowing the user to better track enemy movement in combat. General awareness will improve as well.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_reflex</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_E</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>115</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>15000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Medicine>8</Medicine>
+		  </skillRequirements>
+		  <researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<KOTOR_Spice>10</KOTOR_Spice>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_basic</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_reflex</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_reflex</defName>
+		<label>retinal combat device</label>
+		<description>This ocular implant greatly increases visual acuity, allowing the user to better track enemy movement in combat. General awareness will improve as well.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--defaultLabelColor>(7,255,131)</defaultLabelColor-->
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+				<MeleeHitChance>0.1</MeleeHitChance>
+				<SWCPStat_Awareness>0.1</SWCPStat_Awareness>
+			</statOffsets>
+			<!-- <capMods> -->
+				<!-- <li> -->
+				  <!-- <capacity>Sight</capacity> -->
+				  <!-- <offset>0.1</offset> -->
+				<!-- </li> -->
+            <!-- </capMods> -->
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_ImplantBase">
+		<defName>guy762_ImplantItemImp_lornan</defName>
+		<label>Lornan device</label>
+		<description>This implant regulates electrical current, protecting the user's brain from energy surges.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_lornan</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_C</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>450</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>16000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Medicine>8</Medicine>
+		  </skillRequirements>
+		  <researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<KOTOR_Spice>15</KOTOR_Spice>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_basic</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_lornan</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_lornan</defName>
+		<label>Lornan device</label>
+		<description>This implant regulates electrical current, protecting the user's brain from energy surges.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<makeImmuneTo>
+				<li>guy762_Electrocuted</li>
+			</makeImmuneTo>
+			<damageFactors>
+				<guy762_RangedDamage_electrical>0.75</guy762_RangedDamage_electrical>
+				<guy762_MeleeDamage_electrical>0.75</guy762_MeleeDamage_electrical>
+				<guy762_BeamDamage_electrical>0.75</guy762_BeamDamage_electrical>
+				<EMP>0.75</EMP>
+				
+				<guy762_RangedDamage_energy>0.9</guy762_RangedDamage_energy>
+				<guy762_BeamDamage_energy>0.9</guy762_BeamDamage_energy>
+				<guy762_MeleeDamage_energy>0.9</guy762_MeleeDamage_energy>
+				<guy762_MeleeDamage_ecut>0.9</guy762_MeleeDamage_ecut>
+				<guy762_MeleeDamage_estab>0.9</guy762_MeleeDamage_estab>
+				<guy762_ExplosiveDamage_energy>0.9</guy762_ExplosiveDamage_energy>
+				<guy762_GrenadeDamage_energy>0.9</guy762_GrenadeDamage_energy>
+				<guy762_GrenadeDamage_thermaldet>0.9</guy762_GrenadeDamage_thermaldet>
+				<Beam MayRequire="Ludeon.RimWorld.Biotech">0.9</Beam>
+				<guy762_RangedDamage_KOstun>0.9</guy762_RangedDamage_KOstun>
+				
+				<Force_LightsaberCut MayRequire="lee.theforce.lightsaber">0.9</Force_LightsaberCut>
+				<Force_SaberSlash MayRequire="lee.theforce.lightsaber">0.9</Force_SaberSlash>
+				<Force_SaberStab MayRequire="lee.theforce.lightsaber">0.9</Force_SaberStab>
+			</damageFactors>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_ImplantBase">
+		<defName>guy762_ImplantItemImp_biotech</defName>
+		<label>biotech device</label>
+		<description>This implant does use relatively experimental nano-technology to speed healing, but relies more on coagulants and solid doses of pain relievers. If you feel better, you are better.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_biotech</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_A</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1350</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>18000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Medicine>10</Medicine>
+		  </skillRequirements>
+		  <researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<KOTOR_Spice>25</KOTOR_Spice>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_adv</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_biotech</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_biotech</defName>
+		<label>biotech device</label>
+		<description>This implant does use relatively experimental nano-technology to speed healing, but relies more on coagulants and solid doses of pain relievers. If you feel better, you are better.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<naturalHealingFactor>10</naturalHealingFactor>
+			<totalBleedFactor>0.5</totalBleedFactor>
+			<!--regeneration>1</regeneration-->
+			<statOffsets>
+				<ImmunityGainSpeedFactor>0.1</ImmunityGainSpeedFactor>
+			</statOffsets>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_ImplantBase">
+		<defName>guy762_ImplantItemImp_power</defName>
+		<label>power device</label>
+		<description>This improved variant of the Strength Package employs substantially higher doses of stimulants.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_power</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_D</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>2550</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Medicine>10</Medicine>
+		  </skillRequirements>
+		  <researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<KOTOR_Spice>20</KOTOR_Spice>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_adv</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_power</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_power</defName>
+		<label>power device</label>
+		<description>This improved variant of the Strength Package employs substantially higher doses of stimulants.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<MeleeDamageFactor>0.2</MeleeDamageFactor>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
+			</statOffsets>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemImp_alacrity</defName>
+		<label>alacrity device</label>
+		<description>The Alacrity Implant enhances the user's nervous system, significantly improving reaction times.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_alacrity</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_G</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>5550</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_adv</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_alacrity</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_alacrity</defName>
+		<label>alacrity device</label>
+		<description>The Alacrity Implant enhances the user's nervous system, significantly improving reaction times.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<MeleeDodgeChance>0.1</MeleeDodgeChance>
+				<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
+			</statOffsets>
+			<capMods>
+				<li>
+				  <capacity>Moving</capacity>
+				  <offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.2</offset>
+				</li>
+            </capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemImp_insight</defName>
+		<label>insight device</label>
+		<description>By stimulating less used neural networks in the brain, this implant allows the user to see solutions they may not have otherwise considered.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_insight</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_B</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>11400</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_adv</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_insight</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_insight</defName>
+		<label>insight device</label>
+		<description>By stimulating less used neural networks in the brain, this implant allows the user to see solutions they may not have otherwise considered.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<PainShockThreshold>0.1</PainShockThreshold>
+				<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			</statOffsets>
+			<capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<offset>0.2</offset>
+			  </li>
+			  <li>
+				<capacity>Sight</capacity>
+				<offset>0.2</offset>
+			  </li>
+			  <li>
+				<capacity>Hearing</capacity>
+				<offset>0.2</offset>
+			  </li>
+			</capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemImp_skills</defName>
+		<label>skills device</label>
+		<description>This ingenious device modifies brain chemistry to improve general problem solving and data processing abilities.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_skills</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_J</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19200</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_rare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_skills</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_skills</defName>
+		<label>skills device</label>
+		<description>This ingenious device modifies brain chemistry to improve general problem solving and data processing abilities.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<comps>
+		  <li Class="EBSGFramework.HediffCompProperties_TemporarySkillChange">
+				<skillChanges>
+					<li>
+						<skill>Shooting</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Mining</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Cooking</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Plants</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Animals</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Artistic</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<skillChange>2</skillChange>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<skillChange>2</skillChange>
+					</li>
+				</skillChanges>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemImp_durability</defName>
+		<label>durability device</label>
+		<description>This implant regulates current through the body, both improving stamina and providing resistance to incoming attacks.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_durability</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_F</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>27300</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_rare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_durability</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_durability</defName>
+		<label>durability device</label>
+		<description>This implant regulates current through the body, both improving stamina and providing resistance to incoming attacks.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+				<PainShockThreshold>0.1</PainShockThreshold>
+			</statOffsets>
+			<capMods>
+			  <li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.1</offset>
+			  </li>
+			  <li>
+				<capacity>BloodFiltration</capacity>
+				<offset>0.1</offset>
+			  </li>
+			  <li>
+				<capacity>Breathing</capacity>
+				<offset>0.1</offset>
+			  </li>
+			</capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemImp_physboost</defName>
+		<label>physical boost device</label>
+		<description>This device improves all physical attributes, making it one of the most valuable of implants of its type.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_physboost</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_I</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>35400</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_rare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_physboost</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_physboost</defName>
+		<label>physical boost device</label>
+		<description>This device improves all physical attributes, making it one of the most valuable of implants of its type.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<PainShockThreshold>0.2</PainShockThreshold>
+				<MeleeDamageFactor>0.2</MeleeDamageFactor>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
+			</statOffsets>
+			<capMods>
+				<li>
+				  <capacity>Moving</capacity>
+				  <offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>BloodPumping</capacity>
+					<offset>0.2</offset>
+				  </li>
+				  <li>
+					<capacity>BloodFiltration</capacity>
+					<offset>0.2</offset>
+				  </li>
+				  <li>
+					<capacity>Breathing</capacity>
+					<offset>0.2</offset>
+				  </li>
+            </capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemImp_mentboost</defName>
+		<label>mental boost device</label>
+		<description>This device improves all mental attributes, making it one of the most valuable of implants of its type.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_mentboost</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_H</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>35400</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_rare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_mentboost</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_mentboost</defName>
+		<label>mental boost device</label>
+		<description>This device improves all mental attributes, making it one of the most valuable of implants of its type.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<SocialImpact>0.2</SocialImpact>
+				<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.2</ConversionPower>
+				<NegotiationAbility>0.2</NegotiationAbility>
+				<TradePriceImprovement>0.2</TradePriceImprovement>
+				
+				<EBSG_SkillLossRate>-0.2</EBSG_SkillLossRate>
+				<ResearchSpeed>0.2</ResearchSpeed>
+				<GlobalLearningFactor>0.2</GlobalLearningFactor>
+				<ReadingSpeed>0.2</ReadingSpeed>
+				<StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">0.2</StudyEfficiency>
+				<EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.2</EntityStudyRate>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Sight</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Hearing</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Talking</capacity>
+					<offset>0.2</offset>
+				</li>
+            </capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_ImplantBase">
+		<defName>guy762_ImplantItemImp_sith</defName>
+		<label>Sith regenerator</label>
+		<description>Extensively used by Sith intelligence operatives, this implant stimulates cell replication in the user's body, allowing wounds to be healed quickly and easily. It is most frequently used on operatives operating behind enemy lines for extended periods, where medical treatment is not normally available.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffImp_sith</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantImplant_sith</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>8500</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>24000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Medicine>14</Medicine>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<KOTOR_Spice>50</KOTOR_Spice>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_SEArmor</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<li>guy762_ImplantSlot_Imp</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffImp_sith</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffImp_sith</defName>
+		<label>Sith regenerator</label>
+		<description>Extensively used by Sith intelligence operatives, this implant stimulates cell replication in the user's body, allowing wounds to be healed quickly and easily. It is most frequently used on operatives operating behind enemy lines for extended periods, where medical treatment is not normally available.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<naturalHealingFactor>20</naturalHealingFactor>
+			<!--regeneration>2</regeneration-->
+			<statOffsets>
+				<ImmunityGainSpeedFactor>0.2</ImmunityGainSpeedFactor>
+			</statOffsets>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

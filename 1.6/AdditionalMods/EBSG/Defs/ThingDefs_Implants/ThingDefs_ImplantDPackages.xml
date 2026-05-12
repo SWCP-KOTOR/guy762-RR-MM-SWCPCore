@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+			<!--D-Packages-->
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_strength</defName>
+		<label>strength D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_strength</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_A</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>2780</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_strength</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_strength</defName>
+		<label>strength D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--defaultLabelColor>(255,7,48)</defaultLabelColor-->
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<MeleeDamageFactor>0.4</MeleeDamageFactor>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">40</VEF_MassCarryCapacity>
+				
+				<PainShockThreshold>0.3</PainShockThreshold>
+			</statOffsets>
+			<capMods>
+			  <li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.3</offset>
+			  </li>
+			  <li>
+				<capacity>BloodFiltration</capacity>
+				<offset>0.3</offset>
+			  </li>
+			  <li>
+				<capacity>Breathing</capacity>
+				<offset>0.3</offset>
+			  </li>
+			</capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_immunity</defName>
+		<label>immunity D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_immunity</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_G</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>3000</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_immunity</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_immunity</defName>
+		<label>immunity D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<makeImmuneTo>
+				<li>ToxicBuildup</li>
+				<li>guy762_Poison_saber</li>
+				<!-- <li MayRequire="Killathon.ArtificialBeings.SynCore">ABF_Hediff_Synstruct_Toxicated</li> -->
+				
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForcePacify</li>
+				
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceFear</li>
+				
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceAffliction</li>
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForcePlague</li>
+			</makeImmuneTo>
+			<damageFactors>
+				<Stun>0</Stun>
+			</damageFactors>
+			<statOffsets>
+				<ImmunityGainSpeedFactor>0.3</ImmunityGainSpeedFactor>
+				<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+				<ToxicResistance>1</ToxicResistance>
+			</statOffsets>
+		  </li>
+		</stages>
+		<modExtensions>
+		  <li Class="MentalBreakBlocker.ModExtension_MentalBreakBlocker">
+			<!--choose one: mood, damage, psycast, moodAndDamage, moodAndPsycast, damageAndPsycast, all-->
+			<!--  allow only mood or damage cause  -->
+			<cause>moodAndDamage</cause>
+			<isWhitelist>true</isWhitelist>
+		  </li>
+		</modExtensions>
+	</HediffDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_perception</defName>
+		<label>perception D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_perception</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_E</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>4500</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_perception</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_perception</defName>
+		<label>perception D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<SocialImpact>0.3</SocialImpact>
+				<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.3</ConversionPower>
+				<NegotiationAbility>0.3</NegotiationAbility>
+				<TradePriceImprovement>0.3</TradePriceImprovement>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Sight</capacity>
+					<offset>0.4</offset>
+				</li>
+				<li>
+					<capacity>Hearing</capacity>
+					<offset>0.4</offset>
+				</li>
+				<li>
+					<capacity>Talking</capacity>
+					<offset>0.3</offset>
+				</li>
+            </capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_enhancement</defName>
+		<label>enhancement D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_enhancement</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_D</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>8500</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_enhancement</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_enhancement</defName>
+		<label>enhancement D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<ShootingAccuracyPawn>0.3</ShootingAccuracyPawn>
+				<MeleeHitChance>0.3</MeleeHitChance>
+				
+				<MeleeCooldownFactor>-0.3</MeleeCooldownFactor>
+				<RangedCooldownFactor>-0.3</RangedCooldownFactor>
+			</statOffsets>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_immortality</defName>
+		<label>immortality D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_immortality</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_C</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>12950</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_immortality</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_immortality</defName>
+		<label>immortality D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<PainShockThreshold>0.6</PainShockThreshold>
+			</statOffsets>
+			<capMods>
+			  <li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.3</offset>
+			  </li>
+			  <li>
+				<capacity>BloodFiltration</capacity>
+				<offset>0.3</offset>
+			  </li>
+			  <li>
+				<capacity>Breathing</capacity>
+				<offset>0.3</offset>
+			  </li>
+			</capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_quickness</defName>
+		<label>quickness D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_quickness</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_B</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19000</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_quickness</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_quickness</defName>
+		<label>quickness D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			</statOffsets>
+			<capMods>
+			  <li>
+				  <capacity>Moving</capacity>
+				  <offset>0.4</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.4</offset>
+				</li>
+			</capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_skills</defName>
+		<label>skills D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_skills</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_H</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>32000</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_skills</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_skills</defName>
+		<label>skills D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<comps>
+		  <li Class="EBSGFramework.HediffCompProperties_TemporarySkillChange">
+				<skillChanges>
+					<li>
+						<skill>Shooting</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Mining</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Cooking</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Plants</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Animals</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Artistic</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<skillChange>6</skillChange>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<skillChange>6</skillChange>
+					</li>
+				</skillChanges>
+			</li>
+		</comps>
+	</HediffDef>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_universal</defName>
+		<label>universal D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_universal</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_I</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>58000</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_universal</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_universal</defName>
+		<label>universal D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<PainShockThreshold>0.2</PainShockThreshold>
+				
+				<MeleeDamageFactor>0.2</MeleeDamageFactor>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
+				
+				<SocialImpact>0.2</SocialImpact>
+				<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.2</ConversionPower>
+				<NegotiationAbility>0.2</NegotiationAbility>
+				<TradePriceImprovement>0.2</TradePriceImprovement>
+				
+				<ResearchSpeed>0.2</ResearchSpeed>
+				<GlobalLearningFactor>0.2</GlobalLearningFactor>
+				<ReadingSpeed>0.2</ReadingSpeed>
+				<StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">0.2</StudyEfficiency>
+				<EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.2</EntityStudyRate>
+			</statOffsets>
+			<capMods>
+				<li>
+				  <capacity>Moving</capacity>
+				  <offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>BloodPumping</capacity>
+					<offset>0.2</offset>
+				  </li>
+				  <li>
+					<capacity>BloodFiltration</capacity>
+					<offset>0.2</offset>
+				  </li>
+				  <li>
+					<capacity>Breathing</capacity>
+					<offset>0.2</offset>
+				  </li>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Sight</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Hearing</capacity>
+					<offset>0.2</offset>
+				</li>
+            </capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_physboost</defName>
+		<label>physical boost D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_physboost</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_J</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>58000</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_physboost</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_physboost</defName>
+		<label>physical boost D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<PainShockThreshold>0.4</PainShockThreshold>
+				<MeleeDamageFactor>0.4</MeleeDamageFactor>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">40</VEF_MassCarryCapacity>
+			</statOffsets>
+			<capMods>
+				<li>
+				  <capacity>Moving</capacity>
+				  <offset>0.4</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.4</offset>
+				</li>
+				<li>
+					<capacity>BloodPumping</capacity>
+					<offset>0.4</offset>
+				  </li>
+				  <li>
+					<capacity>BloodFiltration</capacity>
+					<offset>0.4</offset>
+				  </li>
+				  <li>
+					<capacity>Breathing</capacity>
+					<offset>0.4</offset>
+				  </li>
+            </capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_ImplantBase">
+		<defName>guy762_ImplantItemDPkg_mentboost</defName>
+		<label>mental boost D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_ImplantHediffDPkg_mentboost</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Items/Bionics/ImplantDPackage_K</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>58000</MarketValue>
+		  <Mass>0.6</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <li>guy762TT_implants_DPkg</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="EBSGFramework.CompProperties_UseEffectHediffModule">
+				<ejectable>true</ejectable>
+				
+				<installSound>kotorsound_lockpick</installSound>
+				<ejectSound>kotorsound_lockpick</ejectSound>
+				<requiredCapacity>1</requiredCapacity>
+				<slotIDs>
+					<!-- <li>guy762_ImplantSlot_Pkg</li> -->
+					<!-- <li>guy762_ImplantSlot_Imp</li> -->
+					<!-- <li>guy762_ImplantSlot_Sys</li> -->
+					<li>guy762_ImplantSlot_DPkg</li>
+				</slotIDs>
+				<hediffs>
+					<li>guy762_ImplantHediffDPkg_mentboost</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>guy762_ImplantHediffDPkg_mentboost</defName>
+		<label>mental boost D-Package</label>
+		<description>D-Package implants are larger and more intrusive than other types. They tend to have more impressive effects, but can only be used by very healthy individuals.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(215,215,255)</defaultLabelColor>
+		<!--techHediffsTags>
+		  <li>guy762_HediffTag_ImplantBasic</li>
+		</techHediffsTags-->
+		<stages>
+		  <li>
+			<statOffsets>
+				<SocialImpact>0.4</SocialImpact>
+				<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</ConversionPower>
+				<NegotiationAbility>0.4</NegotiationAbility>
+				<TradePriceImprovement>0.4</TradePriceImprovement>
+				
+				<EBSG_SkillLossRate>-0.4</EBSG_SkillLossRate>
+				<ResearchSpeed>0.4</ResearchSpeed>
+				<GlobalLearningFactor>0.4</GlobalLearningFactor>
+				<ReadingSpeed>0.4</ReadingSpeed>
+				<StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">0.4</StudyEfficiency>
+				<EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.4</EntityStudyRate>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.4</offset>
+				</li>
+				<li>
+					<capacity>Sight</capacity>
+					<offset>0.4</offset>
+				</li>
+				<li>
+					<capacity>Hearing</capacity>
+					<offset>0.4</offset>
+				</li>
+				<li>
+					<capacity>Talking</capacity>
+					<offset>0.4</offset>
+				</li>
+            </capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+	
+
+	
+</Defs>

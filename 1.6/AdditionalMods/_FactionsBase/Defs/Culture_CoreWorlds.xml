@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CultureDef>
+		<defName>guy762_culture_coreworlds</defName>
+		<label>core worlds</label>
+		<description>A prevalent culture in the Human-dominated Republic core worlds and surrounding colonies.</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeitySophian</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>World/Khoonda</iconPath>
+		<!--iconColor>(0.8, 0.8, 0.8)</iconColor-->
+		<thingStyleCategories>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<category>VME_Corporate</category>
+			<priority>1</priority>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<category>VME_Authoritarian</category>
+			<priority>2</priority>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<category>Rustic</category>
+			<priority>1</priority>
+		  </li>
+			
+			
+			<!-- idea: make separate cultures with different priority rankings for the Bright Jewel, Queli, and Western Reaches oversectors -->
+			<!-- update: probably not needed since there's a <styles> node in FactionDef but could still be interesting to do for variety -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialArmy</category> -->
+				<!-- <priority>2</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialNavy</category> -->
+				<!-- <priority>2</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialTaskforce</category> -->
+				<!-- <priority>1</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialPolitiburo</category> -->
+				<!-- <priority>1</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImpISB</category> -->
+				<!-- <priority>0.5</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImpINT</category> -->
+				<!-- <priority>0.5</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialOps</category> -->
+				<!-- <priority>0.5</priority> -->
+			<!-- </li> -->
+		</thingStyleCategories>
+		<styleItemTags>
+			  <li>
+				<tag>Urban</tag>
+				<baseWeight>2</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>Royalty</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>Rural</tag>
+				<baseWeight>0.5</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  
+			  <li>
+				<tag>NoBeard</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>MoustacheOnly</tag>
+				<baseWeight>0.5</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>BeardRural</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  
+			  <li>
+				<tag>NoTattoo</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  
+			  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<tag>Furskin</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+		</styleItemTags>
+	</CultureDef>
+
+	
+
+</Defs>

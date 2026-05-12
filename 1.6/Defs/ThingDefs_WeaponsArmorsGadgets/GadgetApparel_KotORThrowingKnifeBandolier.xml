@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_Accessory_knifebandolier</defName>
+		<label>throwing knife bandolier</label>
+		<description>Favored by the Nagai corsairs of the Unknown Regions, bandoliers like this one can hold up to three small knives, which can be quickly thrown at a target. Once all knives have been thrown, they can be replaced with 15 durasteel.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/bandolier_knife/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>9500</WorkToMake>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>KotORAccessory_knifebandolier</li>
+				<li>KotORAccessory_trooper_poncho_knife</li>
+				<li>SaV_apparel_nagai</li>
+				<li>SWCPSpecificApparelItem_ThrowingKnifeBandolier</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Accessories/bandolier_knife/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_GCWGadgetEquipment_Illegal</li>
+		</tradeTags>
+		<costList>
+			<KOTOR_FabricArmorweave>30</KOTOR_FabricArmorweave>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Melee>8</Melee>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,140)</only>         <!-- bley -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+			</options>
+		</colorGenerator>
+		<verbs>
+            <li>
+                <label>throw knife</label>
+                <verbClass>Verb_LaunchProjectileStatic</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>17</range>
+                <warmupTime>0.5</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>kotorsound_blade_swing</soundCast>
+                <onlyManualCast>true</onlyManualCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <defaultProjectile>KotORDart_throwingknife</defaultProjectile>
+				<ai_IsWeapon>true</ai_IsWeapon>
+            </li>
+        </verbs>
+        <comps>
+			<li Class="CompProperties_ApparelReloadable">
+                <maxCharges>3</maxCharges>
+                <destroyOnEmpty>false</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>knives</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<ammoDef>KOTOR_AlloyDurasteel</ammoDef>
+				<ammoCountPerCharge>5</ammoCountPerCharge>
+            </li>
+        </comps>
+	</ThingDef>
+	  
+	
+
+</Defs>

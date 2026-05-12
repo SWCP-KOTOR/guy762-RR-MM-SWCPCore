@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_UniformCap</defName>
+		<label>uniform cap</label>
+		<description>A formal cap for military personnel.</description>
+		<graphicData>
+		  <texPath>SWApparel/Sith/uniform/ensign/hat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>20</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.05</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Synthread>20</Synthread>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Sith/uniform/ensign/hat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>	
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<tags>
+				<li>SE_apparel_ensign</li>
+				<li>SE_apparel_engi</li>
+				<li>KotORRoyaltyTag_ORprivI</li>
+				<li>KotORRoyaltyTag_ORprivII</li>
+				<li>SWCPSpecificApparelItem_KotORSithUniformHat</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>KotOROutfitTag_SithOfficer</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(170,170,190)</only> <!-- sith grey -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_UniformCap_rebel</defName>
+		<label>uniform cap</label>
+		<description>A formal cap for military personnel.</description>
+		<graphicData>
+			<texPath>SWApparel/GenericMilitaryFatigues/hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>10</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.05</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		<!-- <equippedStatOffsets> -->
+		  <!-- <SocialImpact>0.1</SocialImpact> -->
+		<!-- </equippedStatOffsets> -->
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/GenericMilitaryFatigues/hat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<tags>
+				<li>NewRepublic_engineer</li>
+				<li>NewRepublic_RebelAgent_hats</li>
+				<li>SWCPSpecificApparelItem_GenericUniformHat</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(175,150,120)</only>       <!-- bespin beige -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_RebelFlakCap</defName>
+		<label>flak hat</label>
+		<description>A durable, padded armorweave head cover.</description>
+		<graphicData>
+		  <texPath>SWApparel/Rebel/PaoHat/PaoHat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>100</MarketValue>
+		  <MaxHitPoints>115</MaxHitPoints>
+		  <Mass>0.5</Mass>
+		  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.3</ArmorRating_Heat>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		<!-- <equippedStatOffsets> -->
+		  <!-- <SocialImpact>0.1</SocialImpact> -->
+		<!-- </equippedStatOffsets> -->
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<tags>
+				<li>NewRepublic_rebeltrooper</li>
+				<li>NewRepublic_RebelAgent_hats</li>
+				<li>NewRepublic_sharpshooterhat</li>
+				<li>PartisanAlliance_trooperheadwear</li>
+				<li>SWCPSpecificApparelItem_FlakHat</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>SWGCWOutfitTag_RebelSoldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+			<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(160,115,80)</only>       <!-- soft orange -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef> 
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_RebelFlakCap_goggles</defName>
+		<label>flak hat, goggles</label>
+		<description>A durable, padded armorweave head cover.</description>
+		<graphicData>
+		  <texPath>SWApparel/Rebel/PaoHat/PaoHat_Goggles</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+		  <MarketValue>100</MarketValue>
+		  <MaxHitPoints>115</MaxHitPoints>
+		  <Mass>0.5</Mass>
+		  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.3</ArmorRating_Heat>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  
+		  <WorkToMake>1200</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<MortarMissRadiusFactor>-0.2</MortarMissRadiusFactor>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat_Goggles</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<!-- <li>Neck</li> -->
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<tags>
+				<li>NewRepublic_tankpilot</li>
+				<li>NewRepublic_RebelAgent_hats</li>
+				<li>SWCPSpecificApparelItem_GogglesFlakHat</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>SWGCWOutfitTag_RebelSoldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+			<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(160,115,80)</only>       <!-- soft orange -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_RebelEngiCap</defName>
+		<label>engineer's cap</label>
+		<description>A rugged cap with a scarf for engineering personnel.</description>
+		<graphicData>
+		  <texPath>SWApparel/RebelEngineer/hat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(170,170,190)</colorTwo> -->
+		</graphicData>
+		<statBases>
+		  <MarketValue>50</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.05</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <Insulation_Cold>15</Insulation_Cold>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  
+		  <WorkToMake>1200</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>30</Cloth>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/RebelEngineer/hat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RebelEngineer/hat</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>170,170,190</color> <!-- sith grey -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>NewRepublic_engineer</li>
+				<li>NewRepublic_RebelAgent_hats</li>
+				<li>SWCPSpecificApparelItem_RebelEngineerHat</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Engineer</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(175,150,120)</only>       <!-- bespin beige -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_Hat_onderon</defName>
+		<label>masked cap</label>
+		<description>A masked cap for military personnel.</description>
+		<graphicData>
+		  <texPath>SWApparel/Undersuits/onderonhat/hat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+		  <MarketValue>50</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.05</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		
+		<costList>
+			<Synthread>30</Synthread>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Undersuits/onderonhat/hat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderSkipFlags>
+				<li>Hair</li>
+				<li>Beard</li>
+			</renderSkipFlags>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Mouth</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<tags>
+				<li>PReb_apparel_cop</li>
+				<li>PReb_apparel_maskedhats</li>
+				<li>SWCPSpecificApparelItem_KotOROnderonRebelHat</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>KotOROutfitTag_RebelCommando</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(125,50,50)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+  
+  
+  <ThingDef ParentName="guy762_HeadbandBase">
+    <defName>guy762_Headband_bandana</defName>
+    <label>bandana</label>
+    <description>A simple bandana for covering the forehead.</description>
+    <graphicData>
+      <texPath>SWApparel/Headbands/bandanaItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.01</Mass>
+	  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+      <EquipDelay>0.125</EquipDelay>
+	  
+	  <WorkToMake>50</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<PainShockThreshold>0.1</PainShockThreshold>
+	</equippedStatOffsets>
+	
+	<costList>
+		<Cloth>10</Cloth>
+	</costList>
+	<recipeMaker>
+		<recipeUsers Inherit="False">
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		</recipeUsers>
+	</recipeMaker>
+	
+    <apparel>
+		<wornGraphicPath>SWApparel/Headbands/bandana</wornGraphicPath>
+		<renderSkipFlags>
+			<li>None</li>
+		</renderSkipFlags>
+		<drawData>
+			<defaultData>
+				<layer>67</layer>
+			</defaultData>
+		</drawData>
+
+		<bodyPartGroups>
+			<li>UpperHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		
+		<tags>
+			<li>SaV_apparel_huttgoon</li>
+			<li>KotORHeadband_bandana</li>
+			<li>SWCPSpecificApparelItem_Bandana</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>SWCPOutfitTag_Worker</li>
+			<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+			<li>SWCPOutfitTag_HuttSoldier</li>
+			<li>SWCPOutfitTag_Smuggler</li>
+		</defaultOutfitTags>
+	</apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWArmor_OutlawSurplus</li>
+		<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
+	</tradeTags>
+	<comps>
+		<li Class="CompProperties_Forbiddable" />
+		<li>
+			<compClass>CompColorable</compClass>
+		</li>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+		<li Class="CompProperties_Styleable"></li>
+	</comps>
+	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+		<options>
+			<li>
+				<weight>10</weight>
+				<only>(155,30,25)</only> <!--zaalbar's red-->
+			</li>
+			<li>
+				<weight>10</weight>
+				<only>(40,95,170)</only> <!-- blue -->
+			</li>
+			<li>
+				<weight>10</weight>
+				<only>(30,145,150)</only> <!-- teal -->
+			</li>
+			<li>
+				<weight>10</weight>
+				<only>(230,185,45)</only> <!-- republic yellow -->
+			</li>
+			<li>
+				<weight>10</weight>
+				<only>(235,230,15)</only> <!-- slight-green yellow -->
+			</li>
+			<li>
+				<weight>10</weight>
+				<only>(250,250,250)</only> <!-- white -->
+			</li>
+			<li>
+				<weight>10</weight>
+				<only>(50,50,50)</only> <!-- black -->
+			</li>
+			<li>
+				<weight>10</weight>
+				<only>(120,125,110)</only> <!-- slate green -->
+			</li>
+			<li>
+				<weight>10</weight>
+				<only>(255,130,65)</only> <!-- orange -->
+			</li>
+		</options>
+	</colorGenerator>
+  </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_Headwrap_open</defName>
+		<label>headwrap, open</label>
+		<description>A cloth head wrapping.</description>
+		<graphicData>
+		  <texPath>SWApparel/headwrap/openheadwrap</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<statBases>
+		  <MarketValue>5</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.1</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  
+		  <Insulation_Cold>10</Insulation_Cold>
+		  <Insulation_Heat>10</Insulation_Heat>
+		  
+		  <EquipDelay>0.1</EquipDelay>
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		<!-- <equippedStatOffsets> -->
+		  <!-- <SocialImpact>0.1</SocialImpact> -->
+		<!-- </equippedStatOffsets> -->
+		
+		<costList>
+		  <Cloth>30</Cloth>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/headwrap/openheadwrap</wornGraphicPath>
+			<renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags>
+			<drawData><defaultData><layer>67</layer></defaultData></drawData>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<tags>
+				<li>SaV_apparel_headwrapmix</li>
+				<li>PartisanAlliance_trooperheadwear</li>
+				<li>SWCPSpecificApparelItem_OpenHeadwrap</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li><styleDef>guy762_OpenHeadwrapStyle_chin</styleDef></li>
+			<li><styleDef>guy762_OpenHeadwrapStyle_nochin</styleDef></li>
+		</randomStyle>
+		
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+			<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only> <!-- white -->
+				</li>
+				<!--zaalbar's red-->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(155,30,25)</only> -->
+				<!-- </li> -->
+				<li>
+					<weight>10</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(185,160,125)</only>	<!-- alternative beige -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(145,90,50)</only>         <!-- orangeish brown -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(115,120,75)</only>         <!-- olive -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(100,100,115)</only>         <!-- dark bley -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_OpenHeadwrapStyle_chin</defName>
+		<wornGraphicPath>SWApparel/headwrap/openheadwrap</wornGraphicPath>
+		<graphicData>
+			<texPath>SWApparel/headwrap/openheadwrap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_OpenHeadwrapStyle_nochin</defName>
+		<wornGraphicPath>SWApparel/headwrap/chinlessheadwrap</wornGraphicPath>
+		<graphicData>
+			<texPath>SWApparel/headwrap/chinlessheadwrap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_Headwrap_masked</defName>
+		<label>headwrap, masked</label>
+		<description>A masked cloth head wrapping.</description>
+		<graphicData>
+		  <texPath>SWApparel/headwrap/maskedheadwrap</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<statBases>
+		  <MarketValue>10</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.1</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  
+		  <Insulation_Cold>10</Insulation_Cold>
+		  <Insulation_Heat>10</Insulation_Heat>
+		  
+		  <EquipDelay>0.1</EquipDelay>
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+
+			<HuntingStealth>0.1</HuntingStealth>
+			<SWCPStat_StealthGearOffset>0.1</SWCPStat_StealthGearOffset>
+		</equippedStatOffsets>
+		
+		<costList>
+			<Cloth>30</Cloth>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/headwrap/maskedheadwrap</wornGraphicPath>
+			<!-- <useWornGraphicMask>true</useWornGraphicMask> -->
+			<drawData><defaultData><layer>67</layer></defaultData></drawData>
+			<renderSkipFlags>
+				<li>Hair</li>
+				<li>Beard</li>
+			</renderSkipFlags>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Mouth</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<!-- <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance> -->
+			
+			<tags>
+				<li>SaV_apparel_headwrapmix</li>
+				<li>PartisanAlliance_trooperheadwear</li>
+				<li>SWCPSpecificApparelItem_MaskedHeadwrap</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+			<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only> <!-- white -->
+				</li>
+				<!--zaalbar's red-->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(155,30,25)</only> -->
+				<!-- </li> -->
+				<li>
+					<weight>10</weight>
+					<only>(185,160,125)</only>	<!-- alternative beige -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(145,90,50)</only>         <!-- orangeish brown -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(115,120,75)</only>         <!-- olive -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(100,100,115)</only>         <!-- dark bley -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  
+  
+  
+  
+  
+  
+  
+  
+	
+	
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_ImpWorkerHelmet</defName>
+		<label>worker's helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/ImperialWorker/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+		<statBases>
+			<Mass>6</Mass>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>235</MaxHitPoints>
+      		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt> <!-- +0.3 -->
+			<ArmorRating_Heat>0.45</ArmorRating_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+			
+			<MiningSpeed>0.2</MiningSpeed>
+		    <SmoothingSpeed>0.2</SmoothingSpeed>
+			
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/ImperialWorker/helmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			
+			<tags>
+				<li>RemnantEmpire_impworker</li>
+				<li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_IndustrialSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(90,90,75)</only> <!-- stone green -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+
+</Defs>

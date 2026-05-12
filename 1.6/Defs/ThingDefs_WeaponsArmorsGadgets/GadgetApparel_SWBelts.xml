@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+		<!--utility belts-->
+  
+  <ThingDef ParentName="guy762_UtilityItemBase">
+    <defName>guy762_belt_mining</defName>
+    <label>safety harness</label>
+    <description>This Telos mining safety harness is designed to aid a miner in setting and removing demolition charges within asteroid mining claims.</description>
+    <graphicData>
+      <texPath>Items/belt_utility</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(235,255,255)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>2</EquipDelay>
+      <MarketValue>100</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+	<equippedStatOffsets>
+		<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
+		<!--ConstructionSpeedFactor>0.1</ConstructionSpeedFactor-->
+		<MortarMissRadiusFactor>-0.1</MortarMissRadiusFactor>
+	</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+		<li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_utility</li>
+		<li>KotOREquipment_basic</li>
+		<li>SWCPSpecificGadgetItem_SafetyBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+    <defName>guy762_belt_power</defName>
+    <label>power belt</label>
+    <description>Primarily designed for those doing heavy lifting, the power belt has also found use as an enhancement for melee fighters.</description>
+    <graphicData>
+      <texPath>Items/belt_utility</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(30,140,150)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <!-- <MarketValue>1000</MarketValue> -->
+      <MarketValue>200</MarketValue>
+	  <Mass>1</Mass>
+      <EquipDelay>2</EquipDelay>
+      <MaxHitPoints>100</MaxHitPoints>
+	  
+	  <WorkToMake>4500</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDamageFactor>0.1</MeleeDamageFactor>
+		<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
+	</equippedStatOffsets>
+
+	<recipeMaker>
+		<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_FabricArmorweave>10</KOTOR_FabricArmorweave>
+		<ComponentIndustrial>3</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_utility</li>
+		<li>KotOREquipment_basic</li>
+		<li>SWCPSpecificGadgetItem_PowerBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+
+  
+  
+  
+  
+  
+	<ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+		<defName>guy762_belt_czerka</defName>
+		<label>Czerka utility belt</label>
+		<description>This utility belt comes with a variety of tools to assist the wearer with many tasks. It was originally developed by Czerka corporation for their own maintenance staff and quickly found use throughout the Republic.</description>
+		<graphicData>
+		  <texPath>Items/belt_utilitypouches</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <color>(210,225,170)</color>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+		  <Mass>2</Mass>
+		  <EquipDelay>2</EquipDelay>
+		  <MarketValue>1000</MarketValue>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  
+		  <WorkToMake>12000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
+			<ConstructionSpeed>0.2</ConstructionSpeed>
+			<MortarMissRadiusFactor>-0.2</MortarMissRadiusFactor>
+			
+			<MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.2</MechRepairSpeed>
+			<FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+			<ConstructSuccessChance>0.2</ConstructSuccessChance>
+			<!--MHC_MechanicalSurgerySuccessChance>0.2</MHC_MechanicalSurgerySuccessChance>
+			<MHC_MechanicalTendQualityOffset>0.2</MHC_MechanicalTendQualityOffset>
+			<MHC_MechanicalTendSpeed>0.2</MHC_MechanicalTendSpeed-->
+			
+			<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.2</HackingSpeed>
+			<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">20</HackingStealth>
+			
+			<MedicalSurgerySuccessChance>0.3</MedicalSurgerySuccessChance>
+			<MedicalTendQualityOffset>0.3</MedicalTendQualityOffset>
+			<MedicalTendSpeed>0.3</MedicalTendSpeed>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_czerka</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_FabricArmorweave>10</KOTOR_FabricArmorweave>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<guy762_medpac>3</guy762_medpac>
+			<!--guy762_repairkit>3</guy762_repairkit>     ADDED VIA PATCH!!    -->
+		</costList>
+		
+		<apparel>
+		  <bodyPartGroups>
+			<li>Waist</li>
+		  </bodyPartGroups>
+		  <tags>
+			<li>KotORBelt_utility</li>
+			<li>KotOREquipment_tech</li>
+			<li>KotOREquipment_czerkatech</li>
+			<li>KotORUtility_engi</li>
+			<li>KotORUtility_engi_novisor</li>
+			<li>SWCPSpecificGadgetItem_CzerkaUtilityBelt</li>
+		  </tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_CzerkaProduct</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+		</tradeTags>
+	</ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+		<!--"attribute" belts-->
+  
+  
+  <ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+    <defName>guy762_belt_strength</defName>
+    <label>strength enhancer</label>
+    <description>This belt injects a steady but slow stream of stimulants into the wearer's bloodstream.</description>
+    <graphicData>
+      <texPath>Items/belt_attribute</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(200,210,120)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>4</EquipDelay>
+      <MarketValue>600</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+	  
+	  <WorkToMake>3000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDamageFactor>0.1</MeleeDamageFactor>
+		<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_FabricArmorweave>10</KOTOR_FabricArmorweave>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		<guy762_stim_str>2</guy762_stim_str>
+	</costList>
+	
+    <apparel>
+      <ignoredByNonViolent>true</ignoredByNonViolent>
+	  <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_attribute</li>
+		<li>KotOREquipment_basic</li>
+		<li>KotOREquipment_sith</li>
+		<li>SWCPSpecificGadgetItem_STRBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+    <defName>guy762_belt_dex</defName>
+    <label>inertial inhibitor</label>
+    <description>This belt's advanced technology suggests an Arkanian design. It eases the wearer's movement, improving reaction time in combat.</description>
+    <graphicData>
+      <texPath>Items/belt_attribute</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(185,190,250)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>4</EquipDelay>
+      <MarketValue>500</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+	  
+	  <WorkToMake>4500</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_FabricArmorweave>10</KOTOR_FabricArmorweave>
+		<ComponentIndustrial>3</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_attribute</li>
+		<li>KotOREquipment_basic</li>
+		<li>KotOREquipment_sith</li>
+		<li>KotOREquipment_officer</li>
+		<li>SWCPSpecificGadgetItem_DEXBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+		<!--capacity belts--> 
+  
+  <ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+    <defName>guy762_belt_adrenaline</defName>
+    <label>adrenaline amplifier</label>
+    <description>This device improves the wearer's reflexes by triggering prolonged bursts of adrenaline. It is thought to be perfectly safe, with only a few instances of uncontrolled muscle spasms.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_BeltHediff_adrenaline</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/belt_capacity</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(35,155,170)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>8</EquipDelay>
+      <MarketValue>200</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+	  
+	  <WorkToMake>5000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_FabricArmorweave>10</KOTOR_FabricArmorweave>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<guy762_stim_dex>2</guy762_stim_dex>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_capacity</li>
+		<li>KotOREquipment_basic</li>
+		<li>KotOREquipment_sith</li>
+		<li>SWCPSpecificGadgetItem_DEXCapacityBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_BeltHediff_adrenaline</hediff>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_BeltHediff_adrenaline</defName>
+    <label>adrenaline amplifier</label>
+    <description>This device improves the wearer's reflexes by triggering prolonged bursts of adrenaline. It is thought to be perfectly safe, with only a few instances of uncontrolled muscle spasms.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.2</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+    <defName>guy762_belt_cardio</defName>
+    <label>cardio-regulator</label>
+    <description>This belt monitors heartbeat and breathing and releases chemicals into the body should either of these become irregular. This gives the wearer a higher fortitude than most.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_BeltHediff_cardio</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/belt_capacity</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(215,55,65)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>8</EquipDelay>
+      <MarketValue>200</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      
+	  <WorkToMake>5000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_FabricArmorweave>10</KOTOR_FabricArmorweave>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<guy762_stim_con>2</guy762_stim_con>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_capacity</li>
+		<li>KotOREquipment_basic</li>
+		<li>KotOREquipment_officer</li>
+		<li>KotORHeroAccessories_canderousMerc</li>
+		<li>SWCPSpecificGadgetItem_CONCapacityBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_BeltHediff_cardio</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_BeltHediff_cardio</defName>
+    <label>cardio-regulator</label>
+    <description>This belt monitors heartbeat and breathing and releases chemicals into the body should either of these become irregular. This gives the wearer a higher fortitude than most.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.2</offset>
+          </li>
+		  <li>
+			<capacity>BloodFiltration</capacity>
+			<offset>0.2</offset>
+		  </li>
+		  <li>
+            <capacity>Breathing</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+		<!--attribute/capacity belts--> 
+  
+  <ThingDef ParentName="guy762_UtilityItemBase">
+    <defName>guy762_belt_cnsstrength</defName>
+    <label>CNS strength enhancer</label>
+    <description>An experimental system that amplifies power signals along the length of the central nervous system, this generator, attached to a belt, provides greater impulses to all muscles, as well as a resistance to all sorts of perturbations of the user's system.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_BeltHediff_cnsstrength</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/belt_attribute</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(80,180,5)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>4</EquipDelay>
+      <MarketValue>3700</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+	  
+      <!--WorkToMake>7500</WorkToMake-->
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDamageFactor>0.2</MeleeDamageFactor>
+		<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
+	</equippedStatOffsets>
+	
+	<!--recipeMaker>
+		<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_FabricArmorweave>10</KOTOR_FabricArmorweave>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+		<guy762_stim_str>4</guy762_stim_str>
+	</costList-->
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_attribute</li>
+		<li>KotOREquipment_adv</li>
+		<li>KotOREquipment_sith</li>
+		<li>SWCPSpecificGadgetItem_STRCapacityBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_BeltHediff_cnsstrength</hediff>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_BeltHediff_cnsstrength</defName>
+    <label>CNS strength enhancer</label>
+    <description>An experimental system that amplifies power signals along the length of the central nervous system, this generator, attached to a belt, provides greater impulses to all muscles, as well as a resistance to all sorts of perturbations of the user's system.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  <ThingDef ParentName="guy762_UtilityItemBase">
+    <defName>guy762_belt_adrenalstim</defName>
+    <label>adrenaline stimulator</label>
+    <description>This belt endows the wearer with hyper-sensitivity to their surroundings and dynamically improves reflexes and reaction time.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_BeltHediff_adrenalstim</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/belt_capacity</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(135,125,170)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>8</EquipDelay>
+      <MarketValue>7600</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDodgeChance>0.4</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.4</VEF_RangedDodgeChance>
+		<PawnTrapSpringChance>-0.4</PawnTrapSpringChance>
+		<StaggerDurationFactor>-0.4</StaggerDurationFactor>
+	</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_capacity</li>
+		<li>KotOREquipment_adv</li>
+		<li>KotOREquipment_sith</li>
+		<li>KotOREquipment_officer</li>
+		<li>KotORHeroAccessories_visas</li>
+		<li>KotORHeroAccessories_handmaiden</li>
+		<li>KotORHeroAccessories_juhani</li>
+		<li>SWCPSpecificGadgetItem_AdvDEXCapacityBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_BeltHediff_adrenalstim</hediff>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_BeltHediff_adrenalstim</defName>
+    <label>adrenaline stimulator</label>
+    <description>This belt endows the wearer with hyper-sensitivity to their surroundings and dynamically improves reflexes and reaction time.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.2</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  <ThingDef ParentName="guy762_UtilityItemBase">
+    <defName>guy762_belt_nerveamp</defName>
+    <label>nerve amplifier belt</label>
+    <description>This belt monitors the brain, emitting energy waves to reinforce established patterns and block any outside influence. It's extremely effective, if mildly uncomfortable.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_BeltHediff_nerveamp</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/belt_capacity</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(145,170,105)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>12</EquipDelay>
+      <MarketValue>7200</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_rare</li>
+		<li>KotOREquipment_jedi</li>
+		<li>KotOREquipment_officer</li>
+		<li>KotORHeroAccessories_bastila</li>
+		<li>SWCPSpecificGadgetItem_NerveAmplifierBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_BeltHediff_nerveamp</hediff>
+        <part>Brain</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_BeltHediff_nerveamp</defName>
+    <label>nerve amplifier belt</label>
+    <description>This belt monitors the brain, emitting energy waves to reinforce established patterns and block any outside influence. It's extremely effective, if mildly uncomfortable.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<modExtensions>
+      <li Class="MentalBreakBlocker.ModExtension_MentalBreakBlocker">
+		<!--choose one: mood, damage, psycast, moodAndDamage, moodAndPsycast, damageAndPsycast, all-->
+		<!--  allow only mood or damage cause  -->
+		<cause>moodAndDamage</cause>
+		<isWhitelist>true</isWhitelist>
+	  </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+		  <li>
+			<capacity>Sight</capacity>
+			<offset>0.1</offset>
+		  </li>
+		  <li>
+			<capacity>Hearing</capacity>
+			<offset>0.1</offset>
+		  </li>
+        </capMods>
+		<makeImmuneTo>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceFear</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForcePacify</li>
+		</makeImmuneTo>
+		<damageFactors>
+			<Stun>0</Stun>
+		</damageFactors>
+	  </li>
+	</stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_UtilityItemBase">
+    <defName>guy762_belt_gnsstrength</defName>
+    <label>GNS strength enhancer</label>
+    <description>This generator is a high-powered version of the experimental CNS Strength Enhancer. It emphasizes the increase in muscle performance and lacks the protective capabilities of the earlier model.</description>
+    <graphicData>
+      <texPath>Items/belt_attribute</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(250,170,55)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>4</EquipDelay>
+      <MarketValue>9200</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDamageFactor>0.4</MeleeDamageFactor>
+		<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">40</VEF_MassCarryCapacity>
+	</equippedStatOffsets>
+    <apparel>
+      <ignoredByNonViolent>true</ignoredByNonViolent>
+	  <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_legendary</li>
+		<li>KotOREquipment_rare</li>
+		<li>KotORHeroAccessories_canderous</li>
+		<li>KotORHeroAccessories_handmaiden</li>
+		<li>KotORHeroAccessories_sion</li>
+		<li>KotORHeroAccessories_yuthura</li>
+		<li>KotORHeroAccessories_juhani</li>
+		<li>KotORHeroAccessories_zaalbar</li>
+		<li>KotORHeroAccessories_hanharr</li>
+		<li>SWCPSpecificGadgetItem_AdvSTRBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_UtilityItemBase">
+    <defName>guy762_belt_aratechcr</defName>
+    <label>Aratech cardio-regulator</label>
+    <description>With its improved performance and lack of negative side-effects, the Aratech Cardio-Regular is a favorite with more experienced mercenaries.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_BeltHediff_aratechcr</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/belt_capacity</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(230,145,75)</color>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>8</EquipDelay>
+      <MarketValue>8190</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+	<equippedStatOffsets>
+		<PainShockThreshold>0.3</PainShockThreshold>
+		<MeleeDamageFactor>0.1</MeleeDamageFactor>
+		<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
+	</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_legendary</li>
+		<li>KotOREquipment_rare</li>
+		<li>KotORHeroAccessories_canderous</li>
+		<li>KotORHeroAccessories_canderousMerc</li>
+		<li>KotORHeroAccessories_yuthura</li>
+		<li>KotORHeroAccessories_bastila</li>
+		<li>KotORHeroAccessories_juhani</li>
+		<li>KotORHeroAccessories_zaalbar</li>
+		<li>SWCPSpecificGadgetItem_AdvCONCapacityBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_BeltHediff_aratechcr</hediff>
+        <part>Torso</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_BeltHediff_aratechcr</defName>
+    <label>Aratech cardio-regulator</label>
+    <description>With its improved performance and lack of negative side-effects, the Aratech Cardio-Regular is a favorite with more experienced mercenaries.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.1</offset>
+          </li>
+		  <li>
+			<capacity>BloodFiltration</capacity>
+			<offset>0.1</offset>
+		  </li>
+		  <li>
+            <capacity>Breathing</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+		<!--jedi belts--> 
+  
+  <ThingDef ParentName="guy762_UtilityItemBase">
+    <defName>guy762_belt_jalshey</defName>
+    <label>Jal Shey belt</label>
+    <description>The Jal Shey concentrate on intellectual study of the Force, seeking to understand it at a mental level, rather than a spiritual one. Jal Shey are typically exceptional diplomats, but are less successful in physical pursuits.</description>
+    <graphicData>
+      <texPath>Items/belt_jalshey</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>2</EquipDelay>
+      <MarketValue>7100</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+	<equippedStatOffsets>
+        <PsychicSensitivity>0.1</PsychicSensitivity>
+		<PsychicEntropyGain>-1.4</PsychicEntropyGain>
+	</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_force</li>
+		<li>KotOREquipment_jedi</li>
+		<li>SWCPSpecificGadgetItem_JalSheyBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_UtilityItemBase">
+    <defName>guy762_belt_jalsheyadv</defName>
+    <label>Jal Shey mentor belt</label>
+    <description>This belt is an improvement upon the earlier efforts by the Jal Shey to protect their minds from the dark side.\n\nThe Jal Shey concentrate on intellectual study of the Force, seeking to understand it at a mental level, rather than a spiritual one. Jal Shey are typically exceptional diplomats, but are less successful in physical pursuits.</description>
+    <graphicData>
+      <texPath>Items/belt_jalshey_adv</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <EquipDelay>2</EquipDelay>
+      <MarketValue>9430</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+	<equippedStatOffsets>
+        <PsychicSensitivity>0.2</PsychicSensitivity>
+		<PsychicEntropyGain>-2</PsychicEntropyGain>
+	</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORBelt_rare</li>
+		<li>KotOREquipment_jedi</li>
+		<li>KotORHeroAccessories_visas</li>
+		<li>KotORHeroAccessories_exile</li>
+		<li>KotORHeroAccessories_bastila</li>
+		<li>SWCPSpecificGadgetItem_AdvJalSheyBelt</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
+    </tradeTags>
+  </ThingDef>
+  
+
+  
+
+
+</Defs>

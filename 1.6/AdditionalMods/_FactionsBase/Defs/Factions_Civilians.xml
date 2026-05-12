@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>guy762_KotORFaction_Civilians</defName>
+		<label>civilians</label>
+		<description>The local unaligned populace of this rim world. Civilians may send independent caravans to trade with your colony.</description>
+		<categoryTag>Ancient</categoryTag>
+		<colorSpectrum>
+		  <li>RGB(250,250,250)</li>
+		</colorSpectrum>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<listOrderPriority>775</listOrderPriority>
+		<configurationListOrderPriority>775</configurationListOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>false</canStageAttacks>
+		
+		<hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<displayInFactionSelection>false</displayInFactionSelection>
+		<fixedName>civilians</fixedName>
+		<factionIconPath>World/Khoonda</factionIconPath>
+		<techLevel>Spacer</techLevel>
+		
+		
+		<settlementGenerationWeight>0</settlementGenerationWeight>
+		<modExtensions Inherit="False">
+			<li Class="FCP.Currencies.CurrencyReplacement">
+				<currency>guy762_KotORcredits</currency>
+			</li>
+			
+			<li Class="FCP.Factions.FactionExtension_HiddenFactionHasCaravans" />
+
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Factions.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<!-- <guy762_KotORFaction_OldRepublic>100</guy762_KotORFaction_OldRepublic> -->
+					<!-- <guy762_KotORFaction_CorruptRepublic>0</guy762_KotORFaction_CorruptRepublic> -->
+
+					<!-- <guy762_KotORFaction_SithRemnant>-50</guy762_KotORFaction_SithRemnant> -->
+					<!-- <guy762_KotORFaction_KrathRaiders>-100</guy762_KotORFaction_KrathRaiders> -->
+
+					<!-- <guy762_KotORFaction_Militia>100</guy762_KotORFaction_Militia> -->
+					<!-- <guy762_KotORFaction_Rebellion>100</guy762_KotORFaction_Rebellion> -->
+
+					<!-- <guy762_KotORFaction_HuttCartel>0</guy762_KotORFaction_HuttCartel> -->
+					<!-- <guy762_KotORFaction_ViciousHutts>-25</guy762_KotORFaction_ViciousHutts> -->
+
+					<!-- <guy762_KotORFaction_MandoClan>-50</guy762_KotORFaction_MandoClan> -->
+					<!-- <guy762_KotORFaction_SavageMandos>-100</guy762_KotORFaction_SavageMandos> -->
+
+					<!-- <guy762_KotORFaction_Czerka>0</guy762_KotORFaction_Czerka> -->
+					<!-- <guy762_KotORFaction_Exchange>-25</guy762_KotORFaction_Exchange> -->
+					<!-- <guy762_KotORFaction_Civilians>100</guy762_KotORFaction_Civilians> -->
+
+					<!-- <guy762_KotORFaction_MandoNeoCrusaders>-100</guy762_KotORFaction_MandoNeoCrusaders> -->
+					<!-- <guy762_KotORFaction_SithEmpire>-100</guy762_KotORFaction_SithEmpire> -->
+
+					<!-- <guy762_KotORPlayerFaction_RepublicStrikeTeam>100</guy762_KotORPlayerFaction_RepublicStrikeTeam> -->
+					<!-- <guy762_KotORPlayerFaction_SmugglerCrew>0</guy762_KotORPlayerFaction_SmugglerCrew> -->
+					<!-- <guy762_KotORPlayerFaction_MandalorianTribe>-50</guy762_KotORPlayerFaction_MandalorianTribe> -->
+					<!-- <guy762_KotORPlayerFaction_SithWarlord>-100</guy762_KotORPlayerFaction_SithWarlord> -->
+					<!-- <guy762_KotORPlayerFaction_HuttUpstart>0</guy762_KotORPlayerFaction_HuttUpstart> -->
+					
+					<AncientsHostile>0</AncientsHostile> <!-- adding this so I can put hostile thugs on civilian maps and have them attack the player only -->
+				</startingGoodwillByFactionDefs>
+				<excludeFromCommConsole>true</excludeFromCommConsole>
+				<hasCities>true</hasCities>
+			</li>
+		</modExtensions>
+		
+		
+		<xenotypeSet Inherit="False">   <!--full list minus special ones-->
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.02</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_aqualish>
+			<guy762_xenotype_arkanian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_arkanian>
+			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
+			<guy762_xenotype_bothan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bothan>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_cathar>
+			<guy762_xenotype_chadrafan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_chadrafan>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_duros>
+			<guy762_xenotype_echani MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_echani>
+			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_falleen>
+			<guy762_xenotype_feeorin MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_feeorin>
+			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian>
+			<Lee_xenotype_kage MayRequire="guy762.StarWarsXenotypes">0.02</Lee_xenotype_kage>
+			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_klatoonian>
+			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_kubaz>
+			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_lasat>
+			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_mimbanese>
+			<guy762_xenotype_miraluka MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_miraluka>
+			<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_mirialan>
+			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nautolan>
+			<guy762_xenotype_nemoidian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nemoidian>
+			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nikto>
+			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_pantoran>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_togruta>
+			<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_trandoshan>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_twilek>
+			<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_umbaran>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_zabrak>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_zeltron>
+			<guy762_xenotype_zygerrian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_zygerrian>
+		  </xenotypeChances>
+		</xenotypeSet>
+		
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Outlander</li>
+			</categories>
+			<commonality>0.5</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			</categories>
+			<commonality>0.5</commonality>
+		  </li>
+		</backstoryFilters>
+		
+		<classicIdeo>true</classicIdeo>
+		<allowedCultures>
+			<li>guy762_culture_coreworlds</li>
+			<li>guy762_culture_outerrim</li>
+		</allowedCultures>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+		</disallowedPrecepts>
+		
+		<!--apparelStuffFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+			<li>KOTOR_FabricArmorweave</li>
+			<li>Steel</li>
+			<li>Plasteel</li>
+			<li>KOTOR_AlloyDurasteel</li>
+			<li>KOTOR_AlloyBronzium</li>
+		  </thingDefs>
+		</apparelStuffFilter-->
+		
+		<caravanTraderKinds>
+		  <li>Caravan_Outlander_BulkGoods</li>
+		  <li>Caravan_Outlander_CombatSupplier</li>
+		  <li>Caravan_Outlander_Exotic</li>
+		  <li>guy762_TraderKind_JawaScavs</li>
+		  <li>guy762_TraderKind_WanderingDoctor</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+		  <li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+		  <li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(700, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(100000, 10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		
+		 <pawnGroupMakers>
+		  <li>
+			<kindDef>Peaceful</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <SWCPCivilian_villager>20</SWCPCivilian_villager>
+			  <SWCPCivilian_poortraveler>10</SWCPCivilian_poortraveler>
+			  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
+			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+			  
+			  <KotORMerc_merc MayRequire="guy762.KotORFactions">10</KotORMerc_merc>
+			  <KotORDroidGood_3C MayRequire="guy762.KotORDroids">2</KotORDroidGood_3C>
+			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">5</KotORMlita_droid_GE3PD>
+			  <Town_Councilman>10</Town_Councilman>
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Trader</kindDef>
+			<commonality>1</commonality>
+			<traders>
+			  <SWCPCivilian_wanderingtrader>5</SWCPCivilian_wanderingtrader>
+			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORMlita_droid_GE3PD>
+			</traders>
+			<carriers>
+			  <Sovereign_Bantha>10</Sovereign_Bantha>
+			  
+			  <!-- <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha> -->
+			  <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
+			  <Ronto MayRequire="Mlie.StarWarsAnimalCollection">5</Ronto>
+			  <Eopie MayRequire="Mlie.StarWarsAnimalCollection">2.5</Eopie>
+			  <Blurrg MayRequire="Mlie.StarWarsAnimalCollection">2.5</Blurrg>
+			  <Kybuck MayRequire="Mlie.StarWarsAnimalCollection">1</Kybuck>
+			  <Orray MayRequire="Mlie.StarWarsAnimalCollection">1</Orray>
+			  <Bordok MayRequire="Mlie.StarWarsAnimalCollection">1</Bordok>
+			  <Skalder MayRequire="Mlie.StarWarsAnimalCollection">0.1</Skalder>
+			  <!-- <Muffalo>0.01</Muffalo> alright fuck me man I guess this shit doesn't even work without the vanilla animal spawns -->
+			  <Muffalo>6</Muffalo>
+			  <Dromedary>5</Dromedary>
+			  <Alpaca>2</Alpaca>
+			  <Elephant>1</Elephant>
+			</carriers>
+			<guards>
+			  <SWCPCivilian_villager>10</SWCPCivilian_villager>
+			  <SWCPCivilian_poortraveler>5</SWCPCivilian_poortraveler>
+			  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
+			  <KotORMerc_merc MayRequire="guy762.KotORFactions">15</KotORMerc_merc>
+			  <KotORDroidGood_3C MayRequire="guy762.KotORDroids">2</KotORDroidGood_3C>
+			  <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">7</KotORDroidBad_SentWD>
+			</guards>
+		  </li>
+		  
+		  
+		  
+		  
+		  <li Class="FCP.Core.GroupMakerWithTraderKind">
+			<kindDef>Trader</kindDef> <!-- jawa caravan -->
+			<commonality>0.5</commonality>
+			<traderKinds><li>guy762_TraderKind_JawaScavs</li></traderKinds>
+			<traders>
+			  <SWCPCivilian_jawatrader_offworld>100</SWCPCivilian_jawatrader_offworld>
+			</traders>
+			<carriers>
+			  <Sovereign_Bantha>10</Sovereign_Bantha>
+			  
+			  <!-- <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha> -->
+			  <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
+			  <Ronto MayRequire="Mlie.StarWarsAnimalCollection">5</Ronto>
+			  <Eopie MayRequire="Mlie.StarWarsAnimalCollection">2.5</Eopie>
+			  <Blurrg MayRequire="Mlie.StarWarsAnimalCollection">2.5</Blurrg>
+			  <Kybuck MayRequire="Mlie.StarWarsAnimalCollection">1</Kybuck>
+			  <Orray MayRequire="Mlie.StarWarsAnimalCollection">1</Orray>
+			  <Bordok MayRequire="Mlie.StarWarsAnimalCollection">1</Bordok>
+			  <Skalder MayRequire="Mlie.StarWarsAnimalCollection">0.1</Skalder>
+			  <Muffalo>0.01</Muffalo> <!-- required because trader caravan won't generate without at least one valid carrier type -->
+			</carriers>
+			<guards>
+			  <SWCPCivilian_jawa_offworld>15</SWCPCivilian_jawa_offworld>
+			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">3</KotORMlita_droid_GE3PD>
+			  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">7</KotORDroidGood_GE3LD>
+			  <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">5</KotORDroidGood_R8009>
+			  <KotORDroidGood_3C MayRequire="guy762.KotORDroids">2</KotORDroidGood_3C>
+			  <KotORDroidBad_KX12UPD MayRequire="guy762.KotORDroids">3</KotORDroidBad_KX12UPD>
+			  <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">4</KotORDroidBad_SentWD>
+			  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">6</KotORDroidBad_DevWD_weak>
+			</guards>
+		  </li>
+		  
+		  
+		  
+		  <li Class="FCP.Core.GroupMakerWithTraderKind">
+			<kindDef>Trader</kindDef> <!-- wandering doctor -->
+			<commonality>0.5</commonality>
+			<traderKinds><li>guy762_TraderKind_WanderingDoctor</li></traderKinds>
+			<traders>
+			  <SWCPCivilian_doctormid>100</SWCPCivilian_doctormid>
+			</traders>
+			<carriers>
+			  <Sovereign_Bantha>10</Sovereign_Bantha>
+			  
+			  <!-- <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha> -->
+			  <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
+			  <Ronto MayRequire="Mlie.StarWarsAnimalCollection">5</Ronto>
+			  <Eopie MayRequire="Mlie.StarWarsAnimalCollection">2.5</Eopie>
+			  <Blurrg MayRequire="Mlie.StarWarsAnimalCollection">2.5</Blurrg>
+			  <Kybuck MayRequire="Mlie.StarWarsAnimalCollection">1</Kybuck>
+			  <Orray MayRequire="Mlie.StarWarsAnimalCollection">1</Orray>
+			  <Bordok MayRequire="Mlie.StarWarsAnimalCollection">1</Bordok>
+			  <Skalder MayRequire="Mlie.StarWarsAnimalCollection">0.1</Skalder>
+			  <Muffalo>0.01</Muffalo> <!-- required because trader caravan won't generate without at least one valid carrier type -->
+			</carriers>
+			<guards>
+			  <SWCPCivilian_doctormid>2</SWCPCivilian_doctormid>
+			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">2</KotORMlita_droid_GE3PD>
+			  
+			  <KotORMerc_merc MayRequire="guy762.KotORFactions">5</KotORMerc_merc>
+			  <KotORMerc_elite MayRequire="guy762.KotORFactions">10</KotORMerc_elite>
+			  <KotORDroidBad_KX12UPD MayRequire="guy762.KotORDroids">3</KotORDroidBad_KX12UPD>
+			  <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">4</KotORDroidBad_SentWD>
+			</guards>
+		  </li>
+		  
+		  
+		  
+		  <li>
+			<kindDef>Settlement</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <SWCPCivilian_villager>20</SWCPCivilian_villager>
+			  <SWCPCivilian_poortraveler>10</SWCPCivilian_poortraveler>
+			  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
+			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+			  
+			  <SWCPCivilian_prole>15</SWCPCivilian_prole>
+			  <SWCPCivilian_mid>5</SWCPCivilian_mid>
+			  
+			  <SWCPCivilian_bougie>1</SWCPCivilian_bougie>
+			  <SWCPCivilian_exotictraveler>0.1</SWCPCivilian_exotictraveler>
+			  
+			  <SWCPCivilian_spacer>1</SWCPCivilian_spacer>
+			  <SWCPCivilian_doctormid>1</SWCPCivilian_doctormid>
+			  <SWCPCivilian_ugnaught>1</SWCPCivilian_ugnaught>
+			  <SWCPCivilian_jawa_offworld>1</SWCPCivilian_jawa_offworld>
+			  
+			  <SWCPCivilian_thug>1</SWCPCivilian_thug>
+			  <SWCPCivilian_cop MayRequire="guy762.KotORFactions">10</SWCPCivilian_cop>
+			  
+			  <KotORMerc_merc MayRequire="guy762.KotORFactions">2.5</KotORMerc_merc>
+			  <KotORMerc_warrior MayRequire="guy762.KotORFactions">1.5</KotORMerc_warrior>
+			  
+			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">3</KotORMlita_droid_GE3PD>
+			  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">7</KotORDroidGood_GE3LD>
+			  <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">5</KotORDroidGood_R8009>
+			  <KotORDroidGood_3C MayRequire="guy762.KotORDroids">2</KotORDroidGood_3C>
+			  <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">7</KotORDroidBad_SentWD>
+			  
+			  <Town_Councilman>10</Town_Councilman>
+			</options>
+		  </li>
+		  
+		  
+		  
+		  <li MayRequire="SWCP.guy762.Taran.SWGalaxy">
+			<kindDef>SWCPPawnGroupKind_CityBiome</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <SWCPCivilian_villager>5</SWCPCivilian_villager>
+			  <SWCPCivilian_poortraveler>10</SWCPCivilian_poortraveler>
+			  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
+			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+			  
+			  <SWCPCivilian_prole>25</SWCPCivilian_prole>
+			  <SWCPCivilian_mid>15</SWCPCivilian_mid>
+			  
+			  <SWCPCivilian_bougie>2</SWCPCivilian_bougie>
+			  <SWCPCivilian_exotictraveler>0.25</SWCPCivilian_exotictraveler>
+			  
+			  <SWCPCivilian_spacer>2</SWCPCivilian_spacer>
+			  <SWCPCivilian_doctormid>2</SWCPCivilian_doctormid>
+			  <SWCPCivilian_ugnaught>2</SWCPCivilian_ugnaught>
+			  <SWCPCivilian_jawa_offworld>1</SWCPCivilian_jawa_offworld>
+			  
+			  <!-- <SWCPCivilian_thug>1</SWCPCivilian_thug> -->
+			  <!-- <SWCPCivilian_cop MayRequire="guy762.KotORFactions">10</SWCPCivilian_cop> -->
+			  
+			  <!-- <KotORMerc_merc MayRequire="guy762.KotORFactions">2.5</KotORMerc_merc> -->
+			  <!-- <KotORMerc_warrior MayRequire="guy762.KotORFactions">1.5</KotORMerc_warrior> -->
+			  
+			  <!-- <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">3</KotORMlita_droid_GE3PD> -->
+			  <!-- <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">7</KotORDroidGood_GE3LD> -->
+			  <!-- <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">5</KotORDroidGood_R8009> -->
+			  <!-- <KotORDroidGood_3C MayRequire="guy762.KotORDroids">2</KotORDroidGood_3C> -->
+			  <!-- <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">7</KotORDroidBad_SentWD> -->
+			  
+			  <!-- <Town_Councilman>10</Town_Councilman> -->
+			</options>
+		  </li>
+		  
+		  
+		  
+		  
+		  
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Loggers</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <SWCPCivilian_logger>1</SWCPCivilian_logger>
+			  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">2</KotORDroidGood_GE3LD>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Farmers</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <SWCPCivilian_farmer>1</SWCPCivilian_farmer>
+			  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">2</KotORDroidGood_GE3LD>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Miners</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <SWCPCivilian_miner>1</SWCPCivilian_miner>
+			  <KotORDroidBad_KM1MD MayRequire="guy762.KotORDroids">2</KotORDroidBad_KM1MD>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Hunters</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <SWCPCivilian_hunter>10</SWCPCivilian_hunter>
+			  <KotORDroidBad_KX12UPD MayRequire="guy762.KotORDroids">5</KotORDroidBad_KX12UPD>
+			</options>
+		  </li>
+		</pawnGroupMakers>
+		
+	  </FactionDef>
+
+</Defs>

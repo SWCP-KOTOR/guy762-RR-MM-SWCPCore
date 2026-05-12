@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="TechprofSubpersonaCore"]/tradeability</xpath>
+			<value>
+				<tradeability>All</tradeability>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="TechprofSubpersonaCore"]/statBases/MarketValue</xpath>
+			<value>
+				<MarketValue>10000</MarketValue>
+			</value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	
+	
+	
+	
+
+
+</Patch>

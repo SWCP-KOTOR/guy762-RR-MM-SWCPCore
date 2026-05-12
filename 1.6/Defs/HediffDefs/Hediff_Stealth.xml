@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" Name="guy762_StealthDeactivate_Base" Abstract="True">
+		<label>deactivate stealth field</label>
+		<description>Deactivate an equipped stealth field generator.</description>
+		<iconPath>UI/KotOR_Icon_Stealth_off</iconPath>
+		<!--hotKey>Misc12</hotKey-->
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <range>-1</range>
+		  <drawAimPie>false</drawAimPie>
+		</verbProperties>
+	</AbilityDef>
+	 
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" Name="guy762_StealthField_Base" Abstract="True">
+    <label>stealth field</label>
+    <description>A camouflage field that hides the user. Combat is disabled while this is active, but performing mundane tasks are not. Movement speed is also reduced while active.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Invisibility">
+        <visibleToPlayer>true</visibleToPlayer>
+      </li>
+	  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+	  <li MayRequire="smartkar.athenaframework" Class="AthenaFramework.HediffCompProperties_DisableOnDamage">
+		<minDamage>0.1</minDamage>
+	  </li>
+    </comps>
+	<stages>
+	  <li>
+        <label>active</label>
+		<minSeverity>0</minSeverity>
+        <becomeVisible>true</becomeVisible>
+		<disabledWorkTags>Violent</disabledWorkTags>
+		<statFactors>
+			<MoveSpeed>0.5</MoveSpeed>
+		</statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+	
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
+		<defName>guy762_StealthDeactivate</defName>
+		<comps>
+		  <li Class="CompProperties_AbilityRemoveHediff">
+			<hediffDef>guy762_StealthField</hediffDef>
+			<applyToSelf>true</applyToSelf>
+			<applyToTarget>false</applyToTarget>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<sound>kotorsound_cloak</sound>
+		  </li>
+		</comps>
+	</AbilityDef>
+  
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
+    <defName>guy762_StealthField</defName>
+    <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+	  <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>guy762_StealthDeactivate</abilityDef>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>1800</disappearsAfterTicks> <!-- 30 seconds -->
+		<showRemainingTime>True</showRemainingTime>
+	  </li>
+    </comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+
+	
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
+		<defName>guy762_StealthDeactivate_sixty</defName>
+		<comps>
+		  <li Class="CompProperties_AbilityRemoveHediff">
+			<hediffDef>guy762_StealthField_sixty</hediffDef>
+			<applyToSelf>true</applyToSelf>
+			<applyToTarget>false</applyToTarget>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<sound>kotorsound_cloak</sound>
+		  </li>
+		</comps>
+	</AbilityDef>
+  
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
+    <defName>guy762_StealthField_sixty</defName>
+    <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+	  <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>guy762_StealthDeactivate_sixty</abilityDef>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>3600</disappearsAfterTicks> <!-- 60 seconds -->
+		<showRemainingTime>True</showRemainingTime>
+	  </li>
+    </comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+
+	
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
+		<defName>guy762_StealthDeactivate_twomin</defName>
+		<comps>
+		  <li Class="CompProperties_AbilityRemoveHediff">
+			<hediffDef>guy762_StealthField_twomin</hediffDef>
+			<applyToSelf>true</applyToSelf>
+			<applyToTarget>false</applyToTarget>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<sound>kotorsound_cloak</sound>
+		  </li>
+		</comps>
+	</AbilityDef>
+  
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
+    <defName>guy762_StealthField_twomin</defName>
+    <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+	  <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>guy762_StealthDeactivate_twomin</abilityDef>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>7200</disappearsAfterTicks> <!-- 2 minutes -->
+		<showRemainingTime>True</showRemainingTime>
+	  </li>
+    </comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+
+	
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
+		<defName>guy762_StealthDeactivate_threemin</defName>
+		<comps>
+		  <li Class="CompProperties_AbilityRemoveHediff">
+			<hediffDef>guy762_StealthField_threemin</hediffDef>
+			<applyToSelf>true</applyToSelf>
+			<applyToTarget>false</applyToTarget>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<sound>kotorsound_cloak</sound>
+		  </li>
+		</comps>
+	</AbilityDef>
+  
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
+    <defName>guy762_StealthField_threemin</defName>
+    <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+	  <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>guy762_StealthDeactivate_threemin</abilityDef>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>10800</disappearsAfterTicks> <!-- 3 minutes -->
+		<showRemainingTime>True</showRemainingTime>
+	  </li>
+    </comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+	
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
+		<defName>guy762_StealthDeactivate_fourmin</defName>
+		<comps>
+		  <li Class="CompProperties_AbilityRemoveHediff">
+			<hediffDef>guy762_StealthField_fourmin</hediffDef>
+			<applyToSelf>true</applyToSelf>
+			<applyToTarget>false</applyToTarget>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<sound>kotorsound_cloak</sound>
+		  </li>
+		</comps>
+	</AbilityDef>
+  
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
+    <defName>guy762_StealthField_fourmin</defName>
+    <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+	  <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>guy762_StealthDeactivate_fourmin</abilityDef>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>14400</disappearsAfterTicks> <!-- 4 minutes -->
+		<showRemainingTime>True</showRemainingTime>
+	  </li>
+    </comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
+  </HediffDef>
+
+</Defs>

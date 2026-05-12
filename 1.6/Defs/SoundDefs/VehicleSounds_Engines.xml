@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_engineTIE</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EGL_TIE_FIGHTER_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>	
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>  
+				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_XWing</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/eng_xwing_med_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>  				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_YWing</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/eng_ywing_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>55</min>        
+				<max>55</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>  				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_TIE</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/eng_tieFighter_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>  				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_TIEBomber</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/eng_tieBomber_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange> 				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_starviper</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/Egl_star_viper_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange> 				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_YTfreighter</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EGL_FALCON_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange> 
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_YWingAlt</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EGL_Y_WING_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>20</min>        
+				<max>20</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange> 
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_UWing</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EGL_X_WING_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>15</min>        
+				<max>15</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange> 
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_lancet</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/Egl_lancet_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange> 
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_snowspeeder</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/eng_snowspeeder_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_houndstooth</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/Egl_hounds_tooth_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_roaringzoomer</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/Zoomer_engine_lo</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>25</min>        
+				<max>25</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_LAATi</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/eng_repGunship_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_sigil</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/veh_sig_engine_l</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_n1naboo</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/veh_nsf_engine_n</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_freefall</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/freefall_engine</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_skiff</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EaWX/Personnel_Skiff_Loop</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>30</min>        
+				<max>30</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_TIEAggressor</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EaWX/TIE_Aggressor_Engine_Loop</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_JKShuttle</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/shuttle_hover_8</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>20</min>
+				<max>20</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_RavensClaw</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/raven_hover_9</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>25</min>
+				<max>25</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_Z95headhunter</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EaWX/Z95_Engine_Loop</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>50</min>
+				<max>50</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_havoc</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/hvc_eng_slow_lo</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>20</min>        
+				<max>20</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_zoomer</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/veh_zoomer_slow_</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>30</min>        
+				<max>30</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_firespray</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/veh_slave1_engin</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>30</min>        
+				<max>30</max>
+				</volumeRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>200</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	
+
+</Defs>

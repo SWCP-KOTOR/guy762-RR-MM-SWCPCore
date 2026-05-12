@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- This Rulepackdef is what finds the txt files to be used in the later rulepacks -->
+    <RulePackDef>
+        <defName>guy762_SWNameRules</defName>
+        <rulePack>
+            <rulesFiles>
+                <li>SW_glupshitto->Names/SWnames_glupshitto</li>
+                <li>SW_midinitial->Names/SWnames_initial</li>
+                <li>SWBF2_firstName->Names/firstnames_BF2rebel</li>
+                <li>SWBF2_lastName->Names/lastnames_BF2rebel</li> <!--pulled from the classic battlefront and EAfront series plus star wars squadrons -->
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- This is the item that goes into the racedef's namegenerator
+        Example - <nameGenerator>ATR_AndroidMaleNames</nameGenerator> -->
+    <RulePackDef>
+        <defName>guy762_PawnNamer_Bf2</defName>
+        <include>
+            <li>guy762_SWNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[SWBF2_firstName] [SWBF2_lastName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_PawnNamer_GlupShitto</defName>
+        <include>
+            <li>guy762_SWNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=4)->[SW_glupshitto] [SW_glupshitto]</li>
+                <li>r_name(p=1)->[SW_glupshitto] [SW_midinitial] [SW_glupshitto]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+
+
+    
+
+</Defs>

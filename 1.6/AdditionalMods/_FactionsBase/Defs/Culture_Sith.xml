@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CultureDef>
+		<defName>guy762_culture_sith</defName>
+		<label>dark side</label>
+		<description>An esoteric occult culture originating from Jedi who fell to the dark side during the Exar Kun war, as well as many smaller cults like the Krath and the Mecrosa Order.</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">guy762_IdeoNameMaker_sith</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">guy762_DeityNameMaker_sith</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">guy762_DeityTypeMaker_sith</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">guy762_LeaderTitleMaker_sith</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>World/ExarSith</iconPath>
+		<!--iconColor>(0.8, 0.8, 0.8)</iconColor-->
+		<thingStyleCategories>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<category>Morbid</category>
+			<priority>2</priority>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<category>VME_Esotericism</category>
+			<priority>1</priority>
+		  </li>
+		</thingStyleCategories>
+		<styleItemTags>
+			  <li>
+				<tag>Soldier</tag>
+				<baseWeight>2</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>Bald</tag>
+				<baseWeight>0.5</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  
+			  <li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  
+			  <li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>TattooFaceCannibal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>TattooBodyCannibal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  
+			  <!--li>
+				<tag>guy762_SWTattoo_Mirialan</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>guy762_SWTattoo_Togruta</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li>
+			  <li>
+				<tag>guy762_SWTattoo_Pantoran</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			  </li-->
+		</styleItemTags>
+	</CultureDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>guy762_IdeoNameMaker_sith</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_ideoName->Brotherhood of the Sith</li>
+				<li>r_ideoName->New Sith Order</li>
+				<li>r_ideoName->Dark Covenant</li>
+				<li>r_ideoName->Brotherhood of Darkness</li>
+				<li>r_ideoName->Dark Side Elite</li>
+				<li>r_ideoAdjective->sith</li>
+				<li>r_ideoAdjective->dark</li>
+				<li>r_memberName->sith</li>
+				<li>r_memberName->dark sider</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>guy762_DeityNameMaker_sith</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName(p=4)->Marka Ragnos</li>
+				<li>r_deityName(p=4)->Freedon Nadd</li>
+				<li>r_deityName(p=4)->Naga Sadow</li>
+				<li>r_deityName(p=2)->Ludo Kressh</li>
+				<li>r_deityName(p=2)->Tulak Hord</li>
+				<li>r_deityName(p=2)->Ajunta Pall</li>
+				<li>r_deityName->XoXaan</li>
+				<li>r_deityName->Darth Andeddu</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>guy762_DeityTypeMaker_sith</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->dark lord of the Sith</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>guy762_LeaderTitleMaker_sith</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle->dark lord</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORDart_stun</defName>
+		<label>paralysis dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORDart_toxic</defName>
+		<label>toxic dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>BulletToxic</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORDart_saber</defName>
+		<label>Saber-dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_PoisonDamage_saber</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORDart_throwingknife</defName>
+		<label>throwing knife</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/throwingknife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORSlugBolt</defName>
+		<label>slug bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/slug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>100</speed>
+			<extraDamages>
+				<li>
+					<def>guy762_RangedDamage_energy</def>
+					<amount>8</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORRailgun</defName>
+		<label>rail shot</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/gauss</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>100</speed>
+			<explosionRadius>0.25</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>guy762_RangedDamage_AntiVehicleBullet</def>
+					<amount>16</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORRocket_micro</defName>
+		<label>micro rocket</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/rocket_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>25</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>KotORRocket</defName>
+		<label>rocket</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/rocket_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>25</speed>
+			<explosionRadius>1</explosionRadius>
+			<soundAmbient>kotorsound_rocketflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+
+
+
+</Defs>

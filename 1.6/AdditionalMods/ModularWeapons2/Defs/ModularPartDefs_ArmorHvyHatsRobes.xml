@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!-- robe underlays -->
+	
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_regen">
+		<defName>guy762_KotORpartUnderlay_regen_robe</defName>
+		<attachedTo>guy762_KotORMount_underlay_robe</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_strength">
+		<defName>guy762_KotORpartUnderlay_strength_robe</defName>
+		<attachedTo>guy762_KotORMount_underlay_robe</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_environment">
+		<defName>guy762_KotORpartUnderlay_environment_robe</defName>
+		<attachedTo>guy762_KotORMount_underlay_robe</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartUnderlay_forceweave_robe" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartUnderlay_forceweave_robe</defName>
+		<label>Forceweave underlay</label>
+		<labelShort>Forceweave underlay</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_underlay_robe</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>2.5</Mass>
+			<EquipDelay>2</EquipDelay>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<!-- <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.1</SWPotF_ForcePoints_Recovery> -->
+			<Force_FPRecovery MayRequire="lee.theforce.standalone">0.1</Force_FPRecovery>
+			<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_underlayitem_force>1</guy762_underlayitem_force>
+		</costList>
+		<researchPrerequisites>
+		  <li>guy762_ResearchKotOR_advupgrade</li>
+		</researchPrerequisites>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- helmet underlays -->
+	
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_regen">
+		<defName>guy762_KotORpartUnderlay_regen_hat</defName>
+		<attachedTo>guy762_KotORMount_underlay_hat</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_armorweave">
+		<defName>guy762_KotORpartUnderlay_armorweave_hat</defName>
+		<attachedTo>guy762_KotORMount_underlay_hat</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_durasteel">
+		<defName>guy762_KotORpartUnderlay_durasteel_hat</defName>
+		<attachedTo>guy762_KotORMount_underlay_hat</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_environment">
+		<defName>guy762_KotORpartUnderlay_environment_hat</defName>
+		<attachedTo>guy762_KotORMount_underlay_hat</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	
+	
+	
+	<!-- heavy underlays -->
+	
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_regen">
+		<defName>guy762_KotORpartUnderlay_regen_hvy</defName>
+		<attachedTo>guy762_KotORMount_underlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_strength">
+		<defName>guy762_KotORpartUnderlay_strength_hvy</defName>
+		<attachedTo>guy762_KotORMount_underlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_armorweave">
+		<defName>guy762_KotORpartUnderlay_armorweave_hvy</defName>
+		<attachedTo>guy762_KotORMount_underlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_durasteel">
+		<defName>guy762_KotORpartUnderlay_durasteel_hvy</defName>
+		<attachedTo>guy762_KotORMount_underlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartUnderlay_environment">
+		<defName>guy762_KotORpartUnderlay_environment_hvy</defName>
+		<attachedTo>guy762_KotORMount_underlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartUnderlay_flex_hvy" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartUnderlay_flex_hvy</defName>
+		<label>flexible underlay</label>
+		<labelShort>flex underlay</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_underlay_hvy</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>2.5</Mass>
+			<EquipDelay>2</EquipDelay>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
+			<MoveSpeed>0.1</MoveSpeed>
+			
+			<MeleeCooldownFactor>-0.2</MeleeCooldownFactor>
+			<RangedCooldownFactor>-0.2</RangedCooldownFactor>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_underlayitem_flex>1</guy762_underlayitem_flex>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+
+	
+	<!-- heavy overlays -->
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" ParentName="guy762_KotORpartOverlay_pockets">
+		<defName>guy762_KotORpartOverlay_pockets_hvy</defName>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartOverlay_heat">
+		<defName>guy762_KotORpartOverlay_heat_hvy</defName>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartOverlay_energy">
+		<defName>guy762_KotORpartOverlay_energy_hvy</defName>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartOverlay_ballistic">
+		<defName>guy762_KotORpartOverlay_ballistic_hvy</defName>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartOverlay_armorply">
+		<defName>guy762_KotORpartOverlay_armorply_hvy</defName>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_ablative_hvy" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_ablative_hvy</defName>
+		<label>ablative plating</label>
+		<labelShort>ablative plating</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>6</Mass>
+			<EquipDelay>6</EquipDelay>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_overlayitem_ablative>1</guy762_overlayitem_ablative>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_bonded_hvy" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_bonded_hvy</defName>
+		<label>bonded plates</label>
+		<labelShort>bonded plates</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>6</Mass>
+			<EquipDelay>6</EquipDelay>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_overlayitem_bonded>1</guy762_overlayitem_bonded>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_hvybonded_hvy" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_hvybonded_hvy</defName>
+		<label>heavy bonded plates</label>
+		<labelShort>heavy bonded plates</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>8</Mass>
+			<EquipDelay>8</EquipDelay>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+			<MoveSpeed>-0.3</MoveSpeed>
+			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_overlayitem_hvybonded>1</guy762_overlayitem_hvybonded>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_beskar_hvy" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_beskar_hvy</defName>
+		<label>Beskar plating</label>
+		<labelShort>Beskar plating</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>8</Mass>
+			<EquipDelay>8</EquipDelay>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+			<MoveSpeed>-0.3</MoveSpeed>
+			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_overlayitem_beskar>1</guy762_overlayitem_beskar>
+		</costList>
+		<researchPrerequisites>
+		  <li>guy762_ResearchKotOR_advupgrade</li>
+		</researchPrerequisites>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+</Defs>

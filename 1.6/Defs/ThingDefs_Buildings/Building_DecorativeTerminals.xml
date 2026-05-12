@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Holo Terminal ================================================================ -->
+	<ThingDef Name="guy762_DecorativeTerminalBase" ParentName="BuildingBase" Abstract="True">
+		<description>.</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>10000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>14</Mass>
+			<Flammability>1.0</Flammability>
+			<JoyGainFactor>0.5</JoyGainFactor>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<pathCost>42</pathCost>
+		<passability>PassThroughOnly</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<researchPrerequisites>
+			<li>KOTOR_Research_HoloRec</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<!--  ================================================================ -->
+	<ThingDef ParentName="guy762_DecorativeTerminalBase">
+		<defName>guy762_decor_BigRebelScreen</defName>
+		<label>large display screen (green)</label>
+		<graphicData>
+			<texPath>Buildings/DecorativeTerminals/bigrebelscreen_green</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+		</graphicData>
+		
+		<size>(2,1)</size>
+		<fillPercent>0.30</fillPercent>
+		
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>-1~1</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>guy762_Effecter_UsingGreenHoloscreen</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+			<!-- <li>PlaceWorker_ShowFacilitiesConnections</li> -->
+		</placeWorkers>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>5</basePowerConsumption>
+				<soundAmbientPowered>kotorsound_building_telemetry_Purr</soundAmbientPowered>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(45,250,45,0)</glowColor>
+			</li>
+		  <!-- <li Class="CompProperties_Facility"> -->
+			<!-- <statOffsets> -->
+			  <!-- <RangedWeapon_DamageMultiplier>0.06</RangedWeapon_DamageMultiplier> -->
+			<!-- </statOffsets> -->
+			<!-- <maxSimultaneous>2</maxSimultaneous> -->
+		  <!-- </li> -->
+		</comps>
+		
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_DecorativeTerminalBase">
+		<defName>guy762_decor_TowerTerminalA</defName>
+		<label>tower terminal</label>
+		<graphicData>
+			<texPath>Buildings/DecorativeTerminals/JKtowerconsole</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.25)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.25)</drawOffsetNorth>
+			
+			<drawOffsetEast>(0,0,0.25)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.25)</drawOffsetWest>
+		</graphicData>
+		
+		<size>(1,1)</size>
+		<fillPercent>0.85</fillPercent>
+		
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>guy762_Effecter_UsingConsole</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+			<!-- <li>PlaceWorker_ShowFacilitiesConnections</li> -->
+		</placeWorkers>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(45,250,45,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>5</basePowerConsumption>
+				<soundAmbientPowered>kotorsound_building_telemetry_WarbleWithSoftBeep</soundAmbientPowered>
+			</li>
+		  <!-- <li Class="CompProperties_Facility"> -->
+			<!-- <statOffsets> -->
+			  <!-- <RangedWeapon_DamageMultiplier>0.06</RangedWeapon_DamageMultiplier> -->
+			<!-- </statOffsets> -->
+			<!-- <maxSimultaneous>2</maxSimultaneous> -->
+		  <!-- </li> -->
+		</comps>
+		
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_DecorativeTerminalBase">
+		<defName>guy762_decor_StandingTerminalA</defName>
+		<label>standing terminal</label>
+		<graphicData>
+			<texPath>Buildings/DecorativeTerminals/detentionconsole</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.25)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.25)</drawOffsetNorth>
+			
+			<drawOffsetEast>(0,0,0.25)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.25)</drawOffsetWest>
+		</graphicData>
+		
+		<size>(1,1)</size>
+		<fillPercent>0.25</fillPercent>
+		
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>guy762_Effecter_UsingSmallTerminal</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+			<!-- <li>PlaceWorker_ShowFacilitiesConnections</li> -->
+		</placeWorkers>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(130,230,245,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>5</basePowerConsumption>
+				<soundAmbientPowered>kotorsound_building_telemetry_VerySoftWarble</soundAmbientPowered>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	
+	
+	
+	<JoyGiverDef>
+		<defName>guy762_JoyGiver_WatchDecorativeTerminal</defName>
+		<giverClass>JoyGiver_WatchBuilding</giverClass>
+		<baseChance>1</baseChance>
+		<canDoWhileInBed>false</canDoWhileInBed>
+		<thingDefs>
+			<li>guy762_decor_BigRebelScreen</li>
+			<li>guy762_decor_TowerTerminalA</li>
+			<li>guy762_decor_StandingTerminalA</li>
+		</thingDefs>
+		<jobDef>guy762_Job_WatchTerminal</jobDef>
+		<joyKind>Television</joyKind>
+		<desireSit>false</desireSit>
+		<requiredCapacities>
+			<li>Sight</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+	
+	
+	<JobDef>
+		<defName>guy762_Job_WatchTerminal</defName>
+		<driverClass>JobDriver_WatchTelevision</driverClass>
+		<reportString>viewing monitor.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>8</joyMaxParticipants>
+		<joyKind>Television</joyKind>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+		<isCrawlingIfDowned>false</isCrawlingIfDowned>
+	</JobDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<EffecterDef>
+		<defName>guy762_Effecter_UsingGreenHoloscreen</defName>
+		<children>
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>Television_Ambience</soundDef> -->
+		  <!-- </li> -->
+		  <li>
+			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+			<soundDef>kotorsound_HologramSFXMix</soundDef>
+			<intermittentSoundInterval><min>250</min><max>1000</max></intermittentSoundInterval>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+			<fleckDef>PlainFlash</fleckDef>
+			<spawnLocType>RandomCellOnTarget</spawnLocType>
+			<chancePerTick>0.05</chancePerTick>
+			<color>(0,1,0,0.1)</color>
+			<scale>1.5~3</scale>
+		  </li>
+		</children>
+	</EffecterDef>
+	
+	
+	
+	
+	<EffecterDef>
+		<defName>guy762_Effecter_UsingConsole</defName>
+		<children>
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>Television_Ambience</soundDef> -->
+		  <!-- </li> -->
+		  <li>
+			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+			<soundDef>kotorsound_BeepsAndBoopsMix</soundDef>
+			<intermittentSoundInterval><min>250</min><max>1000</max></intermittentSoundInterval>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+			<fleckDef>PlainFlash</fleckDef>
+			<spawnLocType>RandomCellOnTarget</spawnLocType>
+			<chancePerTick>0.05</chancePerTick>
+			<color>(1,1,1,0.1)</color>
+			<scale>1.5~3</scale>
+		  </li>
+		</children>
+	</EffecterDef>
+	
+	
+	
+	<EffecterDef>
+		<defName>guy762_Effecter_UsingSmallTerminal</defName>
+		<children>
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>Television_Ambience</soundDef> -->
+		  <!-- </li> -->
+		  <li>
+			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+			<soundDef>kotorsound_KotORUIBoopsMix</soundDef>
+			<intermittentSoundInterval><min>250</min><max>1000</max></intermittentSoundInterval>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+			<fleckDef>PlainFlash</fleckDef>
+			<spawnLocType>RandomCellOnTarget</spawnLocType>
+			<chancePerTick>0.05</chancePerTick>
+			<color>(1,1,1,0.1)</color>
+			<scale>1.5~3</scale>
+		  </li>
+		</children>
+	</EffecterDef>
+
+	
+</Defs>

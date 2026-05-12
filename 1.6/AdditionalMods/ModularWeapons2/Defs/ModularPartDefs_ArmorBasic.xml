@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	
+	
+	<!-- underlays -->
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartUnderlay_regen" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartUnderlay_regen</defName>
+		<label>Biorestorative underlay</label>
+		<labelShort>Biorestorative underlay</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_underlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>2.5</Mass>
+			<EquipDelay>2</EquipDelay>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<InjuryHealingFactor>0.3</InjuryHealingFactor>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_underlayitem_regen>1</guy762_underlayitem_regen>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartUnderlay_strength" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartUnderlay_strength</defName>
+		<label>strengthening underlay</label>
+		<labelShort>strengthening underlay</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_underlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>2.5</Mass>
+			<EquipDelay>2</EquipDelay>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<PainShockThreshold>0.1</PainShockThreshold>
+			<MeleeDamageFactor>0.2</MeleeDamageFactor>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_underlayitem_strength>1</guy762_underlayitem_strength>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartUnderlay_armorweave" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartUnderlay_armorweave</defName>
+		<label>Armorweave underlay</label>
+		<labelShort>Armorweave underlay</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_underlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>2.5</Mass>
+			<EquipDelay>2</EquipDelay>
+			
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+		  </statOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_underlayitem_armorweave>1</guy762_underlayitem_armorweave>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartUnderlay_durasteel" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartUnderlay_durasteel</defName>
+		<label>Durasteel underlay</label>
+		<labelShort>Durasteel underlay</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_underlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>5</Mass>
+			<EquipDelay>4</EquipDelay>
+			
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
+			<MoveSpeed>-0.2</MoveSpeed>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_underlayitem_durasteel>1</guy762_underlayitem_durasteel>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartUnderlay_environment" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartUnderlay_environment</defName>
+		<label>Environment underlay</label>
+		<labelShort>Environment underlay</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_underlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>5</Mass>
+			<EquipDelay>4</EquipDelay>
+			
+			<Insulation_Cold>50</Insulation_Cold>
+			<Insulation_Heat>50</Insulation_Heat>
+		  </statOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_underlayitem_environment>1</guy762_underlayitem_environment>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- overlays -->
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Name="guy762_KotORpartOverlay_pockets" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_pockets</defName>
+		<label>integrated pockets</label>
+		<labelShort>integrated pockets</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay</attachedTo>
+		<effects>
+		
+		  <equippedStatOffsets>
+			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <KOTOR_FabricArmorweave>40</KOTOR_FabricArmorweave>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_heat" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_heat</defName>
+		<label>heat shielding</label>
+		<labelShort>heat shielding</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>4</Mass>
+			<EquipDelay>4</EquipDelay>
+			
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<Insulation_Heat>25</Insulation_Heat>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_overlayitem_heat>1</guy762_overlayitem_heat>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_energy" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_energy</defName>
+		<label>energy shielding</label>
+		<labelShort>energy shielding</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>4</Mass>
+			<EquipDelay>4</EquipDelay>
+			
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		  </statOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_overlayitem_energy>1</guy762_overlayitem_energy>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_ballistic" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_ballistic</defName>
+		<label>ballistic shielding</label>
+		<labelShort>ballistic shielding</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>4</Mass>
+			<EquipDelay>4</EquipDelay>
+			
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+		  </statOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_overlayitem_ballistic>1</guy762_overlayitem_ballistic>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_armorply" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartOverlay_armorply</defName>
+		<label>Armorply plating</label>
+		<labelShort>Armorply plating</labelShort>
+		<description>.</description>
+		<attachedTo>guy762_KotORMount_overlay</attachedTo>
+		<effects>
+		
+		  <statOffsets>
+			<Mass>4</Mass>
+			<EquipDelay>4</EquipDelay>
+		  </statOffsets>
+		  <equippedStatOffsets>
+			<HuntingStealth>0.6</HuntingStealth>
+			<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
+			
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
+			<MoveSpeed>0.1</MoveSpeed>
+		  </equippedStatOffsets>
+		  
+		</effects>
+		<costList>
+		  <guy762_overlayitem_armorply>1</guy762_overlayitem_armorply>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+</Defs>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+		<!--armor-->	
+		
+	
+	
+	
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_Hat_gamorrean</defName>
+		<label>hood, leather</label>
+		<description>This is a simple leather hood used by many Kajidic enforcers.</description>
+		<graphicData>
+		  <texPath>SWApparel/Undersuits/gamorrean/hat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>75</MarketValue>
+		  <MaxHitPoints>115</MaxHitPoints>
+		  <Mass>0.5</Mass>
+		  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_hutts</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+		  <li>Leathery</li>
+		</stuffCategories>
+		
+		<apparel>
+		  <wornGraphicPath>SWApparel/Undersuits/gamorrean/hat</wornGraphicPath>
+		  <renderSkipFlags>
+			<li>Hair</li>
+		  </renderSkipFlags>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>SaV_outfit_gamorrean</li>
+			<li>SaV_apparel_huttgoon</li>
+			<li>SaV_apparel_leatherhood</li>
+			<li>SWCPSpecificApparelItem_GamorreanHood</li>
+		  </tags>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORAntique</li>
+			<li>guy762TT_KotORArmor_exotic</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(130,75,50)</only> <!-- copper -->
+				</li>
+			</options>
+		</colorGenerator>
+	  </ThingDef>
+	  
+	  
+	<ThingDef ParentName="guy762_clothingbase">
+		<defName>guy762_Clothing_gamorrean</defName>
+		<label>Gamorrean leathers</label>
+		<description>These simple garments do not protect the modesty of the wearer, but they do offer a reasonable level of protection according to the leather hide it is fashioned out of.</description>
+		<graphicData>
+		  <texPath>SWApparel/Undersuits/gamorrean/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(50,50,50)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<MarketValue>200</MarketValue>
+			<MaxHitPoints>225</MaxHitPoints>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_hutts</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+		  <li>Leathery</li>
+		</stuffCategories>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>SaV_outfit_gamorrean</li>
+			<li>SWCPSpecificApparelItem_GamorreanLeathers</li>
+		  </tags>
+		  <bodyPartGroups Inherit="False">
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Neck</li>
+			<li>Hands</li>
+			<li>Feet</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>SWApparel/Undersuits/gamorrean/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/gamorrean/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>50,50,50</color> <!-- black -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORAntique</li>
+			<li>guy762TT_KotORArmor_exotic</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(130,75,50)</only> <!-- copper -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	<ThingDef ParentName="KotORArmorModdable_soft">
+		<defName>guy762_Robes_gand</defName>
+		<label>robes, armored</label>
+		<description>While bulky and restrictive, these robes provide solid full-body protection that most other light armors can't offer. The high degree of modularity allows it to compete with even medium armors, and as such, robes like this are favored by many martial cultures like the Gand Findsmen or the Kaleesh.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)\n- Armor Overlay</description>
+		<graphicData>
+		  <texPath>SWApparel/Robes/gand/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>10</Mass>
+			<MarketValue>4000</MarketValue>
+			<MaxHitPoints>350</MaxHitPoints>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
+			
+			<EquipDelay>9</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<!--PsychicSensitivity>0.1</PsychicSensitivity>
+			<HuntingStealth>0.2</HuntingStealth
+			<SWCPStat_StealthGearOffset>0.2</SWCPStat_StealthGearOffset>-->
+		</equippedStatOffsets>
+		<apparel>
+			<layers>
+				<li>Middle</li>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>SaV_apparel_gand</li>
+				<li>SaV_apparel_kaleesh</li>
+				<li>SWCPSpecificApparelItem_GandRobes</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Robes/gand/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORAntique</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(175,120,55)</only>  <!--faint orange-->
+				</li>
+				<!--<li>
+					<weight>15</weight>
+					<only>(140,75,70)</only>       kaleesh's sand red
+				</li>-->
+				<li>
+					<weight>15</weight>
+					<only>(120,125,110)</only> <!-- drab green -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(90,85,65)</only> <!-- grease green -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(160,150,105)</only> <!-- dijon yellow -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(190,155,120)</only> <!-- beige -->
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
+				<baseGraphicData>
+					<texPath>SWApparel/Robes/gand/Apparel</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</baseGraphicData>
+				<partsMounts>
+				  <li>
+					<mountDef>guy762_KotORMount_underlay_robe</mountDef>
+					<offset>(0,0)</offset>
+					<layerOrder>1</layerOrder>
+				  </li>
+				  <li>
+					<mountDef>guy762_KotORMount_overlay</mountDef>
+					<offset>(0,0)</offset>
+					<layerOrder>1</layerOrder>
+				  </li>
+				</partsMounts>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	  
+	  
+	  <ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_JawaHood</defName>
+		<label>hood, heavy</label>
+		<description>A thick hood for keeping safe from harsh weather conditions.</description>
+		<graphicData>
+		  <texPath>SWApparel/Robes/jawa/hood</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>20</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.5</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  
+		  <Insulation_Cold>10</Insulation_Cold>
+		  <Insulation_Heat>10</Insulation_Heat>
+		  
+		  <EquipDelay>0.25</EquipDelay>
+		  <WorkToMake>5000</WorkToMake>
+		</statBases>
+		
+		<costList>
+			<Cloth>50</Cloth>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_jawa</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<apparel>
+		  <drawData>
+			<defaultData>
+				<layer>71</layer>
+			</defaultData>
+			<dataNorth>
+			  <layer>90</layer>
+			</dataNorth>
+		  </drawData>
+		  <renderSkipFlags>
+			<li>Hair</li>
+			<li>Beard</li>
+		  </renderSkipFlags>
+		  <wornGraphicPath>SWApparel/Robes/jawa/hood</wornGraphicPath>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+			<li>Mouth</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>SaV_apparel_jawa</li>
+			<li>SWCPSpecificApparelItem_KotORJawaHood</li>
+		  </tags>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORAntique</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(100,65,45)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	  </ThingDef>
+	  
+	  
+	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	
+  
+  
+  
+
+</Defs>

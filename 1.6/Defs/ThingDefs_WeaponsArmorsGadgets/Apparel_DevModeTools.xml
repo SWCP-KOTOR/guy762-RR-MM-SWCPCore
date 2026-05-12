@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	  <ThingDef ParentName="guy762_nocraftclothingbase">
+		<defName>_guy762_DevTool_BodyHider</defName>
+		<label>the magic cloak of body hiding</label>
+		<description>This is a clothing item that hides a pawn's body, useful for getting clean in-game renders of a pawn's head.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/poncho/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>9999999999</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers Inherit="False">
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>KotORAccessory_debug</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			
+			<renderSkipFlags>
+				<li>Body</li>
+		    </renderSkipFlags>
+			
+			
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(250,250,250)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	  </ThingDef>
+	  
+	  
+	  <ThingDef ParentName="guy762_HatNoCraftBase">
+		<defName>_guy762_DevTool_HeadHider</defName>
+		<label>the magic cloak of head hiding</label>
+		<description>This is a clothing item that hides a pawn's head, useful for getting clean in-game renders of a pawn's body.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jedi/cloak_1/hood</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>99999999999</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.05</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <Insulation_Cold>5</Insulation_Cold>
+		  <Insulation_Heat>5</Insulation_Heat>
+		  <EquipDelay>0.125</EquipDelay>
+		</statBases>
+
+		<apparel>
+		  <drawData>
+			<defaultData>
+				<layer>71</layer>
+			</defaultData>
+			<dataNorth>
+			  <layer>90</layer>
+			</dataNorth>
+		  </drawData>
+		  <wornGraphicPath>SWApparel/Jedi/cloak_1/hood</wornGraphicPath>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>KotORAccessory_debug</li>
+		  </tags>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		  
+		  <renderSkipFlags>
+			<li>Head</li>
+		  </renderSkipFlags>
+		  
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>95</weight>
+					<only>(250,250,250)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+</Defs>
