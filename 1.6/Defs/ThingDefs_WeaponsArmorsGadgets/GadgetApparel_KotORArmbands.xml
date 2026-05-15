@@ -44,6 +44,10 @@
 				<li>KotORHeroAccessories_bastila</li>
 				<li>SWCPSpecificGadgetItem_JediArmband</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -94,6 +98,10 @@
 				<li>KotOREquipment_moncal</li>
 				<li>SWCPSpecificGadgetItem_MonCalamariArmband</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
@@ -110,56 +118,60 @@
   
   
   
-  <ThingDef ParentName="guy762_UtilityItemBase">
-    <defName>guy762_armband_cortosis</defName>
-    <label>cortosis gauntlet</label>
-    <description>These heavy armored gauntlets are capable of temporarily disabling a Lightsaber upon contact with one, provided the wearer is dexterous enough to block an incoming blow with it.</description>
-    <graphicData>
-      <texPath>Items/armband_cortosis</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<statBases>
-      <Mass>5</Mass>
-	  <MarketValue>10440</MarketValue>
-	  <MaxHitPoints>175</MaxHitPoints>
-	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-	  <ArmorRating_Heat>999</ArmorRating_Heat> <!-- maxed out for maximum block chance -->
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-    <techLevel>Spacer</techLevel>
-	
-    <apparel>
-		<countsAsClothingForNudity>false</countsAsClothingForNudity>
-		<careIfWornByCorpse>false</careIfWornByCorpse>
-		<careIfDamaged>false</careIfDamaged>
-		<ignoredByNonViolent>true</ignoredByNonViolent>
-		<wearPerDay>0</wearPerDay>
-		<bodyPartGroups>
-			<li>Arms</li>
-			<!-- <li>Hands</li> -->
-		</bodyPartGroups>
-		<layers>
-			<li>Belt</li>
-		</layers>  
-		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	<ThingDef ParentName="guy762_UtilityItemBase">
+		<defName>guy762_armband_cortosis</defName>
+		<label>cortosis gauntlet</label>
+		<description>These heavy armored gauntlets are capable of temporarily disabling a Lightsaber upon contact with one, provided the wearer is dexterous enough to block an incoming blow with it.</description>
+		<graphicData>
+		  <texPath>Items/armband_cortosis</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>5</Mass>
+		  <MarketValue>10440</MarketValue>
+		  <MaxHitPoints>175</MaxHitPoints>
+		  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		  <ArmorRating_Heat>999</ArmorRating_Heat> <!-- maxed out for maximum block chance -->
+		  <EquipDelay>3</EquipDelay>
+		</statBases>
+		<techLevel>Spacer</techLevel>
 		
-		<tags>
-			<li>SWCPSpecificGadgetItem_CortosisArmband</li>
-		</tags>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotORElite</li>
-		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
-		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
-    </tradeTags>
-	
-	<modExtensions>
-		<li Class="Lightsaber.ModExtension_Conductive" MayRequire="lee.theforce.lightsaber">
-			<shortCircuitChance>1</shortCircuitChance>
-		</li>
-	</modExtensions>
-  </ThingDef>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<ignoredByNonViolent>true</ignoredByNonViolent>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Arms</li>
+				<!-- <li>Hands</li> -->
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>  
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<tags>
+				<li>SWCPSpecificGadgetItem_CortosisArmband</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORElite</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+			<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
+		</tradeTags>
+		
+		<modExtensions>
+			<li Class="Lightsaber.ModExtension_Conductive" MayRequire="lee.theforce.lightsaber">
+				<shortCircuitChance>1</shortCircuitChance>
+			</li>
+		</modExtensions>
+	</ThingDef>
   
   
   

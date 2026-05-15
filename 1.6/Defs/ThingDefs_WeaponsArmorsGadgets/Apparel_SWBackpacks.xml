@@ -23,7 +23,7 @@
 		  <WorkToMake>4500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets Inherit="False">
-		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -50,6 +50,13 @@
 				<li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
 				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -108,14 +115,9 @@
 		
 		<tickerType>Never</tickerType>
 		<apparel>
-		  <tags>
-			<li>KotORAccessory_scorchbackpack</li>
-			<li>SWCPSpecificApparelItem_KotORScorchBackpack</li>
-			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_scorch</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <drawData>
+			<wornGraphicPath>SWApparel/Accessories/backpacks/backpack_scorch</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
 			  <dataEast>
 				<layer>68</layer>
 			  </dataEast>
@@ -154,6 +156,19 @@
 					</drawData>
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORAccessory_scorchbackpack</li>
+				<li>SWCPSpecificApparelItem_KotORScorchBackpack</li>
+				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
@@ -248,6 +263,13 @@
 				<li>SWCPSpecificApparelItem_KotORBigBackpack</li>
 				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -346,16 +368,8 @@
 		
 		<tickerType>Never</tickerType>
 		<apparel>
-			<tags>
-				<li>NewRepublic_RebelBackpackMix</li>
-				<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
-				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
-			</tags>
 			<wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/backpack</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-		  
-		  
-		  
 			<wornGraphicData>
 				<east>
 					<male><offset>(0.05,0)</offset></male>
@@ -391,6 +405,16 @@
 					</drawData>
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>NewRepublic_RebelBackpackMix</li>
+				<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
+				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
@@ -472,15 +496,8 @@
 		
 		<tickerType>Never</tickerType>
 		<apparel>
-			<tags>
-				<li>NewRepublic_RebelBackpackMix</li>
-				<li>SWCPSpecificApparelItem_GCWRebelHeavyBackpack</li>
-				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
-			</tags>
 			<wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/bedrollbackpack</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			  
-			  
+			<useWornGraphicMask>true</useWornGraphicMask> 
 			<wornGraphicData>
 				<east>
 					<male><offset>(0.05,0)</offset></male>
@@ -516,6 +533,16 @@
 					</drawData>
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>NewRepublic_RebelBackpackMix</li>
+				<li>SWCPSpecificApparelItem_GCWRebelHeavyBackpack</li>
+				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>

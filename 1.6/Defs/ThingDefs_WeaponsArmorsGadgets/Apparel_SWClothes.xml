@@ -20,6 +20,34 @@
 			}
 		}
 	
+	
+	
+	
+	SWCP outfit tags:
+	
+			<defaultOutfitTags>	
+				<li>Spacefarer</li>
+				<li>Slave</li>
+				<li>SWCPOutfitTag_Slave</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelUniform</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelHeavyInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialUniform</li>
+				<li>SWCPOutfitTagGCW_ImperialLightInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialHeavyInfantry</li>
+				<li>SWCPOutfitTag_UnderworldUniform</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 	-->
 	
 	
@@ -50,7 +78,7 @@
 		</statBases>
 		
 		<costList>
-		  <Cloth>75</Cloth>
+			<Cloth>75</Cloth>
 		</costList>
 		
 		<apparel>
@@ -85,10 +113,15 @@
 				<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>Slave</li>
+				<li>SWCPOutfitTag_Slave</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>SWCPOutfitTag_HuttSoldier</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -165,10 +198,15 @@
 				<li>SWCPSpecificApparelItem_RusticClothing</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>Slave</li>
+				<li>SWCPOutfitTag_Slave</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>KotOROutfitTag_RebelCommando</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -264,9 +302,15 @@
 				<li>SWCPSpecificApparelItem_BlackPantsTwoToneRusticClothing</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>Slave</li>
+				<li>SWCPOutfitTag_Slave</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -350,8 +394,9 @@
 				<li>SWCPSpecificApparelItem_PlainClothing</li>
 			</tags>
 			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_Smuggler</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -439,7 +484,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>175,175,175</color> <!-- banal grey -->
+						<color>(175,175,175)</color> <!-- banal grey -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
@@ -452,9 +497,11 @@
 				<li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
 			</tags>
 			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_Smuggler</li>
-				<li>SWGCWOutfitTag_RebelFleetTrooper</li>
+				<!-- <li>Soldier</li> -->
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -553,7 +600,9 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_Smuggler</li>
+				<!-- <li>Soldier</li> -->
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -665,7 +714,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_RichCivilian</li>
+				<!-- <li>SWCPOutfitTag_RichCivilian</li> -->
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -755,7 +804,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_RichCivilian</li>
+				<!-- <li>SWCPOutfitTag_RichCivilian</li> -->
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -851,8 +900,11 @@
 				<li>SWCPSpecificApparelItem_LightClothing</li>
 			</tags>
 			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_Smuggler</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -953,8 +1005,9 @@
 				<li>SWCPSpecificApparelItem_RebelCamoClothing</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>SWGCWOutfitTag_RebelSoldier</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -1058,8 +1111,9 @@
 				<li>SWCPSpecificApparelItem_AltRebelCamoClothing</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>SWGCWOutfitTag_RebelSoldier</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -1149,12 +1203,17 @@
 				<li>SWCPSpecificApparelItem_GenericUniform</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
-				<li>SWCPOutfitTag_Engineer</li>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>SWCPOutfitTag_HeavySoldier</li>
-				<li>SWGCWOutfitTag_RebelSoldier</li>
-				<li>SWGCWOutfitTag_ImpArmyTrooper</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelHeavyInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialLightInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialHeavyInfantry</li>
+				<li>SWCPOutfitTag_UnderworldUniform</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -1243,15 +1302,19 @@
 				<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
-				<li>SWCPOutfitTag_Engineer</li>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>SWCPOutfitTag_HeavySoldier</li>
-				<li>SWCPOutfitTag_Pilot</li>
-				<li>SWGCWOutfitTag_RebelPilot</li>
-				<li>SWGCWOutfitTag_ImpArmyCommando</li>
-				<li>KotOROutfitTag_SithTrooper</li>
-				<li>SWCPOutfitTag_Mandalorian</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelHeavyInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialLightInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialHeavyInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -1351,11 +1414,19 @@
 				<li>SWCPSpecificApparelItem_StripedFatigues</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
-				<li>SWCPOutfitTag_Engineer</li>
-				<li>SWCPOutfitTag_Smuggler</li>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>SWCPOutfitTag_Pilot</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelHeavyInfantry</li>
+				<!-- <li>SWCPOutfitTagGCW_ImperialLightInfantry</li> -->
+				<!-- <li>SWCPOutfitTagGCW_ImperialMediumInfantry</li> -->
+				<!-- <li>SWCPOutfitTagGCW_ImperialHeavyInfantry</li> -->
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -1424,14 +1495,17 @@
 				<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_HeavySoldier</li><li>Soldier</li>
-				<li>SWCPOutfitTag_Pilot</li>
-				<li>SWGCWOutfitTag_RebelPilot</li>
-				<li>SWGCWOutfitTag_Stormtrooper</li>
-				<li>SWGCWOutfitTag_ImpNavyCommando</li>
-				<li>KotOROutfitTag_SithCommando</li>
-				<li>KotOROutfitTag_OldRepubCommando</li>
-				<li>SWCPOutfitTag_Mandalorian</li>
+				<li>Spacefarer</li>
+				<li>Soldier</li>
+				<!-- <li>SWCPOutfitTagGCW_RebelLightInfantry</li> -->
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelHeavyInfantry</li>
+				<!-- <li>SWCPOutfitTagGCW_ImperialLightInfantry</li> -->
+				<li>SWCPOutfitTagGCW_ImperialMediumInfantry</li>
+				<li>SWCPOutfitTagGCW_ImperialHeavyInfantry</li>
+				<!-- <li>SWCPOutfitTag_UnderworldLightInfantry</li> -->
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -1507,7 +1581,9 @@
 	<ThingDef ParentName="KotORArmorModdable_soft">
 		<defName>guy762_Jacket_scoundrel</defName>
 		<label>jacket, scoundrel's</label>
-		<description>This is a fine jacket popular with smugglers and scoundrels alike.\n\nUPGRADE SLOTS:\n- Armor Underlay</description>
+		<!-- <description>This is a fine jacket popular with smugglers and scoundrels alike.\n\nUPGRADE SLOTS:\n- Armor Underlay</description> -->
+		<description>This is a fine jacket popular with smugglers and scoundrels alike.</description>
+		<description>This is a fine jacket popular with smugglers and scoundrels alike.</description>
 		<graphicData>
 		  <texPath>SWApparel/Accessories/jacket_smuggler/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -1574,7 +1650,6 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_Smuggler</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -1636,7 +1711,8 @@
 	<ThingDef ParentName="KotORArmorModdable_soft">
 		<defName>guy762_Jacket_mission</defName>
 		<label>vest, trendy</label>
-		<description>This is a puffy vest popular on many urban worlds.\n\nUPGRADE SLOTS:\n- Armor Underlay</description>
+		<!-- <description>This is a puffy vest popular on many urban worlds.\n\nUPGRADE SLOTS:\n- Armor Underlay</description> -->
+		<description>This is a puffy vest popular on many urban worlds.</description>
 		<graphicData>
 		  <texPath>SWApparel/Accessories/vest_mission/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -1700,8 +1776,6 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_RichCivilian</li>
-				<li>SWCPOutfitTag_Smuggler</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -1766,7 +1840,8 @@
 	<ThingDef ParentName="KotORArmorModdable_soft">
 		<defName>guy762_Jacket_scout</defName>
 		<label>vest, scout's</label>
-		<description>This is a utilitarian vest popular among spacers and colonial pioneers.\n\nUPGRADE SLOTS:\n- Armor Underlay</description>
+		<!-- <description>This is a utilitarian vest popular among spacers and colonial pioneers.\n\nUPGRADE SLOTS:\n- Armor Underlay</description> -->
+		<description>This is a utilitarian vest popular among spacers and colonial pioneers.</description>
 		<graphicData>
 		  <texPath>SWApparel/Accessories/vest_scout/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -1812,11 +1887,9 @@
 				<li>SWCPSpecificApparelItem_ScoutVest</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_Smuggler</li>
-				<li>SWGCWOutfitTag_RebelFleetTrooper</li>
-				<li>SWGCWOutfitTag_RebelSoldier</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>

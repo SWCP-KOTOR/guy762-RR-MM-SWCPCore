@@ -48,6 +48,10 @@
 				<li>MNC_jetpack_light</li>
 				<li>SWCPSpecificApparelItem_SabineJetpack</li>
 			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_hitech</li>
@@ -204,6 +208,10 @@
 				<li>SaV_jetpack</li>
 				<li>SWCPSpecificApparelItem_DashRendarJetpack</li>
 			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_hitech</li>

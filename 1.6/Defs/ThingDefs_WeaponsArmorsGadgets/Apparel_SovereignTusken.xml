@@ -3,73 +3,80 @@
 
 
 
-  <ThingDef ParentName="HatMakeableBase">
-    <defName>GS_SandP_Hood</defName>
-    <label>Sandpeople mask</label>
-    <description>Sandpeople masks are originally developed to help survive the harsh climate. The mouth grills are designed to prevent precious moisture from leaving the bodies, while the goggles likely serve to protect their vulnerable eyes from harsh sandstorms.</description>
- 
-   <graphicData>
-      <texPath>SWApparel/Sovereign_Tuskens/SandHead</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>GS_SandP_Hood</defName>
+		<label>Sandpeople mask</label>
+		<description>Sandpeople masks are originally developed to help survive the harsh climate. The mouth grills are designed to prevent precious moisture from leaving the bodies, while the goggles likely serve to protect their vulnerable eyes from harsh sandstorms.</description>
+	 
+	   <graphicData>
+		  <texPath>SWApparel/Sovereign_Tuskens/SandHead</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
 
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>6000</WorkToMake>
-      <Mass>2</Mass>
-      <EquipDelay>0.8</EquipDelay>
-      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-	  <Insulation_Heat>50</Insulation_Heat>
-    </statBases>
+		<statBases>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <WorkToMake>6000</WorkToMake>
+		  <Mass>2</Mass>
+		  <EquipDelay>0.8</EquipDelay>
+		  <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+		  <Insulation_Heat>50</Insulation_Heat>
+		</statBases>
 
-    <equippedStatOffsets>
-      <SocialImpact>-0.2</SocialImpact>
-    </equippedStatOffsets>
+		<equippedStatOffsets>
+		  <SocialImpact>-0.2</SocialImpact>
+		</equippedStatOffsets>
 
-    <costStuffCount>100</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
 
-    <apparel>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-      <wornGraphicPath>SWApparel/Sovereign_Tuskens/SandHead</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
-	  <bodyPartGroups>
-		<li>FullHead</li>
-	  </bodyPartGroups>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-	  <tags>
-		<li>SWCPSpecificApparelItem_SovereignTuskenMask</li>
-      </tags>
-    </apparel>
+		<apparel>
+		  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		  <wornGraphicPath>SWApparel/Sovereign_Tuskens/SandHead</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+			
+			<tags>
+				<li>SWCPSpecificApparelItem_SovereignTuskenMask</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
 
-	<tradeTags>
-		<li>guy762TT_KotORAntique</li>
-	</tradeTags>
+		<tradeTags>
+			<li>guy762TT_KotORAntique</li>
+		</tradeTags>
 
-	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
-		<recipeUsers Inherit="False">
-			<li>CraftingSpot</li>
-			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
-		</recipeUsers>
-	</recipeMaker>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
-			<li>
-				<weight>15</weight>
-				<only>(190,155,120)</only> <!-- beige -->
-			</li>
-		</options>
-	</colorGenerator>
-  </ThingDef>
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CraftingSpot</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(190,155,120)</only> <!-- beige -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
   
   
   
@@ -96,64 +103,71 @@
 		
         <generateCommonality>0.000001</generateCommonality>
 		<costStuffCount>120</costStuffCount>
-		
-	<stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-	</stuffCategories>
-	<statBases>
-		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToMake>2200</WorkToMake>
-		<Mass>0.45</Mass>
-		<Flammability>0.2</Flammability>
-		<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-		<EquipDelay>3</EquipDelay>
-	</statBases>
-	<equippedStatOffsets>
-		<!--<WorkSpeedGlobal>0.05</WorkSpeedGlobal>-->
-	</equippedStatOffsets>
-    <thingCategories Inherit='False'>
-      <li>Apparel</li>
-    </thingCategories>
-	<apparel>
-		<bodyPartGroups>
-			<li>Neck</li>
-			<li>Torso</li>
-			<li>Shoulders</li>
-			<li>Arms</li>
-			<li>Hands</li>
-			<li>Legs</li>
-			<li>Feet</li>
-		</bodyPartGroups>
-		<wornGraphicPath>SWApparel/Sovereign_Tuskens/Wraps</wornGraphicPath>
-		<layers>
-			<li>OnSkin</li>
-		</layers>
-		<tags>
-			<li>SWCPSpecificApparelItem_SovereignTuskenBodyWraps</li>
-		</tags>
-	</apparel>
-	<tradeTags>
-		<li>guy762TT_KotORAntique</li>
-	</tradeTags>
-	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
-		<recipeUsers Inherit="False">
-			<li>CraftingSpot</li>
-			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
-		</recipeUsers>
-	</recipeMaker>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
-			<li>
-				<weight>15</weight>
-				<only>(190,155,120)</only> <!-- beige -->
-			</li>
-		</options>
-	</colorGenerator>
-   </ThingDef>
+			
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.45</Mass>
+			<Flammability>0.2</Flammability>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!--<WorkSpeedGlobal>0.05</WorkSpeedGlobal>-->
+		</equippedStatOffsets>
+		<thingCategories Inherit='False'>
+		  <li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Sovereign_Tuskens/Wraps</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			
+			<tags>
+				<li>SWCPSpecificApparelItem_SovereignTuskenBodyWraps</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORAntique</li>
+		</tradeTags>
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CraftingSpot</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(190,155,120)</only> <!-- beige -->
+				</li>
+			</options>
+		</colorGenerator>
+	 </ThingDef>
   
   
   

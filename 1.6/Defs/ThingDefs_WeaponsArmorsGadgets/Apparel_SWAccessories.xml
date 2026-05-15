@@ -57,6 +57,12 @@
 				<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -155,6 +161,12 @@
 				<li>SWCPSpecificApparelItem_EngineerSuspenders</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -244,6 +256,12 @@
 				<li>SWCPSpecificApparelItem_HeavySuspenders</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -343,6 +361,10 @@
 				<li>SWCPSpecificApparelItem_DoubleBandolier</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -439,6 +461,10 @@
 				<li>SWCPSpecificApparelItem_ChewbaccaBandolier</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -534,6 +560,13 @@
 				<li>SWCPSpecificApparelItem_TravelerBag</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -652,6 +685,13 @@
 				<li>SWCPSpecificApparelItem_PlainPoncho</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -790,6 +830,10 @@
 				<li>SWCPSpecificApparelItem_CamoPoncho</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>

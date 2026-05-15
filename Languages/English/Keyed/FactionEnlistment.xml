@@ -28,7 +28,17 @@
 	<SWCP_Menu_Missions_Select_Quest>Select a Mission: </SWCP_Menu_Missions_Select_Quest>
 	<SWCP_Menu_Missions_Start_Quest>Start Mission ({0})</SWCP_Menu_Missions_Start_Quest>
 	<SWCP_Cancel>Cancel</SWCP_Cancel>
+	<RH.Cancel>Cancel</RH.Cancel>
 	<SWCP_Not_Enough_Money>Not enough money</SWCP_Not_Enough_Money>
+	
+	<!-- Delivery Options -->
+
+	<FCP_NoDeliveryQuestsAvailable>No delivery jobs available</FCP_NoDeliveryQuestsAvailable>
+	
+	<SWCP_DeliveryBoard_Label>Delivery jobs</SWCP_DeliveryBoard_Label>
+	<SWCP_DeliveryBoard_Desc>Delivery job description.</SWCP_DeliveryBoard_Desc>
+	<SWCP_DeliveryTurnIn_Label>Deliver items</SWCP_DeliveryTurnIn_Label>
+	<SWCP_DeliveryTurnIn_Desc>Drop off delivery items.</SWCP_DeliveryTurnIn_Desc>
 
 	<!-- Salary Options -->
 
@@ -105,6 +115,8 @@
 	<SWCP_Command_Training_Label>Training: Command</SWCP_Command_Training_Label>
 	<SWCP_Command_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Social\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Command_Training_Desc>
 	
+	<!-- AbilityTraining Options -->
+	
 	<SWCP_AbilityTraining_Label>Ability Training</SWCP_AbilityTraining_Label>
 	<SWCP_AbilityTraining_Desc>Select a specific pawn to receive specialized ability training.</SWCP_AbilityTraining_Desc>
 	<FCP_TrainingAlreadyActive>Training in progress!</FCP_TrainingAlreadyActive>
@@ -114,7 +126,51 @@
 	
 	
 	<SWCP_AbilityTraining_CommandTierVI_Label>Training: Command Tier VI</SWCP_AbilityTraining_CommandTierVI_Label>
-	<SWCP_AbilityTraining_CommandTierVI_Desc>Take a 15-day course to learn the following ability:\n\n- Command Tier VI.</SWCP_AbilityTraining_CommandTierVI_Desc>
+	<SWCP_AbilityTraining_CommandTierVI_Desc>Take a 15-day course to learn the Command Tier VI ability.</SWCP_AbilityTraining_CommandTierVI_Desc>
+	<SWCP_AbilityTraining_CommandTierV_Label>Training: Command Tier V</SWCP_AbilityTraining_CommandTierV_Label>
+	<SWCP_AbilityTraining_CommandTierV_Desc>Take a 15-day course to learn the Command Tier V ability.</SWCP_AbilityTraining_CommandTierV_Desc>
+	<SWCP_AbilityTraining_CommandTierIV_Label>Training: Command Tier IV</SWCP_AbilityTraining_CommandTierIV_Label>
+	<SWCP_AbilityTraining_CommandTierIV_Desc>Take a 15-day course to learn the Command Tier IV ability.</SWCP_AbilityTraining_CommandTierIV_Desc>
+	
+	<SWCP_AbilityTraining_TakeCover_Label>Training: Take Cover tactic</SWCP_AbilityTraining_TakeCover_Label>
+	<SWCP_AbilityTraining_TakeCover_Desc>Take a 5-day course to learn the Take Cover squad tactic ability.</SWCP_AbilityTraining_TakeCover_Desc>
+	<SWCP_AbilityTraining_DelegateTakeCover_Label>Training: Take Cover delegation</SWCP_AbilityTraining_DelegateTakeCover_Label>
+	<SWCP_AbilityTraining_DelegateTakeCover_Desc>Take a 5-day course to learn the Take Cover tactic delegation ability.</SWCP_AbilityTraining_DelegateTakeCover_Desc>
+	
+	<SWCP_AbilityTraining_Sprint_Label>Training: Sprint tactic</SWCP_AbilityTraining_Sprint_Label>
+	<SWCP_AbilityTraining_Sprint_Desc>Take a 5-day course to learn the Sprint squad tactic ability.</SWCP_AbilityTraining_Sprint_Desc>
+	<SWCP_AbilityTraining_DelegateSprint_Label>Training: Sprint delegation</SWCP_AbilityTraining_DelegateSprint_Label>
+	<SWCP_AbilityTraining_DelegateSprint_Desc>Take a 5-day course to learn the Sprint tactic delegation ability.</SWCP_AbilityTraining_DelegateSprint_Desc>
+	
+	<SWCP_AbilityTraining_Barrage_Label>Training: Barrage tactic</SWCP_AbilityTraining_Barrage_Label>
+	<SWCP_AbilityTraining_Barrage_Desc>Take a 5-day course to learn the Barrage squad tactic ability.</SWCP_AbilityTraining_Barrage_Desc>
+	<SWCP_AbilityTraining_DelegateBarrage_Label>Training: Barrage delegation</SWCP_AbilityTraining_DelegateBarrage_Label>
+	<SWCP_AbilityTraining_DelegateBarrage_Desc>Take a 5-day course to learn the Barrage tactic delegation ability.</SWCP_AbilityTraining_DelegateBarrage_Desc>
+	
+	<SWCP_AbilityTraining_ZealousRage_Label>Training: Zealous Rage tactic</SWCP_AbilityTraining_ZealousRage_Label>
+	<SWCP_AbilityTraining_ZealousRage_Desc>Take a 5-day course to learn the Zealous Rage squad tactic ability.</SWCP_AbilityTraining_ZealousRage_Desc>
+	<SWCP_AbilityTraining_DelegateZealousRage_Label>Training: Zealous Rage delegation</SWCP_AbilityTraining_DelegateZealousRage_Label>
+	<SWCP_AbilityTraining_DelegateZealousRage_Desc>Take a 5-day course to learn the Zealous Rage tactic delegation ability.</SWCP_AbilityTraining_DelegateZealousRage_Desc>
+	
+	<SWCP_AbilityTraining_Charge_Label>Training: Charge tactic</SWCP_AbilityTraining_Charge_Label>
+	<SWCP_AbilityTraining_Charge_Desc>Take a 5-day course to learn the Charge squad tactic ability.</SWCP_AbilityTraining_Charge_Desc>
+	<SWCP_AbilityTraining_DelegateCharge_Label>Training: Charge delegation</SWCP_AbilityTraining_DelegateCharge_Label>
+	<SWCP_AbilityTraining_DelegateCharge_Desc>Take a 5-day course to learn the Charge tactic delegation ability.</SWCP_AbilityTraining_DelegateCharge_Desc>
+	
+	<SWCP_AbilityTraining_Harass_Label>Training: Harass tactic</SWCP_AbilityTraining_Harass_Label>
+	<SWCP_AbilityTraining_Harass_Desc>Take a 5-day course to learn the Harass squad tactic ability.</SWCP_AbilityTraining_Harass_Desc>
+	<SWCP_AbilityTraining_DelegateHarass_Label>Training: Harass delegation</SWCP_AbilityTraining_DelegateHarass_Label>
+	<SWCP_AbilityTraining_DelegateHarass_Desc>Take a 5-day course to learn the Harass tactic delegation ability.</SWCP_AbilityTraining_DelegateHarass_Desc>
+	
+	<SWCP_AbilityTraining_Ambush_Label>Training: Ambush tactic</SWCP_AbilityTraining_Ambush_Label>
+	<SWCP_AbilityTraining_Ambush_Desc>Take a 5-day course to learn the Ambush squad tactic ability.</SWCP_AbilityTraining_Ambush_Desc>
+	<SWCP_AbilityTraining_DelegateAmbush_Label>Training: Ambush delegation</SWCP_AbilityTraining_DelegateAmbush_Label>
+	<SWCP_AbilityTraining_DelegateAmbush_Desc>Take a 5-day course to learn the Ambush tactic delegation ability.</SWCP_AbilityTraining_DelegateAmbush_Desc>
+	
+	<SWCP_AbilityTraining_StealthAdvance_Label>Training: Stealth Advance tactic</SWCP_AbilityTraining_StealthAdvance_Label>
+	<SWCP_AbilityTraining_StealthAdvance_Desc>Take a 5-day course to learn the Stealth Advance squad tactic ability.</SWCP_AbilityTraining_StealthAdvance_Desc>
+	<SWCP_AbilityTraining_DelegateStealthAdvance_Label>Training: Stealth Advance delegation</SWCP_AbilityTraining_DelegateStealthAdvance_Label>
+	<SWCP_AbilityTraining_DelegateStealthAdvance_Desc>Take a 5-day course to learn the Stealth Advance tactic delegation ability.</SWCP_AbilityTraining_DelegateStealthAdvance_Desc>
 
 	<!-- Bounty Options -->
 
@@ -168,5 +224,8 @@
 	
 	<SWCP_ProvisionRecruit_Label_ArmyTrooper>Recruit Army Trooper</SWCP_ProvisionRecruit_Label_ArmyTrooper>
 	<SWCP_ProvisionRecruit_Desc_ImpArmyTrooper15days>Recruit soldiers to your caravan every 15 days:\n\n- 1x Imperial Army Trooper</SWCP_ProvisionRecruit_Desc_ImpArmyTrooper15days>
+	
+	<SWCP_ProvisionRecruit_Label_ArmyConscript>Recruit Army Conscript</SWCP_ProvisionRecruit_Label_ArmyConscript>
+	<SWCP_ProvisionRecruit_Desc_ImpArmyConscript5days>Recruit soldiers to your caravan every 5 days:\n\n- 1x Imperial Army Conscript</SWCP_ProvisionRecruit_Desc_ImpArmyConscript5days>
 
 </LanguageData>

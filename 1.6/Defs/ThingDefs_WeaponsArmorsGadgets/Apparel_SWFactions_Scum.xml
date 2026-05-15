@@ -11,7 +11,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_HatCraftableBase">
+	<ThingDef ParentName="guy762_HatCraftableBase">
 		<defName>guy762_Hat_gamorrean</defName>
 		<label>hood, leather</label>
 		<description>This is a simple leather hood used by many Kajidic enforcers.</description>
@@ -50,15 +50,21 @@
 		  <layers>
 			<li>Overhead</li>
 		  </layers>
-		  <tags>
-			<li>SaV_outfit_gamorrean</li>
-			<li>SaV_apparel_huttgoon</li>
-			<li>SaV_apparel_leatherhood</li>
-			<li>SWCPSpecificApparelItem_GamorreanHood</li>
-		  </tags>
-		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<tags>
+				<li>SaV_outfit_gamorrean</li>
+				<li>SaV_apparel_huttgoon</li>
+				<li>SaV_apparel_leatherhood</li>
+				<li>SWCPSpecificApparelItem_GamorreanHood</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
@@ -73,7 +79,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	<ThingDef ParentName="guy762_clothingbase">
@@ -107,19 +113,15 @@
 		</stuffCategories>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>SaV_outfit_gamorrean</li>
-			<li>SWCPSpecificApparelItem_GamorreanLeathers</li>
-		  </tags>
-		  <bodyPartGroups Inherit="False">
-			<li>Torso</li>
-			<li>Shoulders</li>
-			<li>Neck</li>
-			<li>Hands</li>
-			<li>Feet</li>
-		  </bodyPartGroups>
-		  <wornGraphicPath>SWApparel/Undersuits/gamorrean/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups Inherit="False">
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Undersuits/gamorrean/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -142,6 +144,17 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>SaV_outfit_gamorrean</li>
+				<li>SWCPSpecificApparelItem_GamorreanLeathers</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
@@ -199,10 +212,17 @@
 			<EquipDelay>9</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
-			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
+			<!-- <MoveSpeed>-0.2</MoveSpeed> -->
+			<!-- <MeleeDodgeChance>-0.2</MeleeDodgeChance> -->
+			<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance> -->
+			<!-- <IncomingDamageFactor>-0.1</IncomingDamageFactor> -->
+			
 			<!--PsychicSensitivity>0.1</PsychicSensitivity>
 			<HuntingStealth>0.2</HuntingStealth
 			<SWCPStat_StealthGearOffset>0.2</SWCPStat_StealthGearOffset>-->
@@ -221,13 +241,18 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/Robes/gand/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			
 			<tags Inherit="False">
 				<li>SaV_apparel_gand</li>
 				<li>SaV_apparel_kaleesh</li>
 				<li>SWCPSpecificApparelItem_GandRobes</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Robes/gand/Apparel</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
@@ -287,7 +312,7 @@
 
 	  
 	  
-	  <ThingDef ParentName="guy762_HatCraftableBase">
+	<ThingDef ParentName="guy762_HatCraftableBase">
 		<defName>guy762_JawaHood</defName>
 		<label>hood, heavy</label>
 		<description>A thick hood for keeping safe from harsh weather conditions.</description>
@@ -346,13 +371,19 @@
 		  <layers>
 			<li>Overhead</li>
 		  </layers>
-		  <tags>
-			<li>SaV_apparel_jawa</li>
-			<li>SWCPSpecificApparelItem_KotORJawaHood</li>
-		  </tags>
-		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		 
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			 <tags>
+				<li>SaV_apparel_jawa</li>
+				<li>SWCPSpecificApparelItem_KotORJawaHood</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
@@ -365,7 +396,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	

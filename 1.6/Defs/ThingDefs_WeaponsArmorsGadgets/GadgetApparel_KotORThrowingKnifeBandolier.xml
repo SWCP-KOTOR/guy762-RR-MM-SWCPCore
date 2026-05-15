@@ -32,13 +32,6 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
-				<li>KotORAccessory_knifebandolier</li>
-				<li>KotORAccessory_trooper_poncho_knife</li>
-				<li>SaV_apparel_nagai</li>
-				<li>SWCPSpecificApparelItem_ThrowingKnifeBandolier</li>
-				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
-			</tags>
 			<wornGraphicPath>SWApparel/Accessories/bandolier_knife/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
@@ -46,6 +39,18 @@
 				<layer>65</layer>
 			  </dataNorth>
 			</drawData>
+			
+			<tags Inherit="False">
+				<li>KotORAccessory_knifebandolier</li>
+				<li>KotORAccessory_trooper_poncho_knife</li>
+				<li>SaV_apparel_nagai</li>
+				<li>SWCPSpecificApparelItem_ThrowingKnifeBandolier</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_consumables</li>

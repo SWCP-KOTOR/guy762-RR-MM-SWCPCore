@@ -5,6 +5,9 @@
 		<defName>SWCPDrugPolicy_CheapMedpacsAndStims</defName>
 		<label>carry medpacs and stims (common only)</label>
 		<entries>
+			<li><drug>Beer</drug><allowedForJoy>true</allowedForJoy></li>
+			<li><drug>SmokeleafJoint</drug><allowedForJoy>true</allowedForJoy></li>
+			
 			<li><drug>guy762_medpac</drug><takeToInventory>3</takeToInventory></li>
 			<li><drug>guy762_medpac_adv</drug><takeToInventory>3</takeToInventory></li>
 			<!-- <li><drug>guy762_medpac_life</drug><takeToInventory>3</takeToInventory></li> -->
@@ -18,7 +21,7 @@
 	
 	<DrugPolicyDef>
 		<defName>SWCPDrugPolicy_MedpacsAndStims</defName>
-		<label>carry medpacs and stims (any non-addictive)</label>
+		<label>carry medpacs and stims (non-addictive)</label>
 		<entries>
 			<li>
 				<drug>guy762_medpac</drug>
@@ -41,6 +44,9 @@
 		<defName>SWCPDrugPolicy_AddictiveMedpacsAndStims</defName>
 		<label>carry medpacs and stims (all)</label>
 		<entries>
+			<li><drug>Beer</drug><allowedForJoy>true</allowedForJoy></li>
+			<li><drug>SmokeleafJoint</drug><allowedForJoy>true</allowedForJoy></li>
+			
 			<li><drug>guy762_medpac</drug><takeToInventory>3</takeToInventory></li>
 			<li><drug>guy762_medpac_adv</drug><takeToInventory>3</takeToInventory></li>
 			<li><drug>guy762_medpac_life</drug><takeToInventory>3</takeToInventory></li>

@@ -5,7 +5,8 @@
 	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
 		<defName>guy762_Robes_jawa</defName>
 		<label>robes, rustic</label>
-		<description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
+		<!-- <description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
+		<description>Thick robes like these are worn to protect the wearer from temperature extremes.</description>
 		<graphicData>
 		  <texPath>SWApparel/Robes/jawa/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +27,7 @@
 			<WorkToMake>12500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<MoveSpeed>-0.25</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		</equippedStatOffsets>
@@ -47,6 +48,7 @@
 		
 		
 		<apparel>
+			<wornGraphicPath>SWApparel/Robes/jawa/Apparel</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>OnSkin</li>
@@ -60,12 +62,17 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
+			
 			<tags Inherit="False">
 				<li>SaV_apparel_jawa</li>
 				<li>KotORClothing_civilian_villager</li>
 				<li>SWCPSpecificApparelItem_KotORJawaRobes</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Robes/jawa/Apparel</wornGraphicPath>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -116,7 +123,8 @@
 	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
 		<defName>guy762_Robes_tusken</defName>
 		<label>robes, rugged</label>
-		<description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
+		<!-- <description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
+		<description>Thick robes like these are worn to protect the wearer from temperature extremes.</description>
 		<graphicData>
 		  <texPath>SWApparel/Robes/tusken/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -137,7 +145,7 @@
 			<WorkToMake>12500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<MoveSpeed>-0.25</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		</equippedStatOffsets>
@@ -158,6 +166,7 @@
 		
 		
 		<apparel>
+			<wornGraphicPath>SWApparel/Robes/tusken/Apparel</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>OnSkin</li>
@@ -171,13 +180,18 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
+			
 			<tags Inherit="False">
 				<li>SaV_apparel_tusken</li>
 				<li>KotORClothing_civilian_villager</li>
 				<li>KotORClothing_civilian_hooded</li>
 				<li>SWCPSpecificApparelItem_TuskenRobes</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Robes/tusken/Apparel</wornGraphicPath>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -234,7 +248,8 @@
 	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
 		<defName>guy762_Robes_zuckuss</defName>
 		<label>robes, heavy</label>
-		<description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
+		<!-- <description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
+		<description>Thick robes like these are worn to protect the wearer from temperature extremes.</description>
 		<graphicData>
 		  <texPath>SWApparel/Robes/zuckuss/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -255,7 +270,7 @@
 			<WorkToMake>12500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<MoveSpeed>-0.25</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		</equippedStatOffsets>
@@ -276,6 +291,7 @@
 		
 		
 		<apparel>
+			<wornGraphicPath>SWApparel/Robes/zuckuss/Apparel</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>OnSkin</li>
@@ -294,7 +310,11 @@
 				<li>KotORClothing_civilian_hooded</li>
 				<li>SWCPSpecificApparelItem_ZuckussRobes</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Robes/zuckuss/Apparel</wornGraphicPath>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -331,7 +351,8 @@
 	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
 		<defName>guy762_Robes_onderon</defName>
 		<label>robes, wayfarer's</label>
-		<description>These are simple garments that protect little more than the modesty of the wearer.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
+		<!-- <description>These are simple garments that protect little more than the modesty of the wearer.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/Robes/onderon/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -354,7 +375,7 @@
 			<WorkToMake>12500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<MoveSpeed>-0.25</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		</equippedStatOffsets>
@@ -375,6 +396,8 @@
 		
 		
 		<apparel>
+			<wornGraphicPath>SWApparel/Robes/onderon/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
 				<li>OnSkin</li>
@@ -388,12 +411,6 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<tags Inherit="False">
-				<li>KotORClothing_civilian_villager</li>
-				<li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
-			</tags>
-			<wornGraphicPath>SWApparel/Robes/onderon/Apparel</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -417,6 +434,14 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>KotORClothing_civilian_villager</li>
+				<li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>SWCPOutfitTag_Civilian</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>

@@ -55,8 +55,9 @@
 				<li>SWCPSpecificApparelItem_KotORSithUniformHat</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>KotOROutfitTag_SithOfficer</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldUniform</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -133,9 +134,11 @@
 				<li>SWCPSpecificApparelItem_GenericUniformHat</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelUniform</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -208,8 +211,11 @@
 				<li>SWCPSpecificApparelItem_FlakHat</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>SWGCWOutfitTag_RebelSoldier</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -285,8 +291,11 @@
 				<li>SWCPSpecificApparelItem_GogglesFlakHat</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>SWGCWOutfitTag_RebelSoldier</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -407,8 +416,11 @@
 				<li>SWCPSpecificApparelItem_RebelEngineerHat</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
-				<li>SWCPOutfitTag_Engineer</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -492,8 +504,10 @@
 				<li>SWCPSpecificApparelItem_KotOROnderonRebelHat</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-				<li>KotOROutfitTag_RebelCommando</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -512,130 +526,136 @@
   
   
   
-  <ThingDef ParentName="guy762_HeadbandBase">
-    <defName>guy762_Headband_bandana</defName>
-    <label>bandana</label>
-    <description>A simple bandana for covering the forehead.</description>
-    <graphicData>
-      <texPath>SWApparel/Headbands/bandanaItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-	  <MarketValue>1</MarketValue>
-      <MaxHitPoints>80</MaxHitPoints>
-      <Mass>0.01</Mass>
-	  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
-      <EquipDelay>0.125</EquipDelay>
-	  
-	  <WorkToMake>50</WorkToMake>
-    </statBases>
-	<equippedStatOffsets>
-		<PainShockThreshold>0.1</PainShockThreshold>
-	</equippedStatOffsets>
-	
-	<costList>
-		<Cloth>10</Cloth>
-	</costList>
-	<recipeMaker>
-		<recipeUsers Inherit="False">
-			<li>HandTailoringBench</li>
-			<li>ElectricTailoringBench</li>
-			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
-		</recipeUsers>
-	</recipeMaker>
-	
-    <apparel>
-		<wornGraphicPath>SWApparel/Headbands/bandana</wornGraphicPath>
-		<renderSkipFlags>
-			<li>None</li>
-		</renderSkipFlags>
-		<drawData>
-			<defaultData>
-				<layer>67</layer>
-			</defaultData>
-		</drawData>
-
-		<bodyPartGroups>
-			<li>UpperHead</li>
-		</bodyPartGroups>
-		<layers>
-			<li>Overhead</li>
-		</layers>
-		<countsAsClothingForNudity>false</countsAsClothingForNudity>
-		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+	<ThingDef ParentName="guy762_HeadbandBase">
+		<defName>guy762_Headband_bandana</defName>
+		<label>bandana</label>
+		<description>A simple bandana for covering the forehead.</description>
+		<graphicData>
+		  <texPath>SWApparel/Headbands/bandanaItem</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.01</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <EquipDelay>0.125</EquipDelay>
+		  
+		  <WorkToMake>50</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
 		
-		<tags>
-			<li>SaV_apparel_huttgoon</li>
-			<li>KotORHeadband_bandana</li>
-			<li>SWCPSpecificApparelItem_Bandana</li>
-		</tags>
-		<defaultOutfitTags>
-			<li>Worker</li>
-			<li>SWCPOutfitTag_Worker</li>
-			<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
-			<li>SWCPOutfitTag_HuttSoldier</li>
-			<li>SWCPOutfitTag_Smuggler</li>
-		</defaultOutfitTags>
-	</apparel>
-	<tradeTags>
-		<li>guy762TT_KotOREquipment_apparel</li>
-		<li>guy762TT_GCWArmor_OutlawSurplus</li>
-		<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
-	</tradeTags>
-	<comps>
-		<li Class="CompProperties_Forbiddable" />
-		<li>
-			<compClass>CompColorable</compClass>
-		</li>
-		<li>
-			<compClass>CompQuality</compClass>
-		</li>
-		<li Class="CompProperties_Styleable"></li>
-	</comps>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
+		<costList>
+			<Cloth>10</Cloth>
+		</costList>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Headbands/bandana</wornGraphicPath>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<drawData>
+				<defaultData>
+					<layer>67</layer>
+				</defaultData>
+			</drawData>
+
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<tags>
+				<li>SaV_apparel_huttgoon</li>
+				<li>KotORHeadband_bandana</li>
+				<li>SWCPSpecificApparelItem_Bandana</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Slave</li>
+				<li>SWCPOutfitTag_Slave</li>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+			<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
 			<li>
-				<weight>10</weight>
-				<only>(155,30,25)</only> <!--zaalbar's red-->
+				<compClass>CompColorable</compClass>
 			</li>
 			<li>
-				<weight>10</weight>
-				<only>(40,95,170)</only> <!-- blue -->
+				<compClass>CompQuality</compClass>
 			</li>
-			<li>
-				<weight>10</weight>
-				<only>(30,145,150)</only> <!-- teal -->
-			</li>
-			<li>
-				<weight>10</weight>
-				<only>(230,185,45)</only> <!-- republic yellow -->
-			</li>
-			<li>
-				<weight>10</weight>
-				<only>(235,230,15)</only> <!-- slight-green yellow -->
-			</li>
-			<li>
-				<weight>10</weight>
-				<only>(250,250,250)</only> <!-- white -->
-			</li>
-			<li>
-				<weight>10</weight>
-				<only>(50,50,50)</only> <!-- black -->
-			</li>
-			<li>
-				<weight>10</weight>
-				<only>(120,125,110)</only> <!-- slate green -->
-			</li>
-			<li>
-				<weight>10</weight>
-				<only>(255,130,65)</only> <!-- orange -->
-			</li>
-		</options>
-	</colorGenerator>
-  </ThingDef>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(155,30,25)</only> <!--zaalbar's red-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(40,95,170)</only> <!-- blue -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(30,145,150)</only> <!-- teal -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(230,185,45)</only> <!-- republic yellow -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(235,230,15)</only> <!-- slight-green yellow -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only> <!-- white -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(120,125,110)</only> <!-- slate green -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(255,130,65)</only> <!-- orange -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 	
 	
 	
@@ -710,10 +730,15 @@
 				<li>SWCPSpecificApparelItem_OpenHeadwrap</li>
 			</tags>
 			<defaultOutfitTags>
+				<li>Slave</li>
+				<li>SWCPOutfitTag_Slave</li>
 				<li>Worker</li>
 				<li>SWCPOutfitTag_Worker</li>
 				<li>SWCPOutfitTag_Civilian</li>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		
@@ -858,7 +883,10 @@
 				<li>SWCPSpecificApparelItem_MaskedHeadwrap</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -986,6 +1014,9 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>SWCPOutfitTag_Worker</li>
+				<!-- <li>Soldier</li> -->
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>

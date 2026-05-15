@@ -7,255 +7,278 @@
   
   
   
-  <ThingDef ParentName="guy762_armorbase_soft">
-    <defName>guy762_JediCloak_light</defName>
-    <label>cloak, simple</label>
-    <description>This is a simple robe worn by ordinary civilians and Jedi alike.</description>
-    <graphicData>
-      <texPath>SWApparel/Jedi/cloak_1/Apparel</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-		<Mass>5</Mass>
-		<MarketValue>50</MarketValue>
-		<MaxHitPoints>100</MaxHitPoints>
-		<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-		<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-		<ArmorRating_Heat>0.01</ArmorRating_Heat>
+	<ThingDef ParentName="guy762_armorbase_soft">
+		<defName>guy762_JediCloak_light</defName>
+		<label>cloak, simple</label>
+		<description>This is a simple robe worn by ordinary civilians and Jedi alike.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jedi/cloak_1/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>5</Mass>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			
+			<EquipDelay>3</EquipDelay>
+			<WorkToMake>9500</WorkToMake>
+		</statBases>
+		<!--equippedStatOffsets>
+		  <PsychicSensitivity>0.1</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets-->
 		
-		<Insulation_Cold>15</Insulation_Cold>
-        <Insulation_Heat>15</Insulation_Heat>
+		<!-- //////////////////////////////////////////////////////////////////////////////// NOTE: the function that cancels the "soaking wet" and "tox rain" thoughts when this item is worn is done through a PATCH!!!  -->
 		
-		<EquipDelay>3</EquipDelay>
-		<WorkToMake>9500</WorkToMake>
-	</statBases>
-	<!--equippedStatOffsets>
-	  <PsychicSensitivity>0.1</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
-    </equippedStatOffsets-->
-	
-	<!-- //////////////////////////////////////////////////////////////////////////////// NOTE: the function that cancels the "soaking wet" and "tox rain" thoughts when this item is worn is done through a PATCH!!!  -->
-	
-    <apparel>
-		<drawData>
+		<costList>
+			<Cloth>80</Cloth>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Jedi/cloak_1/Apparel</wornGraphicPath>
+			<canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
+			<drawData>
+				<dataNorth>
+				  <layer>79</layer>
+				</dataNorth>
+			</drawData>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			
+			<tags Inherit="False">
+				<li>KotORClothing_civilian_prole</li>
+				<li>KotORClothing_civilian_hooded</li>
+				<li>KotORClothing_simplecloak</li>
+				<li>SWCPAccessory_CloakOrPlainPoncho</li>
+				<li>OR_jedi</li>
+				<li>OR_jedicloak_light</li>
+				<li>SWCPSpecificApparelItem_SimpleCloak</li>
+			</tags>
+			<defaultOutfitTags>	
+				<!-- <li>Worker</li> -->
+				<!-- <li>SWCPOutfitTag_Worker</li> -->
+				<li>SWCPOutfitTag_Civilian</li>
+				<!-- <li>Soldier</li> -->
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_AnyAccessory</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_JediApparel</li>
+		</tradeTags>
+
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>95</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>100</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_JediHood_light</defName>
+		<label>hood, simple</label>
+		<description>A simple hood for remaining anonymous.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jedi/cloak_1/hood</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>20</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.05</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  
+		  <Insulation_Cold>5</Insulation_Cold>
+		  <Insulation_Heat>5</Insulation_Heat>
+		  
+		  <EquipDelay>0.125</EquipDelay>
+		  <WorkToMake>5000</WorkToMake>
+		</statBases>
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		  <drawData>
+			<defaultData>
+				<layer>71</layer>
+			</defaultData>
 			<dataNorth>
-			  <layer>79</layer>
+			  <layer>90</layer>
 			</dataNorth>
-		</drawData>
-		<layers>
-			<li>Shell</li>
-		</layers>
-		<bodyPartGroups>
-			<li>Torso</li>
-			<li>Neck</li>
-			<li>Shoulders</li>
-			<li>Arms</li>
-			<li>Legs</li>
-		</bodyPartGroups>
-		<tags Inherit="False">
-			<li>KotORClothing_civilian_prole</li>
-			<li>KotORClothing_civilian_hooded</li>
-			<li>KotORClothing_simplecloak</li>
-			<li>SWCPAccessory_CloakOrPlainPoncho</li>
-			<li>OR_jedi</li>
-			<li>OR_jedicloak_light</li>
-			<li>SWCPSpecificApparelItem_SimpleCloak</li>
-		</tags>
-		<wornGraphicPath>SWApparel/Jedi/cloak_1/Apparel</wornGraphicPath>
-		
-		<canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotORClothes</li>
-		<li>guy762TT_JediApparel</li>
-	</tradeTags>
-	<costList>
-		<Cloth>80</Cloth>
-	</costList>
-	<recipeMaker>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
-		<recipeUsers Inherit="False">
-			<li>HandTailoringBench</li>
-			<li>ElectricTailoringBench</li>
-			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
-		</recipeUsers>
-	</recipeMaker>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
-			<li>
-				<weight>95</weight>
-				<only>(125,100,75)</only>       <!--K2 padawan-->
-			</li>
-			<li>
-				<weight>100</weight>
-				<only>(90,55,40)</only>         <!--K2 jedi knight-->
-			</li>
-		</options>
-	</colorGenerator>
-  </ThingDef>
-  
-  <ThingDef ParentName="guy762_HatCraftableBase">
-    <defName>guy762_JediHood_light</defName>
-    <label>hood, simple</label>
-    <description>A simple hood for remaining anonymous.</description>
-    <graphicData>
-      <texPath>SWApparel/Jedi/cloak_1/hood</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-	  <MarketValue>20</MarketValue>
-      <MaxHitPoints>80</MaxHitPoints>
-      <Mass>0.05</Mass>
-	  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
-	  
-	  <Insulation_Cold>5</Insulation_Cold>
-      <Insulation_Heat>5</Insulation_Heat>
-	  
-      <EquipDelay>0.125</EquipDelay>
-	  <WorkToMake>5000</WorkToMake>
-    </statBases>
-	<costList>
-		<Cloth>40</Cloth>
-	</costList>
-	<recipeMaker>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
-		<recipeUsers Inherit="False">
-			<li>HandTailoringBench</li>
-			<li>ElectricTailoringBench</li>
-			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
-		</recipeUsers>
-	</recipeMaker>
-    <apparel>
-      <drawData>
-		<defaultData>
-			<layer>71</layer>
-		</defaultData>
-		<dataNorth>
-		  <layer>90</layer>
-	    </dataNorth>
-	  </drawData>
-	  <wornGraphicPath>SWApparel/Jedi/cloak_1/hood</wornGraphicPath>
-      <bodyPartGroups>
-		<li>UpperHead</li>
-      </bodyPartGroups>
-      <layers>
-		<li>Overhead</li>
-      </layers>
-	  <tags>
-		<li>OR_jedi</li>
-		<li>OR_jedicloak_light</li>
-		<li>KotORClothing_civilian_hooded</li>
-		<li>SWCPSpecificApparelItem_SimpleHood</li>
-	  </tags>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotORClothes</li>
-		<li>guy762TT_JediApparel</li>
-	</tradeTags>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
-			<li>
-				<weight>95</weight>
-				<only>(125,100,75)</only>       <!--K2 padawan-->
-			</li>
-			<li>
-				<weight>100</weight>
-				<only>(90,55,40)</only>         <!--K2 jedi knight-->
-			</li>
-		</options>
-	</colorGenerator>
-  </ThingDef>
+		  </drawData>
+		  <wornGraphicPath>SWApparel/Jedi/cloak_1/hood</wornGraphicPath>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  
+			<tags>
+				<li>OR_jedi</li>
+				<li>OR_jedicloak_light</li>
+				<li>KotORClothing_civilian_hooded</li>
+				<li>SWCPSpecificApparelItem_SimpleHood</li>
+			</tags>
+			<defaultOutfitTags>	
+				<!-- <li>Worker</li> -->
+				<!-- <li>SWCPOutfitTag_Worker</li> -->
+				<li>SWCPOutfitTag_Civilian</li>
+				<!-- <li>Soldier</li> -->
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_JediApparel</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>95</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>100</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
   
   
   
   
   
   
-  <ThingDef ParentName="guy762_HatCraftableBase">
-    <defName>guy762_SithHood_masked</defName>
-    <label>hood, masked</label>
-    <description>A masked hood for remaining anonymous.</description>
-    <graphicData>
-      <texPath>SWApparel/Sith/apprentice/hood</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-	  <MarketValue>20</MarketValue>
-      <MaxHitPoints>80</MaxHitPoints>
-      <Mass>0.05</Mass>
-	  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
-	  
-	  <Insulation_Cold>5</Insulation_Cold>
-      <Insulation_Heat>5</Insulation_Heat>
-	  
-      <EquipDelay>0.125</EquipDelay>
-	  <WorkToMake>5000</WorkToMake>
-    </statBases>
-	<costList>
-		<Cloth>40</Cloth>
-	</costList>
-	<recipeMaker>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
-		<recipeUsers Inherit="False">
-			<li>HandTailoringBench</li>
-			<li>ElectricTailoringBench</li>
-			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
-		</recipeUsers>
-	</recipeMaker>
-    <apparel>
-      <drawData>
-		<defaultData>
-			<layer>71</layer>
-		</defaultData>
-		<dataNorth>
-		  <layer>90</layer>
-	    </dataNorth>
-	  </drawData>
-	  <renderSkipFlags>
-		<li>Hair</li>
-		<li>Beard</li>
-	  </renderSkipFlags>
-	  <wornGraphicPath>SWApparel/Sith/apprentice/hood</wornGraphicPath>
-      <bodyPartGroups>
-		<li>UpperHead</li>
-		<li>Mouth</li>
-      </bodyPartGroups>
-      <layers>
-		<li>Overhead</li>
-      </layers>
-	  <tags>
-		<li>SE_sithapprentice</li>
-		<li>SWCPSpecificApparelItem_MaskedHood</li>
-	  </tags>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_SEArmor</li>
-	</tradeTags>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
-			<li>
-				<weight>10</weight>
-				<only>(62,62,62)</only>
-			</li>
-		</options>
-	</colorGenerator>
-  </ThingDef>
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_SithHood_masked</defName>
+		<label>hood, masked</label>
+		<description>A masked hood for remaining anonymous.</description>
+		<graphicData>
+			<texPath>SWApparel/Sith/apprentice/hood</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>20</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.05</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  
+		  <Insulation_Cold>5</Insulation_Cold>
+		  <Insulation_Heat>5</Insulation_Heat>
+		  
+		  <EquipDelay>0.125</EquipDelay>
+		  <WorkToMake>5000</WorkToMake>
+		</statBases>
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		  <drawData>
+			<defaultData>
+				<layer>71</layer>
+			</defaultData>
+			<dataNorth>
+			  <layer>90</layer>
+			</dataNorth>
+		  </drawData>
+		  <renderSkipFlags>
+			<li>Hair</li>
+			<li>Beard</li>
+		  </renderSkipFlags>
+		  <wornGraphicPath>SWApparel/Sith/apprentice/hood</wornGraphicPath>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+			<li>Mouth</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+
+			<tags>
+				<li>SE_sithapprentice</li>
+				<li>SWCPSpecificApparelItem_MaskedHood</li>
+			</tags>
+			<defaultOutfitTags>	
+				<!-- <li>Soldier</li> -->
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_SEArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(62,62,62)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 
 
 </Defs>

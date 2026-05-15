@@ -30,10 +30,6 @@
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.1</PilotingAbility>
 		</equippedStatOffsets>
 		<apparel>
-		  <tags Inherit="False">
-			<li>NewRepublic_pilot</li>
-			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
-		  </tags>
 		  <wornGraphicPath>SWApparel/RebelPilot/Apparel</wornGraphicPath>
 		  <layers Inherit="False">
 			<li>Shell</li>
@@ -41,12 +37,20 @@
 		  <bodyPartGroups Inherit="False">
 			<li>Torso</li>
 		  </bodyPartGroups>
-		  <drawData>
+			<drawData>
 			  <dataNorth>
 				<layer>65</layer>
 			  </dataNorth>
 			</drawData>
 			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			
+			<tags Inherit="False">
+				<li>NewRepublic_pilot</li>
+				<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor_space</li>
@@ -102,18 +106,22 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_pilot</li>
-			<li>SWCPSpecificApparelItem_FlightVest</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/FlightVest/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <layers Inherit="False">
-			<li>Middle</li>
-		  </layers>
-		  <bodyPartGroups Inherit="False">
-			<li>Torso</li>
-		  </bodyPartGroups>
+			<wornGraphicPath>SWApparel/FlightVest/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers Inherit="False">
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups Inherit="False">
+				<li>Torso</li>
+			</bodyPartGroups>
+			
+			<tags Inherit="False">
+				<li>KotORClothing_pilot</li>
+				<li>SWCPSpecificApparelItem_FlightVest</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -159,10 +167,11 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.125</DecompressionResistance>
@@ -170,18 +179,15 @@
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.2</PilotingAbility>
 		</equippedStatOffsets>
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_pilot</li>
-			<li>SWCPSpecificApparelItem_KotORFlightArmor</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/FlightArmor/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <layers Inherit="False">
-			<li>Middle</li>
-		  </layers>
-		  <bodyPartGroups Inherit="False">
-			<li>Torso</li>
-		  </bodyPartGroups>
+		  
+			<wornGraphicPath>SWApparel/FlightArmor/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers Inherit="False">
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups Inherit="False">
+				<li>Torso</li>
+			</bodyPartGroups>
 		  
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -205,6 +211,14 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>KotORClothing_pilot</li>
+				<li>SWCPSpecificApparelItem_KotORFlightArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor</li>
