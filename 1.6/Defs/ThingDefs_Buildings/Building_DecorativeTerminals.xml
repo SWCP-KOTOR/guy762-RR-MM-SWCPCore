@@ -34,7 +34,7 @@
 		<constructEffect>ConstructMetal</constructEffect>
 		<designationCategory>KOTOR_BuildTab</designationCategory>
 		<researchPrerequisites>
-			<li>KOTOR_Research_HoloRec</li>
+			<li>SWCPResearch_HoloRec</li>
 		</researchPrerequisites>
 	</ThingDef>
 	

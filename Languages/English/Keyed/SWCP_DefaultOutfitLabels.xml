@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<SWCPOutfit_Worker>Worker (SWCP)</SWCPOutfit_Worker>
+	<SWCPOutfit_Civilian>Civilian (SWCP)</SWCPOutfit_Civilian>
+	<SWCPOutfit_Slave>Slave (SWCP)</SWCPOutfit_Slave>
+	
+	<SWCPOutfit_UnderworldSpace>Underworld EVA</SWCPOutfit_UnderworldSpace>
+	<SWCPOutfit_UnderworldUniform>Underworld Uniform</SWCPOutfit_UnderworldUniform>
+	<SWCPOutfit_UnderworldLightInfantry>Underworld Light Infantry</SWCPOutfit_UnderworldLightInfantry>
+	<SWCPOutfit_UnderworldMediumInfantry>Underworld Medium Infantry</SWCPOutfit_UnderworldMediumInfantry>
+	<SWCPOutfit_UnderworldHeavyInfantry>Underworld Heavy Infantry</SWCPOutfit_UnderworldHeavyInfantry>
+	
+	<SWCPOutfitGCW_RebelSpace>Rebel EVA</SWCPOutfitGCW_RebelSpace>
+	<SWCPOutfitGCW_RebelUniform>Rebel Uniform</SWCPOutfitGCW_RebelUniform>
+	<SWCPOutfitGCW_RebelLightInfantry>URebel Light Infantry</SWCPOutfitGCW_RebelLightInfantry>
+	<SWCPOutfitGCW_RebelMediumInfantry>Rebel Medium Infantry</SWCPOutfitGCW_RebelMediumInfantry>
+	<SWCPOutfitGCW_RebelHeavyInfantry>Rebel Heavy Infantry</SWCPOutfitGCW_RebelHeavyInfantry>
+	
+	<SWCPOutfitGCW_ImperialSpace>Imperial EVA</SWCPOutfitGCW_ImperialSpace>
+	<SWCPOutfitGCW_ImperialUniform>Imperial Uniform</SWCPOutfitGCW_ImperialUniform>
+	<SWCPOutfitGCW_ImperialLightInfantry>Imperial Light Infantry</SWCPOutfitGCW_ImperialLightInfantry>
+	<SWCPOutfitGCW_ImperialMediumInfantry>Imperial Medium Infantry</SWCPOutfitGCW_ImperialMediumInfantry>
+	<SWCPOutfitGCW_ImperialHeavyInfantry>Imperial Heavy Infantry</SWCPOutfitGCW_ImperialHeavyInfantry>
+	
+	
+</LanguageData>

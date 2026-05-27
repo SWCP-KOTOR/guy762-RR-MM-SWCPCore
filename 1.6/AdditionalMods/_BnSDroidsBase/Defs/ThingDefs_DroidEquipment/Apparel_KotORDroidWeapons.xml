@@ -23,7 +23,7 @@
 	</statBases>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -107,7 +107,7 @@
 	</statBases>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 		</skillRequirements>
@@ -262,8 +262,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_droidblasters</li>
-			<li>guy762_ResearchKotOR_sonic</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<!-- <li>SWCPResearch_sonic</li> -->
 		</researchPrerequisites>
 		<skillRequirements>
 			<Crafting>5</Crafting>
@@ -510,8 +510,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_droidblasters</li>
-			<li>KOTOR_Research_AdvMunitions</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<li>SWCPResearch_AdvMunitions</li>
 		</researchPrerequisites>
 		<skillRequirements>
 			<Crafting>7</Crafting>
@@ -612,8 +612,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_droidblasters</li>
-			<li>KOTOR_Research_AdvMunitions</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<li>SWCPResearch_AdvMunitions</li>
 		</researchPrerequisites>
 		<skillRequirements>
 			<Crafting>8</Crafting>
@@ -817,7 +817,7 @@
 	</statBases>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -914,8 +914,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_droidblasters</li>
-			<li>guy762_ResearchKotOR_ion</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<!-- <li>SWCPResearch_ion</li> -->
 		</researchPrerequisites>
 		<skillRequirements>
 			<Crafting>12</Crafting>

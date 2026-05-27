@@ -32,7 +32,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>KOTOR_Research_cloaking</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_cloaking</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>15</Crafting>
 		</skillRequirements>

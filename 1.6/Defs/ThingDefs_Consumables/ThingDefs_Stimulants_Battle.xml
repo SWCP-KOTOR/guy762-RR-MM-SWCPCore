@@ -66,7 +66,7 @@
       <li>guy762TT_KotORStims</li>
     </tradeTags>
     <recipeMaker>
-      <researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+      <researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
 		<li>kotor_DrugLab</li>

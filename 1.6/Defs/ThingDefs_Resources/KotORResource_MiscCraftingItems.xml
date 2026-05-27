@@ -90,7 +90,7 @@
 		<products>
 			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
 		</products>
-		<researchPrerequisite>KOTOR_Research_UltraComponent</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_UltraComponent</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>
@@ -248,7 +248,7 @@
 			<li>FabricationBench</li>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
 		</recipeUsers>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -304,7 +304,7 @@
 			<li>FabricationBench</li>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
 		</recipeUsers>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -424,7 +424,7 @@
 			<li>kotor_PlasmaFurnace</li>
 		</recipeUsers>
 		<displayPriority>10</displayPriority>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 		</skillRequirements>
@@ -473,7 +473,7 @@
 			<li>kotor_PlasmaFurnace</li>
 		</recipeUsers>
 		<displayPriority>10</displayPriority>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 		</skillRequirements>
@@ -594,7 +594,7 @@
 		<products>
 			<KOTOR_Plastoid>5</KOTOR_Plastoid>
 		</products>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -633,7 +633,7 @@
 		<products>
 			<KOTOR_Plastoid>50</KOTOR_Plastoid>
 		</products>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -696,7 +696,7 @@
 			<li>FabricationBench</li>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
 		</recipeUsers>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>
@@ -734,7 +734,7 @@
 			<li>FabricationBench</li>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
 		</recipeUsers>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>

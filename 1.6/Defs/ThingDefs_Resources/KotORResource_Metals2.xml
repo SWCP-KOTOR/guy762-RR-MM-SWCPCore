@@ -360,7 +360,7 @@
 		<products>
 			<KOTOR_IngotBeskar>1</KOTOR_IngotBeskar>
 		</products>
-		<researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>16</Crafting>
 		</skillRequirements>
@@ -398,7 +398,7 @@
 		<products>
 			<KOTOR_IngotBeskar>10</KOTOR_IngotBeskar>
 		</products>
-		<researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>16</Crafting>
 		</skillRequirements>
@@ -459,7 +459,7 @@
 		<products>
 			<Plasteel>5</Plasteel>
 		</products>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>12</Crafting>
 		</skillRequirements>
@@ -506,7 +506,7 @@
 		<products>
 			<Plasteel>50</Plasteel>
 		</products>
-		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMaterials</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>12</Crafting>
 		</skillRequirements>
@@ -812,7 +812,7 @@
 		<products>
 			<KOTOR_AlloyDurasteel>5</KOTOR_AlloyDurasteel>
 		</products>
-		<researchPrerequisite>KOTOR_Research_Durasteel</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Durasteel</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -859,7 +859,7 @@
 		<products>
 			<KOTOR_AlloyDurasteel>50</KOTOR_AlloyDurasteel>
 		</products>
-		<researchPrerequisite>KOTOR_Research_Durasteel</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Durasteel</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>

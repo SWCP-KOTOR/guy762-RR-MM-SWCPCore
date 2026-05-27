@@ -46,7 +46,7 @@
 			<WorkToBuild>2500</WorkToBuild>
 		</statBases>
 		<researchPrerequisites>
-			<li>KOTOR_Research_MoistureVaporator</li>
+			<li>SWCPResearch_MoistureVaporator</li>
 		</researchPrerequisites>
 		<designationCategory>KOTOR_BuildTab</designationCategory>
 		<tradeTags>

@@ -26,7 +26,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_lgtcannons</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>
 			<Crafting>8</Crafting>
@@ -137,7 +137,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_lgtcannons</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>
 			<Crafting>10</Crafting>
@@ -227,7 +227,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_lgtcannons</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>
 			<Crafting>10</Crafting>
@@ -562,7 +562,7 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_lgtcannons</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
 			<li>Firefoam</li>
 		</researchPrerequisites>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
@@ -669,8 +669,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_lgtcannons</li>
-			<li>guy762_ResearchKotOR_sonic</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<!-- <li>SWCPResearch_sonic</li> -->
 		</researchPrerequisites>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>
@@ -775,7 +775,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_lgtcannons</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>
 			<Crafting>12</Crafting>
@@ -1094,8 +1094,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_lgtcannons</li>
-			<li>KOTOR_Research_AdvMunitions</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<li>SWCPResearch_AdvMunitions</li>
 		</researchPrerequisites>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>
@@ -1207,8 +1207,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_lgtcannons</li>
-			<li>KOTOR_Research_AdvMunitions</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<li>SWCPResearch_AdvMunitions</li>
 		</researchPrerequisites>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>
@@ -1320,8 +1320,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_lgtcannons</li>
-			<li>KOTOR_Research_AdvMunitions</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<li>SWCPResearch_AdvMunitions</li>
 		</researchPrerequisites>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>
@@ -1429,8 +1429,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_lgtcannons</li>
-			<li>KOTOR_Research_AdvMunitions</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<li>SWCPResearch_AdvMunitions</li>
 		</researchPrerequisites>
 		<recipeUsers><li>FabricationBench</li></recipeUsers>
 		<skillRequirements>

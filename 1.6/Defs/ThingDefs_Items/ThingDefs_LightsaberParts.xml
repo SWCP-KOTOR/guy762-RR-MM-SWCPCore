@@ -22,7 +22,7 @@
 		  <skillRequirements>
 			<Crafting>16</Crafting>
 		  </skillRequirements>
-		  <researchPrerequisite>guy762_ResearchKotOR_saberparts</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Plasteel>10</Plasteel>
@@ -62,7 +62,7 @@
 		  <skillRequirements>
 			<Crafting>16</Crafting>
 		  </skillRequirements>
-		  <researchPrerequisite>guy762_ResearchKotOR_saberparts</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
@@ -103,7 +103,7 @@
 		  <skillRequirements>
 			<Crafting>16</Crafting>
 		  </skillRequirements>
-		  <researchPrerequisite>guy762_ResearchKotOR_saberparts</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>

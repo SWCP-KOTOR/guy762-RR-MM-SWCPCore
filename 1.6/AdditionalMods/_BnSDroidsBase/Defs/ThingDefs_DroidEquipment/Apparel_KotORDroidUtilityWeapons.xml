@@ -24,7 +24,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -139,7 +139,7 @@
     </statBases>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -251,7 +251,7 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_droidblasters</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
 			<li>Firefoam</li>
 		</researchPrerequisites>
 		<skillRequirements>
@@ -351,8 +351,8 @@
 	
 	<recipeMaker>
 		<researchPrerequisites>
-			<li>guy762_ResearchKotOR_droidblasters</li>
-			<li>KOTOR_Research_Kolto</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
+			<li>SWCPResearch_Kolto</li>
 		</researchPrerequisites>
 		<skillRequirements>
 			<Crafting>5</Crafting>

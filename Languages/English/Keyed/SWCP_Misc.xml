@@ -3,6 +3,13 @@
 	
 	<SWCP_LifeSupport_OxygenMode>Oxygen Mode</SWCP_LifeSupport_OxygenMode>
 	<SWCP_LifeSupport_OxygenMode_Desc>(ONLY WORKS IN SPACE!) Toggle between pushing oxygen to the room or sucking oxygen out of the room.</SWCP_LifeSupport_OxygenMode_Desc>
+	
+	
+	<FCP_CannotPickUp>Cannot pick up {0}</FCP_CannotPickUp>
+	<FCP_PickUp>Pick up {0} (all)</FCP_PickUp>
+	<FCP_PickUpMax>Pick up max</FCP_PickUpMax>
+	<FCP_PickUpOne>Pick up one {0}</FCP_PickUpOne>
+	<FCP_TooHeavy>Too Heavy</FCP_TooHeavy>
   
 	<!-- Jetpack Commands -->
 	<EnableJetpack>Enable Jetpack</EnableJetpack>

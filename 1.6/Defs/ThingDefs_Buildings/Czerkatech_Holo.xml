@@ -58,7 +58,7 @@
 		</tradeTags>
 		<constructEffect>ConstructMetal</constructEffect>
 		<designationCategory>KOTOR_BuildTab</designationCategory>
-		<researchPrerequisites><li>KOTOR_Research_HoloRec</li></researchPrerequisites>
+		<researchPrerequisites><li>SWCPResearch_HoloRec</li></researchPrerequisites>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 		<uiIconScale>0.9</uiIconScale>
 	</ThingDef>

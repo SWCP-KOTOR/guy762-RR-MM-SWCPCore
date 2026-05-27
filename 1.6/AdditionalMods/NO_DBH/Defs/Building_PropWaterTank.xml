@@ -49,7 +49,7 @@
 			<!-- <WorkToBuild>2500</WorkToBuild> -->
 		</statBases>
 		<!-- <researchPrerequisites> -->
-			<!-- <li>KOTOR_Research_MoistureVaporator</li> -->
+			<!-- <li>SWCPResearch_MoistureVaporator</li> -->
 		<!-- </researchPrerequisites> -->
 		<!-- <tradeTags> -->
 		  <!-- <li>guy762TT_SWMoistureVaporator</li> -->

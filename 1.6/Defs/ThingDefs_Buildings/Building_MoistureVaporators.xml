@@ -91,7 +91,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	
 	<researchPrerequisites>
-		<li>KOTOR_Research_MoistureVaporator</li>
+		<li>SWCPResearch_MoistureVaporator</li>
 	</researchPrerequisites>
 	
 	<minifiedDef>MinifiedThing</minifiedDef>

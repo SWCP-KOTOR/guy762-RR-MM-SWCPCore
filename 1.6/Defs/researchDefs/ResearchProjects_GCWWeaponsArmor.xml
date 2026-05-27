@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef ParentName="SWCPResearch_Base">
+		<defName>SWCPResearch_PLACEHOLDER</defName>
+		<label>placeholder research</label>
+		<description>placeholder.</description>
+		<baseCost>6000</baseCost>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4.5</researchViewY>
+	</ResearchProjectDef>
+  
+</Defs>

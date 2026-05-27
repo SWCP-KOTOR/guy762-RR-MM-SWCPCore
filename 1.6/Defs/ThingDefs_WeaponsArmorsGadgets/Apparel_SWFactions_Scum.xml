@@ -32,7 +32,7 @@
 		</statBases>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_hutts</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
@@ -105,7 +105,7 @@
 		</statBases>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_hutts</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
@@ -339,7 +339,7 @@
 			<Cloth>50</Cloth>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_jawa</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>

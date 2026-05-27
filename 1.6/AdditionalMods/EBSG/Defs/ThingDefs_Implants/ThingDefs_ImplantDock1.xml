@@ -79,7 +79,7 @@
 	
 	
 	<recipeMaker>
-		<researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Implants</researchPrerequisite>
 		<skillRequirements>
 			<Medicine>14</Medicine>
 		</skillRequirements>
@@ -113,7 +113,7 @@
     </descriptionHyperlinks>
     <jobString>Installing small implant dock.</jobString>
 	
-	<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+	<researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
 	<workAmount>4000</workAmount>
     <skillRequirements>
       <Medicine>14</Medicine>

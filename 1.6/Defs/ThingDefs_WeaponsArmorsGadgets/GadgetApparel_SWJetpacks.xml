@@ -27,8 +27,8 @@
 		
 		<recipeMaker>
 		  <researchPrerequisites>
-			<li>KOTOR_Research_plasmaApplications</li>
-			<li>guy762_ResearchKotOR_mando</li>
+			<li>SWCPResearch_plasmaApplications</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
 		  </researchPrerequisites>
 		  <skillRequirements>
 			<Crafting>12</Crafting>
@@ -167,7 +167,7 @@
 		</statBases>
 		
 		<recipeMaker>
-		  <researchPrerequisite>KOTOR_Research_plasmaApplications</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_plasmaApplications</researchPrerequisite>
 		  <skillRequirements>
 			<Crafting>14</Crafting>
 		  </skillRequirements>

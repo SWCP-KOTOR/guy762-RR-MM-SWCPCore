@@ -25,7 +25,7 @@
 		  <skillRequirements>
 			<Medicine>6</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
@@ -98,7 +98,7 @@
 		  <skillRequirements>
 			<Medicine>6</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
@@ -187,7 +187,7 @@
 		  <skillRequirements>
 			<Medicine>8</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
@@ -282,7 +282,7 @@
 		  <skillRequirements>
 			<Medicine>8</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>

@@ -111,7 +111,7 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <defaultPlacingRot>South</defaultPlacingRot>
     <researchPrerequisites>
-		<li>KOTOR_Research_Kolto</li>
+		<li>SWCPResearch_Kolto</li>
 	</researchPrerequisites>
     <altitudeLayer>Pawn</altitudeLayer>
     <passability>PassThroughOnly</passability>

@@ -1,0 +1,93 @@
+<Defs>
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>BS_UnfinishedAndroid</defName>
+		<label>unfinished android</label>
+		<description>An unfinished android.</description>
+		<thingClass>BigAndSmall.UnfinishedMechanicalRace</thingClass>
+		
+		<!-- <selectable>false</selectable> -->
+		<statBases>
+		  <Flammability>0.2</Flammability>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Item/Unfinished/UnfinishedHealthItem</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <color>(189,169,118)</color>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+
+
+
+
+	<RecipeDef Name="SWCPRecipe_DroidBASE" Abstract="True">
+		<defName>SWCPRecipe_DroidBASE</defName>
+		<!-- <label>make droid</label> -->
+		<!-- <description>Create a droid.</description> -->
+		<jobString>Creating droid</jobString>
+		<!-- <uiIconPath>Icons/BS_TV_Erratic</uiIconPath> -->
+		
+		<researchPrerequisite>
+			<li>SWCPResearch_PLACEHOLDER</li>
+		</researchPrerequisite>
+		
+		<unfinishedThingDef>BS_UnfinishedAndroid</unfinishedThingDef>
+		<effectWorking>ButcherMechanoid</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+		<workAmount>18000</workAmount>
+		<!-- <workAmount>100</workAmount> -->
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+		  <!-- <li>TableMachining</li> -->
+		  <li>FabricationBench</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>70</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentIndustrial</li>
+			  </thingDefs>
+			</filter>
+			<count>16</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		
+		<!-- <modExtensions> -->
+		  <!-- <li Class="BigAndSmall.RecipeExtension"> -->
+			<!-- <pawnKindDef>BS_TVRobot_Crafted</pawnKindDef> -->
+		  <!-- </li> -->
+		<!-- </modExtensions> -->
+	</RecipeDef>
+
+
+
+</Defs>

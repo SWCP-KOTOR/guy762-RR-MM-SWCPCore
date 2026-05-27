@@ -95,7 +95,7 @@
 		</placeWorkers>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>KOTOR_Research_AdvPhysiology</li>
+			<li>SWCPResearch_AdvPhysiology</li>
 		</researchPrerequisites>
 		
 		<tradeTags>

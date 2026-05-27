@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<!-- Research Tab ================================================================ -->
+	<ResearchTabDef>
+		<defName>SWCPResearchTab</defName>
+		<label>SWCP</label>
+	</ResearchTabDef>
+	
+	<!-- KOTOR Research Base ================================================================ -->
+	<ResearchProjectDef Name="SWCPResearch_Base" Abstract="True">
+		<tab>SWCPResearchTab</tab>
+		<techLevel>Spacer</techLevel>
+		<!--requiredResearchBuilding>kotor_CzerkaTechResearchBench</requiredResearchBuilding-->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+</Defs>

@@ -245,7 +245,7 @@
 		<products>
 			<KOTOR_Deathstick>10</KOTOR_Deathstick>
 		</products>
-		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Spice</researchPrerequisite>
 		<skillRequirements>
 			<Cooking>10</Cooking>
 		</skillRequirements>

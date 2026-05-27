@@ -86,8 +86,8 @@
 		  <guy762_RocketItem_conc>5</guy762_RocketItem_conc>
 		</products>
 		<researchPrerequisites>
-			<li>KOTOR_Research_AdvMunitions</li>
-			<li>KOTOR_Research_plasma</li>
+			<li>SWCPResearch_AdvMunitions</li>
+			<li>SWCPResearch_plasma</li>
 		</researchPrerequisites>
 		<recipeUsers>
 			<li>FabricationBench</li>

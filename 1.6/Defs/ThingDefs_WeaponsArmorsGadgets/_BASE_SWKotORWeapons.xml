@@ -89,7 +89,7 @@
 		  <recipeUsers>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
 		  </recipeUsers>
-		  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_uncraftable</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
 		  <WorkToMake>100</WorkToMake>
@@ -353,7 +353,7 @@
 		  <recipeUsers>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
 		  </recipeUsers>
-		  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_uncraftable</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
 		  <WorkToMake>100</WorkToMake>
@@ -484,7 +484,48 @@
 	  
 	  
 	  
-	  
+	<ThingDef Name="KotORMeleeMakeableNoQuality" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Spacer</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<relicChance>1</relicChance>
+		<thingCategories>
+		  <li>guy762_vibroweapons</li>
+		  <li>guy762_ThingCategory_KotORWeapons</li>
+		</thingCategories>
+		<weaponTags>
+		  <li>KotORMelee</li>
+		</weaponTags>
+		<weaponClasses>
+		  <li>Melee</li>
+		  <li>Ultratech</li>
+		</weaponClasses>
+
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		
+		<comps>
+		  <li Class="CompProperties_Biocodable"/>
+		  <!-- <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/> -->
+		</comps>
+		
+		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
+	</ThingDef>
 	  
 	  
 	  
@@ -606,17 +647,156 @@
 	  <ThingDef Name="KotORMeleeNoQualityModMake_TwoHand" Abstract="True" ParentName="KotORMeleeNoQualityModMake">
 		<defName>KotORMeleeNoQualityModMake_TwoHand</defName>
 	  </ThingDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  <ToolCapacityDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="SWCPRangedMakeableNoQuality_OneHand" Abstract="True" ParentName="KotORRangedMakeableNoQuality">
+		<defName>SWCPRangedMakeableNoQuality_OneHand</defName>
+		<statBases>
+			<WorkToMake>28000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef Name="SWCPRangedMakeableNoQuality_OffHand" Abstract="True" ParentName="KotORRangedMakeableNoQuality">
+		<defName>SWCPRangedMakeableNoQuality_OffHand</defName>
+		<statBases>
+			<WorkToMake>28000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef Name="SWCPRangedMakeableNoQuality_TwoHand" Abstract="True" ParentName="KotORRangedMakeableNoQuality">
+		<defName>SWCPRangedMakeableNoQuality_TwoHand</defName>
+		<statBases>
+			<WorkToMake>28000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+		</costList>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Name="SWCPMeleeMakeableNoQuality_OneHand" Abstract="True" ParentName="KotORMeleeMakeableNoQuality">
+		<defName>SWCPMeleeMakeableNoQuality_OneHand</defName>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_IngotCortosis>2</KOTOR_IngotCortosis>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>30</Plasteel>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef Name="SWCPMeleeMakeableNoQuality_OffHand" Abstract="True" ParentName="KotORMeleeMakeableNoQuality">
+		<defName>SWCPMeleeMakeableNoQuality_OffHand</defName>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_IngotCortosis>2</KOTOR_IngotCortosis>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>30</Plasteel>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef Name="SWCPMeleeMakeableNoQuality_TwoHand" Abstract="True" ParentName="KotORMeleeMakeableNoQuality">
+		<defName>SWCPMeleeMakeableNoQuality_TwoHand</defName>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_IngotCortosis>2</KOTOR_IngotCortosis>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>30</Plasteel>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ToolCapacityDef>
 		<defName>guy762_ToolCapacity_SaberSlash</defName>
 		<label>energy slash</label>
 	</ToolCapacityDef>

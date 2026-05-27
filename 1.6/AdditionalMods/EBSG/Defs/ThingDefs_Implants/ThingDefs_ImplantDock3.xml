@@ -120,7 +120,7 @@
 	
 	
 	<recipeMaker>
-		<researchPrerequisite>KOTOR_Research_Lobot</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Lobot</researchPrerequisite>
 		<skillRequirements>
 			<Medicine>18</Medicine>
 		</skillRequirements>
@@ -155,7 +155,7 @@
     <jobString>Installing large implant dock.</jobString>
 	<!--workerClass>Recipe_InstallArtificialBodyPart</workerClass-->
 	
-	<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+	<researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
     <workAmount>8000</workAmount>
     <skillRequirements>
       <Medicine>18</Medicine>

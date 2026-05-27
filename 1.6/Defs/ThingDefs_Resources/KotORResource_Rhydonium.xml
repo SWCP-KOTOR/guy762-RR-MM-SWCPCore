@@ -532,7 +532,7 @@
 		<products>
 			<KOTOR_Rhydonium>10</KOTOR_Rhydonium>
 		</products>
-		<researchPrerequisite>KOTOR_Research_FuelProcessing</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_FuelProcessing</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>10</Intellectual>
 		</skillRequirements>
@@ -571,7 +571,7 @@
 		<products>
 			<KOTOR_Rhydonium>40</KOTOR_Rhydonium>
 		</products>
-		<researchPrerequisite>KOTOR_Research_FuelProcessing</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_FuelProcessing</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>10</Intellectual>
 		</skillRequirements>
@@ -656,7 +656,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>KOTOR_Research_FuelProcessing</li>
+			<li>SWCPResearch_FuelProcessing</li>
 		</researchPrerequisites>
 	</ThingDef>
 	
@@ -775,7 +775,7 @@
 		<uiOrder>2100</uiOrder>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>KOTOR_Research_FuelProcessing</li>
+			<li>SWCPResearch_FuelProcessing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 		
@@ -888,7 +888,7 @@
 		<uiOrder>2100</uiOrder>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>KOTOR_Research_FuelProcessing</li>
+			<li>SWCPResearch_FuelProcessing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 		<tradeTags>

@@ -70,7 +70,7 @@
 		<products>
 		  <SWCPItem_BF2AmmoSupplyPickup>5</SWCPItem_BF2AmmoSupplyPickup>
 		</products>
-		<researchPrerequisite>KOTOR_Research_AdvMunitions</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMunitions</researchPrerequisite>
 		<recipeUsers>
 			<li>FabricationBench</li>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>

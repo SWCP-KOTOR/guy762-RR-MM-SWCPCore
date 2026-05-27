@@ -8,7 +8,7 @@
 		<!-- <soundPlayInstrument>jizz_play</soundPlayInstrument> -->
 		
 		<defaultPlacingRot>North</defaultPlacingRot>
-		<researchPrerequisites><li>KOTOR_Research_Instruments</li></researchPrerequisites>
+		<researchPrerequisites><li>SWCPResearch_Instruments</li></researchPrerequisites>
 		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -42,7 +42,7 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>KOTOR_Research_Instruments</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_Instruments</researchPrerequisite>
 			<recipeUsers>
 				<li>TableSculpting</li>
 			</recipeUsers>
@@ -72,7 +72,7 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>KOTOR_Research_Instruments</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_Instruments</researchPrerequisite>
 			<recipeUsers>
 				<li>TableSculpting</li>
 			</recipeUsers>
@@ -103,7 +103,7 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>KOTOR_Research_Instruments</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_Instruments</researchPrerequisite>
 			<recipeUsers>
 				<li>TableSculpting</li>
 			</recipeUsers>
@@ -132,7 +132,7 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>KOTOR_Research_Instruments</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_Instruments</researchPrerequisite>
 			<recipeUsers>
 				<li>TableSculpting</li>
 			</recipeUsers>

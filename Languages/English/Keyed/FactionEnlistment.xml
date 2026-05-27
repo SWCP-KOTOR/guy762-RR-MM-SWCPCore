@@ -120,57 +120,73 @@
 	<SWCP_AbilityTraining_Label>Ability Training</SWCP_AbilityTraining_Label>
 	<SWCP_AbilityTraining_Desc>Select a specific pawn to receive specialized ability training.</SWCP_AbilityTraining_Desc>
 	<FCP_TrainingAlreadyActive>Training in progress!</FCP_TrainingAlreadyActive>
-	
 	<SWCP_AbilityTrainingCompleted_LetterTitle>Ablity training completed!</SWCP_AbilityTrainingCompleted_LetterTitle>
 	<SWCP_AbilityTrainingCompleted_Desc>A pawn training at an allied faction's settlement has gained an ability!</SWCP_AbilityTrainingCompleted_Desc>
 	
 	
 	<SWCP_AbilityTraining_CommandTierVI_Label>Training: Command Tier VI</SWCP_AbilityTraining_CommandTierVI_Label>
 	<SWCP_AbilityTraining_CommandTierVI_Desc>Take a 15-day course to learn the Command Tier VI ability.</SWCP_AbilityTraining_CommandTierVI_Desc>
+		<!-- USED BY: Rebel Cell, Imperial Remnant, Pentastar Alignment -->
+		
 	<SWCP_AbilityTraining_CommandTierV_Label>Training: Command Tier V</SWCP_AbilityTraining_CommandTierV_Label>
 	<SWCP_AbilityTraining_CommandTierV_Desc>Take a 15-day course to learn the Command Tier V ability.</SWCP_AbilityTraining_CommandTierV_Desc>
+		<!-- USED BY: Partisan Cell, Greater Maldrood, Eriadu Authority -->
+		
 	<SWCP_AbilityTraining_CommandTierIV_Label>Training: Command Tier IV</SWCP_AbilityTraining_CommandTierIV_Label>
 	<SWCP_AbilityTraining_CommandTierIV_Desc>Take a 15-day course to learn the Command Tier IV ability.</SWCP_AbilityTraining_CommandTierIV_Desc>
+		<!-- USED BY: New Republic, Zsinj's Dominion -->
+	
+	
 	
 	<SWCP_AbilityTraining_TakeCover_Label>Training: Take Cover tactic</SWCP_AbilityTraining_TakeCover_Label>
 	<SWCP_AbilityTraining_TakeCover_Desc>Take a 5-day course to learn the Take Cover squad tactic ability.</SWCP_AbilityTraining_TakeCover_Desc>
 	<SWCP_AbilityTraining_DelegateTakeCover_Label>Training: Take Cover delegation</SWCP_AbilityTraining_DelegateTakeCover_Label>
 	<SWCP_AbilityTraining_DelegateTakeCover_Desc>Take a 5-day course to learn the Take Cover tactic delegation ability.</SWCP_AbilityTraining_DelegateTakeCover_Desc>
+		<!-- USED BY: Imperial Remnant, Pentastar Alignment, Eriadu Authority -->
 	
 	<SWCP_AbilityTraining_Sprint_Label>Training: Sprint tactic</SWCP_AbilityTraining_Sprint_Label>
 	<SWCP_AbilityTraining_Sprint_Desc>Take a 5-day course to learn the Sprint squad tactic ability.</SWCP_AbilityTraining_Sprint_Desc>
 	<SWCP_AbilityTraining_DelegateSprint_Label>Training: Sprint delegation</SWCP_AbilityTraining_DelegateSprint_Label>
 	<SWCP_AbilityTraining_DelegateSprint_Desc>Take a 5-day course to learn the Sprint tactic delegation ability.</SWCP_AbilityTraining_DelegateSprint_Desc>
+		<!-- USED BY: Rebel Cell, Pentastar Alignment, Greater Maldrood -->
 	
 	<SWCP_AbilityTraining_Barrage_Label>Training: Barrage tactic</SWCP_AbilityTraining_Barrage_Label>
 	<SWCP_AbilityTraining_Barrage_Desc>Take a 5-day course to learn the Barrage squad tactic ability.</SWCP_AbilityTraining_Barrage_Desc>
 	<SWCP_AbilityTraining_DelegateBarrage_Label>Training: Barrage delegation</SWCP_AbilityTraining_DelegateBarrage_Label>
 	<SWCP_AbilityTraining_DelegateBarrage_Desc>Take a 5-day course to learn the Barrage tactic delegation ability.</SWCP_AbilityTraining_DelegateBarrage_Desc>
+		<!-- USED BY: Eriadu Authority -->
 	
 	<SWCP_AbilityTraining_ZealousRage_Label>Training: Zealous Rage tactic</SWCP_AbilityTraining_ZealousRage_Label>
 	<SWCP_AbilityTraining_ZealousRage_Desc>Take a 5-day course to learn the Zealous Rage squad tactic ability.</SWCP_AbilityTraining_ZealousRage_Desc>
 	<SWCP_AbilityTraining_DelegateZealousRage_Label>Training: Zealous Rage delegation</SWCP_AbilityTraining_DelegateZealousRage_Label>
 	<SWCP_AbilityTraining_DelegateZealousRage_Desc>Take a 5-day course to learn the Zealous Rage tactic delegation ability.</SWCP_AbilityTraining_DelegateZealousRage_Desc>
+		<!-- USED BY: Imperial Remnant, Zsinj's Dominion -->
 	
 	<SWCP_AbilityTraining_Charge_Label>Training: Charge tactic</SWCP_AbilityTraining_Charge_Label>
 	<SWCP_AbilityTraining_Charge_Desc>Take a 5-day course to learn the Charge squad tactic ability.</SWCP_AbilityTraining_Charge_Desc>
 	<SWCP_AbilityTraining_DelegateCharge_Label>Training: Charge delegation</SWCP_AbilityTraining_DelegateCharge_Label>
 	<SWCP_AbilityTraining_DelegateCharge_Desc>Take a 5-day course to learn the Charge tactic delegation ability.</SWCP_AbilityTraining_DelegateCharge_Desc>
+		<!-- USED BY: Zsinj's Dominion -->
 	
 	<SWCP_AbilityTraining_Harass_Label>Training: Harass tactic</SWCP_AbilityTraining_Harass_Label>
 	<SWCP_AbilityTraining_Harass_Desc>Take a 5-day course to learn the Harass squad tactic ability.</SWCP_AbilityTraining_Harass_Desc>
 	<SWCP_AbilityTraining_DelegateHarass_Label>Training: Harass delegation</SWCP_AbilityTraining_DelegateHarass_Label>
 	<SWCP_AbilityTraining_DelegateHarass_Desc>Take a 5-day course to learn the Harass tactic delegation ability.</SWCP_AbilityTraining_DelegateHarass_Desc>
+		<!-- USED BY: New Republic, Greater Maldrood -->
 	
 	<SWCP_AbilityTraining_Ambush_Label>Training: Ambush tactic</SWCP_AbilityTraining_Ambush_Label>
 	<SWCP_AbilityTraining_Ambush_Desc>Take a 5-day course to learn the Ambush squad tactic ability.</SWCP_AbilityTraining_Ambush_Desc>
 	<SWCP_AbilityTraining_DelegateAmbush_Label>Training: Ambush delegation</SWCP_AbilityTraining_DelegateAmbush_Label>
 	<SWCP_AbilityTraining_DelegateAmbush_Desc>Take a 5-day course to learn the Ambush tactic delegation ability.</SWCP_AbilityTraining_DelegateAmbush_Desc>
+		<!-- USED BY: Rebel Cell, Partisan Cell -->
 	
 	<SWCP_AbilityTraining_StealthAdvance_Label>Training: Stealth Advance tactic</SWCP_AbilityTraining_StealthAdvance_Label>
 	<SWCP_AbilityTraining_StealthAdvance_Desc>Take a 5-day course to learn the Stealth Advance squad tactic ability.</SWCP_AbilityTraining_StealthAdvance_Desc>
 	<SWCP_AbilityTraining_DelegateStealthAdvance_Label>Training: Stealth Advance delegation</SWCP_AbilityTraining_DelegateStealthAdvance_Label>
 	<SWCP_AbilityTraining_DelegateStealthAdvance_Desc>Take a 5-day course to learn the Stealth Advance tactic delegation ability.</SWCP_AbilityTraining_DelegateStealthAdvance_Desc>
+		<!-- USED BY: New Republic, Partisan Cell -->
+
+
 
 	<!-- Bounty Options -->
 

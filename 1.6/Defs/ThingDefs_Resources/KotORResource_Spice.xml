@@ -354,7 +354,7 @@
 		  <recipeUsers>
 			<li>kotor_DrugLab</li>
 		  </recipeUsers>
-		  <researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_Spice</researchPrerequisite>
 		  <skillRequirements>
 			<Medicine>8</Medicine>
 		  </skillRequirements>
@@ -413,7 +413,7 @@
 		</skillRequirements>
 		<workSkill>Medicine</workSkill>
 		<displayPriority>766</displayPriority>
-		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Spice</researchPrerequisite>
 		<recipeUsers>
 			<li>kotor_DrugLab</li>
 		</recipeUsers>
@@ -459,7 +459,7 @@
 		</skillRequirements>
 		<workSkill>Medicine</workSkill>
 		<displayPriority>767</displayPriority>
-		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Spice</researchPrerequisite>
 		<recipeUsers>
 			<li>kotor_DrugLab</li>
 		</recipeUsers>
@@ -505,7 +505,7 @@
 		</skillRequirements>
 		<workSkill>Medicine</workSkill>
 		<displayPriority>768</displayPriority>
-		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Spice</researchPrerequisite>
 		<recipeUsers>
 			<li>kotor_DrugLab</li>
 		</recipeUsers>
@@ -551,7 +551,7 @@
 		</skillRequirements>
 		<workSkill>Medicine</workSkill>
 		<displayPriority>769</displayPriority>
-		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Spice</researchPrerequisite>
 		<recipeUsers>
 			<li>kotor_DrugLab</li>
 		</recipeUsers>

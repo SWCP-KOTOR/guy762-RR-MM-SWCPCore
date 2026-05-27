@@ -39,11 +39,11 @@
 	<FCP_RarityRare>Rare</FCP_RarityRare>
 	<FCP_RarityUnique>Unique</FCP_RarityUnique>
 	<FCP_MechDetonate>Detonate</FCP_MechDetonate>
-	<FCP_CannotPickUp>Cannot pick up {0}</FCP_CannotPickUp>
-	<FCP_PickUp>Pick up {0}</FCP_PickUp>
-	<FCP_PickUpMax>Pick up max</FCP_PickUpMax>
-	<FCP_PickUpOne>Pick up one {0}</FCP_PickUpOne>
-	<FCP_TooHeavy>Too Heavy</FCP_TooHeavy>
+	<!-- <FCP_CannotPickUp>Cannot pick up {0}</FCP_CannotPickUp> -->
+	<!-- <FCP_PickUp>Pick up {0}</FCP_PickUp> -->
+	<!-- <FCP_PickUpMax>Pick up max</FCP_PickUpMax> -->
+	<!-- <FCP_PickUpOne>Pick up one {0}</FCP_PickUpOne> -->
+	<!-- <FCP_TooHeavy>Too Heavy</FCP_TooHeavy> -->
 	<FCP_Techprint_Label>FCP techprint ({PROJECT_label})</FCP_Techprint_Label>
 	<FCP_Techprint_Desc>This is a techprint for the research project '{PROJECT_label}'.
 \nThe physical form of techprints can range from scraps of paper with diagrams, all the way to advanced self-contained teaching machines. Regardless of form, they play the same role. They give your researchers the confidence that an idea is possible, and a rough idea of the designs used in more established societies.

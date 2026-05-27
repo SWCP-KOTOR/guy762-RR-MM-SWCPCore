@@ -62,7 +62,7 @@
 		</tradeTags>
 
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>CraftingSpot</li>
 				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
@@ -153,7 +153,7 @@
 			<li>guy762TT_KotORAntique</li>
 		</tradeTags>
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>CraftingSpot</li>
 				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>

@@ -43,7 +43,7 @@
 		<designationCategory>KOTOR_BuildTab</designationCategory>
 		<canOverlapZones>false</canOverlapZones>
 		<researchPrerequisites>
-			<li>KOTOR_Research_TableRec</li>
+			<li>SWCPResearch_TableRec</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<uiIconScale>0.5</uiIconScale>

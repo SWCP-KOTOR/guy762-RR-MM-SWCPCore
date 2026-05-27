@@ -10,7 +10,6 @@
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-		<initialResistanceRange>13~21</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
 		<biocodeWeaponChance>1</biocodeWeaponChance>
 		<isFighter>true</isFighter>
@@ -39,6 +38,10 @@
 		</forcedTraits>
 		
 		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+		
+		<initialWillRange>99~100</initialWillRange>
+		<initialResistanceRange>50~75</initialResistanceRange>
+		
     </PawnKindDef>
 	
 

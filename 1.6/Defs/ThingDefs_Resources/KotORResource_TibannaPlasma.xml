@@ -68,7 +68,7 @@
 			<li>ExoticBuilding</li>
 		</tradeTags>
 		<researchPrerequisites>
-			<li>KOTOR_Research_plasma</li>
+			<li>SWCPResearch_plasma</li>
 		</researchPrerequisites>
 		<designationCategory>KOTOR_BuildTab</designationCategory>
 		<uiIconScale>0.6</uiIconScale>
@@ -228,7 +228,7 @@
 		<uiOrder>2100</uiOrder>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>KOTOR_Research_plasma</li>
+			<li>SWCPResearch_plasma</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 		
@@ -483,7 +483,7 @@
 		</statBases>
 		<size>(1,1)</size>
 		<researchPrerequisites>
-			<li>KOTOR_Research_plasmaApplications</li>
+			<li>SWCPResearch_plasmaApplications</li>
 		</researchPrerequisites>
 		<costList>
 			<Steel>65</Steel>
@@ -693,7 +693,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>KOTOR_Research_plasmaApplications</li>
+			<li>SWCPResearch_plasmaApplications</li>
 		</researchPrerequisites>
 		
 	</ThingDef>

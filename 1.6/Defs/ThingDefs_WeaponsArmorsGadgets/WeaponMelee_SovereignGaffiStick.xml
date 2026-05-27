@@ -38,7 +38,7 @@
 		</statBases>
 		
 		<recipeMaker>
-		  <researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		  <skillRequirements>
 			<Crafting>6</Crafting>
 		  </skillRequirements>

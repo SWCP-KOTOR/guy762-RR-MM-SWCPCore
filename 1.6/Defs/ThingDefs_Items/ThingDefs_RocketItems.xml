@@ -123,7 +123,7 @@
 		<products>
 		  <guy762_RocketItem_highex>5</guy762_RocketItem_highex>
 		</products>
-		<researchPrerequisite>KOTOR_Research_AdvMunitions</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_AdvMunitions</researchPrerequisite>
 		<recipeUsers>
 			<li>FabricationBench</li>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
@@ -235,8 +235,8 @@
 		  <guy762_RocketItem_plasma>5</guy762_RocketItem_plasma>
 		</products>
 		<researchPrerequisites>
-			<li>KOTOR_Research_AdvMunitions</li>
-			<li>KOTOR_Research_plasma</li>
+			<li>SWCPResearch_AdvMunitions</li>
+			<li>SWCPResearch_plasma</li>
 		</researchPrerequisites>
 		<recipeUsers>
 			<li>FabricationBench</li>
@@ -339,8 +339,8 @@
 		  <guy762_RocketItem_ion>5</guy762_RocketItem_ion>
 		</products>
 		<researchPrerequisites>
-			<li>KOTOR_Research_AdvMunitions</li>
-			<li>guy762_ResearchKotOR_ion</li>
+			<li>SWCPResearch_AdvMunitions</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
 		</researchPrerequisites>
 		<recipeUsers>
 			<li>FabricationBench</li>
@@ -455,7 +455,7 @@
 		<products>
 		  <guy762_RocketItem_buster>5</guy762_RocketItem_buster>
 		</products>
-		<researchPrerequisite>KOTOR_Research_Baradium</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_Baradium</researchPrerequisite>
 		<recipeUsers>
 			<li>FabricationBench</li>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>

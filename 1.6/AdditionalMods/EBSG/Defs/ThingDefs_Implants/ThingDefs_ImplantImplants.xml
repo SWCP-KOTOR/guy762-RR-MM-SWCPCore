@@ -25,7 +25,7 @@
 		  <skillRequirements>
 			<Medicine>8</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_Implants</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -106,7 +106,7 @@
 		  <skillRequirements>
 			<Medicine>8</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_Implants</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -208,7 +208,7 @@
 		  <skillRequirements>
 			<Medicine>10</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_Implants</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -285,7 +285,7 @@
 		  <skillRequirements>
 			<Medicine>10</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_Implants</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_Implants</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -920,7 +920,7 @@
 		  <skillRequirements>
 			<Medicine>14</Medicine>
 		  </skillRequirements>
-		  <researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+		  <!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>

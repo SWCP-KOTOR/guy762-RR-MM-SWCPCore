@@ -249,6 +249,49 @@
 	
 	
 	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="SWCPRangedMakeableNoQuality_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="SWCPRangedMakeableNoQuality_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="SWCPRangedMakeableNoQuality_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -436,6 +479,49 @@
 	
 	<Operation Class="PatchOperationAddModExtension">
 	  <xpath>Defs/ThingDef[defName="KotORMeleeNoQualityModMake_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="SWCPMeleeMakeableNoQuality_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="SWCPMeleeMakeableNoQuality_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="SWCPMeleeMakeableNoQuality_TwoHand"]</xpath>
 	  <value>
 		
 			<li Class="DualWield.DefModExtension_DefaultSettings">

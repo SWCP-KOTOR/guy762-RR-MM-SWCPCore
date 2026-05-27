@@ -398,7 +398,7 @@
 		  <recipeUsers>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
 		  </recipeUsers>
-		  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_uncraftable</researchPrerequisite>
 		</recipeMaker>
 		<smeltable>false</smeltable>
 		<tickerType>Normal</tickerType>
@@ -467,7 +467,7 @@
 		  <recipeUsers>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
 		  </recipeUsers>
-		  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_uncraftable</researchPrerequisite>
 		</recipeMaker>
 		<smeltable>false</smeltable>
 		<tickerType>Normal</tickerType>
@@ -739,6 +739,168 @@
 			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
 		</descriptionHyperlinks>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="SWCPArmorMakeableNoQuality_soft" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		
+		
+		<recipeMaker>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<!--factionPrerequisiteTags>
+				<li>guy762_KotORFaction_Mando</li>
+			</factionPrerequisiteTags-->
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>40</Plasteel>
+			<Synthread>20</Synthread>
+			<KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
+		</costList>
+		
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>guy762_ThingCategory_KotORArmor</li>
+		</thingCategories>
+		
+		
+		<tickerType>Normal</tickerType>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	<ThingDef Name="SWCPArmorMakeableNoQuality_hard" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>-0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			
+			<Insulation_Cold>2.5</Insulation_Cold>
+			<Insulation_Heat>2.5</Insulation_Heat>
+			
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>5000</WorkToMake>
+		</statBases>
+		
+		
+		
+		<recipeMaker>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<!--factionPrerequisiteTags>
+				<li>guy762_KotORFaction_Mando</li>
+			</factionPrerequisiteTags-->
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>80</Plasteel>
+		</costList>
+		
+		
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>guy762_ThingCategory_KotORArmor</li>
+		</thingCategories>
+		
+
+		<tickerType>Normal</tickerType>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef Name="SWCPHelmetMakeableNoQuality_soft" ParentName="SWCPArmorMakeableNoQuality_soft" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	</ThingDef>
+	  
+	<ThingDef Name="SWCPHelmetMakeableNoQuality_hard" ParentName="SWCPArmorMakeableNoQuality_hard" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -1229,7 +1391,7 @@
 	  <recipeUsers>
 		<li>guy762_KotORDroidBench</li>
 	  </recipeUsers>
-	  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+	  <researchPrerequisite>SWCPResearch_uncraftable</researchPrerequisite>
 	</recipeMaker>
 	<costList>
 		<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
@@ -1266,7 +1428,7 @@
 	
 	<ThingDef Name="guy762_DroidArmorMakeable" ParentName="guy762_armorbase_hard" Abstract="True">
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_droidarmor</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
 				<li MayRequire="Killathon.ArtificialBeings.SynCore">ABF_Thing_Synstruct_PartWorkbench</li>

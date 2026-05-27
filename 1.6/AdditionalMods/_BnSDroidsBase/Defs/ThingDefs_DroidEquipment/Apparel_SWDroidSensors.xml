@@ -27,7 +27,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 			<Intellectual>6</Intellectual>
@@ -193,7 +193,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>12</Crafting>
 			<Intellectual>12</Intellectual>
@@ -254,7 +254,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 			<Intellectual>5</Intellectual>
@@ -380,7 +380,7 @@
 	</equippedStatOffsets>
 	
 	<recipeMaker>
-		<researchPrerequisite>guy762_ResearchKotOR_iondamp</researchPrerequisite>
+		<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 			<Intellectual>12</Intellectual>

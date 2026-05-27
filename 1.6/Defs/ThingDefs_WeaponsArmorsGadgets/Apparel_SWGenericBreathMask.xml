@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+	<ThingDef ParentName="guy762_HeadbandCraftableNoQualityBase">
+		<defName>guy762_RebelGasMask</defName>
+		<label>breath mask</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>SWApparel/RebelBreakMask/mask</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+		  <MarketValue>100</MarketValue>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Mass>0.3</Mass>
+		  <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.02</ArmorRating_Heat>
+		  
+		  <Insulation_Cold>2</Insulation_Cold>
+		  
+		  <EquipDelay>0.5</EquipDelay>
+		  <WorkToMake>1500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/RebelBreakMask/mask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderSkipFlags>
+				<li>Beard</li>
+			</renderSkipFlags>
+			<drawData>
+				<defaultData><layer>85</layer></defaultData>
+				<dataNorth><layer>-3</layer></dataNorth>
+			</drawData>
+			<bodyPartGroups>
+				<li>Mouth</li>
+			</bodyPartGroups>
+			<layers>
+				<!-- <li>Overhead</li> -->
+				<li>EyeCover</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>true</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			
+			<tags>
+				<li>SWCPSpecificApparelItem_RebelGasmask</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+				<options>
+					<li>
+						<weight>10</weight>
+						<only>(250,250,250)</only>  <!-- white -->
+					</li>
+				</options>
+		</colorGenerator>
+		
+		<modExtensions>
+		  <li MayRequire="guy762.StarWarsXenotypes" Class="EBSGFramework.EquipRestrictExtension">
+			<forbiddenGenesToEquip>
+				<li>guy762_HeadAttachment_keldormask</li>
+				<li>guy762_HeadAttachment_gandmask</li>
+			 </forbiddenGenesToEquip>
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+
+</Defs>

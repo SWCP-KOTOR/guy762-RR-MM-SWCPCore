@@ -282,7 +282,7 @@
 		</building>
 		
 		<researchPrerequisites>
-			<li>KOTOR_Research_UltraComponent</li>
+			<li>SWCPResearch_UltraComponent</li>
 		</researchPrerequisites>
 		<costList>
 			<KOTOR_AlloyDurasteel>65</KOTOR_AlloyDurasteel>

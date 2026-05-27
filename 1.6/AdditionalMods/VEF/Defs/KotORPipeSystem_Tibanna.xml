@@ -126,7 +126,7 @@
 	  <constructEffect>ConstructMetal</constructEffect>
 	  <clearBuildingArea>false</clearBuildingArea>
 	  <researchPrerequisites>
-		  <li>KOTOR_Research_plasma</li>
+		  <li>SWCPResearch_plasma</li>
 		</researchPrerequisites>
 	</ThingDef>
 	
@@ -204,7 +204,7 @@
 	    <constructEffect>ConstructMetal</constructEffect>
 	    <clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites>
-		  <li>KOTOR_Research_plasma</li>
+		  <li>SWCPResearch_plasma</li>
 		</researchPrerequisites>
 	  </ThingDef>
 
@@ -267,7 +267,7 @@
 	    <constructEffect>ConstructMetal</constructEffect>
 	    <clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites>
-		  <li>KOTOR_Research_plasma</li>
+		  <li>SWCPResearch_plasma</li>
 		</researchPrerequisites>
 	  </ThingDef>
 		
@@ -355,7 +355,7 @@
 		<canOverlapZones>false</canOverlapZones>
 		
 		<researchPrerequisites>
-		  <li>KOTOR_Research_plasma</li>
+		  <li>SWCPResearch_plasma</li>
 		</researchPrerequisites>
 		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
 		
@@ -450,7 +450,7 @@
       </li>
     </comps>
     <researchPrerequisites>
-	  <li>KOTOR_Research_plasma</li>
+	  <li>SWCPResearch_plasma</li>
 	</researchPrerequisites>
   </ThingDef>
 
@@ -529,7 +529,7 @@
       </li>
     </comps>
     <researchPrerequisites>
-	  <li>KOTOR_Research_plasma</li>
+	  <li>SWCPResearch_plasma</li>
 	</researchPrerequisites>
   </ThingDef>
 	
