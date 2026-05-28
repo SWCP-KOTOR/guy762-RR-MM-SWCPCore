@@ -4,6 +4,8 @@
 	<SWCP_LifeSupport_OxygenMode>Oxygen Mode</SWCP_LifeSupport_OxygenMode>
 	<SWCP_LifeSupport_OxygenMode_Desc>(ONLY WORKS IN SPACE!) Toggle between pushing oxygen to the room or sucking oxygen out of the room.</SWCP_LifeSupport_OxygenMode_Desc>
 	
+	<SWCP_ShowShipRoof>View Gravship interiors</SWCP_ShowShipRoof>
+	
 	
 	<FCP_CannotPickUp>Cannot pick up {0}</FCP_CannotPickUp>
 	<FCP_PickUp>Pick up {0} (all)</FCP_PickUp>

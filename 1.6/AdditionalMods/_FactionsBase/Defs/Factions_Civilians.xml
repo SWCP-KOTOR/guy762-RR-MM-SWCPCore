@@ -335,7 +335,7 @@
 		  
 		  
 		  
-		  <li MayRequire="SWCP.guy762.Taran.SWGalaxy">
+		  <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">
 			<kindDef>SWCPPawnGroupKind_CityBiome</kindDef>
 			<commonality>1</commonality>
 			<options>

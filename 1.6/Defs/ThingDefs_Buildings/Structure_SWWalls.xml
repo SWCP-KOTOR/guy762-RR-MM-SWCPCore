@@ -105,7 +105,7 @@
 				<li>WallLamp</li>
 				<li>Vent</li>
 				<li MayRequire="RedMattis.BetterPrerequisites">guy762_ShipTech_WallChargingStation</li>
-				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">guy762_ShipTech_LifeSupportUnit_heater</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">guy762_ShipTech_LifeSupportUnit_heater</li>
 			</relatedBuildCommands>
 		</building>
 		
