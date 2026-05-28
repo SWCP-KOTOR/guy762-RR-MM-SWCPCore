@@ -1,30 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <loadFolders>
-	<v1.5>
-		<li>/</li>
-		<li>1.5</li>
-		<!-- <li IfModActive="erdelf.HumanoidAlienRaces">1.5/AdditionalMods/HAR</li> -->
-		
-		<li IfModNotActive="jecrell.jecstools">1.5/AdditionalMods/_BorrowedFromJecsTools</li>
-		<!-- <li IfModNotActive="smartkar.athenaframework">1.5/AdditionalMods/_BorrowedFromAthenaFramework</li> -->
-		
-		<li IfModActive="Killathon.ArtificialBeings">1.5/AdditionalMods/MHC</li>
-		<li IfModActive="Killathon.ArtificialBeings.SynCore">1.5/AdditionalMods/ATC</li>
-		
-		<li IfModActive="DimonSever000.FactionLanguages">1.5/AdditionalMods/RimLanguages</li>
-		
-		<li IfModActive="sindre0830.rimnauts2">1.5/AdditionalMods/RimNauts2</li>
-		
-		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/AdditionalMods/Ideology</li>
-		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/AdditionalMods/Biotech</li>
-		
-		<li IfModActive="Dubwise.DubsBadHygiene">1.5/AdditionalMods/DBH</li>
-		<li IfModNotActive="Dubwise.DubsBadHygiene">1.5/AdditionalMods/NO_DBH</li>
-		
-		<li IfModActive="guy762.NA.MM.SWVehicles">1.5/AdditionalMods/_VehiclesBase</li>
-		<li IfModActive="guy762.MM.KotORVehicles">1.5/AdditionalMods/_VehiclesBase</li>
-	</v1.5>
-	
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
@@ -33,17 +8,12 @@
 		
 		<li IfModNotActive="jecrell.jecstools">1.6/AdditionalMods/_BorrowedFromJecsTools</li>
 		
-		<li IfModActive="Killathon.ArtificialBeings">1.6/AdditionalMods/MHC</li>
-		<li IfModActive="Killathon.ArtificialBeings.SynCore">1.6/AdditionalMods/ATC</li>
-		
 		<li IfModActive="DimonSever000.FactionLanguages">1.6/AdditionalMods/RimLanguages</li>
 		
 		<li IfModActive="MemeGoddess.DualWield">1.6/AdditionalMods/DualWield</li>
 		<li IfModActive="Roolo.DualWield">1.6/AdditionalMods/DualWield</li>
 		
 		<li IfModActive="Mlie.ShowMeYourHands">1.6/AdditionalMods/ShowMeYourHands</li>
-		
-		<li IfModActive="sindre0830.rimnauts2">1.6/AdditionalMods/RimNauts2</li>
 		
 		<!-- <li IfModActive="Ludeon.RimWorld.Ideology">1.6/AdditionalMods/Ideology</li> -->
 		<!-- <li IfModActive="Ludeon.RimWorld.Biotech">1.6/AdditionalMods/Biotech</li> -->
@@ -64,11 +34,7 @@
 		
 		<li IfModActive="EBSG.Framework">1.6/AdditionalMods/EBSG</li>
 		
-		<li IfModActive="kaitorisenkou.ModularWeapons2">1.6/AdditionalMods/ModularWeapons2</li>
-		
 		<li IfModActive="MrHydralisk.LayeredAtmosphereOrbit">1.6/AdditionalMods/LayeredAtmosphereOrbit</li>
-		
-		<li IfModActive="guy762.KotORDroids">1.6/AdditionalMods/_DroidsBase</li>
 		
 		<li IfModActive="SWCP.guy762.WarlordEmpire">1.6/AdditionalMods/_BnSDroidsBase</li>
 		
