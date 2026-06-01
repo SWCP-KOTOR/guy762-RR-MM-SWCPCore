@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+        <!--tunics-->
+
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_JediTunic_light</defName>
+		<label>Jedi tunic, light</label>
+		<description>Members of the Jedi Order typically wear plain or unassuming garments.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jedi/tunic_1_new/alt/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>175</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>10000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+		</equippedStatOffsets>
+		
+		<costList Inherit="False">
+			<Synthread>80</Synthread>
+			<!--VPE_Eltex>3</VPE_Eltex> added by patch -->
+		  </costList>
+		  <recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+			  <Crafting>10</Crafting>
+			</skillRequirements>
+		  </recipeMaker>
+		
+		<apparel>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<layers>
+				<li>OnSkin</li>
+				<!--li>Middle</li-->
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!-- <li>Neck</li> -->
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>OR_jedi</li>
+				<li>OR_jeditunic_light</li>
+				<li>KotORRoyaltyTag_AnyJediTunic</li>
+				<li>SWKotORSpecificApparelItem_LightJediTunic</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Jedi/tunic_1_new/alt/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_JediApparel</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(220,200,170)</only>       <!--K2 knight-->
+				</li>
+				<li>
+					<weight>75</weight>
+					<only>(140,125,115)</only>      <!--K2 padawan-->
+				</li>
+			</options>
+		</colorGenerator>
+		<!-- <comps> -->
+			<!-- <li Class="ModularWeapons2.CompProperties_ModularWeapon"> -->
+				<!-- <baseGraphicData> -->
+					<!-- <texPath>SWApparel/Jedi/tunic_1_new/alt/Apparel</texPath> -->
+					<!-- <graphicClass>Graphic_Single</graphicClass> -->
+				<!-- </baseGraphicData> -->
+				<!-- <partsMounts> -->
+				  <!-- <li> -->
+					<!-- <mountDef>guy762_KotORMount_underlay_robe</mountDef> -->
+					<!-- <offset>(0,0)</offset> -->
+					<!-- <layerOrder>1</layerOrder> -->
+				  <!-- </li> -->
+				<!-- </partsMounts> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	</ThingDef>
+  
+  
+	  <ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_JediTunic_simple</defName>
+		<label>Jedi tunic, simple</label>
+		<description>Members of the Jedi Order typically wear plain or unassuming garments.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jedi/tunic_1_new/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>175</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>10000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+		  <Force_FPMaxOffset MayRequire="lee.theforce.standalone">1.05</Force_FPMaxOffset>
+		  <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.05</SWPotF_ForcePoints_Recovery>
+		  <PsychicSensitivity>0.1</PsychicSensitivity>
+		</equippedStatOffsets>
+		
+		<costList Inherit="False">
+			<Synthread>80</Synthread>
+			<!--VPE_Eltex>3</VPE_Eltex> added by patch -->
+		  </costList>
+		  <recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+			  <Crafting>10</Crafting>
+			</skillRequirements>
+		  </recipeMaker>
+		
+		<apparel>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<layers>
+				<li>OnSkin</li>
+				<!--li>Middle</li-->
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!-- <li>Neck</li> -->
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>OR_jedi</li>
+				<li>OR_jeditunic_simple</li>
+				<li>KotORRoyaltyTag_AnyJediTunic</li>
+				<li>SWKotORSpecificApparelItem_SimpleJediTunic</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Jedi/tunic_1_new/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_JediApparel</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,165,110)</only>  <!--jawa's nougat 100,65,45 hood -->
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<!-- <comps> -->
+			<!-- <li Class="ModularWeapons2.CompProperties_ModularWeapon"> -->
+				<!-- <baseGraphicData> -->
+					<!-- <texPath>SWApparel/Jedi/tunic_1_new/Apparel</texPath> -->
+					<!-- <graphicClass>Graphic_Single</graphicClass> -->
+				<!-- </baseGraphicData> -->
+				<!-- <partsMounts> -->
+				  <!-- <li> -->
+					<!-- <mountDef>guy762_KotORMount_underlay_robe</mountDef> -->
+					<!-- <offset>(0,0)</offset> -->
+					<!-- <layerOrder>1</layerOrder> -->
+				  <!-- </li> -->
+				<!-- </partsMounts> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	</ThingDef>
+  
+ 
+  
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_JediTunic_trad</defName>
+		<label>Jedi tunic, traditional</label>
+		<description>Members of the Jedi Order typically wear plain or unassuming garments.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jedi/tunic_3/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>175</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>10000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <PainShockThreshold>0.1</PainShockThreshold>
+		  <PsychicSensitivity>0.1</PsychicSensitivity>
+		</equippedStatOffsets>
+
+		<costList Inherit="False">
+			<Synthread>80</Synthread>
+			<!--VPE_Eltex>3</VPE_Eltex> added by patch -->
+		  </costList>
+		  <recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+			  <Crafting>10</Crafting>
+			</skillRequirements>
+		  </recipeMaker>
+		
+		<apparel>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!-- <li>Neck</li> -->
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>OR_jedi</li>
+				<li>OR_jeditunic_trad</li>
+				<li>KotORRoyaltyTag_AnyJediTunic</li>
+				<li>SWKotORSpecificApparelItem_TraditionalJediTunic</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Jedi/tunic_3/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_JediApparel</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(175,120,55)</only>       <!--K1-->
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<!-- <comps> -->
+			<!-- <li Class="ModularWeapons2.CompProperties_ModularWeapon"> -->
+				<!-- <baseGraphicData> -->
+					<!-- <texPath>SWApparel/Jedi/tunic_3/Apparel</texPath> -->
+					<!-- <graphicClass>Graphic_Single</graphicClass> -->
+				<!-- </baseGraphicData> -->
+				<!-- <partsMounts> -->
+				  <!-- <li> -->
+					<!-- <mountDef>guy762_KotORMount_underlay_robe</mountDef> -->
+					<!-- <offset>(0,0)</offset> -->
+					<!-- <layerOrder>1</layerOrder> -->
+				  <!-- </li> -->
+				<!-- </partsMounts> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	</ThingDef>
+  
+  
+  
+  
+  
+  
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_JediTunic_lightOld</defName>
+		<label>Jedi tunic, plain</label>
+		<description>Members of the Jedi Order typically wear plain or unassuming garments.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jedi/tunic_1/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(190,135,75)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>10000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <PsychicSensitivity>0.1</PsychicSensitivity>
+		</equippedStatOffsets>
+		
+		<costList Inherit="False">
+			<Synthread>80</Synthread>
+			<!--VPE_Eltex>3</VPE_Eltex> added by patch -->
+		  </costList>
+		  <recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+			  <Crafting>10</Crafting>
+			</skillRequirements>
+		  </recipeMaker>
+		
+		<apparel>
+			<layers>
+				<li>OnSkin</li>
+				<!--li>Middle</li-->
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>OR_jedi</li>
+				<li>SWKotORSpecificApparelItem_OldJediTunic</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Jedi/tunic_1/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_JediApparel</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(220,200,170)</only>       <!--K2 knight-->
+				</li>
+				<li>
+					<weight>75</weight>
+					<only>(140,125,115)</only>      <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>33</weight>
+					<only>(125,90,65)</only>      <!--K2 norris-->
+				</li>
+				<li>
+					<weight>33</weight>
+					<only>(90,90,70)</only>      <!--K2 matukai apprentice-->
+				</li>
+				<li>
+					<weight>32</weight>
+					<only>(115,105,85)</only>      <!--K2 matukai adept-->
+				</li>
+				<li>
+					<weight>2</weight>
+					<only>(210,210,180)</only>      <!--K2 nomi sunrider's-->
+				</li>
+				<li>
+					<weight>1</weight>
+					<only>(60,70,55)</only>      <!--K2 arca jeth's-->
+				</li>
+			</options>
+		</colorGenerator>
+		<!-- <comps> -->
+			<!-- <li Class="ModularWeapons2.CompProperties_ModularWeapon"> -->
+				<!-- <baseGraphicData> -->
+					<!-- <texPath>SWApparel/Jedi/tunic_1/Apparel</texPath> -->
+					<!-- <graphicClass>Graphic_Single</graphicClass> -->
+				<!-- </baseGraphicData> -->
+				<!-- <partsMounts> -->
+				  <!-- <li> -->
+					<!-- <mountDef>guy762_KotORMount_underlay_robe</mountDef> -->
+					<!-- <offset>(0,0)</offset> -->
+					<!-- <layerOrder>1</layerOrder> -->
+				  <!-- </li> -->
+				<!-- </partsMounts> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_SithTunic_assassin</defName>
+		<label>Dark Jedi tunic, plain</label>
+		<description>These are simple robes, kept modest not by a desire to appear humble, but to offer the greatest freedom of movement during battle.</description>
+		<graphicData>
+		  <texPath>SWApparel/Sith/assassin/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<MarketValue>900</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			
+			<WorkToMake>10000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+			<Force_FPMaxOffset MayRequire="lee.theforce.standalone">1.05</Force_FPMaxOffset>
+			<SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.05</SWPotF_ForcePoints_Recovery>
+		</equippedStatOffsets>
+		
+		<costList Inherit="False">
+			<Synthread>90</Synthread>
+			<!--VPE_Eltex>4</VPE_Eltex> added by patch -->
+		  </costList>
+		  <recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+			  <Crafting>10</Crafting>
+			</skillRequirements>
+		  </recipeMaker>
+		
+		<apparel>
+			<layers>
+				<li>OnSkin</li>
+				<!--li>Middle</li-->
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!-- <li>Neck</li> -->
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>SE_sithassassin</li>
+				<li>SWKotORSpecificApparelItem_SithAssassinTunic</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Sith/assassin/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_SEArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(180,185,185)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<!-- <comps> -->
+			<!-- <li Class="ModularWeapons2.CompProperties_ModularWeapon"> -->
+				<!-- <baseGraphicData> -->
+					<!-- <texPath>SWApparel/Sith/assassin/Apparel</texPath> -->
+					<!-- <graphicClass>Graphic_Single</graphicClass> -->
+				<!-- </baseGraphicData> -->
+				<!-- <partsMounts> -->
+				  <!-- <li> -->
+					<!-- <mountDef>guy762_KotORMount_underlay_robe</mountDef> -->
+					<!-- <offset>(0,0)</offset> -->
+					<!-- <layerOrder>1</layerOrder> -->
+				  <!-- </li> -->
+				<!-- </partsMounts> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	</ThingDef>
+  
+
+
+</Defs>
