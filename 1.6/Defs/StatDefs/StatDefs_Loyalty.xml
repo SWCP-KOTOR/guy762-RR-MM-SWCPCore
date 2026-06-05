@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<StatDef>
+		<defName>SWCPStat_Loyalty</defName>
+		<label>loyalty</label>
+		<description>This stat decreases the chances that a pawn will be successfully recruited by a bribery attempt.</description>
+		<descriptionHyperlinks>
+			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_Bribery</AbilityDef>
+		</descriptionHyperlinks>
+		<category>SWCPStatCategory</category>
+		<displayPriorityInCategory>10</displayPriorityInCategory>
+		
+		<showOnPawns>true</showOnPawns>
+		<!-- <showOnDefaultValue>false</showOnDefaultValue> -->
+		<!-- <neverDisabled>true</neverDisabled> -->
+		<!-- <alwaysHide>false</alwaysHide> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+		
+		<defaultBaseValue>1</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<parts>
+			<li Class="StatPart_Mood">
+				<factorFromMoodCurve>
+					<points>
+						<li>(0,0.5)</li>
+							<li>(0.25,0.75)</li>
+								<li>(0.5,1)</li>
+							<li>(0.75,1.5)</li>
+						<li>(1,2)</li>
+					</points>
+				</factorFromMoodCurve>
+			</li>
+			<li Class="StatPart_Slave" MayRequire="Ludeon.RimWorld.Ideology">
+				<factor>0.25</factor>
+			</li>
+		</parts>
+	</StatDef>
+
+
+</Defs>

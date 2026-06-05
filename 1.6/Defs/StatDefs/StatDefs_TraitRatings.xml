@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StatDef Name="SWCPStat_TraitRatingsBASE" Abstract="True">
+		<category>SWCPStatCategory</category>
+		<!-- <category>PawnCombat</category> -->
+		<defaultBaseValue>0</defaultBaseValue>
+		<hideAtValue>0</hideAtValue>
+		
+		<!-- <minValue>0</minValue> -->
+		<!-- <maxValue>1</maxValue> -->
+		
+		<!-- <toStringStyle>PercentZero</toStringStyle> -->
+		<showOnPawns>true</showOnPawns>
+		
+		<!-- <displayPriorityInCategory>676205</displayPriorityInCategory> ok these are reverse-scored in the stat menu for some reaons??? -->
+	</StatDef>
+
+	
+
+	<StatDef ParentName="SWCPStat_TraitRatingsBASE">
+		<defName>SWCPStat_TraitRatings_SumOfGoodBad</defName>
+		<label>Trait Score</label>
+		<labelForFullStatList>Trait Score</labelForFullStatList>
+		<description>The sum total of both good and bad traits that this pawn has. This stat has no in-game effects.</description>
+		<displayPriorityInCategory>676205</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_TraitRatingsBASE">
+		<defName>SWCPStat_TraitRatings_Good</defName>
+		<label>Good Traits</label>
+		<labelForFullStatList>Good Traits</labelForFullStatList>
+		<description>The sum total of beneficial traits that this pawn has. This stat has no in-game effects.</description>
+		<displayPriorityInCategory>676204</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_TraitRatingsBASE">
+		<defName>SWCPStat_TraitRatings_Bad</defName>
+		<label>Bad Traits</label>
+		<labelForFullStatList>Bad Traits</labelForFullStatList>
+		<description>The sum total of negative traits that this pawn has. This stat has no in-game effects.</description>
+		<displayPriorityInCategory>676203</displayPriorityInCategory>
+	</StatDef>
+	
+	
+	
+	
+	
+	
+	
+	<StatDef ParentName="SWCPStat_TraitRatingsBASE">
+		<defName>SWCPStat_TraitRatings_LightSideAffinity</defName>
+		<label>Light Side Affinity</label>
+		<labelForFullStatList>Light Affinity</labelForFullStatList>
+		<description>This pawn's baseline disposition towards the Light side of the Force, as determined by their traits.</description>
+		<toStringStyle>PercentZero</toStringStyle>
+		<displayPriorityInCategory>676202</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_TraitRatingsBASE">
+		<defName>SWCPStat_TraitRatings_DarkSideAffinity</defName>
+		<label>Dark Side Affinity</label>
+		<labelForFullStatList>Dark Affinity</labelForFullStatList>
+		<description>This pawn's baseline disposition towards the Dark side of the Force, as determined by their traits.</description>
+		<toStringStyle>PercentZero</toStringStyle>
+		<displayPriorityInCategory>676201</displayPriorityInCategory>
+	</StatDef>
+
+
+
+
+</Defs>

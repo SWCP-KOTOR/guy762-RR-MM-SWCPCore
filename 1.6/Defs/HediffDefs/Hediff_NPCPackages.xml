@@ -16,7 +16,7 @@
 	<HediffDef Name="SWCPNPCPackageHediff_liteneeddisabler" ParentName="SWCPHediff_NPCPackageBASE">
 		<defName>SWCPNPCPackageHediff_liteneeddisabler</defName>
 		<label>NPC Package: lite need disabler</label>
-		<description>This is a debug hediff that disables a pawn's various unimportant needs.\n\nThis hediff will be removed if the pawn is downed or killed.</description>
+		<description>This is a debug hediff that disables a pawn's various unimportant needs.\n\nThis hediff will be removed if the pawn is downed, killed, or changes factions.</description>
 		<stages>
 			<li>
 				<minSeverity>0</minSeverity>
@@ -37,7 +37,7 @@
 	<HediffDef Name="SWCPNPCPackageHediff_needdisabler" ParentName="SWCPHediff_NPCPackageBASE">
 		<defName>SWCPNPCPackageHediff_needdisabler</defName>
 		<label>NPC Package: need disabler</label>
-		<description>This is a debug hediff that disables a pawn's hunger, rest, and various other needs.\n\nThis hediff will be removed if the pawn is downed or killed.</description>
+		<description>This is a debug hediff that disables a pawn's hunger, rest, and various other needs.\n\nThis hediff will be removed if the pawn is downed, killed, or changes factions.</description>
 		<stages>
 			<li>
 				<minSeverity>0</minSeverity>
@@ -61,7 +61,7 @@
 	<HediffDef Name="SWCPNPCPackageHediff_boredguard" ParentName="SWCPNPCPackageHediff_needdisabler">
 		<defName>SWCPNPCPackageHediff_boredguard</defName>
 		<label>NPC Package: bored guard</label>
-		<description>This is a debug hediff that disables a various needs and sets stats according to a specific role.\n\nThis pawn has the role of a bored, inattentive guard.\n\nThis hediff will be removed if the pawn is downed or killed.</description>
+		<description>This is a debug hediff that disables a various needs and sets stats according to a specific role.\n\nThis pawn has the role of a bored, inattentive guard.\n\nThis hediff will be removed if the pawn is downed, killed, or changes factions.</description>
 		<stages Inherit="False">
 			<li>
 				<minSeverity>0</minSeverity>
@@ -80,6 +80,102 @@
 				
 				<statOffsets>
 					<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	<HediffDef Name="SWCPNPCPackageHediff_minus25percentloyalty" ParentName="SWCPNPCPackageHediff_needdisabler">
+		<defName>SWCPNPCPackageHediff_minus25percentloyalty</defName>
+		<label>NPC Package: somewhat disloyal soldier</label>
+		<description>This is a debug hediff that disables a various needs and sets stats according to a specific role.\n\nThis pawn has the role of a somewhat disloyal soldier.\n\nThis hediff will be removed if the pawn is downed, killed, or changes factions.</description>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				<disablesNeeds>
+					<li>Food</li>
+					<li>Rest</li>
+					
+					<li>Joy</li>
+					<li>Beauty</li>
+					<li>Comfort</li>
+					<li>DrugDesire</li>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+				</disablesNeeds>
+				
+				<statOffsets>
+					<SWCPStat_Loyalty>-0.25</SWCPStat_Loyalty>
+					<SWCPStat_Awareness>-0.1</SWCPStat_Awareness>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	<HediffDef Name="SWCPNPCPackageHediff_minus50percentloyalty" ParentName="SWCPNPCPackageHediff_needdisabler">
+		<defName>SWCPNPCPackageHediff_minus50percentloyalty</defName>
+		<label>NPC Package: disloyal soldier</label>
+		<description>This is a debug hediff that disables a various needs and sets stats according to a specific role.\n\nThis pawn has the role of a disloyal soldier.\n\nThis hediff will be removed if the pawn is downed, killed, or changes factions.</description>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				<disablesNeeds>
+					<li>Food</li>
+					<li>Rest</li>
+					
+					<li>Joy</li>
+					<li>Beauty</li>
+					<li>Comfort</li>
+					<li>DrugDesire</li>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+				</disablesNeeds>
+				
+				<statOffsets>
+					<SWCPStat_Loyalty>-0.5</SWCPStat_Loyalty>
+					<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	<HediffDef Name="SWCPNPCPackageHediff_minus75percentloyalty" ParentName="SWCPNPCPackageHediff_needdisabler">
+		<defName>SWCPNPCPackageHediff_minus75percentloyalty</defName>
+		<label>NPC Package: very disloyal soldier</label>
+		<description>This is a debug hediff that disables a various needs and sets stats according to a specific role.\n\nThis pawn has the role of a very disloyal soldier.\n\nThis hediff will be removed if the pawn is downed, killed, or changes factions.</description>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				<disablesNeeds>
+					<li>Food</li>
+					<li>Rest</li>
+					
+					<li>Joy</li>
+					<li>Beauty</li>
+					<li>Comfort</li>
+					<li>DrugDesire</li>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+				</disablesNeeds>
+				
+				<statOffsets>
+					<SWCPStat_Loyalty>-0.75</SWCPStat_Loyalty>
+					<SWCPStat_Awareness>-0.3</SWCPStat_Awareness>
 				</statOffsets>
 			</li>
 		</stages>

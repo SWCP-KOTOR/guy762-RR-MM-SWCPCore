@@ -33,7 +33,7 @@
 			<li Class="SkillNeed_BaseBonus">
 				<skill>Animals</skill>
 				<baseValue>0</baseValue>
-				<bonusPerLevel>0.05</bonusPerLevel>
+				<bonusPerLevel>0.01</bonusPerLevel>
 			</li>
 		</skillNeedOffsets>
 		<capacityFactors>
