@@ -184,7 +184,13 @@
 	<SWCP_AbilityTraining_StealthAdvance_Desc>Take a 5-day course to learn the Stealth Advance squad tactic ability.</SWCP_AbilityTraining_StealthAdvance_Desc>
 	<SWCP_AbilityTraining_DelegateStealthAdvance_Label>Training: Stealth Advance delegation</SWCP_AbilityTraining_DelegateStealthAdvance_Label>
 	<SWCP_AbilityTraining_DelegateStealthAdvance_Desc>Take a 5-day course to learn the Stealth Advance tactic delegation ability.</SWCP_AbilityTraining_DelegateStealthAdvance_Desc>
-		<!-- USED BY: New Republic, Partisan Cell -->
+		<!-- USED BY: New Republic, Partisan Cell, Zann Consortium -->
+		
+	<SWCP_AbilityTraining_Bribery_Label>Training: Bribery tactic</SWCP_AbilityTraining_Bribery_Label>
+	<SWCP_AbilityTraining_Bribery_Desc>Take a 5-day course to learn the Bribery squad tactic ability.</SWCP_AbilityTraining_Bribery_Desc>
+	<SWCP_AbilityTraining_DelegateBribery_Label>Training: Bribery delegation</SWCP_AbilityTraining_DelegateBribery_Label>
+	<SWCP_AbilityTraining_DelegateBribery_Desc>Take a 5-day course to learn the Bribery tactic delegation ability.</SWCP_AbilityTraining_DelegateBribery_Desc>
+		<!-- USED BY: Zann Consortium -->
 
 
 

@@ -1223,6 +1223,31 @@
 		</subSounds>
 	</SoundDef>
 	
+	<SoundDef>
+		<defName>kotorsound_EaWBribe</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/Gui_bribe_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	
 	
 	

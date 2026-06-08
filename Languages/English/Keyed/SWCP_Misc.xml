@@ -6,6 +6,8 @@
 	
 	<SWCP_ShowShipRoof>View Gravship interiors</SWCP_ShowShipRoof>
 	
+	<SelfHediffVerb_CooltimeRemain>On cooldown! {0}</SelfHediffVerb_CooltimeRemain>
+	
 	
 	<FCP_CannotPickUp>Cannot pick up {0}</FCP_CannotPickUp>
 	<FCP_PickUp>Pick up {0} (all)</FCP_PickUp>

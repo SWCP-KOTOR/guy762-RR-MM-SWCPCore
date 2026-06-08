@@ -560,7 +560,8 @@
 			<WorkToMake>1000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -675,7 +676,8 @@
 			<WorkToMake>1000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.2</SocialImpact>
+			<SocialImpact>0.2</SocialImpact>
+			<NegotiationAbility>0.2</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -767,7 +769,8 @@
 			<WorkToMake>1000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.2</SocialImpact>
+			<SocialImpact>0.2</SocialImpact>
+			<NegotiationAbility>0.2</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -1607,8 +1610,9 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
-		  <SocialImpact>0.2</SocialImpact>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
+			<SocialImpact>0.2</SocialImpact>
+			<NegotiationAbility>0.2</NegotiationAbility>
 		</equippedStatOffsets>
 		<apparel>
 			<layers>
@@ -1736,7 +1740,8 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.3</SocialImpact>
+			<SocialImpact>0.3</SocialImpact>
+			<NegotiationAbility>0.3</NegotiationAbility>
 		</equippedStatOffsets>
 		<apparel>
 			<layers>

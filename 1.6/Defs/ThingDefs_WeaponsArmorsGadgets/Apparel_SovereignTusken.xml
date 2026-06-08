@@ -26,7 +26,8 @@
 		</statBases>
 
 		<equippedStatOffsets>
-		  <SocialImpact>-0.2</SocialImpact>
+			<SocialImpact>-0.2</SocialImpact>
+			<NegotiationAbility>-0.2</NegotiationAbility>
 		</equippedStatOffsets>
 
 		<costStuffCount>100</costStuffCount>

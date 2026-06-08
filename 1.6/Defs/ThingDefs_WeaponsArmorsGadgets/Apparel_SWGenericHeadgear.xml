@@ -23,7 +23,8 @@
 		  <WorkToMake>1000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -104,7 +105,8 @@
 		  <WorkToMake>1000</WorkToMake>
 		</statBases>
 		<!-- <equippedStatOffsets> -->
-		  <!-- <SocialImpact>0.1</SocialImpact> -->
+			<!-- <SocialImpact>0.1</SocialImpact> -->
+			<!-- <NegotiationAbility>0.1</NegotiationAbility> -->
 		<!-- </equippedStatOffsets> -->
 		
 		<recipeMaker>
@@ -179,7 +181,8 @@
 		  <WorkToMake>1000</WorkToMake>
 		</statBases>
 		<!-- <equippedStatOffsets> -->
-		  <!-- <SocialImpact>0.1</SocialImpact> -->
+			<!-- <SocialImpact>0.1</SocialImpact> -->
+			<!-- <NegotiationAbility>0.1</NegotiationAbility> -->
 		<!-- </equippedStatOffsets> -->
 		
 		<recipeMaker>
@@ -473,6 +476,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		
@@ -701,7 +705,8 @@
 		  <WorkToMake>1000</WorkToMake>
 		</statBases>
 		<!-- <equippedStatOffsets> -->
-		  <!-- <SocialImpact>0.1</SocialImpact> -->
+			<!-- <SocialImpact>0.1</SocialImpact> -->
+			<!-- <NegotiationAbility>0.1</NegotiationAbility> -->
 		<!-- </equippedStatOffsets> -->
 		
 		<costList>
