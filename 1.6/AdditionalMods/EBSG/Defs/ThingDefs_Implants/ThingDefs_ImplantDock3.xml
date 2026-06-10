@@ -40,6 +40,7 @@
 			<li>Indoors</li>
 			<li>RoomSize</li>
 			<li MayRequire="rim.job.world">Sex</li>
+			<li MayRequire="LovelyDovey.Sex.WithEuterpe">SEX_Intimacy</li>
 		</disablesNeeds>
       </li>
     </stages>
@@ -254,6 +255,7 @@
 		<li>Indoors</li>
 		<li>RoomSize</li>
 		<li MayRequire="rim.job.world">Sex</li>
+		<li MayRequire="LovelyDovey.Sex.WithEuterpe">SEX_Intimacy</li>
 	</disablesNeeds>
   </HediffDef-->
 

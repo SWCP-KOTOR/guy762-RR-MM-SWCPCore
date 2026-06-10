@@ -128,6 +128,11 @@
 				</disabledWorkTags>
 			</li>
 		</stages>
+		<!-- <modExtension> done through a patch in the GCW Factions AdditionalMods folder-->
+			<!-- <li MayRequire="LovelyDovey.Sex.WithEuterpe" Class="LoveyDoveySexWithEuterpe.IntimacyModExtension"> -->
+				<!-- <preventsSocialActivity>false</preventsSocialActivity> -->
+			<!-- </li> -->
+		<!-- </modExtension> -->
 	</HediffDef>
 	
 	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">

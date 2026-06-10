@@ -418,6 +418,7 @@
 				<li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
 				<li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
 				<li MayRequire="rim.job.world">Sex</li>
+				<li MayRequire="LovelyDovey.Sex.WithEuterpe">SEX_Intimacy</li>
 				<li>RoomSize</li>
 				<li>Joy</li>
 				<li>Beauty</li>

@@ -155,6 +155,7 @@
                     <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
                     <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
 					<li MayRequire="rim.job.world">Sex</li>
+					<li MayRequire="LovelyDovey.Sex.WithEuterpe">SEX_Intimacy</li>
                 </blacklistedNeeds>
                 <blacklistedSapientNeeds>
                     <li>RoomSize</li>

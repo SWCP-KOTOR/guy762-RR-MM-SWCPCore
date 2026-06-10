@@ -1,11 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<StatCategoryDef>
+		<defName>SWCPStatCategory_TraitRating</defName>
+		<label>SWCP Trait Ratings</label>
+		<displayOrder>763</displayOrder>
+		
+		<displayAllByDefault>true</displayAllByDefault>
+	</StatCategoryDef>
+	
 	<StatDef Name="SWCPStat_TraitRatingsBASE" Abstract="True">
-		<category>SWCPStatCategory</category>
+		<category>SWCPStatCategory_TraitRating</category>
 		<!-- <category>PawnCombat</category> -->
 		<defaultBaseValue>0</defaultBaseValue>
-		<hideAtValue>0</hideAtValue>
+		<!-- <hideAtValue>0</hideAtValue> -->
 		
 		<!-- <minValue>0</minValue> -->
 		<!-- <maxValue>1</maxValue> -->
@@ -23,15 +31,18 @@
 		<label>Trait Score</label>
 		<labelForFullStatList>Trait Score</labelForFullStatList>
 		<description>The sum total of both good and bad traits that this pawn has. This stat has no in-game effects.</description>
-		<displayPriorityInCategory>676205</displayPriorityInCategory>
+		<displayPriorityInCategory>676207</displayPriorityInCategory>
 	</StatDef>
+	
+	
 	
 	<StatDef ParentName="SWCPStat_TraitRatingsBASE">
 		<defName>SWCPStat_TraitRatings_Good</defName>
 		<label>Good Traits</label>
 		<labelForFullStatList>Good Traits</labelForFullStatList>
 		<description>The sum total of beneficial traits that this pawn has. This stat has no in-game effects.</description>
-		<displayPriorityInCategory>676204</displayPriorityInCategory>
+		<displayPriorityInCategory>676206</displayPriorityInCategory>
+		<hideAtValue>0</hideAtValue>
 	</StatDef>
 	
 	<StatDef ParentName="SWCPStat_TraitRatingsBASE">
@@ -39,8 +50,13 @@
 		<label>Bad Traits</label>
 		<labelForFullStatList>Bad Traits</labelForFullStatList>
 		<description>The sum total of negative traits that this pawn has. This stat has no in-game effects.</description>
-		<displayPriorityInCategory>676203</displayPriorityInCategory>
+		<displayPriorityInCategory>676205</displayPriorityInCategory>
+		<hideAtValue>0</hideAtValue>
 	</StatDef>
+	
+	
+	
+	
 	
 	
 	
@@ -54,7 +70,8 @@
 		<labelForFullStatList>Light Affinity</labelForFullStatList>
 		<description>This pawn's baseline disposition towards the Light side of the Force, as determined by their traits.</description>
 		<toStringStyle>PercentZero</toStringStyle>
-		<displayPriorityInCategory>676202</displayPriorityInCategory>
+		<displayPriorityInCategory>676204</displayPriorityInCategory>
+		<hideAtValue>0</hideAtValue>
 	</StatDef>
 	
 	<StatDef ParentName="SWCPStat_TraitRatingsBASE">
@@ -63,8 +80,33 @@
 		<labelForFullStatList>Dark Affinity</labelForFullStatList>
 		<description>This pawn's baseline disposition towards the Dark side of the Force, as determined by their traits.</description>
 		<toStringStyle>PercentZero</toStringStyle>
-		<displayPriorityInCategory>676201</displayPriorityInCategory>
+		<displayPriorityInCategory>676203</displayPriorityInCategory>
+		<hideAtValue>0</hideAtValue>
 	</StatDef>
+	
+	
+	
+	
+	
+	<!-- <StatDef ParentName="SWCPStat_TraitRatingsBASE"> -->
+		<!-- <defName>SWCPStat_TraitRatings_MartialPractice</defName> -->
+		<!-- <label>Martial Alignment</label> -->
+		<!-- <labelForFullStatList>Martiality</labelForFullStatList> -->
+		<!-- <description>This pawn's baseline disposition towards martial practices, as determined by their traits.</description> -->
+		<!-- <toStringStyle>PercentZero</toStringStyle> -->
+		<!-- <displayPriorityInCategory>676202</displayPriorityInCategory> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+	<!-- </StatDef> -->
+	
+	<!-- <StatDef ParentName="SWCPStat_TraitRatingsBASE"> -->
+		<!-- <defName>SWCPStat_TraitRatings_SpiritualPractice</defName> -->
+		<!-- <label>Spiritual Alignment</label> -->
+		<!-- <labelForFullStatList>Spirituality</labelForFullStatList> -->
+		<!-- <description>This pawn's baseline disposition towards spirituality, as determined by their traits.</description> -->
+		<!-- <toStringStyle>PercentZero</toStringStyle> -->
+		<!-- <displayPriorityInCategory>676201</displayPriorityInCategory> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+	<!-- </StatDef> -->
 
 
 
