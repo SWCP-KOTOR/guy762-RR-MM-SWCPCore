@@ -967,7 +967,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPHelmetMakeableNoQuality_hard">
 		<defName>guy762_ImpWorkerHelmet</defName>
 		<label>worker's helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -977,9 +977,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<thingCategories>
-		  <li>ArmorHeadgear</li>
-		</thingCategories>
 		<statBases>
 			<Mass>6</Mass>
 			<MarketValue>300</MarketValue>

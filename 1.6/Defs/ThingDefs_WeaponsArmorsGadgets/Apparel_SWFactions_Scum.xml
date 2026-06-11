@@ -189,7 +189,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_Robes_gand</defName>
 		<label>robes, armored</label>
 		<description>While bulky and restrictive, these robes provide solid full-body protection that most other light armors can't offer. The high degree of modularity allows it to compete with even medium armors, and as such, robes like this are favored by many martial cultures like the Gand Findsmen or the Kaleesh.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)\n- Armor Overlay</description>
