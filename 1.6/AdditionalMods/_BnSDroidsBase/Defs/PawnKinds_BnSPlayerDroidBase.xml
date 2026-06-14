@@ -6,18 +6,22 @@
         <defaultFactionType>PlayerColony</defaultFactionType>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		
-		<minGenerationAge>20</minGenerationAge>
-		<maxGenerationAge>21</maxGenerationAge>
+		<!-- <minGenerationAge>20</minGenerationAge> -->
+		<!-- <maxGenerationAge>21</maxGenerationAge> -->
 		<chronologicalAgeRange>1~2</chronologicalAgeRange>
 		
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialResistanceRange>13~21</initialResistanceRange>
 		<modExtensions>
-            <!-- <li Class="ArtificialBeings.ABF_ArtificialPawnKindExtension"> -->
-                <!-- <pawnState>Reprogrammable</pawnState> -->
-                <!-- <caravanRole>Chattel</caravanRole> -->
-            <!-- </li> -->
+            <li Class="BigAndSmall.PawnKindExtension">
+				<ageCurve> 
+					<points> 
+						<li>(0, 20)</li>
+						<li>(1, 21)</li>
+					</points>
+				</ageCurve>
+			</li>
         </modExtensions>
     </PawnKindDef>
 	

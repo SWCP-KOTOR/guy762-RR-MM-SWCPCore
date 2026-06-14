@@ -255,6 +255,10 @@
 			
 			<socialFightChanceFactor>0</socialFightChanceFactor>
 			<makeImmuneTo>
+				<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
+				
+				<li>PsychicShock</li>
+				
 				<li>Flu</li>
 				<li>Malaria</li>
 				<li>SleepingSickness</li>
@@ -266,9 +270,19 @@
 				<li>OrganDecay</li>
 				<li>FoodPoisoning</li>
 
-				<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
+				<li>Carcinoma</li>
+				<li>HeartAttack</li>
+				<li>BadBack</li>
+				<li>Frail</li>
+				<li>Cataract</li>
+				<li>Dementia</li>
+				<li>Alzheimers</li>
+				<li>Asthma</li>
+				<li>HeartArteryBlockage</li>
+				<li>Anesthetic</li>
+
+				<li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
 				
-				<li>PsychicShock</li>
 				
 				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropy</li>
 				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBreakdown</li>
@@ -312,6 +326,7 @@
 				<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumBurn</li>
 				<li MayRequire="Ludeon.RimWorld.Odyssey">GravNausea</li>
 				
+				
 				<li>KoltoTank_Coma</li>
 				<li>KoltoTank_Recovering</li>
 				<li>guy762_hediff_kolto</li>
@@ -319,6 +334,7 @@
 				<li>guy762_Electrocuted</li>
 				<li>guy762_Poison_saber</li>
 				<li>guy762_hediff_Decayed</li>
+				
 				
 				<li>guy762_medpacHeal</li>
 				<li>guy762_medpacHeal_adv</li>
@@ -329,14 +345,15 @@
 				
 				<li>SWCPHediff_Suppression</li>
 				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li>
-
-
-
+				
+				
+				
 				<li MayRequire="lee.theforce.lightsaber">Lightsaber_Stance</li>
 				<li MayRequire="lee.theforce.lightsaber">Force_TelekineticLightsaber</li>
 				<li MayRequire="lee.theforce.lightsaber">Force_LightsaberShortCircuit</li>
-				
-				
+
+
+
 				<li MayRequire="lee.theforce.standalone">Force_Rage</li>
 				<li MayRequire="lee.theforce.standalone">Force_WaveOfHatred</li>
 				<li MayRequire="lee.theforce.standalone">Force_DarkSideHatred</li>
@@ -782,152 +799,152 @@
 				  </banlist>
 				</traitFilters>
 				
-				<hediffFilters>
-				  <banlist>
+				<!-- <hediffFilters> -->
+				  <!-- <banlist> -->
 					<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
 					
-					<li>PsychicShock</li>
+					<!-- <li>PsychicShock</li> -->
 					
-					<li>Flu</li>
-					<li>Malaria</li>
-					<li>SleepingSickness</li>
-					<li>Plague</li>
-					<li>WoundInfection</li>
-					<li>LungRot</li>
-					<li>GutWorms</li>
-					<li>MuscleParasites</li>
-					<li>OrganDecay</li>
-					<li>FoodPoisoning</li>
+					<!-- <li>Flu</li> -->
+					<!-- <li>Malaria</li> -->
+					<!-- <li>SleepingSickness</li> -->
+					<!-- <li>Plague</li> -->
+					<!-- <li>WoundInfection</li> -->
+					<!-- <li>LungRot</li> -->
+					<!-- <li>GutWorms</li> -->
+					<!-- <li>MuscleParasites</li> -->
+					<!-- <li>OrganDecay</li> -->
+					<!-- <li>FoodPoisoning</li> -->
 
-					<li>Carcinoma</li>
-					<li>HeartAttack</li>
-					<li>BadBack</li>
-					<li>Frail</li>
-					<li>Cataract</li>
-					<li>Dementia</li>
-					<li>Alzheimers</li>
-					<li>Asthma</li>
-					<li>HeartArteryBlockage</li>
-					<li>Anesthetic</li>
+					<!-- <li>Carcinoma</li> -->
+					<!-- <li>HeartAttack</li> -->
+					<!-- <li>BadBack</li> -->
+					<!-- <li>Frail</li> -->
+					<!-- <li>Cataract</li> -->
+					<!-- <li>Dementia</li> -->
+					<!-- <li>Alzheimers</li> -->
+					<!-- <li>Asthma</li> -->
+					<!-- <li>HeartArteryBlockage</li> -->
+					<!-- <li>Anesthetic</li> -->
 
-					<li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
-					
-					
-					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropy</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBreakdown</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicAnesthesia</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBurden</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBlindness</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicVertigo</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicFocus</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">EntropyLink</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicLove</li>
-
-					<li MayRequire="Ludeon.RimWorld.Royalty">BloodRot</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Abasia</li>
-
-					<li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BiosculptingSickness</li>
-
-					<li MayRequire="Ludeon.RimWorld.Ideology">WorkFocus</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">PreachHealth</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BerserkTrance</li>
-
-					<li MayRequire="Ludeon.RimWorld.Ideology">ResearchCommand</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">ImmunityDrive</li>
-					
-					<li MayRequire="Ludeon.RimWorld.Biotech">ToxGasExposure</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">PsychicBond</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">PsychicBondTorn</li>
-					
-					<li MayRequire="Ludeon.RimWorld.Odyssey">VolcanicAsh</li>
-					<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumExposure</li>
-					<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumBurn</li>
-					<li MayRequire="Ludeon.RimWorld.Odyssey">GravNausea</li>
+					<!-- <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li> -->
 					
 					
-					<li>KoltoTank_Coma</li>
-					<li>KoltoTank_Recovering</li>
-					<li>guy762_hediff_kolto</li>
-					<li>guy762_SonicDisorient</li>
-					<li>guy762_Electrocuted</li>
-					<li>guy762_Poison_saber</li>
-					<li>guy762_hediff_Decayed</li>
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropy</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">PsychicBreakdown</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">PsychicAnesthesia</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">PsychicBurden</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">PsychicBlindness</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">PsychicVertigo</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">PsychicFocus</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">EntropyLink</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">PsychicLove</li> -->
+
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">BloodRot</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">Abasia</li> -->
+
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">BiosculptingSickness</li> -->
+
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkFocus</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">PreachHealth</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">BerserkTrance</li> -->
+
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ResearchCommand</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ImmunityDrive</li> -->
+					
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">ToxGasExposure</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">PsychicBond</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">PsychicBondTorn</li> -->
+					
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">VolcanicAsh</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">VacuumExposure</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">VacuumBurn</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">GravNausea</li> -->
 					
 					
-					<li>guy762_medpacHeal</li>
-					<li>guy762_medpacHeal_adv</li>
-					<li>guy762_medpacHeal_life</li>
-					<li>guy762_medpacHeal_antidote</li>
-					<li>SWCPHediff_BactaHeal</li>
+					<!-- <li>KoltoTank_Coma</li> -->
+					<!-- <li>KoltoTank_Recovering</li> -->
+					<!-- <li>guy762_hediff_kolto</li> -->
+					<!-- <li>guy762_SonicDisorient</li> -->
+					<!-- <li>guy762_Electrocuted</li> -->
+					<!-- <li>guy762_Poison_saber</li> -->
+					<!-- <li>guy762_hediff_Decayed</li> -->
 					
 					
-					<li>SWCPHediff_Suppression</li>
-					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li>
+					<!-- <li>guy762_medpacHeal</li> -->
+					<!-- <li>guy762_medpacHeal_adv</li> -->
+					<!-- <li>guy762_medpacHeal_life</li> -->
+					<!-- <li>guy762_medpacHeal_antidote</li> -->
+					<!-- <li>SWCPHediff_BactaHeal</li> -->
+					
+					
+					<!-- <li>SWCPHediff_Suppression</li> -->
+					<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li> -->
 					
 					
 					
-					<li MayRequire="lee.theforce.lightsaber">Lightsaber_Stance</li>
-					<li MayRequire="lee.theforce.lightsaber">Force_TelekineticLightsaber</li>
-					<li MayRequire="lee.theforce.lightsaber">Force_LightsaberShortCircuit</li>
+					<!-- <li MayRequire="lee.theforce.lightsaber">Lightsaber_Stance</li> -->
+					<!-- <li MayRequire="lee.theforce.lightsaber">Force_TelekineticLightsaber</li> -->
+					<!-- <li MayRequire="lee.theforce.lightsaber">Force_LightsaberShortCircuit</li> -->
 
 
 
-					<li MayRequire="lee.theforce.standalone">Force_Rage</li>
-					<li MayRequire="lee.theforce.standalone">Force_WaveOfHatred</li>
-					<li MayRequire="lee.theforce.standalone">Force_DarkSideHatred</li>
-					<li MayRequire="lee.theforce.standalone">Force_DrainedVitality</li>
-					<li MayRequire="lee.theforce.standalone">Force_SiphonedVitality</li>
-					<li MayRequire="lee.theforce.standalone">Force_Phantom</li>
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Rage</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_WaveOfHatred</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_DarkSideHatred</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_DrainedVitality</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_SiphonedVitality</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Phantom</li> -->
 
-					<li MayRequire="lee.theforce.standalone">Force_EnhanceForce</li>
-					<li MayRequire="lee.theforce.standalone">Jedi_Training_Combat</li>
-					<li MayRequire="lee.theforce.standalone">Jedi_Training_Mental</li>
-					<li MayRequire="lee.theforce.standalone">Jedi_Training_Social</li>
-					<li MayRequire="lee.theforce.standalone">Jedi_Training_Manipulation</li>
-					<li MayRequire="lee.theforce.standalone">Jedi_Training_Meditation</li>
-					<li MayRequire="lee.theforce.standalone">ForceBond_MasterApprentice</li>
-					<li MayRequire="lee.theforce.standalone">Force_Master</li>
-					<li MayRequire="lee.theforce.standalone">Force_Apprentice</li>
-					<li MayRequire="lee.theforce.standalone">Force_TeachingCooldown</li>
+					<!-- <li MayRequire="lee.theforce.standalone">Force_EnhanceForce</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Jedi_Training_Combat</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Jedi_Training_Mental</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Jedi_Training_Social</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Jedi_Training_Manipulation</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Jedi_Training_Meditation</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">ForceBond_MasterApprentice</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Master</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Apprentice</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_TeachingCooldown</li> -->
 
-					<li MayRequire="lee.theforce.standalone">Force_Healing</li>
-					<li MayRequire="lee.theforce.standalone">Force_Stabilize</li>
-					<li MayRequire="lee.theforce.standalone">Force_Revitalize</li>
-					<li MayRequire="lee.theforce.standalone">Force_EnlightenmentHediff</li>
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Healing</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Stabilize</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Revitalize</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_EnlightenmentHediff</li> -->
 
-					<li MayRequire="lee.theforce.standalone">Force_ConstructedLimb</li>
-					<li MayRequire="lee.theforce.standalone">Force_ConstructedArm</li>
-					<li MayRequire="lee.theforce.standalone">Force_Ghost</li>
-					<li MayRequire="lee.theforce.standalone">Force_SithGhost</li>
+					<!-- <li MayRequire="lee.theforce.standalone">Force_ConstructedLimb</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_ConstructedArm</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Ghost</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_SithGhost</li> -->
 
-					<li MayRequire="lee.theforce.standalone">Force_SpeedBoost</li>
-					<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
-					<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
-					<li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li>
-					<li MayRequire="lee.theforce.standalone">Force_BattleMeditationEnhanced</li>
-					<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
-					<li MayRequire="lee.theforce.standalone">Force_Malacia</li>
+					<!-- <li MayRequire="lee.theforce.standalone">Force_SpeedBoost</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Precognition</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_ForceBody</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_BattleMeditationEnhanced</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_ForceCloak</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Malacia</li> -->
 
-					<li MayRequire="lee.theforce.standalone">Force_TemporaryHearingLoss</li>
-					<li MayRequire="lee.theforce.standalone">Force_ComfortSpell</li>
-					<li MayRequire="lee.theforce.standalone">Force_SoulPyreHealing</li>
+					<!-- <li MayRequire="lee.theforce.standalone">Force_TemporaryHearingLoss</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_ComfortSpell</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_SoulPyreHealing</li> -->
 
-					<li MayRequire="lee.theforce.standalone">Force_Sacrifice</li>
-					<li MayRequire="lee.theforce.standalone">Force_SithExperiment_DarkCorruption</li>
-					<li MayRequire="lee.theforce.standalone">Force_SithZombie</li>
-				  </banlist>
-				</hediffFilters>
+					<!-- <li MayRequire="lee.theforce.standalone">Force_Sacrifice</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_SithExperiment_DarkCorruption</li> -->
+					<!-- <li MayRequire="lee.theforce.standalone">Force_SithZombie</li> -->
+				  <!-- </banlist> -->
+				<!-- </hediffFilters> -->
 				
 				<!--
 				<apparelRestrictions>

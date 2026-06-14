@@ -518,7 +518,13 @@
 	
 	
 	
-	
+		<!-- used by: CR90 -->
+	<ThingDef ParentName="SWCPStarfighterBullet_IntAA_heavyBASE">
+		<defName>SWCPStarfighterBullet_IntAAheavy_red</defName>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+		</graphicData>
+	</ThingDef>
 	
 	
 	
