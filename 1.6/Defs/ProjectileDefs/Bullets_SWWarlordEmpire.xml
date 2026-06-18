@@ -128,6 +128,33 @@
 	
 	
 	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_SlugBoltSniper_adv</defName>
+		<label>slug bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/slug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>100</speed>
+			<extraDamages>
+				<li>
+					<def>guy762_RangedDamage_energy</def>
+					<amount>8</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	
 	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>SWProj_SlugBoltSniper_mst</defName>
 		<label>slug bolt</label>
@@ -267,6 +294,29 @@
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_ACPShotgun</defName>
+		<label>shotgun blast</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/shotgun_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	
 	
 	
 	<ThingDef ParentName="BaseGrenadeProjectile">

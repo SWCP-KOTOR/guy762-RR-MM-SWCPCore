@@ -766,13 +766,10 @@
 		<statBases>
 			<Mass>0.5</Mass>
 			<MaxHitPoints>100</MaxHitPoints>
-			<!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
-			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
 			
 			<Insulation_Cold>5</Insulation_Cold>
 			<Insulation_Heat>5</Insulation_Heat>
@@ -797,9 +794,9 @@
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<Plasteel>40</Plasteel>
+			<Plasteel>20</Plasteel>
 			<Synthread>20</Synthread>
-			<KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
+			<KOTOR_FabricArmorweave>40</KOTOR_FabricArmorweave>
 		</costList>
 		
 		<apparel>
