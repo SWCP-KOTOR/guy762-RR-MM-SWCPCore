@@ -98,7 +98,7 @@
 	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
 		<!-- <defName>guy762_StructureColor_AscendencyBlue</defName> -->
 		<!-- <label>Ascendency Blue</label> -->
-		<!-- <color>(105,180,200)</color> -->
+		<!-- <color>(120,140,205)</color> -->
 	<!-- </ColorDef> -->
 	
 	<ColorDef ParentName="guy762_StructureColorIdeoBase">
@@ -223,7 +223,7 @@
 	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
 		<!-- <defName>guy762_StructureColor_BlackSunViolet</defName> -->
 		<!-- <label>Black Sun Violet</label> -->
-		<!-- <color>(85,65,150)</color> -->
+		<!-- <color>(90,65,150)</color> -->
 	<!-- </ColorDef> -->
 	
 	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->

@@ -7,7 +7,7 @@
 		<description>The local unaligned populace of this rim world. Civilians may send independent caravans to trade with your colony.</description>
 		<categoryTag>Ancient</categoryTag>
 		<colorSpectrum>
-		  <li>RGB(250,250,250)</li>
+			<li>RGB(250,250,250)</li>
 		</colorSpectrum>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -22,7 +22,7 @@
 		<rescueesCanJoin>true</rescueesCanJoin>
 		<displayInFactionSelection>false</displayInFactionSelection>
 		<fixedName>civilians</fixedName>
-		<factionIconPath>World/Khoonda</factionIconPath>
+		<factionIconPath>World/Andor</factionIconPath>
 		<techLevel>Spacer</techLevel>
 		
 		

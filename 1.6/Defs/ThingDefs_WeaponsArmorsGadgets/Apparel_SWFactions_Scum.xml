@@ -5,7 +5,89 @@
 		
 	
 	
-	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_SovereignTuskenMask_NonStuffable</defName>
+		<label>Tusken Raider mask</label>
+		<description>This intimidating mask is worn by the Tusken Raiders of Tatooine. Merely wearing it is enough to make most people uncomfortable in the wearer's presence, though the bulky filtration system is more than enough to protect the wearer from most environmental toxins.</description>
+		<graphicData>
+		  <texPath>SWApparel/Sovereign_Tuskens/SandHead</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+		  <MarketValue>20</MarketValue>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Mass>1.5</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  
+		  <Insulation_Heat>50</Insulation_Heat>
+		  
+		  <EquipDelay>5</EquipDelay>
+		  <WorkToMake>15000</WorkToMake>
+		</statBases>
+		
+		<equippedStatOffsets>
+			<SocialImpact>-0.4</SocialImpact>
+			<PainShockThreshold>0.1</PainShockThreshold>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		
+		<costList Inherit="False">
+			<Cloth>50</Cloth>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li>guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<apparel>
+		  <!--drawData>
+			<defaultData>
+				<layer>71</layer>
+			</defaultData>
+			<dataNorth>
+			  <layer>90</layer>
+			</dataNorth>
+		  </drawData-->
+		  <wornGraphicPath>SWApparel/Sovereign_Tuskens/SandHead</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Overhead</li>
+			<li>EyeCover</li>
+		  </layers>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <tags>
+			<li>SWCPSpecificApparelItem_SovereignTuskenMaskNonStuffable</li>
+		  </tags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORAntique</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(190,155,120)</only> <!-- beige -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 	  
 	  
 	  
