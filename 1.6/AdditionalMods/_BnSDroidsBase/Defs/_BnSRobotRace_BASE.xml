@@ -799,6 +799,7 @@
 				  </banlist>
 				</traitFilters>
 				
+				<!-- TEST THIS MORE -->
 				<!-- <hediffFilters> -->
 				  <!-- <banlist> -->
 					<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
