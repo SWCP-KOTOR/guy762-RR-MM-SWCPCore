@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = SWCP_Misc
-build_property.ProjectDir = C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-RR-MM-SWCPCore\1.6\SWCP_Misc\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 

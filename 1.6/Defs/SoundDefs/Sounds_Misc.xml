@@ -1175,10 +1175,10 @@
 	
 	
 	<SoundDef>
-		<defName>kotorsound_medicbelt_loop</defName>	
+		<defName>kotorsound_medicbelt_loop</defName>
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
+		<maxSimultaneous>1</maxSimultaneous>
 		<sustain>true</sustain>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
@@ -1187,11 +1187,11 @@
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotormisc/int_GEN_bactaCharge_02</clipPath>
 					</li>
-				</grains>	
+				</grains>
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
-				</volumeRange>  					
+				</volumeRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -1334,25 +1334,25 @@
 	
 	
 	<SoundDef>
-		<defName>kotorsound_DroidOff</defName>	
+		<defName>kotorsound_DroidOff</defName>
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
+		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotormisc/droid_off</clipPath>
 					</li>
-				</grains>	
+				</grains>
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
-					<min>0.8</min>				
+					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1542,6 +1542,178 @@
 					<min>1</min>				
 					<max>1</max>
 				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_CommandPost_ambient</defName>
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/commandpost/com_blg_commandpost3</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>45</min>
+				<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+				<sustainLoop>True</sustainLoop>
+				<muteWhenPaused>True</muteWhenPaused>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_CommandPost_captured</defName>
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/commandpost/com_blg_commandpost_capture</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- <SoundDef> this one sucks -->
+		<!-- <defName>kotorsound_CommandPost_capturing</defName> -->
+		<!-- <context>MapOnly</context> -->
+		<!-- <eventNames />	 -->
+		<!-- <maxSimultaneous>1</maxSimultaneous> -->
+		<!-- <sustain>true</sustain> -->
+		<!-- <priorityMode>PrioritizeNearest</priorityMode> -->
+		<!-- <subSounds> -->
+			<!-- <li> -->
+				<!-- <grains> -->
+					<!-- <li Class="AudioGrain_Clip"> -->
+						<!-- <clipPath>kotormisc/commandpost/com_blg_commandpost_charge</clipPath> -->
+					<!-- </li> -->
+				<!-- </grains> -->
+				<!-- <volumeRange> -->
+				<!-- <min>35</min> -->
+				<!-- <max>35</max> -->
+				<!-- </volumeRange> -->
+				<!-- <pitchRange> -->
+					<!-- <min>1</min> -->
+					<!-- <max>1</max> -->
+				<!-- </pitchRange> -->
+			<!-- </li> -->
+		<!-- </subSounds> -->
+	<!-- </SoundDef> -->
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_CommandPost_dispute</defName>
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/commandpost/com_blg_commandpost_dispute</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+				<sustainLoop>True</sustainLoop>
+				<muteWhenPaused>True</muteWhenPaused>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<!-- <SoundDef> this one also sucks -->
+		<!-- <defName>kotorsound_CommandPost_losing</defName> -->
+		<!-- <context>MapOnly</context> -->
+		<!-- <eventNames />	 -->
+		<!-- <maxSimultaneous>1</maxSimultaneous> -->
+		<!-- <sustain>true</sustain> -->
+		<!-- <priorityMode>PrioritizeNearest</priorityMode> -->
+		<!-- <subSounds> -->
+			<!-- <li> -->
+				<!-- <grains> -->
+					<!-- <li Class="AudioGrain_Clip"> -->
+						<!-- <clipPath>kotormisc/commandpost/com_blg_commandpost_discharge</clipPath> -->
+					<!-- </li> -->
+				<!-- </grains> -->
+				<!-- <volumeRange> -->
+				<!-- <min>35</min> -->
+				<!-- <max>35</max> -->
+				<!-- </volumeRange> -->
+				<!-- <pitchRange> -->
+					<!-- <min>1</min> -->
+					<!-- <max>1</max> -->
+				<!-- </pitchRange> -->
+			<!-- </li> -->
+		<!-- </subSounds> -->
+	<!-- </SoundDef> -->
+	
+	<SoundDef>
+		<defName>kotorsound_CommandPost_lost</defName>
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/commandpost/com_blg_commandpost_lost</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
