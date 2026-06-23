@@ -37,7 +37,7 @@ namespace SWCP_Misc
     [StaticConstructorOnStartup]
     public class CompCommandPost : ThingComp
     {
-        private CommandPostState currentState;
+        private CommandPostState currentState = CommandPostState.Factionless;
         private float captureProgress;
         private Faction capturingFaction;
         private Sustainer currentSustainer;
@@ -101,6 +101,13 @@ namespace SWCP_Misc
         {
             base.CompTick();
             if (parent.Map == null || parent.Destroyed) return;
+
+            if (parent.Faction == null && (currentState == CommandPostState.Held || currentState == CommandPostState.Reverting))
+            {
+                captureProgress = 0f;
+                capturingFaction = null;
+                SetState(CommandPostState.Factionless);
+            }
 
             if (currentSustainer == null || currentSustainer.Ended)
             {
