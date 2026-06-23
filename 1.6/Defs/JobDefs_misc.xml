@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<JobDef>
+    <JobDef>
         <defName>MinePocket_Job</defName>
         <driverClass>MinePocket.MinePocketJob</driverClass>
         <reportString>defusing mine.</reportString>
@@ -9,7 +9,20 @@
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
 
+    <JobDef>
+        <defName>SWCP_CaptureCommandPost</defName>
+        <driverClass>SWCP_Misc.JobDriver_CaptureCommandPost</driverClass>
+        <reportString>capturing command post.</reportString>
+        <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
 
-	
-	
+    <JobDef>
+        <defName>SWCP_DefendCommandPost</defName>
+        <driverClass>SWCP_Misc.JobDriver_DefendCommandPost</driverClass>
+        <reportString>defending command post.</reportString>
+        <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
+
 </Defs>
