@@ -100,10 +100,19 @@ namespace SWCP_Misc
         public override void CompTick()
         {
             base.CompTick();
+            if (parent.Map == null || parent.Destroyed) return;
+
+            if (currentSustainer == null || currentSustainer.Ended)
+            {
+                currentSustainer = null;
+                var soundToPlay = GetSoundForState(currentState);
+                if (soundToPlay != null)
+                {
+                    currentSustainer = soundToPlay.TrySpawnSustainer(SoundInfo.InMap(parent, MaintenanceType.PerTick));
+                }
+            }
             coneMaterial ??=MaterialPool.MatFrom(new MaterialRequest(coneTexture, ShaderDatabase.MoteGlow));
             currentSustainer?.Maintain();
-
-            if (parent.Map == null || parent.Destroyed) return;
 
             tickCounter++;
             if (tickCounter >= 60)
@@ -227,6 +236,18 @@ namespace SWCP_Misc
             }
         }
 
+        private SoundDef GetSoundForState(CommandPostState state)
+        {
+            return state switch
+            {
+                CommandPostState.Held => Props.soundHeld,
+                CommandPostState.Reverting => Props.soundReverting,
+                CommandPostState.Factionless => Props.soundFactionless,
+                CommandPostState.Capturing => Props.soundCapturing,
+                _ => null
+            };
+        }
+
         public void SetState(CommandPostState newState)
         {
             if (currentState == newState) return;
@@ -235,15 +256,7 @@ namespace SWCP_Misc
             currentSustainer?.End();
             currentSustainer = null;
 
-            var soundToPlay = currentState switch
-            {
-                CommandPostState.Held => Props.soundHeld,
-                CommandPostState.Reverting => Props.soundReverting,
-                CommandPostState.Factionless => Props.soundFactionless,
-                CommandPostState.Capturing => Props.soundCapturing,
-                _ => null
-            };
-
+            var soundToPlay = GetSoundForState(currentState);
             if (soundToPlay != null)
             {
                 currentSustainer = soundToPlay.TrySpawnSustainer(SoundInfo.InMap(parent, MaintenanceType.PerTick));
@@ -334,6 +347,44 @@ namespace SWCP_Misc
             base.PostDestroy(mode, previousMap);
             currentSustainer?.End();
             currentSustainer = null;
+        }
+
+        public override string CompInspectStringExtra()
+        {
+            var stateStr = "SWCP_CommandPost_State".Translate() + ": ";
+            switch (currentState)
+            {
+                case CommandPostState.Held:
+                    stateStr += "SWCP_CommandPost_State_Held".Translate(parent.Faction?.Name ?? "unaligned faction");
+                    break;
+                case CommandPostState.Factionless:
+                    stateStr += "SWCP_CommandPost_State_Factionless".Translate();
+                    break;
+                case CommandPostState.Capturing:
+                    if (capturingFaction != null)
+                    {
+                        if (isContested || !capturerPresent)
+                        {
+                            var remainingTicks = Mathf.RoundToInt(captureProgress * Props.ticksToCapture);
+                            stateStr += "SWCP_CommandPost_State_LosingProgress".Translate(capturingFaction.Name, remainingTicks.ToStringTicksToPeriod());
+                        }
+                        else
+                        {
+                            var remainingTicks = Mathf.RoundToInt((1f - captureProgress) * Props.ticksToCapture);
+                            stateStr += "SWCP_CommandPost_State_Capturing".Translate(capturingFaction.Name, remainingTicks.ToStringTicksToPeriod());
+                        }
+                    }
+                    break;
+                case CommandPostState.Reverting:
+                    if (parent.Faction != null)
+                    {
+                        var remainingTicks = ownerHostilesPresent ? Mathf.RoundToInt(captureProgress * Props.ticksToCapture) : Mathf.RoundToInt((1f - captureProgress) * Props.ticksToCapture);
+                        var key = ownerHostilesPresent ? "SWCP_CommandPost_State_LosingControl" : "SWCP_CommandPost_State_RegainingControl";
+                        stateStr += key.Translate(parent.Faction.Name, remainingTicks.ToStringTicksToPeriod());
+                    }
+                    break;
+            }
+            return stateStr;
         }
 
         public override void PostExposeData()

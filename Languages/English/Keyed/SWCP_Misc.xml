@@ -38,4 +38,11 @@
 	<CannotFlyUnderRoofTip>Cannot fly: Under roof</CannotFlyUnderRoofTip>
 	<StartingInTip>Starting in: {0}s</StartingInTip>
 	
+  <SWCP_CommandPost_State>State</SWCP_CommandPost_State>
+  <SWCP_CommandPost_State_Held>Held by {0}</SWCP_CommandPost_State_Held>
+  <SWCP_CommandPost_State_Factionless>Factionless</SWCP_CommandPost_State_Factionless>
+  <SWCP_CommandPost_State_LosingProgress>Losing progress ({0}) - {1} remaining</SWCP_CommandPost_State_LosingProgress>
+  <SWCP_CommandPost_State_Capturing>Capturing ({0}) - {1} remaining</SWCP_CommandPost_State_Capturing>
+  <SWCP_CommandPost_State_LosingControl>Losing control ({0}) - {1} remaining</SWCP_CommandPost_State_LosingControl>
+  <SWCP_CommandPost_State_RegainingControl>Regaining control ({0}) - {1} remaining</SWCP_CommandPost_State_RegainingControl>
 </LanguageData>

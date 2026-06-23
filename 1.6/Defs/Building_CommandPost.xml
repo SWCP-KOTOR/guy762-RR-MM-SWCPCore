@@ -28,7 +28,10 @@
         <nonCapturingFactions>
           <li>Mechanoid</li>
           <li>Insect</li>
+          <li>guy762_KotORFaction_Civilians</li>
         </nonCapturingFactions>
+        <soundHeld>kotorsound_jetpack_loop</soundHeld>
+        <soundFactionless>kotorsound_jetpack_loop</soundFactionless>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>
