@@ -10,6 +10,8 @@
 		<maxValue>1</maxValue>
 		<!-- <toStringStyle>TemperatureOffset</toStringStyle> -->
 		<showOnPawns>true</showOnPawns>
+		
+		<!-- <displayPriorityInCategory>676205</displayPriorityInCategory> ok these are reverse-scored in the stat menu for some reaons??? -->
 	</StatDef>
 
 
@@ -18,7 +20,7 @@
 		<defName>SWCPStat_InfantryArmorClass_light</defName>
 		<label>Armor Class: Light Infantry</label>
 		<labelForFullStatList>Armor Class: Light Infantry</labelForFullStatList>
-		<displayPriorityInCategory>762</displayPriorityInCategory>
+		<displayPriorityInCategory>769</displayPriorityInCategory>
 		<description>Infantry classification based on an equipped set of body armor. This stat has no in-game effects beyond marking a pawn as "light infantry".</description>
 	</StatDef>
 	
@@ -26,7 +28,7 @@
 		<defName>SWCPStat_InfantryArmorClass_medium</defName>
 		<label>Armor Class: Medium Infantry</label>
 		<labelForFullStatList>Armor Class: Medium Infantry</labelForFullStatList>
-		<displayPriorityInCategory>763</displayPriorityInCategory>
+		<displayPriorityInCategory>768</displayPriorityInCategory>
 		<description>Infantry classification based on an equipped set of body armor. This stat has no in-game effects beyond marking a pawn as "medium infantry".</description>
 	</StatDef>
 	
@@ -34,7 +36,7 @@
 		<defName>SWCPStat_InfantryArmorClass_heavy</defName>
 		<label>Armor Class: Heavy Infantry</label>
 		<labelForFullStatList>Armor Class: Heavy Infantry</labelForFullStatList>
-		<displayPriorityInCategory>764</displayPriorityInCategory>
+		<displayPriorityInCategory>767</displayPriorityInCategory>
 		<description>Infantry classification based on an equipped set of body armor. This stat has no in-game effects beyond marking a pawn as "heavy infantry".</description>
 	</StatDef>
 	
@@ -43,11 +45,43 @@
 	
 	
 	<StatDef ParentName="SWCPStat_InfantryArmorClassificationBASE">
+		<defName>SWCPStat_InfantryWeaponClass_shortrange</defName>
+		<label>Weapon Class: Short Range</label>
+		<labelForFullStatList>Weapon Class: Short Range</labelForFullStatList>
+		<displayPriorityInCategory>766</displayPriorityInCategory>
+		<description>Infantry classification based on an equipped weapon. This stat has no in-game effects beyond marking a pawn as carrying a "short-range" weapon. This includes all pistols and carbines.</description>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_InfantryArmorClassificationBASE">
+		<defName>SWCPStat_InfantryWeaponClass_longrange</defName>
+		<label>Weapon Class: Long Range</label>
+		<labelForFullStatList>Weapon Class: Long Range</labelForFullStatList>
+		<displayPriorityInCategory>765</displayPriorityInCategory>
+		<description>Infantry classification based on an equipped weapon. This stat has no in-game effects beyond marking a pawn as carrying a "long-range" weapon. This includes all rifles.</description>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_InfantryArmorClassificationBASE">
 		<defName>SWCPStat_InfantryWeaponClass_heavyordnance</defName>
 		<label>Weapon Class: Heavy Ordnance</label>
 		<labelForFullStatList>Weapon Class: Heavy Ordnance</labelForFullStatList>
-		<displayPriorityInCategory>765</displayPriorityInCategory>
+		<displayPriorityInCategory>764</displayPriorityInCategory>
 		<description>Infantry classification based on an equipped weapon. This stat has no in-game effects beyond marking a pawn as carrying "heavy ordnance".</description>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_InfantryArmorClassificationBASE">
+		<defName>SWCPStat_InfantryWeaponClass_melee</defName>
+		<label>Weapon Class: Melee</label>
+		<labelForFullStatList>Weapon Class: Melee</labelForFullStatList>
+		<displayPriorityInCategory>763</displayPriorityInCategory>
+		<description>Infantry classification based on an equipped weapon. This stat has no in-game effects beyond marking a pawn as carrying a "melee" weapon.</description>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_InfantryArmorClassificationBASE">
+		<defName>SWCPStat_InfantryWeaponClass_lightsaber</defName>
+		<label>Weapon Class: Lightsaber</label>
+		<labelForFullStatList>Weapon Class: Lightsaber</labelForFullStatList>
+		<displayPriorityInCategory>762</displayPriorityInCategory>
+		<description>Infantry classification based on an equipped weapon. This stat has no in-game effects beyond marking a pawn as carrying a "Lightsaber".</description>
 	</StatDef>
 
 

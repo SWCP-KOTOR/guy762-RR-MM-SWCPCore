@@ -19,9 +19,23 @@
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
 		<equippedAngleOffset>-65</equippedAngleOffset>
+		
+		<statBases>
+		  <MarketValue>100</MarketValue>
+		  <Mass>4</Mass>
+		  
+		  <WorkToMake>26000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_melee>1</SWCPStat_InfantryWeaponClass_melee>
+		</equippedStatOffsets>
+		
+		
 		<weaponTags>
 			<li>SandClub</li>
 			<li>SWMelee_GaffiStick</li>
+			
+			<li>SWCPWeaponCategoryTag_LightMelee</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORMelee</li>
@@ -31,12 +45,7 @@
 			<li>guy762TT_GCWWeapon_ExoticLegal</li>
 		</tradeTags>
 		
-		<statBases>
-		  <MarketValue>100</MarketValue>
-		  <Mass>4</Mass>
-		  
-		  <WorkToMake>26000</WorkToMake>
-		</statBases>
+		
 		
 		<recipeMaker>
 		  <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>

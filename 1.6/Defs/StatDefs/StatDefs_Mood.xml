@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<StatDef>
+		<defName>SWCPStat_Mood</defName>
+		<label>mood</label>
+		<description>This stat is a numeric reading of the current mood gauge.</description>
+		<category>SWCPStatCategory</category>
+		<displayPriorityInCategory>10</displayPriorityInCategory>
+		
+		<showOnPawns>true</showOnPawns>
+		<!-- <showOnDefaultValue>false</showOnDefaultValue> -->
+		<!-- <neverDisabled>true</neverDisabled> -->
+		<!-- <alwaysHide>false</alwaysHide> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+		
+		<defaultBaseValue>1</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		
+		<cacheable>true</cacheable>
+		<parts>
+			<li Class="StatPart_Mood">
+				<factorFromMoodCurve>
+					<points>
+						<li>(0,0)</li>
+							<li>(0.25,0.25)</li>
+								<li>(0.5,0.5)</li>
+							<li>(0.75,0.75)</li>
+						<li>(1,1)</li>
+					</points>
+				</factorFromMoodCurve>
+			</li>
+		</parts>
+	</StatDef>
+
+
+</Defs>

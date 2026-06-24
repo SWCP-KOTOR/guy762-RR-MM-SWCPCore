@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+
+
+	<Operation Class="PatchOperationFindMod" IfModActive="lee.theforce.lightsaber">
+		<mods>
+			<li>Star Wars : The Force - Lightsaber</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+		  <operations>
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="Lightsaber_Crafting"]</xpath>
+				<value>
+					<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+				</value>
+			</li>
+			
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="Lightsaber_Crafting"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingSpot</li>
+						<li>FabricationBench</li>
+						<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+					</recipeUsers>
+				</value>
+			</li>
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberSingle"]</xpath>
+				<value>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+					<workAmount>6000</workAmount>
+					<skillRequirements>
+						<Crafting>6</Crafting>
+					</skillRequirements>
+					<ingredients Inherit="False">
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_lens</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_emitter</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_pcell</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Steel</li>
+						  </thingDefs>
+						</filter>
+						<count>25</count>
+					  </li>
+					  <li>
+						<filter>
+						  <categories>
+							<li>Force_KyberCrystals</li>
+						  </categories>
+						</filter>
+						<count>1</count>
+					  </li>
+					</ingredients>
+				</value>
+			</li>
+			
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberCurved"]</xpath>
+				<value>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+					<workAmount>10000</workAmount>
+					<skillRequirements>
+						<Melee>14</Melee>
+						<Crafting>6</Crafting>
+					</skillRequirements>
+					<ingredients Inherit="False">
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_lens</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_emitter</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_pcell</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Steel</li>
+						  </thingDefs>
+						</filter>
+						<count>25</count>
+					  </li>
+					  <li>
+						<filter>
+						  <categories>
+							<li>Force_KyberCrystals</li>
+						  </categories>
+						</filter>
+						<count>1</count>
+					  </li>
+					</ingredients>
+				</value>
+			</li>
+			
+			
+			
+			
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberShoto"]</xpath>
+				<value>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+					<workAmount>5000</workAmount>
+					<skillRequirements>
+						<Crafting>6</Crafting>
+					</skillRequirements>
+					<ingredients Inherit="False">
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_lens</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_emitter</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_pcell</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Steel</li>
+						  </thingDefs>
+						</filter>
+						<count>15</count>
+					  </li>
+					  <li>
+						<filter>
+						  <categories>
+							<li>Force_KyberCrystals</li>
+						  </categories>
+						</filter>
+						<count>1</count>
+					  </li>
+					</ingredients>
+				</value>
+			</li>
+			
+			
+			
+			
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberDual"]</xpath>
+				<value>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+					<workAmount>12000</workAmount>
+					<skillRequirements>
+						<Crafting>8</Crafting>
+					</skillRequirements>
+					<ingredients Inherit="False">
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_lens</li>
+						  </thingDefs>
+						</filter>
+						<count>2</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_emitter</li>
+						  </thingDefs>
+						</filter>
+						<count>2</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_pcell</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Steel</li>
+						  </thingDefs>
+						</filter>
+						<count>50</count>
+					  </li>
+					  <li>
+						<filter>
+						  <categories>
+							<li>Force_KyberCrystals</li>
+						  </categories>
+						</filter>
+						<count>1</count>
+					  </li>
+					</ingredients>
+				</value>
+			</li>
+			
+			
+			
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberCrossguard"]</xpath>
+				<value>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+					<workAmount>14000</workAmount>
+					<skillRequirements>
+						<Melee>12</Melee>
+						<Crafting>12</Crafting>
+					</skillRequirements>
+					<ingredients Inherit="False">
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_lens</li>
+						  </thingDefs>
+						</filter>
+						<count>3</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_emitter</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>guy762_saberpart_pcell</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>ComponentIndustrial</li>
+						  </thingDefs>
+						</filter>
+						<count>4</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>ComponentSpacer</li>
+						  </thingDefs>
+						</filter>
+						<count>2</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Steel</li>
+						  </thingDefs>
+						</filter>
+						<count>40</count>
+					  </li>
+					  <li>
+						<filter>
+						  <categories>
+							<li>Force_KyberCrystals</li>
+						  </categories>
+						</filter>
+						<count>1</count>
+					  </li>
+					</ingredients>
+				</value>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			<!-- <li Class="PatchOperationAdd"> -->
+				<!-- <xpath>Defs/RecipeDef[defName=""]</xpath> -->
+				<!-- <value> -->
+					<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> RECIPE FOR INQUISITOR LIGHTSABERS, NEEDS AN ACTUAL RECIPE AND PROBABLY INQUISITOR-EXCLUSIVE RESEARCH -->
+					<!-- <workAmount>14000</workAmount> -->
+					<!-- <skillRequirements> -->
+						<!-- <Crafting>16</Crafting> -->
+					<!-- </skillRequirements> -->
+					<!-- <ingredients Inherit="False"> -->
+					  <!-- <li> -->
+						<!-- <filter> -->
+						  <!-- <thingDefs> -->
+							<!-- <li>guy762_saberpart_lens</li> -->
+						  <!-- </thingDefs> -->
+						<!-- </filter> -->
+						<!-- <count>2</count> -->
+					  <!-- </li> -->
+					  <!-- <li> -->
+						<!-- <filter> -->
+						  <!-- <thingDefs> -->
+							<!-- <li>guy762_saberpart_emitter</li> -->
+						  <!-- </thingDefs> -->
+						<!-- </filter> -->
+						<!-- <count>2</count> -->
+					  <!-- </li> -->
+					  <!-- <li> -->
+						<!-- <filter> -->
+						  <!-- <thingDefs> -->
+							<!-- <li>guy762_saberpart_pcell</li> -->
+						  <!-- </thingDefs> -->
+						<!-- </filter> -->
+						<!-- <count>1</count> -->
+					  <!-- </li> -->
+					  <!-- <li> -->
+						<!-- <filter> -->
+						  <!-- <thingDefs> -->
+							<!-- <li>ComponentIndustrial</li> -->
+						  <!-- </thingDefs> -->
+						<!-- </filter> -->
+						<!-- <count>8</count> -->
+					  <!-- </li> -->
+					  <!-- <li> -->
+						<!-- <filter> -->
+						  <!-- <thingDefs> -->
+							<!-- <li>ComponentSpacer</li> -->
+						  <!-- </thingDefs> -->
+						<!-- </filter> -->
+						<!-- <count>2</count> -->
+					  <!-- </li> -->
+					  <!-- <li> -->
+						<!-- <filter> -->
+						  <!-- <thingDefs> -->
+							<!-- <li>Plasteel</li> -->
+						  <!-- </thingDefs> -->
+						<!-- </filter> -->
+						<!-- <count>75</count> -->
+					  <!-- </li> -->
+					  <!-- <li> -->
+						<!-- <filter> -->
+						  <!-- <categories> -->
+							<!-- <li>Force_KyberCrystals</li> -->
+						  <!-- </categories> -->
+						<!-- </filter> -->
+						<!-- <count>1</count> -->
+					  <!-- </li> -->
+					<!-- </ingredients> -->
+				<!-- </value> -->
+			<!-- </li> -->
+
+
+		  </operations>
+		</match>
+	</Operation>
+
+
+
+
+</Patch>
