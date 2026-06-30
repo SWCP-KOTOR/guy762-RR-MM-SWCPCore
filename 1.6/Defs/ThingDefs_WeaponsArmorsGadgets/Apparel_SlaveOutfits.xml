@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_NonTwilekHeadband_ornate</defName>
+		<label>headband, ornate</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/SlaveOutfits/headband_ornate/Hat_Yuthura</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>50</MarketValue>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Mass>0.1</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <EquipDelay>0.5</EquipDelay>
+		  
+		  <WorkToMake>50</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<NegotiationAbility>0.2</NegotiationAbility>
+			<PawnBeauty>2</PawnBeauty>
+		</equippedStatOffsets>
+		
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/SlaveOutfits/headband_ornate/Hat_Yuthura</wornGraphicPath>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<drawData>
+				<defaultData>
+					<layer>81</layer>
+				</defaultData>
+				<dataSouth>
+					<layer>69</layer>
+				</dataSouth>
+			</drawData>
+
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>SWCPSpecificApparelItem_OrnateHeadband</li>
+			</tags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<wearPerDay>0</wearPerDay>
+		</apparel>
+		
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+		</tradeTags>
+		
+		<!-- <comps> -->
+		  <!-- <li Class="AthenaFramework.CompProperties_GeneLockedEquippable"> -->
+			<!-- <requiredGenes> -->
+				<!-- <li>guy762_Headbone_twilek</li> -->
+			<!-- </requiredGenes> -->
+			<!-- <cantReason>Incompatible head structure!</cantReason> -->
+			<!-- <dropWithoutRequirements>true</dropWithoutRequirements> -->
+		  <!-- </li> -->
+		<!-- </comps> -->
+		
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(180,185,185)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_SlaveOutfit_KotORII</defName>
+		<label>dancer's outfit, antique</label>
+		<description>.\n\nDeveloper's Note: this outfit was drawn to be compatible with the "Malang Bodies" mod.\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2838181007</description>
+		<graphicData>
+		  <texPath>SWApparel/SlaveOutfits/KotOR2/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <!-- <colorTwo>(160,170,175)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			
+			<Insulation_Heat>5</Insulation_Heat>
+			
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>1</SocialImpact>
+			<NegotiationAbility>1</NegotiationAbility>
+		</equippedStatOffsets>
+		
+		<apparel>
+			<slaveApparel>true</slaveApparel>
+			
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!-- <li>Neck</li> -->
+				<!-- <li>Shoulders</li> -->
+				<!-- <li>Arms</li> -->
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/SlaveOutfits/KotOR2/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/SlaveOutfits/KotOR2/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(225,210,170)</color> <!-- warm gold -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>SWCPSpecificApparelItem_KotOR2DancerOutfit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Slave</li>
+				<li>SWCPOutfitTag_Slave</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(80,30,40)</only>         <!-- Visas' burgundy -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(60,50,65)</only>         <!--goth purple-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(70,90,125)</only>       <!--K1 jedi blue-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(150,200,200)</only>       <!-- Juhani's cyan	-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(190,110,0)</only> <!-- rebel pilot orange -->
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<comps>
+		</comps>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+ 
+</Defs>

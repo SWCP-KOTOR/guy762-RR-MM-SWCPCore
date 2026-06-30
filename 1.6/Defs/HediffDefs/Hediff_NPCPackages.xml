@@ -45,6 +45,11 @@
 			<li>
 				<minSeverity>0</minSeverity>
 				<becomeVisible>false</becomeVisible>
+				<statOffsets>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+					<ComfyTemperatureMax>100</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+				</statOffsets>
 				<disablesNeeds>
 					<li>Food</li>
 					<li>Rest</li>
@@ -209,6 +214,40 @@
 				<statOffsets>
 					<SWCPStat_Loyalty>-0.75</SWCPStat_Loyalty>
 					<SWCPStat_Awareness>-0.3</SWCPStat_Awareness>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	<HediffDef Name="SWCPNPCPackageHediff_NonViolentCivilian" ParentName="SWCPNPCPackageHediff_needdisabler">
+		<defName>SWCPNPCPackageHediff_NonViolentCivilian</defName>
+		<label>NPC Package: non-violent civilian</label>
+		<description>This is a debug hediff that disables a various needs and sets stats according to a specific role.\n\nThis pawn has the role of a non-violent civilian.\n\nThis hediff will be removed if the pawn is downed, killed, or changes factions.</description>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				
+				<disabledWorkTags>Violent</disabledWorkTags>
+				
+				<disablesNeeds>
+					<li>Food</li>
+					<li>Rest</li>
+					
+					<li>Joy</li>
+					<li>Beauty</li>
+					<li>Comfort</li>
+					<li>DrugDesire</li>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+				</disablesNeeds>
+				
+				<statOffsets>
+					<SWCPStat_Loyalty>-0.75</SWCPStat_Loyalty>
+					<SWCPStat_Awareness>-0.5</SWCPStat_Awareness>
 				</statOffsets>
 			</li>
 		</stages>

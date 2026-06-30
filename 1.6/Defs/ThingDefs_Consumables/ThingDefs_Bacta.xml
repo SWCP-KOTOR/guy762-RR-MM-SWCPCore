@@ -21,7 +21,7 @@
 					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForcePlague</li>
 				</makeImmuneTo>
 				<statOffsets>
-					<ImmunityGainSpeedFactor>100</ImmunityGainSpeedFactor>
+					<ImmunityGainSpeed>100</ImmunityGainSpeed>
 					<IncomingDamageFactor>-0.05</IncomingDamageFactor>
 				</statOffsets>
 			</li>

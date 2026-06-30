@@ -198,6 +198,61 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NPCAutoDoorBase">
+		<defName>guy762_NPCAutodoor1x1_SandcrawlerA</defName>
+		<label>rugged autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/Sandcrawler1x1DoorA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(110,65,15)</color>
+		</graphicData>
+		<uiIconPath>Buildings/Doors/Sandcrawler1x1DoorA_icon</uiIconPath>
+		
+		
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<modExtensions>
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
+				<rightPartGraphicData>
+					<texPath>Buildings/Doors/Sandcrawler1x1DoorA</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(110,65,15)</color>
+					<drawSize>(1, 1)</drawSize>
+				</rightPartGraphicData>
+			</li>
+		</modExtensions>
+		
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<DoorOpenSpeed>0.3</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<!-- <soundDoorOpenManual>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenManual> -->
+			<!-- <soundDoorCloseManual>kotorsound_building_DoorClose</soundDoorCloseManual> -->
+			<soundDoorOpenManual>kotorsound_building_RuggedPressurizedDoor</soundDoorOpenManual>
+			<soundDoorCloseManual>kotorsound_building_DoorClose</soundDoorCloseManual>
+			
+			<paintable>false</paintable>
+			<doorTopGraphic>
+				<texPath>Buildings/Doors/NPCSingleDoorFrame_Square</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>1.25</drawSize>
+			</doorTopGraphic>
+		</building>
+	</ThingDef>
+	
+	
+	
+	
 
 	
 </Defs>

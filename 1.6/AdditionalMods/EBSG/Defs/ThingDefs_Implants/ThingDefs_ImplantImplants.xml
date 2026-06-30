@@ -253,7 +253,7 @@
 			<totalBleedFactor>0.5</totalBleedFactor>
 			<!--regeneration>1</regeneration-->
 			<statOffsets>
-				<ImmunityGainSpeedFactor>0.1</ImmunityGainSpeedFactor>
+				<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
 			</statOffsets>
 		  </li>
 		</stages>
@@ -964,7 +964,7 @@
 			<naturalHealingFactor>20</naturalHealingFactor>
 			<!--regeneration>2</regeneration-->
 			<statOffsets>
-				<ImmunityGainSpeedFactor>0.2</ImmunityGainSpeedFactor>
+				<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
 			</statOffsets>
 		  </li>
 		</stages>

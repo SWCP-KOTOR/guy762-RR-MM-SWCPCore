@@ -154,7 +154,7 @@
 				<Stun>0</Stun>
 			</damageFactors>
 			<statOffsets>
-				<ImmunityGainSpeedFactor>0.3</ImmunityGainSpeedFactor>
+				<ImmunityGainSpeed>0.3</ImmunityGainSpeed>
 				<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 				<ToxicResistance>1</ToxicResistance>
 			</statOffsets>

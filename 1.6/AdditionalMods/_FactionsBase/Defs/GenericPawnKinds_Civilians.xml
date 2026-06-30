@@ -1441,12 +1441,14 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags Inherit="False">
 			<li>Tribal</li>
-			<li>SaV_slavedancer</li>
+			<!-- <li>SaV_slavedancer</li> -->
 			<!-- <li>SWCPSpecificApparelItem_OrnateTwilekHeadband</li> -->
+			<li>SWCPSpecificApparelItem_KotOR2DancerOutfit</li>
 		</apparelTags>
 		<apparelRequired>
-			<li MayRequire="lumi.slaveoutfit">Apparel_SlaveBikini_Old</li>	
+			<!-- <li MayRequire="lumi.slaveoutfit">Apparel_SlaveBikini_Old</li>	 -->
 			<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
+			<li>guy762_SlaveOutfit_KotORII</li>
 		</apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<specificApparelRequirements>
@@ -1522,21 +1524,23 @@
 			<li>SWCPSpecificApparelItem_RusticClothing</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_BodyStrap</li>	
+		   <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_BodyStrap</li> -->
 		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
 		   <li>guy762_Clothing_scumII</li>
 		</apparelRequired>
 		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
 		<specificApparelRequirements>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<apparelLayer>Shell</apparelLayer>
-				<stuff>Leather_Plain</stuff>
-			</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology"> -->
+				<!-- <apparelLayer>Shell</apparelLayer> -->
+				<!-- <stuff>Leather_Plain</stuff> -->
+			<!-- </li> -->
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<apparelLayer>Overhead</apparelLayer>
 				<stuff>Steel</stuff>
 			</li>
 		</specificApparelRequirements>
+		
+		<isFighter>false</isFighter>
 		<requiredWorkTags>
 		   <li>Firefighting</li>
 		   <li>ManualDumb</li>

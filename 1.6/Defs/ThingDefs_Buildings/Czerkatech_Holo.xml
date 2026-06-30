@@ -47,9 +47,9 @@
 		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<shortCircuitInRain>true</shortCircuitInRain>
-			<basePowerConsumption>300</basePowerConsumption>
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>300</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 		</comps>
@@ -63,7 +63,59 @@
 		<uiIconScale>0.9</uiIconScale>
 	</ThingDef>
 	
-	<!-- Female Dancer ================================================================ -->
+	
+	
+	
+	
+	
+	<ThingDef Name="SWCP_HoloTerminalNPCBase" ParentName="BuildingBase" Abstract="True">
+		<description>Holographic recorded entertainment</description>
+		<size>(1,2)</size>
+		<graphicData>
+			<drawOffset>(0,0,0.25)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>14</Mass>
+			<Flammability>1.0</Flammability>
+			<JoyGainFactor>1.5</JoyGainFactor>
+		</statBases>
+		<pathCost>42</pathCost>
+		<passability>PassThroughOnly</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>5</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>WatchingTelevision</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<!-- <tradeTags> -->
+			<!-- <li>Television</li> -->
+		<!-- </tradeTags> -->
+		<designationCategory />
+	</ThingDef>
+	
+	
+	
+	
+	<!-- player use ================================================================ -->
 	<ThingDef ParentName="HoloTerminalBase">
 		<defName>kotor_holo_dancerF</defName>
 		<label>Holo Terminal ( Dancer F )</label>
@@ -71,8 +123,7 @@
 			<texPath>recreation/holo_entertainment/dancerF</texPath>
 		</graphicData>
 	</ThingDef>
-	
-	<!-- Male Dancer ================================================================ -->
+
 	<ThingDef ParentName="HoloTerminalBase">
 		<defName>kotor_holo_dancerM</defName>
 		<label>Holo Terminal ( Dancer M )</label>
@@ -81,7 +132,6 @@
 		</graphicData>
 	</ThingDef>
 	
-	<!-- Bith ================================================================ -->
 	<ThingDef ParentName="HoloTerminalBase">
 		<defName>kotor_holo_bith</defName>
 		<label>Holo Terminal ( Music )</label>
@@ -89,6 +139,51 @@
 			<texPath>recreation/holo_entertainment/holo_bith</texPath>
 		</graphicData>
 	</ThingDef>
+	
+	
+	
+	<!-- NPC use ================================================================ -->
+	<ThingDef ParentName="SWCP_HoloTerminalNPCBase">
+		<defName>SWCPBuilding_NPCHologram_dancerF</defName>
+		<label>Holo Terminal ( Dancer F )</label>
+		<graphicData>
+			<texPath>recreation/holo_entertainment/dancerF</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="SWCP_HoloTerminalNPCBase">
+		<defName>SWCPBuilding_NPCHologram_dancerM</defName>
+		<label>Holo Terminal ( Dancer M )</label>
+		<graphicData>
+			<texPath>recreation/holo_entertainment/dancerM</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_HoloTerminalNPCBase">
+		<defName>SWCPBuilding_NPCHologram_bith</defName>
+		<label>Holo Terminal ( Music )</label>
+		<graphicData>
+			<texPath>recreation/holo_entertainment/holo_bith</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<JoyGiverDef>
 		<defName>WatchHolo</defName>
