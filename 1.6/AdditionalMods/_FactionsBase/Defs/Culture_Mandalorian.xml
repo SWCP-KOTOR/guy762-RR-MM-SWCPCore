@@ -54,26 +54,26 @@
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			  </li>
-			  <li>
-				<tag>TattooFaceTribal</tag>
-				<baseWeight>0.6</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
-			  <li>
-				<tag>TattooBodyTribal</tag>
-				<baseWeight>0.6</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
-			  <li>
-				<tag>TattooFacePunk</tag>
-				<baseWeight>0.3</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
-			  <li>
-				<tag>TattooBodyPunk</tag>
-				<baseWeight>0.3</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
+			  <!-- <li> -->
+				<!-- <tag>TattooFaceTribal</tag> -->
+				<!-- <baseWeight>0.6</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <tag>TattooBodyTribal</tag> -->
+				<!-- <baseWeight>0.6</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <tag>TattooFacePunk</tag> -->
+				<!-- <baseWeight>0.3</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <tag>TattooBodyPunk</tag> -->
+				<!-- <baseWeight>0.3</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
 		</styleItemTags>
 	</CultureDef>
 

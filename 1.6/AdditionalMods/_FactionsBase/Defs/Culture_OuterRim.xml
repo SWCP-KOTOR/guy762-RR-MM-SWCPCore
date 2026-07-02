@@ -71,16 +71,16 @@
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			  </li>
-			  <li>
-				<tag>TattooFaceTribal</tag>
-				<baseWeight>0.6</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
-			  <li>
-				<tag>TattooBodyTribal</tag>
-				<baseWeight>0.6</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
+			  <!-- <li> -->
+				<!-- <tag>TattooFaceTribal</tag> -->
+				<!-- <baseWeight>0.6</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <tag>TattooBodyTribal</tag> -->
+				<!-- <baseWeight>0.6</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
 			  
 			  <li MayRequire="Ludeon.RimWorld.Biotech">
 				<tag>Furskin</tag>

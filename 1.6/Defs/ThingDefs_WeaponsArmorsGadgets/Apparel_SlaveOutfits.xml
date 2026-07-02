@@ -177,7 +177,7 @@
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_SlaveOutfits</li>
 		</tradeTags>
 
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">

@@ -22,10 +22,11 @@
 				<statOffsets>
 					<!-- <SlaveSuppressionOffset>0.30</SlaveSuppressionOffset> -->
 					<!-- <SlaveSuppressionFallRate>-0.30</SlaveSuppressionFallRate> -->
+					<SWCPStat_NonGearSlaveSuppressionOffset>-0.30</SWCPStat_NonGearSlaveSuppressionOffset>
 				</statOffsets>
-				<statFactors>
-					<SlaveSuppressionFallRate>0</SlaveSuppressionFallRate>
-				</statFactors>
+				<!-- <statFactors> -->
+					<!-- <SlaveSuppressionFallRate>0</SlaveSuppressionFallRate> -->
+				<!-- </statFactors> -->
 			</li>
 		</stages>
 		<comps>

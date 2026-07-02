@@ -454,7 +454,7 @@
 	
 	<!-- Refined Rhydonium ================================================================ -->
 	<ThingDef ParentName="ResourceBase">
-		<defName>KOTOR_Rhydonium</defName>
+		<defName>KOTOR_Rhydonium</defName> <!-- THIS DEFNAME REFERENCED BY SWCP_LevelDesignStuff.dll -->
 		<label>Rhydonium fuel</label>
 		<description>In the refining process, raw Rhydonium powder is mixed with the liquid element Hydrargyrum for safe transport, giving it a distinctive silvery shine. The infused Hydrargyrum is a poor conductor of heat and a fair conductor of electricity, keeping the fuel relatively safe from common explosives and blaster damage but having a particular weakness to electrical and ionizing attacks.</description>
 		<tickerType>Normal</tickerType>

@@ -76,7 +76,7 @@
 	
 	<!-- Unrefined Plasma ================================================================ -->
 	<ThingDef ParentName="ResourceBase">
-		<defName>KOTOR_Tibanna</defName>
+		<defName>KOTOR_Tibanna</defName> <!-- THIS DEFNAME REFERENCED BY SWCP_LevelDesignStuff.dll -->
 		<label>Tibanna gas</label>
 		<description>An exotic, volatile gas that can be superheated and used to generate power or be condensed into high powered energy projectiles. While Tibanna is primarily found in the atmospheres of gas giants, it can also sometimes be found in deep underground pockets on terrestrial worlds.</description>
 		<tickerType>Normal</tickerType>

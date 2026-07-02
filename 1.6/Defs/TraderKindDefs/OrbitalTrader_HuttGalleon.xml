@@ -481,9 +481,21 @@
 	  
 	  
 	  <!-- Slaves & Apparel -->
-      <li Class="StockGenerator_Slaves">
-        <countRange>10~20</countRange>
-      </li>
+		<li Class="StockGenerator_Slaves">
+			<countRange>10~20</countRange>
+		</li>
+		<li Class="StockGenerator_Slaves">
+			<slaveKindDef>SWCPCivilian_SlaveEntertainer</slaveKindDef>
+			<countRange>4~5</countRange>
+		</li>
+		<li Class="StockGenerator_Tag">
+			<tradeTag>guy762TT_SlaveOutfits</tradeTag>
+			<thingDefCountRange>2~4</thingDefCountRange>
+			<countRange>1~3</countRange>
+		</li>
+		
+		
+		
 	  <li MayRequire ="guy762.KotORFactions" Class="StockGenerator_Slaves">
         <slaveKindDef>KotORHutts_SlaveEntertainer</slaveKindDef>
         <countRange>4~5</countRange>

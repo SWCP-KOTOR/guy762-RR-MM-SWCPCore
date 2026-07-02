@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/StatDef[defName="SlaveSuppressionFallRate"]/parts</xpath>
+        <value>
+            <li Class="SWCP_FlyingSloth_Misc.StatPart_StatOffset">
+				<stat>SWCPStat_NonGearSlaveSuppressionOffset</stat>
+				<factor>1</factor>
+			</li>
+        </value>
+    </Operation>
+	
+	
+</Patch>

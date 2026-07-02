@@ -63,26 +63,26 @@
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			  </li>
-			  <li>
-				<tag>TattooFaceCannibal</tag>
-				<baseWeight>0.4</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
-			  <li>
-				<tag>TattooBodyCannibal</tag>
-				<baseWeight>0.4</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
-			  <li>
-				<tag>TattooFaceTribal</tag>
-				<baseWeight>0.2</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
-			  <li>
-				<tag>TattooBodyTribal</tag>
-				<baseWeight>0.2</baseWeight>
-				<weightFactor>1</weightFactor>
-			  </li>
+			  <!-- <li> -->
+				<!-- <tag>TattooFaceCannibal</tag> -->
+				<!-- <baseWeight>0.4</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <tag>TattooBodyCannibal</tag> -->
+				<!-- <baseWeight>0.4</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <tag>TattooFaceTribal</tag> -->
+				<!-- <baseWeight>0.2</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <tag>TattooBodyTribal</tag> -->
+				<!-- <baseWeight>0.2</baseWeight> -->
+				<!-- <weightFactor>1</weightFactor> -->
+			  <!-- </li> -->
 			  
 			  <!--li>
 				<tag>guy762_SWTattoo_Mirialan</tag>

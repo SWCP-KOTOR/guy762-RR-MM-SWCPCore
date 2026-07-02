@@ -1427,7 +1427,8 @@
 				<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_pantoran>
 				<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_quarren>
 				<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_rodian>
-				<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.35</guy762_xenotype_twilek>
+				<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_togruta>
+				<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.25</guy762_xenotype_twilek>
 				<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
 				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_zabrak>
 				<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.20</guy762_xenotype_zeltron>
@@ -1479,6 +1480,14 @@
 		<!-- <techHediffsTags Inherit="False"> -->
 			<!-- <li>SWCPTechHediffTag_SlaveChip</li> -->
 		<!-- </techHediffsTags> -->
+		
+		<isFighter>false</isFighter>
+		<requiredWorkTags>
+			<li>Firefighting</li>
+			<li>ManualDumb</li>
+			<li>Social</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
 		
 		<startingHediffs>
 			<li MayRequire="EBSG.Framework"><def>SWCPHediff_SlaveChip</def><chance>0.75</chance></li>
