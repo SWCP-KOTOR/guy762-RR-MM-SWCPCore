@@ -15,34 +15,42 @@
     <woundAnchorRange>0</woundAnchorRange>
     <displayWound>true</displayWound>
 	<stages>
-      <li>
-		<opinionOfOthersFactor>0</opinionOfOthersFactor>
-		<statOffsets>
-			<PsychicSensitivity>-0.5</PsychicSensitivity>
-			<MeditationFocusGain>-0.9</MeditationFocusGain>
-			<PsychicEntropyRecoveryRate>-0.9</PsychicEntropyRecoveryRate>
-			<!-- <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">-0.9</SWPotF_ForcePoints_Recovery> -->
-			<Force_FPRecovery MayRequire="lee.theforce.standalone">-0.9</Force_FPRecovery>
-		</statOffsets>
-		<capMods>
-			<li>
-				<capacity>Consciousness</capacity>
-				<offset>1</offset>
-			</li>
-		</capMods>
-		
-		<disablesNeeds>
-			<li>Mood</li>
-			<li>Joy</li>
-			<li>Beauty</li>
-			<li>Comfort</li>
-			<li>Outdoors</li>
-			<li>Indoors</li>
-			<li>RoomSize</li>
-			<li MayRequire="rim.job.world">Sex</li>
-			<li MayRequire="LovelyDovey.Sex.WithEuterpe">SEX_Intimacy</li>
-		</disablesNeeds>
-      </li>
+		<li>
+			<statOffsets>
+				<PsychicSensitivity>-0.5</PsychicSensitivity>
+				<MeditationFocusGain>-0.9</MeditationFocusGain>
+				<PsychicEntropyRecoveryRate>-0.9</PsychicEntropyRecoveryRate>
+				<!-- <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">-0.9</SWPotF_ForcePoints_Recovery> -->
+				<Force_FPRecovery MayRequire="lee.theforce.standalone">-0.9</Force_FPRecovery>
+				
+				<SWCPStat_Loyalty>100</SWCPStat_Loyalty>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>1</offset>
+				</li>
+			</capMods>
+			
+			<disablesNeeds>
+				<li>Mood</li>
+				<li>Joy</li>
+				<li>Beauty</li>
+				<li>Comfort</li>
+				<li>Outdoors</li>
+				<li>Indoors</li>
+				<li>RoomSize</li>
+				<li MayRequire="rim.job.world">Sex</li>
+				<li MayRequire="LovelyDovey.Sex.WithEuterpe">SEX_Intimacy</li>
+			</disablesNeeds>
+			
+			<opinionOfOthersFactor>0</opinionOfOthersFactor>
+			<socialFightChanceFactor>0</socialFightChanceFactor>
+			<makeImmuneTo>
+				<li>SWCPHediff_Suppression</li>
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li>
+			</makeImmuneTo>
+		</li>
     </stages>
 	<blocksSocialInteraction>true</blocksSocialInteraction>
 	<renderNodeProperties>

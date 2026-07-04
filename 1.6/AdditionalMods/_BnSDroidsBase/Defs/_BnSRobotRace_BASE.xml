@@ -243,14 +243,17 @@
 			<statOffsets>
 				<VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
 				<ToxicResistance>2</ToxicResistance>
+				
+				<SWCPStat_Awareness>1</SWCPStat_Awareness>
+				<SWCPStat_Loyalty>100</SWCPStat_Loyalty>
 			</statOffsets>
 			<damageFactors>
-			  <Stun>0</Stun>
-			  <Frostbite>0</Frostbite>
-			  <guy762_RangedDamage_KOstun>0</guy762_RangedDamage_KOstun>
-			  <guy762_GrenadeDamage_stun>0</guy762_GrenadeDamage_stun>
-			  <guy762_PoisonDamage_saber>0</guy762_PoisonDamage_saber>
-			  <guy762_RangedDamage_kolto>0</guy762_RangedDamage_kolto>
+				<Stun>0</Stun>
+				<Frostbite>0</Frostbite>
+				<guy762_RangedDamage_KOstun>0</guy762_RangedDamage_KOstun>
+				<guy762_GrenadeDamage_stun>0</guy762_GrenadeDamage_stun>
+				<guy762_PoisonDamage_saber>0</guy762_PoisonDamage_saber>
+				<guy762_RangedDamage_kolto>0</guy762_RangedDamage_kolto>
 			</damageFactors>
 			
 			<socialFightChanceFactor>0</socialFightChanceFactor>

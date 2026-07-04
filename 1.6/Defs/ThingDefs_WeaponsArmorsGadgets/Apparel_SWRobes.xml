@@ -2,7 +2,7 @@
 <Defs>
 	
 
-	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_Robes_jawa</defName>
 		<label>robes, rustic</label>
 		<!-- <description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
@@ -32,7 +32,7 @@
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		</equippedStatOffsets>
 		
-		<costList>
+		<costList Inherit="False">
 			<Cloth>160</Cloth>
 		</costList>
 		<recipeMaker>
@@ -50,7 +50,7 @@
 		<apparel>
 			<wornGraphicPath>SWApparel/Robes/jawa/Apparel</wornGraphicPath>
 			<layers>
-				<li>Middle</li>
+				<!-- <li>Middle</li> -->
 				<li>OnSkin</li>
 			</layers>
 			<bodyPartGroups>
@@ -120,7 +120,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_Robes_tusken</defName>
 		<label>robes, rugged</label>
 		<!-- <description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
@@ -150,7 +150,7 @@
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		</equippedStatOffsets>
 		
-		<costList>
+		<costList Inherit="False">
 			<Cloth>160</Cloth>
 		</costList>
 		<recipeMaker>
@@ -168,7 +168,7 @@
 		<apparel>
 			<wornGraphicPath>SWApparel/Robes/tusken/Apparel</wornGraphicPath>
 			<layers>
-				<li>Middle</li>
+				<!-- <li>Middle</li> -->
 				<li>OnSkin</li>
 			</layers>
 			<bodyPartGroups>
@@ -245,7 +245,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_Robes_zuckuss</defName>
 		<label>robes, heavy</label>
 		<!-- <description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
@@ -275,7 +275,7 @@
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		</equippedStatOffsets>
 		
-		<costList>
+		<costList Inherit="False">
 			<Cloth>160</Cloth>
 		</costList>
 		<recipeMaker>
@@ -293,7 +293,7 @@
 		<apparel>
 			<wornGraphicPath>SWApparel/Robes/zuckuss/Apparel</wornGraphicPath>
 			<layers>
-				<li>Middle</li>
+				<!-- <li>Middle</li> -->
 				<li>OnSkin</li>
 			</layers>
 			<bodyPartGroups>
@@ -343,12 +343,121 @@
 			</li>
 		</comps>
 	</ThingDef>
-  
-  
-  
-  
-  
-	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_Robes_coldweather</defName>
+		<label>robes, insulated</label>
+		<!-- <description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
+		<description>Thick robes like these are worn to protect the wearer from temperature extremes.</description>
+		<graphicData>
+		  <texPath>SWApparel/Robes/coldweather/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>8</Mass>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>225</MaxHitPoints>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
+			
+			<EquipDelay>9</EquipDelay>
+			
+			<WorkToMake>12500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.25</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
+		</equippedStatOffsets>
+		
+		<costList Inherit="False">
+			<Cloth>160</Cloth>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Robes/coldweather/Apparel</wornGraphicPath>
+			<layers>
+				<!-- <li>Middle</li> -->
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<!-- <li>Neck</li> -->
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags>
+				<li>SWCPSpecificApparelItem_ColdWeatherRobes</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Worker</li>
+				<li>SWCPOutfitTag_Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(190,190,200)</only> <!-- ice white -->
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
+				<baseGraphicData>
+					<texPath>SWApparel/Robes/coldweather/Apparel</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</baseGraphicData>
+				<partsMounts>
+				  <li>
+					<mountDef>guy762_KotORMount_underlay_robe</mountDef>
+					<offset>(0,0)</offset>
+					<layerOrder>1</layerOrder>
+				  </li>
+				</partsMounts>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_Robes_onderon</defName>
 		<label>robes, wayfarer's</label>
 		<!-- <description>These are simple garments that protect little more than the modesty of the wearer.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description> -->
@@ -380,7 +489,7 @@
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		</equippedStatOffsets>
 		
-		<costList>
+		<costList Inherit="False">
 			<Cloth>160</Cloth>
 		</costList>
 		<recipeMaker>
@@ -399,7 +508,7 @@
 			<wornGraphicPath>SWApparel/Robes/onderon/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
-				<li>Middle</li>
+				<!-- <li>Middle</li> -->
 				<li>OnSkin</li>
 			</layers>
 			<bodyPartGroups>

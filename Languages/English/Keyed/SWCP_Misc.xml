@@ -8,6 +8,8 @@
 	
 	<SelfHediffVerb_CooltimeRemain>On cooldown! {0}</SelfHediffVerb_CooltimeRemain>
 	
+	<SWCP_TitleXenotypeIneligibleFaction>{PAWN_labelShort} cannot hold titles from {FACTION_name} due to their xenotype.</SWCP_TitleXenotypeIneligibleFaction>
+	
 	
 	<FCP_CannotPickUp>Cannot pick up {0}</FCP_CannotPickUp>
 	<FCP_PickUp>Pick up {0} (all)</FCP_PickUp>
