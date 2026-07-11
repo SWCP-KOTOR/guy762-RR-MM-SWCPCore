@@ -7,7 +7,7 @@
 		<defName>SWCPHediff_SlaveChip</defName>
 		<label>slave chip</label>
 		<labelNoun>a slave chip</labelNoun>
-		<description>.</description>
+		<description>An installed slave chip. This chip will automatically electrocute the pawn it is installed in if they enter the "rebellion" mental state. The threat of this occurring is usually enough to keep most slaves suppressed, without the need for any restrictive bondage.\n\nDEV'S NOTE: This unfortunately does NOT do anything in the "Grand Slave Rebellion" event, as the pawn state used by that event is 100% hardcoded and I have no way of targeting it for prevention with this hediff.</description>
 		<!-- <descriptionHyperlinks><ThingDef>Mindscrew</ThingDef></descriptionHyperlinks> -->
 		<tags><li>SWCPHediffTag_SlaveChip</li></tags>
 		
@@ -52,7 +52,7 @@
 	<HediffDef>
 		<defName>SWCPHediff_SlaveChipElectrocution</defName>
 		<label>slave chip electrocution</label>
-		<description>.</description>
+		<description>This pawn is being electrocuted by an installed slave chip due to rebellious activity.</description>
 		<defaultLabelColor>(255,7,48)</defaultLabelColor> <!-- red -->
 		<hediffClass>HediffWithComps</hediffClass>
 		<maxSeverity>1.0</maxSeverity>

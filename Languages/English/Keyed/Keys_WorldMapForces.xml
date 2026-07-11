@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<GUY_RelabelForce>relabel force...</GUY_RelabelForce>
+	<GUY_RelabelForce>relabel this force.</GUY_RelabelForce>
+	
+	<GUY_DisbandForce>disband force</GUY_DisbandForce>
+	<GUY_DisbandForce_Description>Permanently disband this force.</GUY_DisbandForce_Description>
+	
+	<GUY_ForceName>{0} of {1}</GUY_ForceName>
+	
+	<GUY_GroundForces>ground forces</GUY_GroundForces>
+	
+	<GUY_ForceAbility_OnCooldown>On cooldown ({0} remaining)</GUY_ForceAbility_OnCooldown>
+	
+	<GUY_ForcesDeployed>{0} has been deployed</GUY_ForcesDeployed>
+	<GUY_NoPlayerOwnedWorldObjects>No major player-owned entities exist on the world map.</GUY_NoPlayerOwnedWorldObjects>
+	
+	<GUY_ForceAbility_DoYouWantToNukeYourOwnSettlement>Are you sure you want to destroy {0}, your own settlement?</GUY_ForceAbility_DoYouWantToNukeYourOwnSettlement>
+	
+	<GUY_AbilityRaid>Deployed raid</GUY_AbilityRaid>
+	<GUY_AbilityRaid_Description>Forces from {0} have deployed {1} units nearby.</GUY_AbilityRaid_Description>
+	
+	<GUY_OutOfRange>Out of range.</GUY_OutOfRange>
+	<GUY_ForceAbility_MustTargetSettlement>Must target a settlement.</GUY_ForceAbility_MustTargetSettlement>
+	<GUY_TargetSiteHasNoMap>Target site has no map.</GUY_TargetSiteHasNoMap>
+	<GUY_AbilityHasNoValidFaction>No valid faction for this ability.</GUY_AbilityHasNoValidFaction>
+	
+	
+	
+	
+	
+	<SWCPWorldMapForceNameString_ImpArmyPlatoon>Imperial Army platoon</SWCPWorldMapForceNameString_ImpArmyPlatoon>
+	
+	
+</LanguageData>
