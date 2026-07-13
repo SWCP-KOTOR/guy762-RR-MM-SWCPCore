@@ -24,12 +24,5 @@
 	<GUY_ForceAbility_MustTargetSettlement>Must target a settlement.</GUY_ForceAbility_MustTargetSettlement>
 	<GUY_TargetSiteHasNoMap>Target site has no map.</GUY_TargetSiteHasNoMap>
 	<GUY_AbilityHasNoValidFaction>No valid faction for this ability.</GUY_AbilityHasNoValidFaction>
-	
-	
-	
-	
-	
-	<SWCPWorldMapForceNameString_ImpArmyPlatoon>Imperial Army platoon</SWCPWorldMapForceNameString_ImpArmyPlatoon>
-	
-	
+
 </LanguageData>

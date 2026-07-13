@@ -76,9 +76,9 @@
 	</SoundDef>
 	
 	<SoundDef>
-		<defName>kotorsound_speederbike_moving</defName>	
+		<defName>kotorsound_speederbike_moving</defName>
 		<context>MapOnly</context>
-		<eventNames />	
+		<eventNames />
 		<maxSimultaneous>5</maxSimultaneous>
 		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
@@ -89,11 +89,11 @@
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/eng_speederbike_mid_lp</clipPath>
 					</li>
-				</grains>	
+				</grains>
 				<volumeRange>
-				<min>45</min>        
-				<max>45</max>
-				</volumeRange>  		
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>
 			</li>
 		</subSounds>
 	</SoundDef>

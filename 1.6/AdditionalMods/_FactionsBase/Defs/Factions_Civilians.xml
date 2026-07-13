@@ -15,6 +15,8 @@
 		<listOrderPriority>775</listOrderPriority>
 		<configurationListOrderPriority>775</configurationListOrderPriority>
 		<canMakeRandomly>true</canMakeRandomly>
+		
+		<raidsForbidden>true</raidsForbidden>
 		<canSiege>false</canSiege>
 		<canStageAttacks>false</canStageAttacks>
 		
