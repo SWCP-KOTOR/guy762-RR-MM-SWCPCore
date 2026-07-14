@@ -12,8 +12,8 @@
 		<equippedStatOffsets>
 			<PsychicSensitivity>0.1</PsychicSensitivity>
 			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
-			<!-- <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.05</SWPotF_ForcePoints_Recovery> -->
-			<Force_FPRecovery MayRequire="lee.theforce.standalone">0.05</Force_FPRecovery>
+			<SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.05</SWPotF_ForcePoints_Recovery>
+			<!-- <Force_FPRecovery MayRequire="lee.theforce.standalone">0.05</Force_FPRecovery> -->
 			<MeditationFocusGain>0.1</MeditationFocusGain>
 			<PainShockThreshold>0.1</PainShockThreshold>
 		</equippedStatOffsets>
