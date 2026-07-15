@@ -794,7 +794,12 @@
 				  <!-- </whitelist> -->
 				  <banlist>
 					<li>PsychicSensitivity</li>
-					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_Trait_psyultrasensitive</li>
+					<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_Trait_psyultrasensitive</li> -->
+					
+					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_Trait_ForceSensitive_weak</li>
+					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_Trait_ForceSensitive_mid</li>
+					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_Trait_ForceSensitive_strong</li>
+					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_Trait_ForceSensitive_ultra</li>
 					
 					<li MayRequire="lee.theforce.standalone">Force_NeutralSensitivity</li>
 					<li MayRequire="lee.theforce.standalone">Force_LightAffinity</li>
