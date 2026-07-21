@@ -181,6 +181,11 @@
 			<makeImmuneTo>
 				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceFear</li>
 				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForcePacify</li>
+				<li>SWCPHediff_KOStun</li>
+				
+				<li MayRequire="guy762.Lee.KotORPotF">SWCPHediff_Suppression</li>
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li>
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotFHediff_Feat_intimidated</li>
 			</makeImmuneTo>
 			<damageFactors>
 				<Stun>0</Stun>

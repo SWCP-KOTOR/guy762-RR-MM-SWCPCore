@@ -414,7 +414,7 @@
 		</graphicData>
 		<equippedStatOffsets>
 			<MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
-			<MedicalTendQualityOffset>0.2</MedicalTendQualityOffset>
+			<MedicalTendQuality>0.2</MedicalTendQuality>
 			<MedicalTendSpeed>0.2</MedicalTendSpeed>
 		</equippedStatOffsets>
 		<statBases>

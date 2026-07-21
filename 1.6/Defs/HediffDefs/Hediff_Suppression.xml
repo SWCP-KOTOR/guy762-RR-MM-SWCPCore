@@ -22,6 +22,8 @@
 					<RangedCooldownFactor>0.15</RangedCooldownFactor>
 					<!-- <PainShockThreshold>-0.15</PainShockThreshold> -->
 					<MentalBreakThreshold>0.15</MentalBreakThreshold>
+					
+					<Terror MayRequire="Ludeon.RimWorld.Ideology">0.3</Terror>
 				</statOffsets>
 			</li>
 			<li>
@@ -35,6 +37,8 @@
 					<RangedCooldownFactor>0.30</RangedCooldownFactor>
 					<!-- <PainShockThreshold>-0.30</PainShockThreshold> -->
 					<MentalBreakThreshold>0.30</MentalBreakThreshold>
+					
+					<Terror MayRequire="Ludeon.RimWorld.Ideology">0.6</Terror>
 				</statOffsets>
 					<!-- disabling these because one of my pawns rolled the mental break while testing, ran off the map, and just fully stopped being a colonist. not great to have when half of every pawnkind has a weapon that suppresses  -->
 				<!-- <mentalStateGivers>-->
@@ -55,6 +59,8 @@
 					<RangedCooldownFactor>0.45</RangedCooldownFactor>
 					<!-- <PainShockThreshold>-0.45</PainShockThreshold> -->
 					<MentalBreakThreshold>0.45</MentalBreakThreshold>
+					
+					<Terror MayRequire="Ludeon.RimWorld.Ideology">0.9</Terror>
 				</statOffsets>
 				<!-- <mentalStateGivers> -->
 					<!-- <li> -->

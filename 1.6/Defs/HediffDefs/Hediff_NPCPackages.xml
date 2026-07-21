@@ -88,6 +88,7 @@
 				
 				<statOffsets>
 					<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
+					<SWCPStat_Willpower>-0.2</SWCPStat_Willpower>
 				</statOffsets>
 			</li>
 		</stages>
@@ -118,6 +119,7 @@
 				
 				<statOffsets>
 					<SWCPStat_Awareness>0.2</SWCPStat_Awareness>
+					<SWCPStat_Willpower>0.2</SWCPStat_Willpower>
 				</statOffsets>
 			</li>
 		</stages>
@@ -151,6 +153,7 @@
 				
 				<statOffsets>
 					<SWCPStat_Loyalty>-0.25</SWCPStat_Loyalty>
+					<SWCPStat_Willpower>-0.25</SWCPStat_Willpower>
 					<SWCPStat_Awareness>-0.1</SWCPStat_Awareness>
 				</statOffsets>
 			</li>
@@ -181,6 +184,7 @@
 				
 				<statOffsets>
 					<SWCPStat_Loyalty>-0.5</SWCPStat_Loyalty>
+					<SWCPStat_Willpower>-0.5</SWCPStat_Willpower>
 					<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
 				</statOffsets>
 			</li>
@@ -213,6 +217,7 @@
 				
 				<statOffsets>
 					<SWCPStat_Loyalty>-0.75</SWCPStat_Loyalty>
+					<SWCPStat_Willpower>-0.75</SWCPStat_Willpower>
 					<SWCPStat_Awareness>-0.3</SWCPStat_Awareness>
 				</statOffsets>
 			</li>
@@ -247,6 +252,7 @@
 				
 				<statOffsets>
 					<SWCPStat_Loyalty>-0.75</SWCPStat_Loyalty>
+					<SWCPStat_Willpower>-1</SWCPStat_Willpower>
 					<SWCPStat_Awareness>-0.5</SWCPStat_Awareness>
 				</statOffsets>
 			</li>

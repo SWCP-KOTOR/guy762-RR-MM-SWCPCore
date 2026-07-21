@@ -123,7 +123,7 @@
 	
 	<!-- Nalargon ================================================================ -->
 	<ThingDef ParentName="Kotor_Instrument_Base">
-		<defName>KOTORInstrument_Nalargon</defName>
+		<defName>KOTORInstrument_Nalargon</defName> <!-- THIS DEFNAME IS REFERENCED BY A THINGDEFOF IN SWCP_LevelDesignStuff!!!! -->
 		<label>Nalargon</label>
 		<description>The Nalargon or Red Ball Jett keyboard was a keyboard instrument similar to an organ. Circular in shape, the player—known as a Nalargonist would sit in the center of the instrument, depressing any combination of the keys. Air intake was to the player's left, while the output speaker was on their right. Between the base of the organ and the keyboard were air outlet pipes.</description>
 		<size>(2,2)</size>

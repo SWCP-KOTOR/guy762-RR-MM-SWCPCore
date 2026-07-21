@@ -1547,6 +1547,7 @@
 			<workSkill>Crafting</workSkill>
 			<recipeUsers>
 				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+				<li>FabricationBench</li>
 			</recipeUsers>
 			<defaultIngredientFilter>
 				<categories>
@@ -1638,6 +1639,7 @@
 			<workSkill>Crafting</workSkill>
 			<recipeUsers>
 				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+				<li>FabricationBench</li>
 			</recipeUsers>
 			<defaultIngredientFilter>
 				<categories>

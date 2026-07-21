@@ -39,25 +39,50 @@
 	
 	
 	<SoundDef>
-		<defName>kotorsound_shieldpowerup</defName>	
+		<defName>kotorsound_vader</defName>
 		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/VAD_BREATH_1</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_shieldpowerup</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotormisc/gen_shieldredon</clipPath>
 					</li>
-				</grains>	
+				</grains>
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
-					<min>0.8</min>				
+					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>

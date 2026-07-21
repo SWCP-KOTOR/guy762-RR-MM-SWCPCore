@@ -148,7 +148,7 @@
 			<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">20</HackingStealth>
 			
 			<MedicalSurgerySuccessChance>0.3</MedicalSurgerySuccessChance>
-			<MedicalTendQualityOffset>0.3</MedicalTendQualityOffset>
+			<MedicalTendQuality>0.3</MedicalTendQuality>
 			<MedicalTendSpeed>0.3</MedicalTendSpeed>
 		</equippedStatOffsets>
 		
@@ -815,6 +815,11 @@
 		<makeImmuneTo>
 			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceFear</li>
 			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForcePacify</li>
+			<li>SWCPHediff_KOStun</li>
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWCPHediff_Suppression</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotFHediff_Feat_intimidated</li>
 		</makeImmuneTo>
 		<damageFactors>
 			<Stun>0</Stun>
