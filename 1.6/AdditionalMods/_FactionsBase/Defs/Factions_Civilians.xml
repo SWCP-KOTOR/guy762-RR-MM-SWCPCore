@@ -411,6 +411,114 @@
 		  </li>
 		</pawnGroupMakers>
 		
-	  </FactionDef>
+	</FactionDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <FactionDef ParentName="FactionBase"> -->
+		<!-- <defName>guy762_SWCPFaction_DebugHostiles</defName> -->
+		<!-- <label>debug hostiles</label> -->
+		<!-- <fixedName>hostiles</fixedName> -->
+		<!-- <description>This is a debug faction for pawns that are hostile only to the player.</description> -->
+		<!-- <categoryTag>Ancient</categoryTag> -->
+		<!-- <colorSpectrum> -->
+			<!-- <li>RGB(250,0,0)</li> -->
+		<!-- </colorSpectrum> -->
+		<!-- <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation> -->
+		<!-- <requiredCountAtGameStart>1</requiredCountAtGameStart> -->
+		<!-- <maxCountAtGameStart>1</maxCountAtGameStart> -->
+		<!-- <listOrderPriority>776</listOrderPriority> -->
+		<!-- <configurationListOrderPriority>776</configurationListOrderPriority> -->
+		<!-- <canMakeRandomly>false</canMakeRandomly> -->
+		
+		<!-- <raidsForbidden>true</raidsForbidden> -->
+		<!-- <generateNewLeaderFromMapMembersOnly>true</generateNewLeaderFromMapMembersOnly><leaderTitle>leader</leaderTitle> -->
+		<!-- <hidden>true</hidden> -->
+		<!-- <hiddenIdeo>true</hiddenIdeo> -->
+		<!-- <displayInFactionSelection>false</displayInFactionSelection> -->
+		
+		<!-- <factionIconPath>World/ScumAndVillainy</factionIconPath> -->
+
+		<!-- <settlementGenerationWeight>0</settlementGenerationWeight> -->
+		<!-- <techLevel>Spacer</techLevel> -->
+		<!-- <backstoryFilters><li><categories><li>Offworld</li></categories></li></backstoryFilters> -->
+		
+		<!-- <permanentEnemyToEveryoneExcept> -->
+			<!-- <li>OutlanderCivil</li> -->
+			<!-- <li>OutlanderRough</li> -->
+			<!-- <li>TribeCivil</li> -->
+			<!-- <li>TribeRough</li> -->
+			<!-- <li>TribeSavage</li> -->
+			<!-- <li>Pirate</li> -->
+			<!-- <li>Ancients</li> -->
+			<!-- <li>AncientsHostile</li> -->
+			<!-- <li>Mechanoid</li> -->
+			<!-- <li>Insect</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Royalty">Empire</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Royalty">OutlanderRefugee</li> -->
+			
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">TribeCannibal</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">NudistTribe</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">CannibalPirate</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Pilgrims</li> -->
+			
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">TribeRoughNeanderthal</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">PirateYttakin</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">TribeSavageImpid</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">OutlanderRoughPig</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">PirateWaster</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophages</li> -->
+			
+			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">TradersGuild</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Salvagers</li> -->
+			
+			
+
+			<!-- <li>guy762_KotORFaction_Civilians</li> -->
+			
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_OldRepublic</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_CorruptRepublic</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithRemnant</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Militia</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Rebellion</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_HuttCartel</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_ViciousHutts</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_MandoClan</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SavageMandos</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Czerka</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Exchange</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_MandoNeoCrusaders</li> -->
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithEmpire</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_NewRepublic</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_RebelCell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_PartisanCell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_ImpRemnant</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_Pentastar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_GreaterMaldrood</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_EriaduAuthority</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_ImpMandalore</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_BlackSun</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_HuttCartel</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_ViciousHutts</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_MandoClan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_PDF</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_LocalWarlord</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_SlaverGuild</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_LocalPirates</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWWarlordsFaction_CSA</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWCPFaction_JawaMerchants</li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_SWCPFaction_TuskenTribe</li> -->
+		<!-- </permanentEnemyToEveryoneExcept> -->
+	<!-- </FactionDef> -->
 
 </Defs>

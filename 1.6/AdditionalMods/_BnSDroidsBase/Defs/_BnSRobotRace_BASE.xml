@@ -274,15 +274,18 @@
 				<li>FoodPoisoning</li>
 
 				<li>Carcinoma</li>
+				<li>Asthma</li>
 				<li>HeartAttack</li>
 				<li>BadBack</li>
 				<li>Frail</li>
 				<li>Cataract</li>
 				<li>Dementia</li>
 				<li>Alzheimers</li>
-				<li>Asthma</li>
 				<li>HeartArteryBlockage</li>
 				<li>Anesthetic</li>
+				<li>Cirrhosis</li>
+				<li>ChemicalDamageModerate</li>
+				<li>ChemicalDamageSevere</li>
 
 				<li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
 				
@@ -329,6 +332,27 @@
 				<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumBurn</li>
 				<li MayRequire="Ludeon.RimWorld.Odyssey">GravNausea</li>
 				
+				<li>AlcoholAddiction</li>
+				<li>Hangover</li>
+				<li>AmbrosiaAddiction</li>
+				<li>GoJuiceAddiction</li>
+				<li>LuciferiumAddiction</li>
+				<li>PsychiteAddiction</li>
+				<li>SmokeleafAddiction</li>
+				<li>HeartAttack</li>
+				<li MayRequire="rim.job.world">HumpShroomAddiction</li>
+				<li MayRequire="Euterpe.MilkyTitfuck">SEX_BroodmotherAddiction</li>
+				
+				<li>guy762_addiction_battlestim</li>
+				<li>guy762_addiction_constim</li>
+				<li>guy762_addiction_dexstim</li>
+				<li>guy762_addiction_strstim</li>
+				<li>guy762_addiction_rhydo</li>
+				<li>guy762_addiction_spice</li>
+				<li>guy762_addiction_deathstick</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">GlitterstimAddiction</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">JiRikknitAddiction</li>
+				
 				
 				<li>KoltoTank_Coma</li>
 				<li>KoltoTank_Recovering</li>
@@ -344,7 +368,6 @@
 				<li>guy762_medpacHeal_life</li>
 				<li>guy762_medpacHeal_antidote</li>
 				<li>SWCPHediff_BactaHeal</li>
-				
 				
 				<li>SWCPHediff_Suppression</li>
 				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li>
@@ -825,15 +848,18 @@
 					<!-- <li>FoodPoisoning</li> -->
 
 					<!-- <li>Carcinoma</li> -->
+					<!-- <li>Asthma</li> -->
 					<!-- <li>HeartAttack</li> -->
 					<!-- <li>BadBack</li> -->
 					<!-- <li>Frail</li> -->
 					<!-- <li>Cataract</li> -->
 					<!-- <li>Dementia</li> -->
 					<!-- <li>Alzheimers</li> -->
-					<!-- <li>Asthma</li> -->
 					<!-- <li>HeartArteryBlockage</li> -->
 					<!-- <li>Anesthetic</li> -->
+					<!-- <li>Cirrhosis</li> -->
+					<!-- <li>ChemicalDamageModerate</li> -->
+					<!-- <li>ChemicalDamageSevere</li> -->
 
 					<!-- <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li> -->
 					
@@ -879,6 +905,27 @@
 					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">VacuumExposure</li> -->
 					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">VacuumBurn</li> -->
 					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">GravNausea</li> -->
+					
+					<!-- <li>AlcoholAddiction</li> -->
+					<!-- <li>Hangover</li> -->
+					<!-- <li>AmbrosiaAddiction</li> -->
+					<!-- <li>GoJuiceAddiction</li> -->
+					<!-- <li>LuciferiumAddiction</li> -->
+					<!-- <li>PsychiteAddiction</li> -->
+					<!-- <li>SmokeleafAddiction</li> -->
+					<!-- <li>HeartAttack</li> -->
+					<!-- <li MayRequire="rim.job.world">HumpShroomAddiction</li> -->
+					<!-- <li MayRequire="Euterpe.MilkyTitfuck">SEX_BroodmotherAddiction</li> -->
+					
+					<!-- <li>guy762_addiction_battlestim</li> -->
+					<!-- <li>guy762_addiction_constim</li> -->
+					<!-- <li>guy762_addiction_dexstim</li> -->
+					<!-- <li>guy762_addiction_strstim</li> -->
+					<!-- <li>guy762_addiction_rhydo</li> -->
+					<!-- <li>guy762_addiction_spice</li> -->
+					<!-- <li>guy762_addiction_deathstick</li> -->
+					<!-- <li MayRequire="Mlie.StarWarsAnimalCollection">GlitterstimAddiction</li> -->
+					<!-- <li MayRequire="Mlie.StarWarsAnimalCollection">JiRikknitAddiction</li> -->
 					
 					
 					<!-- <li>KoltoTank_Coma</li> -->

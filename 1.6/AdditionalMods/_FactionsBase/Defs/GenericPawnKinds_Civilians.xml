@@ -176,6 +176,7 @@
 			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
 		  </xenotypeChances>
 		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 		
 		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	</PawnKindDef>
@@ -199,7 +200,7 @@
 	  
 	<PawnKindDef Name="SWCPCivilian_villager" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_villager</defName>
-		<label>civilian</label>
+		<label>villager</label>
 		<combatPower>25</combatPower>
 		
 		<itemQuality>Poor</itemQuality>
@@ -267,7 +268,7 @@
 	  
 	<PawnKindDef Name="SWCPCivilian_poortraveler" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_poortraveler</defName>
-		<label>civilian</label>
+		<label>traveler</label>
 		<combatPower>25</combatPower>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
@@ -1008,6 +1009,7 @@
 		<defName>SWCPCivilian_thug</defName>
 		<label>thug</label>
 		<combatPower>35</combatPower>
+		<fixedGender>Male</fixedGender>
 		<minGenerationAge>15</minGenerationAge>
 		<maxGenerationAge>25</maxGenerationAge>
 		<invNutrition>0</invNutrition>
@@ -1018,7 +1020,7 @@
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 		<apparelTags>
 		  <li>SaV_apparel_thug</li>
-		  <li>KotORAccessory_outlaw</li>
+		  <li>SWWarlordsAccessory_scumtrooper</li>
 		  <li>KotORHeadband_bandana</li>
 		</apparelTags>
 		<specificApparelRequirements>
@@ -1031,15 +1033,16 @@
 		<weaponMoney>200~2100</weaponMoney>
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponTags>
-		  <li>SaV_thug</li>
-		  <li>SWRanged_DL18pistol</li>
+			<li>SaV_thug</li>
+			<li>SWRanged_DL18pistol</li>
+			<li>SWMelee_Vibrodagger</li>
 		</weaponTags>
 		
-		<techHediffsMoney>50~150</techHediffsMoney>
-		<techHediffsTags>
-		  <li>Poor</li>
-		</techHediffsTags>
-		<techHediffsChance>0.15</techHediffsChance>
+		<!-- <techHediffsMoney>50~150</techHediffsMoney> -->
+		<!-- <techHediffsTags> -->
+		  <!-- <li>Poor</li> -->
+		<!-- </techHediffsTags> -->
+		<!-- <techHediffsChance>0.15</techHediffsChance> -->
 		
 		<initialWillRange>0.2~1.6</initialWillRange>
 		<initialResistanceRange>3~7</initialResistanceRange>
@@ -1051,6 +1054,106 @@
 		<defName>SWCPCivilian_HostileThug</defName>
 		<defaultFactionType>AncientsHostile</defaultFactionType>
 	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWCPCivilian_ThugLeader" ParentName="SWCPMercBase">
+		<defName>SWCPCivilian_ThugLeader</defName>
+		<label>thug leader</label>
+		<combatPower>50</combatPower>
+		<fixedGender>Male</fixedGender>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<invNutrition>0</invNutrition>
+		
+		<gearHealthRange>0.6~1</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>1000~5000</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORHeadband_bandana</li>
+			<li>SWCPSpecificApparelItem_KotORScoundrelJacket</li>
+			<li>SWCPSpecificApparelItem_SmugglerClothing</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Jacket_scoundrel</li>	
+		   <li>guy762_Clothing_smuggler</li>
+		</apparelRequired>
+		
+		<weaponMoney>620~2100</weaponMoney>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags>
+			<li>SaV_thug</li>
+			<li>SWRanged_Model57pistol</li>
+			<li>SWMelee_Vibrosword</li>
+		</weaponTags>
+		
+		<initialWillRange>0.2~1.6</initialWillRange>
+		<initialResistanceRange>3~7</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li MayRequire="guy762.Lee.KotORPotF">
+					<thingDef>SWCPItem_OddityXP_datapad_purple10xp</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>100~500</countRange>
+				</li>
+				<li>
+					<thingDef>KOTOR_Spice</thingDef>
+					<countRange>2~4</countRange>
+				</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">
+					<thingDef>TarisianAle</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -7,6 +7,7 @@
 		<label>intimidation power</label>
 		<description>This stat increases the chances that a pawn can intimidate others through abilities.</description>
 		<descriptionHyperlinks>
+			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWCP_Ability_ThugLeaderChallenge</AbilityDef>
 			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_intimidate</AbilityDef>
 			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_intimidate_adv</AbilityDef>
 			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_intimidate_AoE</AbilityDef>
@@ -49,11 +50,15 @@
 	<StatDef>
 		<defName>SWCPStat_Willpower</defName>
 		<label>willpower</label>
-		<description>This stat decreases the chances that a pawn will be successfully intimidated by an ability.</description>
+		<description>This stat decreases the chances that a pawn will be successfully intimidated by an ability. Also serves as a modifier to the duration of some revival abilities.</description>
 		<descriptionHyperlinks>
+			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWCP_Ability_ThugLeaderChallenge</AbilityDef>
 			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_intimidate</AbilityDef>
 			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_intimidate_adv</AbilityDef>
 			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_intimidate_AoE</AbilityDef>
+			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_secondwind</AbilityDef>
+			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_secondwind_adv</AbilityDef>
+			<AbilityDef MayRequire="guy762.Lee.KotORPotF">SWPotFAbility_Feat_secondwind_mst</AbilityDef>
 		</descriptionHyperlinks>
 		<category>SWCPStatCategory</category>
 		<displayPriorityInCategory>10</displayPriorityInCategory>
@@ -80,10 +85,12 @@
 					</points>
 				</factorFromMoodCurve>
 			</li>
-			<li Class="SWCP_FlyingSloth_Misc.StatPart_StatOffset"  MayRequire="Ludeon.RimWorld.Ideology">
-				<stat>Terror</stat>
-				<factor>-1</factor>
-			</li>
+			
+			<!-- <li Class="SWCP_FlyingSloth_Misc.StatPart_StatOffset"  MayRequire="Ludeon.RimWorld.Ideology"> bugs out, needs an option for the stat calculation to ignore this node if it can't return a value? -->
+				<!-- <stat>Terror</stat> -->
+				<!-- <factor>-1</factor> -->
+			<!-- </li> -->
+			
 			<!-- <li Class="SWCP_FlyingSloth_Misc.StatPart_StatOffset"> stats cannot ouroborous, will crash the game -->
 				<!-- <stat>SWCPStat_IntimidationPower</stat> -->
 				<!-- <factor>0.5</factor> -->

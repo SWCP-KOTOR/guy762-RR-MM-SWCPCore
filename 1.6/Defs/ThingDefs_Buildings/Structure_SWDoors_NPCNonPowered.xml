@@ -124,7 +124,7 @@
 		
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<DoorOpenSpeed>0.5</DoorOpenSpeed>
+			<DoorOpenSpeed>0.7</DoorOpenSpeed>
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
@@ -176,7 +176,7 @@
 		
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<DoorOpenSpeed>0.4</DoorOpenSpeed>
+			<DoorOpenSpeed>0.6</DoorOpenSpeed>
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
@@ -231,7 +231,7 @@
 		
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
-			<DoorOpenSpeed>0.3</DoorOpenSpeed>
+			<DoorOpenSpeed>0.5</DoorOpenSpeed>
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>

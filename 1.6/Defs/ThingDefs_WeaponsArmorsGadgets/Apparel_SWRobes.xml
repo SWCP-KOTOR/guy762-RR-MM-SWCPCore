@@ -362,6 +362,7 @@
 		<graphicData>
 		  <texPath>SWApparel/Robes/coldweather/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
 			<Mass>8</Mass>
@@ -401,6 +402,7 @@
 		
 		<apparel>
 			<wornGraphicPath>SWApparel/Robes/coldweather/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<!-- <li>Middle</li> -->
 				<li>OnSkin</li>
@@ -465,7 +467,7 @@
 		<graphicData>
 		  <texPath>SWApparel/Robes/onderon/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <shaderType>CutoutComplex</shaderType>
 		  <!-- <colorTwo>(100,145,160)</colorTwo> -->
 		</graphicData>
 		<statBases>

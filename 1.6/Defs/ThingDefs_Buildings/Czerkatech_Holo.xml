@@ -4,9 +4,9 @@
 	<!-- Holo Terminal ================================================================ -->
 	<ThingDef Name="HoloTerminalBase" ParentName="BuildingBase" Abstract="True">
 		<description>Holographic recorded entertainment</description>
-		<size>(1,2)</size>
+		<size>(1,1)</size>
 		<graphicData>
-			<drawOffset>(0,0,0.25)</drawOffset>
+			<drawOffset>(0,0,0.75)</drawOffset>
 			<drawSize>(2.5,2.5)</drawSize>
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
@@ -70,9 +70,9 @@
 	
 	<ThingDef Name="SWCP_HoloTerminalNPCBase" ParentName="BuildingBase" Abstract="True">
 		<description>Holographic recorded entertainment</description>
-		<size>(1,2)</size>
+		<size>(1,1)</size>
 		<graphicData>
-			<drawOffset>(0,0,0.25)</drawOffset>
+			<drawOffset>(0,0,0.75)</drawOffset>
 			<drawSize>(2.5,2.5)</drawSize>
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>

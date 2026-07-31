@@ -9,6 +9,12 @@
 	<SelfHediffVerb_CooltimeRemain>On cooldown! {0}</SelfHediffVerb_CooltimeRemain>
 	
 	<SWCP_TitleXenotypeIneligibleFaction>{PAWN_labelShort} cannot hold titles from {FACTION_name} due to their xenotype.</SWCP_TitleXenotypeIneligibleFaction>
+	<SWCP_TitleXenotypeIneligible>{PAWN_labelShort} cannot hold the title of {TITLE} due to their xenotype.</SWCP_TitleXenotypeIneligible>
+	
+	<SWCP_WiseInspirationReason>thanks to advice from {INITIATOR_labelShort}</SWCP_WiseInspirationReason>
+	<SWCP_WiseInspirationMessage>{RECIPIENT_labelShort} was inspired thanks to {INITIATOR_labelShort}'s advice: {INSPIRATION}.</SWCP_WiseInspirationMessage>
+	<SWCP_TreacherousBetrayalLabel>Betrayal!</SWCP_TreacherousBetrayalLabel>
+	<SWCP_TreacherousBetrayalText>{PAWN_labelShort} has turned against the colony and joined {FACTION_name}.</SWCP_TreacherousBetrayalText>
 	
 	
 	<FCP_CannotPickUp>Cannot pick up {0}</FCP_CannotPickUp>
