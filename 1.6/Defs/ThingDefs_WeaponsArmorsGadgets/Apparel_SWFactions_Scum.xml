@@ -330,6 +330,7 @@
 				<li>SaV_apparel_gand</li>
 				<li>SaV_apparel_kaleesh</li>
 				<li>SWCPSpecificApparelItem_GandRobes</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>	
 				<li>Soldier</li>

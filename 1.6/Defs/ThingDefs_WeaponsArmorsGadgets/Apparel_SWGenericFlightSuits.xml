@@ -215,6 +215,7 @@
 			<tags Inherit="False">
 				<li>KotORClothing_pilot</li>
 				<li>SWCPSpecificApparelItem_KotORFlightArmor</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Spacefarer</li>

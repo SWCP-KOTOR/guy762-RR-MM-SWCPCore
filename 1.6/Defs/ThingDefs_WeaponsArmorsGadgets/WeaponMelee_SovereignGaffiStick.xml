@@ -36,6 +36,7 @@
 			<li>SWMelee_GaffiStick</li>
 			
 			<li>SWCPWeaponCategoryTag_LightMelee</li>
+			<li>SWCPWeaponClassTag_Melee</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORMelee</li>
