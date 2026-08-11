@@ -900,25 +900,25 @@
 	</SoundDef>
 	
 	<SoundDef>
-		<defName>kotorsound_select_JKdetpack</defName>	
+		<defName>kotorsound_select_JKdetpack</defName>
 		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotormisc/JK_detpack_select</clipPath>
 					</li>
-				</grains>	
+				</grains>
 				<volumeRange>
-				<min>25</min>        
+				<min>25</min>
 				<max>25</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
-					<min>0.8</min>				
+					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -974,7 +974,30 @@
 	</SoundDef>
 	
 	
-	
+	<SoundDef>
+		<defName>kotorsound_JKshieldbank_done</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/shieldcon_done</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>15</min>
+				<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	
 	
 	
@@ -1770,6 +1793,34 @@
 				<pitchRange>
 					<min>1</min>
 					<max>1</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_GoldeneyeSlap</defName>
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/Goldeneye_punch_air</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>15</min>
+				<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.8</min>
+					<max>1.2</max>
 				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>

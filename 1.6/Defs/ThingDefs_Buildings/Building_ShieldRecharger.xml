@@ -43,6 +43,16 @@
 			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
 		</costList>
 		<comps>
+			<li Class="SWCP_Thekiborg_Misc.CompProperties_UseEffectReloadsApparel">
+                <reloadableApparels>
+                    <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_JKenergyshield</li>
+                    <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_JKenergyshield_big</li>
+                </reloadableApparels>
+                <timeToReload>600</timeToReload>
+                <sustainerReload>kotorsound_JKshieldbank</sustainerReload>
+                <oneShotReloaded>kotorsound_JKshieldbank_done</oneShotReloaded>
+            </li>
+			
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>200</basePowerConsumption>
@@ -63,6 +73,9 @@
 			<buildingTags>
 				<li>Production</li>
 			</buildingTags>
+			<unpoweredWorkTableWorkSpeedFactor>0.5</unpoweredWorkTableWorkSpeedFactor>
+            <workTableRoomRole>Workshop</workTableRoomRole>
+            <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
 		</building>
 		<fillPercent>0.5</fillPercent>
 		<hasInteractionCell>true</hasInteractionCell>
@@ -80,6 +93,21 @@
 		  <li>guy762TT_KotORWorkbench</li>
 		</tradeTags>
 	</ThingDef>
+	<JobDef>
+        <defName>SWCP_Thekiborg_Misc_ReloadOnBuilding</defName> <!-- Don't change it'll break -->
+        <driverClass>SWCP_Thekiborg_Misc.JobDriver_ReloadOnBuilding</driverClass>
+        <reportString>recharging TargetA at TargetB.</reportString>
+        <suspendable>false</suspendable>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<WorkGiverDef>
 		<defName>KOTOR_WorkGiver_ShieldBank</defName>

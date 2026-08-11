@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-	<GUY_RelabelForce>relabel force...</GUY_RelabelForce>
-	<GUY_RelabelForce>relabel this force.</GUY_RelabelForce>
+	<GUY_RelabelForce>rename force...</GUY_RelabelForce>
+	<GUY_RelabelForce>rename this force.</GUY_RelabelForce>
 	
 	<GUY_DisbandForce>disband force</GUY_DisbandForce>
 	<GUY_DisbandForce_Description>Permanently disband this force.</GUY_DisbandForce_Description>
@@ -19,6 +19,17 @@
 	
 	<GUY_AbilityRaid>Deployed raid</GUY_AbilityRaid>
 	<GUY_AbilityRaid_Description>Forces from {0} have deployed {1} units nearby.</GUY_AbilityRaid_Description>
+	
+	<GUY_SettlementDestroyed>{0} destroyed!</GUY_SettlementDestroyed>
+	<GUY_SettlementDestroyed_Description>Our forces have successfully assaulted and destroyed the settlement of {0}.</GUY_SettlementDestroyed_Description>
+	
+	<GUY_ForceDestroyed>{0} annihilated!</GUY_ForceDestroyed>
+	<GUY_ForceDestroyed_Description>{0} sent to assault {1} have failed critically! The force has been destroyed.</GUY_ForceDestroyed_Description>
+	
+	<GUY_SettlementNotDestroyed>{0} has repelled the siege!</GUY_SettlementNotDestroyed>
+	<GUY_SettlementNotDestroyed_Description>Our forces have failed to assault and destroy the settlement of {0}.</GUY_SettlementNotDestroyed_Description>
+	
+	<GUY_ForceAbility_MustTargetDestroyedSettlement>Only Destroyed Settlements can be reclaimed!</GUY_ForceAbility_MustTargetDestroyedSettlement>
 	
 	<GUY_OutOfRange>Out of range.</GUY_OutOfRange>
 	<GUY_ForceAbility_MustTargetSettlement>Must target a settlement.</GUY_ForceAbility_MustTargetSettlement>

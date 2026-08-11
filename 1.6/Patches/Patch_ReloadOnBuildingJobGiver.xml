@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationInsert">
+        <xpath>Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li/subNodes/li[@Class="JobGiver_Reload"]</xpath>
+        <value>
+            <li Class="SWCP_Thekiborg_Misc.JobGiver_ReloadOnBuilding" />
+        </value>
+    </Operation>
+
+</Patch>

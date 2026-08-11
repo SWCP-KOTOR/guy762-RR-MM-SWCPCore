@@ -91,6 +91,21 @@
 				</hediffs>
 			</li>
 		</comps>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>UI/FeatIcons/PotF_Suppressed4</texPath>
+				<parentTagDef>Body</parentTagDef>
+				<drawSize>0.25</drawSize>
+				<drawData>
+				  <defaultData>
+					<layer>100</layer>
+					<offset>(0.325, 0, 0.75)</offset>
+				  </defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</HediffDef>
 	  
 	<ThoughtDef>
