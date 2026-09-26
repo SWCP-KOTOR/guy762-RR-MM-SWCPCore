@@ -9,6 +9,7 @@
 	<GUY_ForceName>{0} of {1}</GUY_ForceName>
 	
 	<GUY_GroundForces>ground forces</GUY_GroundForces>
+	<GUY_ForceAbility_OffCooldown>{0} is ready to use {1}</GUY_ForceAbility_OffCooldown>
 	
 	<GUY_ForceAbility_OnCooldown>On cooldown ({0} remaining)</GUY_ForceAbility_OnCooldown>
 	
@@ -35,5 +36,11 @@
 	<GUY_ForceAbility_MustTargetSettlement>Must target a settlement.</GUY_ForceAbility_MustTargetSettlement>
 	<GUY_TargetSiteHasNoMap>Target site has no map.</GUY_TargetSiteHasNoMap>
 	<GUY_AbilityHasNoValidFaction>No valid faction for this ability.</GUY_AbilityHasNoValidFaction>
+	
+	<GUY_ForceAbility_AlreadyThere>Force is already at the targeted tile.</GUY_ForceAbility_AlreadyThere>
+	<GUY_ForceAbility_AlreadyLaunching>Is already launched.</GUY_ForceAbility_AlreadyLaunching>
+	<GUY_ForceAbility_TileImpassable>Targeted tile is impassable.</GUY_ForceAbility_TileImpassable>
+	<GUY_ForceAbility_TileOccupied>Targeted tile is already occupied.</GUY_ForceAbility_TileOccupied>
+	<GUY_ForceInFlight>In transit, arriving in {0}</GUY_ForceInFlight>
 
 </LanguageData>
