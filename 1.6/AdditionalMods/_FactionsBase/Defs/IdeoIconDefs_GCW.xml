@@ -56,6 +56,18 @@
 	</IdeoIconDef>
 	
 	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_zerocommand</defName>
+		<iconPath>World/ZeroCommand</iconPath>
+		<memes>
+			<!-- <li>guy762_MemeDef_corruptrepublic</li> -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Authoritarianism</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
 		<defName>guy762_IdeoIcon_impmando</defName>
 		<iconPath>World/ImperialMandalore</iconPath>
 		<memes>
@@ -77,6 +89,24 @@
 	<IdeoIconDef>
 		<defName>guy762_IdeoIcon_darkempire</defName>
 		<iconPath>World/DarkEmpire</iconPath>
+		<memes>
+			<li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li>
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_MemeDef_sith</li> -->
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_crimsonempire</defName>
+		<iconPath>World/CrimsonEmpire</iconPath>
+		<memes>
+			<li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li>
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_MemeDef_sith</li> -->
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_lumiya</defName>
+		<iconPath>World/LumiyaEmpire</iconPath>
 		<memes>
 			<li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li>
 			<!-- <li MayRequire="guy762.KotORFactions">guy762_MemeDef_sith</li> -->
